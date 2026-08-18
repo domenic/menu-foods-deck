@@ -146,9 +146,11 @@
   },
   "garganelli": {
     "core": [
-      "Ridged egg-pasta tubes with a visible seam"
+      "Ridged pasta tubes with a visible seam"
     ],
-    "context": []
+    "context": [
+      "egg pasta"
+    ]
   },
   "gemelli": {
     "core": [
@@ -239,9 +241,11 @@
   },
   "pastina": {
     "core": [
-      "Any very small pasta, usually for soup"
+      "Any very small pasta"
     ],
-    "context": []
+    "context": [
+      "usually for soup"
+    ]
   },
   "penne": {
     "core": [
@@ -321,15 +325,19 @@
   },
   "tagliatelle": {
     "core": [
-      "Long, flat egg-pasta ribbons"
+      "Long, flat pasta ribbons"
     ],
-    "context": []
+    "context": [
+      "egg pasta"
+    ]
   },
   "tagliolini": {
     "core": [
-      "Very narrow, flat egg-pasta ribbons"
+      "Very narrow, flat pasta ribbons"
     ],
-    "context": []
+    "context": [
+      "egg pasta"
+    ]
   },
   "tonnarelli": {
     "core": [
@@ -417,17 +425,17 @@
   "mortadella": {
     "core": [
       "Pig",
-      "large, mild, cooked sausage"
+      "mild, cooked sausage"
     ],
     "context": []
   },
   "prosciutto": {
     "core": [
       "Pig",
-      "dry-cured ham",
-      "usually thinly sliced"
+      "dry-cured ham"
     ],
     "context": [
+      "usually thinly sliced",
       "Italian",
       "usually means crudo on English menus"
     ]
@@ -508,10 +516,11 @@
   "bresaola": {
     "core": [
       "Cow",
-      "air-dried, salted beef",
-      "thinly sliced"
+      "air-dried, salted beef"
     ],
-    "context": []
+    "context": [
+      "usually thinly sliced"
+    ]
   },
   "culatello": {
     "core": [
@@ -571,9 +580,10 @@
   "saucisson": {
     "core": [
       "Usually pig",
-      "thick, dry-cured sausage"
+      "dry-cured sausage"
     ],
     "context": [
+      "usually thick",
       "French"
     ]
   },
@@ -626,7 +636,7 @@
   "pâté": {
     "core": [
       "Animal varies",
-      "seasoned meat paste",
+      "meat paste",
       "often liver"
     ],
     "context": []
@@ -665,7 +675,7 @@
   "jamón ibérico": {
     "core": [
       "Iberian pig",
-      "premium dry-cured ham"
+      "dry-cured ham"
     ],
     "context": [
       "Spanish"
@@ -859,9 +869,11 @@
     "core": [
       "Cow",
       "tenderloin steak",
-      "small and very tender"
+      "very tender"
     ],
-    "context": []
+    "context": [
+      "usually small"
+    ]
   },
   "entrecôte": {
     "core": [
@@ -1153,10 +1165,12 @@
   },
   "scamorza": {
     "core": [
-      "Semi-soft, pear-shaped, stretched-curd cheese",
+      "Semi-soft, stretched-curd cheese",
       "often smoked"
     ],
-    "context": []
+    "context": [
+      "traditionally pear-shaped"
+    ]
   },
   "stracchino": {
     "core": [
@@ -1169,9 +1183,11 @@
   },
   "taleggio": {
     "core": [
-      "Soft, washed-rind cheese"
+      "Soft, mild cheese"
     ],
     "context": [
+      "strong-smelling",
+      "washed-rind",
       "Italian",
       "cow’s milk"
     ]
@@ -1206,9 +1222,10 @@
   },
   "brie": {
     "core": [
-      "Soft, creamy, bloomy-rind cheese"
+      "Soft, creamy cheese"
     ],
     "context": [
+      "bloomy-rind",
       "French",
       "cow’s milk"
     ]
@@ -1223,9 +1240,10 @@
   },
   "camembert": {
     "core": [
-      "Soft, earthy, bloomy-rind cheese"
+      "Soft, earthy cheese"
     ],
     "context": [
+      "bloomy-rind",
       "French",
       "cow’s milk"
     ]
@@ -1260,9 +1278,10 @@
   },
   "époisses": {
     "core": [
-      "Soft, pungent, washed-rind cheese"
+      "Soft, pungent cheese"
     ],
     "context": [
+      "washed-rind",
       "French",
       "cow’s milk"
     ]
@@ -1296,35 +1315,39 @@
   },
   "munster": {
     "core": [
-      "Soft, pungent, washed-rind cheese"
+      "Soft, pungent cheese"
     ],
     "context": [
+      "washed-rind",
       "French",
       "cow’s milk"
     ]
   },
   "neufchâtel": {
     "core": [
-      "Soft, bloomy-rind cheese"
+      "Soft, slightly crumbly cheese"
     ],
     "context": [
+      "bloomy-rind",
       "French",
       "cow’s milk"
     ]
   },
   "ossau-iraty": {
     "core": [
-      "Firm, nutty sheep’s-milk cheese"
+      "Firm, nutty cheese"
     ],
     "context": [
+      "sheep’s milk",
       "French Basque"
     ]
   },
   "pont-l’évêque": {
     "core": [
-      "Soft, aromatic, washed-rind cheese"
+      "Soft, pungent cheese"
     ],
     "context": [
+      "washed-rind",
       "French",
       "cow’s milk"
     ]
@@ -1351,9 +1374,10 @@
   },
   "roquefort": {
     "core": [
-      "Tangy blue sheep’s-milk cheese"
+      "Tangy blue cheese"
     ],
     "context": [
+      "sheep’s milk",
       "French"
     ]
   },
@@ -1376,10 +1400,11 @@
   },
   "tomme": {
     "core": [
-      "Rustic round cheese",
+      "Rustic cheese family",
       "not one specific style"
     ],
     "context": [
+      "typically round",
       "French/Swiss term"
     ]
   },
@@ -1391,9 +1416,10 @@
   },
   "valençay": {
     "core": [
-      "Soft, ash-coated, pyramid-shaped goat cheese"
+      "Soft, ash-coated, pyramid-shaped cheese"
     ],
     "context": [
+      "goat’s milk",
       "French"
     ]
   },
@@ -1416,9 +1442,10 @@
   },
   "manchego": {
     "core": [
-      "Firm sheep’s-milk cheese"
+      "Firm cheese"
     ],
     "context": [
+      "sheep’s milk",
       "Spanish"
     ]
   },
@@ -1610,16 +1637,20 @@
   },
   "puntarelle": {
     "core": [
-      "Crisp, slightly bitter shoots of Catalonian chicory"
+      "Crisp, slightly bitter chicory shoots"
     ],
-    "context": []
+    "context": [
+      "from Catalonian chicory"
+    ]
   },
   "cavolo nero": {
     "core": [
-      "Dark leafy Tuscan cabbage",
+      "Dark leafy cabbage",
       "Italian kale"
     ],
-    "context": []
+    "context": [
+      "Tuscan"
+    ]
   },
   "cipollini": {
     "core": [

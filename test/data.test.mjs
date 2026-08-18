@@ -61,6 +61,20 @@ test("every meat recognition cue leads with its animal", () => {
   }
 });
 
+test("cheese cores reserve milk types for identity terms and avoid rind jargon", () => {
+  const milkIdentityTerms = new Set(["mozzarella di bufala", "pecorino", "pecorino romano", "chèvre"]);
+  const animalMilk = /\b(?:cow|sheep|goat|buffalo|water-buffalo)[’'s-]*(?:milk|cheese)\b/iu;
+  const contextOnlyVocabulary = /\b(?:aromatic|bloomy-rind|strong-smelling|washed-rind)\b/iu;
+
+  for (const food of foods.filter(food => food.category === "cheese")) {
+    const core = recognition[food.term].core.join("; ");
+    if (animalMilk.test(core)) {
+      assert.ok(milkIdentityTerms.has(food.term), `${food.term} puts a non-identity milk type in its bold cue`);
+    }
+    assert.doesNotMatch(core, contextOnlyVocabulary, `${food.term} puts context-only cheese vocabulary in its bold cue`);
+  }
+});
+
 test("every card has a distinct effective image source", () => {
   const imageKeys = foods.map(food => food.cardImageTitle ?? food.wiki);
   assert.equal(new Set(imageKeys).size, imageKeys.length);
