@@ -365,7 +365,7 @@
   },
   "ziti": {
     "core": [
-      "Long smooth tubes, often broken before cooking"
+      "Long, smooth pasta tubes"
     ],
     "context": []
   },
@@ -1399,9 +1399,10 @@
   },
   "feta": {
     "core": [
-      "Salty, crumbly, brined cheese, usually sheep’s milk"
+      "Salty, crumbly, brined cheese"
     ],
     "context": [
+      "usually sheep’s milk",
       "Greek"
     ]
   },

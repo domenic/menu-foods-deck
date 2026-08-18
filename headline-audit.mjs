@@ -126,7 +126,7 @@ const proposals = new Map([
   ["tomme", { core: "Rustic round cheese; not one specific style.", context: "French/Swiss term" }],
   ["triple crème", { core: "Very rich, soft cheese with extra cream added." }],
   ["valençay", { core: "Soft, ash-coated, pyramid-shaped goat cheese.", context: "French" }],
-  ["feta", { core: "Salty, crumbly, brined cheese, usually sheep’s milk.", context: "Greek" }],
+  ["feta", { core: "Salty, crumbly, brined cheese.", context: "usually sheep’s milk; Greek" }],
   ["halloumi", { core: "Firm, brined cheese that holds its shape when grilled.", context: "Cypriot" }],
   ["manchego", { core: "Firm sheep’s-milk cheese.", context: "Spanish" }],
   ["cotija", { core: "Salty, crumbly cheese.", context: "Mexican; cow’s milk" }],
@@ -181,6 +181,7 @@ const pastaCoreOverrides = new Map([
   ["pici", "Thick, hand-rolled spaghetti."],
   ["scialatielli", "Short, thick, flat ribbons."],
   ["trofie", "Short, thin, hand-twisted pasta."],
+  ["ziti", "Long, smooth pasta tubes."],
 ]);
 
 const auditNotes = new Map([
@@ -195,6 +196,7 @@ const auditNotes = new Map([
   ["veau", "Leads with the animal and expands “young cow” to “young cow (calf)”."],
   ["entrecôte", "Makes the implied beef (cow) source explicit."],
   ["ris de veau", "Moves the “not rice” mnemonic to context; the food identity remains prominent."],
+  ["ziti", "Removes the nonessential habit of breaking the pasta before cooking; the existing extra context retains it."],
   ["asiago", "Leads with its age-dependent texture instead of origin or milk."],
   ["fontina", "Moves “Alpine” to context because it describes geography/style, not a dependable texture."],
   ["montasio", "Moves “Alpine” to context because it describes geography/style, not a dependable texture."],
@@ -206,6 +208,7 @@ const auditNotes = new Map([
   ["reblochon", "Moves “Alpine” to context because it describes geography/style, not a dependable texture."],
   ["gouda", "Leads with its age-dependent character instead of origin or milk."],
   ["tomme", "Makes explicit that this is a family/term rather than one uniform cheese."],
+  ["feta", "Moves its usual milk type to context so the bold cue contains only immediately useful texture and preparation facts."],
 ]);
 
 function capitalize(text) {

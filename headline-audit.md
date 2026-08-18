@@ -8,7 +8,7 @@ Each card retains structured facts internally but renders one compact sentence-l
 
 The proposed ordering is shape first for pasta; animal/form/preparation for meat; texture/style/milk for cheese; and plain-English identity/preparation for other menu traps. The draft preserves the semantic content of the current headline except where an audit note explicitly calls out a clarification.
 
-Cards audited: 212. Substantive rendering changes: 149. Capitalization/punctuation only: 63. Density flags: 0. Animal-first meat check: 72/72.
+Cards audited: 212. Substantive rendering changes: 150. Capitalization/punctuation only: 62. Density flags: 0. Animal-first meat check: 72/72.
 
 ## Recognition collisions
 
@@ -42,7 +42,7 @@ These remain identical even after including the unbolded context. Synonym pairs 
 Each category is collapsed by default. Formatting-only cards are counted separately and hidden in a nested list rather than repeated as nearly identical table rows.
 
 <details>
-<summary><strong>Pasta</strong>; 7 substantive; 52 formatting-only</summary>
+<summary><strong>Pasta</strong>; 8 substantive; 51 formatting-only</summary>
 
 | Term | Current headline | Proposed rendering | Audit note |
 | --- | --- | --- | --- |
@@ -53,11 +53,12 @@ Each category is collapsed by default. Formatting-only cards are counted separat
 | pici | thick, hand-rolled Tuscan spaghetti | **Thick, hand-rolled spaghetti**; Tuscan | Moves regional origin to context; no food facts dropped. |
 | scialatielli | short, thick, flat ribbons from Campania | **Short, thick, flat ribbons**; from Campania | Moves regional origin to context; no food facts dropped. |
 | trofie | short, thin, hand-twisted Ligurian pasta | **Short, thin, hand-twisted pasta**; Ligurian | Moves regional origin to context; no food facts dropped. |
+| ziti | long smooth tubes, often broken before cooking | **Long, smooth pasta tubes** | Removes the nonessential habit of breaking the pasta before cooking; the existing extra context retains it. |
 
 <details>
-<summary>Formatting-only cards (52)</summary>
+<summary>Formatting-only cards (51)</summary>
 
-`acini di pepe`, `agnolotti`, `anelli`, `bigoli`, `bucatini`, `calamarata`, `campanelle`, `cannelloni`, `capellini`, `cappellacci`, `cappelletti`, `casarecce`, `cavatappi`, `cavatelli`, `conchiglie`, `corzetti`, `ditalini`, `farfalle`, `fettuccine`, `fusilli`, `garganelli`, `gemelli`, `gnocchi`, `lasagne`, `linguine`, `lumache`, `mafaldine`, `manicotti`, `mezze maniche`, `orecchiette`, `orzo`, `paccheri`, `pappardelle`, `passatelli`, `pastina`, `penne`, `pizzoccheri`, `radiatori`, `ravioli`, `rigatoni`, `rotelle`, `rotini`, `spaghetti`, `spaghettini`, `strozzapreti`, `tagliatelle`, `tagliolini`, `tonnarelli`, `tortellini`, `tortelloni`, `vermicelli`, `ziti`
+`acini di pepe`, `agnolotti`, `anelli`, `bigoli`, `bucatini`, `calamarata`, `campanelle`, `cannelloni`, `capellini`, `cappellacci`, `cappelletti`, `casarecce`, `cavatappi`, `cavatelli`, `conchiglie`, `corzetti`, `ditalini`, `farfalle`, `fettuccine`, `fusilli`, `garganelli`, `gemelli`, `gnocchi`, `lasagne`, `linguine`, `lumache`, `mafaldine`, `manicotti`, `mezze maniche`, `orecchiette`, `orzo`, `paccheri`, `pappardelle`, `passatelli`, `pastina`, `penne`, `pizzoccheri`, `radiatori`, `ravioli`, `rigatoni`, `rotelle`, `rotini`, `spaghetti`, `spaghettini`, `strozzapreti`, `tagliatelle`, `tagliolini`, `tonnarelli`, `tortellini`, `tortelloni`, `vermicelli`
 
 </details>
 
@@ -189,7 +190,7 @@ Each category is collapsed by default. Formatting-only cards are counted separat
 | saint-nectaire | semi-soft, earthy French cow’s-milk cheese | **Semi-soft, earthy cheese**; French; cow’s milk | Moves contextual facts after semicolons; food facts preserved. |
 | tomme | French/Swiss term for a rustic round cheese | **Rustic round cheese; not one specific style**; French/Swiss term | Makes explicit that this is a family/term rather than one uniform cheese. |
 | valençay | soft, ash-coated pyramid-shaped French goat cheese | **Soft, ash-coated, pyramid-shaped goat cheese**; French | Moves contextual facts after semicolons; food facts preserved. |
-| feta | salty, crumbly Greek brined cheese, usually sheep’s milk | **Salty, crumbly, brined cheese, usually sheep’s milk**; Greek | Moves contextual facts after semicolons; food facts preserved. |
+| feta | salty, crumbly Greek brined cheese, usually sheep’s milk | **Salty, crumbly, brined cheese**; usually sheep’s milk; Greek | Moves its usual milk type to context so the bold cue contains only immediately useful texture and preparation facts. |
 | halloumi | firm Cypriot brined cheese that holds its shape when grilled | **Firm, brined cheese that holds its shape when grilled**; Cypriot | Moves contextual facts after semicolons; food facts preserved. |
 | manchego | firm Spanish sheep’s-milk cheese | **Firm sheep’s-milk cheese**; Spanish | Moves contextual facts after semicolons; food facts preserved. |
 | cotija | salty, crumbly Mexican cow’s-milk cheese | **Salty, crumbly cheese**; Mexican; cow’s milk | Moves contextual facts after semicolons; food facts preserved. |
