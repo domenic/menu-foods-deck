@@ -206,6 +206,22 @@ function escapeHTML(value) {
     .replaceAll('"', "&quot;");
 }
 
+function normalizeBasicHTMLEntities(value) {
+  let normalized = value;
+  for (let pass = 0; pass < 3; ++pass) {
+    const decoded = normalized
+      .replaceAll("&quot;", '"')
+      .replaceAll("&gt;", ">")
+      .replaceAll("&lt;", "<")
+      .replaceAll("&amp;", "&");
+    if (decoded === normalized) {
+      break;
+    }
+    normalized = decoded;
+  }
+  return normalized;
+}
+
 function validateRecognitionData() {
   const foodTerms = new Set(foods.map(food => food.term));
   const missingTerms = foods.filter(food => !recognitionByTerm.has(food.term)).map(food => food.term);
@@ -571,7 +587,7 @@ async function existingNoteKeys() {
       if (note.modelName !== modelName) {
         continue;
       }
-      keys.add(`${note.fields.Category.value}\u0000${note.fields.Term.value}`);
+      keys.add(`${normalizeBasicHTMLEntities(note.fields.Category.value)}\u0000${note.fields.Term.value}`);
     }
   }
   return keys;
@@ -704,7 +720,8 @@ async function verifyInstallation(pages) {
         errors.push(`note ${note.noteId} has an empty ${fieldName} field`);
       }
     }
-    const category = Object.entries(categories).find(([, { label }]) => label === note.fields.Category?.value)?.[0];
+    const normalizedCategory = normalizeBasicHTMLEntities(note.fields.Category?.value ?? "");
+    const category = Object.entries(categories).find(([, { label }]) => label === normalizedCategory)?.[0];
     if (!category) {
       errors.push(`note ${note.noteId} has unknown category ${note.fields.Category?.value}`);
     } else {
@@ -730,7 +747,7 @@ async function verifyInstallation(pages) {
           Reference: `<a href="${escapeHTML(articleURL)}">${escapeHTML(food.referenceLabel ?? "Wikipedia")}</a>`,
         };
         for (const [fieldName, expectedValue] of Object.entries(expectedFields)) {
-          if (note.fields[fieldName].value !== expectedValue) {
+          if (normalizeBasicHTMLEntities(note.fields[fieldName].value) !== normalizeBasicHTMLEntities(expectedValue)) {
             errors.push(`note ${note.noteId} has stale ${fieldName} content`);
           }
         }
