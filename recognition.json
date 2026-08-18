@@ -1,0 +1,1661 @@
+{
+  "acini di pepe": {
+    "core": [
+      "Tiny bead-shaped pasta"
+    ],
+    "context": []
+  },
+  "agnolotti": {
+    "core": [
+      "Small stuffed pasta parcels"
+    ],
+    "context": []
+  },
+  "anelli": {
+    "core": [
+      "Small ring-shaped pasta"
+    ],
+    "context": []
+  },
+  "bigoli": {
+    "core": [
+      "Thick, rough spaghetti-like pasta"
+    ],
+    "context": []
+  },
+  "bucatini": {
+    "core": [
+      "Thick spaghetti with a hollow center"
+    ],
+    "context": []
+  },
+  "busiate": {
+    "core": [
+      "Long, tightly twisted pasta"
+    ],
+    "context": [
+      "Sicilian"
+    ]
+  },
+  "calamarata": {
+    "core": [
+      "Thick squid-ring-shaped pasta"
+    ],
+    "context": []
+  },
+  "campanelle": {
+    "core": [
+      "Ruffled cone or bell-shaped pasta"
+    ],
+    "context": []
+  },
+  "cannelloni": {
+    "core": [
+      "Large pasta tubes meant for stuffing"
+    ],
+    "context": []
+  },
+  "capellini": {
+    "core": [
+      "Very thin strands",
+      "angel-hair pasta"
+    ],
+    "context": []
+  },
+  "cappellacci": {
+    "core": [
+      "Large hat-shaped stuffed pasta"
+    ],
+    "context": []
+  },
+  "cappelletti": {
+    "core": [
+      "Small hat-shaped stuffed pasta"
+    ],
+    "context": []
+  },
+  "casarecce": {
+    "core": [
+      "Short, loosely rolled S-shaped pasta"
+    ],
+    "context": []
+  },
+  "cavatappi": {
+    "core": [
+      "Hollow corkscrew-shaped pasta"
+    ],
+    "context": []
+  },
+  "cavatelli": {
+    "core": [
+      "Small folded pasta shells with a hollow"
+    ],
+    "context": []
+  },
+  "conchiglie": {
+    "core": [
+      "Seashell-shaped pasta"
+    ],
+    "context": []
+  },
+  "corzetti": {
+    "core": [
+      "Thin round pasta coins, often stamped"
+    ],
+    "context": []
+  },
+  "ditalini": {
+    "core": [
+      "Very short, tiny pasta tubes"
+    ],
+    "context": []
+  },
+  "farfalle": {
+    "core": [
+      "Bow-tie or butterfly-shaped pasta"
+    ],
+    "context": []
+  },
+  "fettuccine": {
+    "core": [
+      "Flat, medium-width pasta ribbons"
+    ],
+    "context": []
+  },
+  "fileja": {
+    "core": [
+      "Long, narrow corkscrews"
+    ],
+    "context": [
+      "Calabrian"
+    ]
+  },
+  "fregola": {
+    "core": [
+      "Small toasted pasta balls"
+    ],
+    "context": [
+      "Sardinian"
+    ]
+  },
+  "fusilli": {
+    "core": [
+      "Short spiral or corkscrew pasta"
+    ],
+    "context": []
+  },
+  "garganelli": {
+    "core": [
+      "Ridged egg-pasta tubes with a visible seam"
+    ],
+    "context": []
+  },
+  "gemelli": {
+    "core": [
+      "Short pasta twisted like paired strands"
+    ],
+    "context": []
+  },
+  "gnocchi": {
+    "core": [
+      "Soft dumplings, usually made with potato"
+    ],
+    "context": []
+  },
+  "lasagne": {
+    "core": [
+      "Wide flat pasta sheets",
+      "also the layered dish"
+    ],
+    "context": []
+  },
+  "linguine": {
+    "core": [
+      "Long, narrow, slightly flattened strands"
+    ],
+    "context": []
+  },
+  "lumache": {
+    "core": [
+      "Curved, hollow snail-shell-shaped pasta"
+    ],
+    "context": []
+  },
+  "mafaldine": {
+    "core": [
+      "Long ribbons with ruffled edges"
+    ],
+    "context": []
+  },
+  "malloreddus": {
+    "core": [
+      "Small ridged pasta shells"
+    ],
+    "context": [
+      "Sardinian"
+    ]
+  },
+  "manicotti": {
+    "core": [
+      "Large ridged pasta tubes meant for stuffing"
+    ],
+    "context": []
+  },
+  "mezze maniche": {
+    "core": [
+      "Short, wide ridged pasta tubes"
+    ],
+    "context": []
+  },
+  "orecchiette": {
+    "core": [
+      "Small ear-shaped pasta"
+    ],
+    "context": []
+  },
+  "orzo": {
+    "core": [
+      "Rice-shaped pasta—not rice"
+    ],
+    "context": []
+  },
+  "paccheri": {
+    "core": [
+      "Very large, wide pasta tubes"
+    ],
+    "context": []
+  },
+  "pappardelle": {
+    "core": [
+      "Very broad, flat pasta ribbons"
+    ],
+    "context": []
+  },
+  "passatelli": {
+    "core": [
+      "Soft breadcrumb-and-egg noodle-like strands"
+    ],
+    "context": []
+  },
+  "pastina": {
+    "core": [
+      "Any very small pasta, usually for soup"
+    ],
+    "context": []
+  },
+  "penne": {
+    "core": [
+      "Short diagonal-cut pasta tubes"
+    ],
+    "context": []
+  },
+  "pici": {
+    "core": [
+      "Thick, hand-rolled spaghetti"
+    ],
+    "context": [
+      "Tuscan"
+    ]
+  },
+  "pizzoccheri": {
+    "core": [
+      "Short, flat buckwheat pasta ribbons"
+    ],
+    "context": []
+  },
+  "radiatori": {
+    "core": [
+      "Short pasta shaped like little radiators"
+    ],
+    "context": []
+  },
+  "ravioli": {
+    "core": [
+      "Filled pasta pillows"
+    ],
+    "context": []
+  },
+  "rigatoni": {
+    "core": [
+      "Large ridged pasta tubes with square-cut ends"
+    ],
+    "context": []
+  },
+  "rotelle": {
+    "core": [
+      "Wagon-wheel-shaped pasta"
+    ],
+    "context": []
+  },
+  "rotini": {
+    "core": [
+      "Short, tight corkscrew pasta"
+    ],
+    "context": []
+  },
+  "scialatielli": {
+    "core": [
+      "Short, thick, flat ribbons"
+    ],
+    "context": [
+      "from Campania"
+    ]
+  },
+  "spaghetti": {
+    "core": [
+      "Long, thin round pasta strands"
+    ],
+    "context": []
+  },
+  "spaghettini": {
+    "core": [
+      "Thin spaghetti strands"
+    ],
+    "context": []
+  },
+  "strozzapreti": {
+    "core": [
+      "Short, hand-rolled twisted pasta"
+    ],
+    "context": []
+  },
+  "tagliatelle": {
+    "core": [
+      "Long, flat egg-pasta ribbons"
+    ],
+    "context": []
+  },
+  "tagliolini": {
+    "core": [
+      "Very narrow, flat egg-pasta ribbons"
+    ],
+    "context": []
+  },
+  "tonnarelli": {
+    "core": [
+      "Thick square-cut spaghetti"
+    ],
+    "context": []
+  },
+  "tortellini": {
+    "core": [
+      "Small ring-shaped stuffed pasta"
+    ],
+    "context": []
+  },
+  "tortelloni": {
+    "core": [
+      "Larger ring-shaped stuffed pasta"
+    ],
+    "context": []
+  },
+  "trofie": {
+    "core": [
+      "Short, thin, hand-twisted pasta"
+    ],
+    "context": [
+      "Ligurian"
+    ]
+  },
+  "vermicelli": {
+    "core": [
+      "Long thin strands, usually thinner than spaghetti"
+    ],
+    "context": []
+  },
+  "ziti": {
+    "core": [
+      "Long smooth tubes, often broken before cooking"
+    ],
+    "context": []
+  },
+  "salumi": {
+    "core": [
+      "Usually pig",
+      "cured-meat assortment"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "salame": {
+    "core": [
+      "Usually pig",
+      "cured sausage"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "salsiccia": {
+    "core": [
+      "Usually pig",
+      "sausage"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "soppressata": {
+    "core": [
+      "Usually pig",
+      "coarse, dry-cured salami"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "finocchiona": {
+    "core": [
+      "Pig",
+      "fennel-flavored salami"
+    ],
+    "context": [
+      "Tuscan"
+    ]
+  },
+  "mortadella": {
+    "core": [
+      "Pig",
+      "large, mild, cooked sausage"
+    ],
+    "context": []
+  },
+  "prosciutto": {
+    "core": [
+      "Pig",
+      "dry-cured ham",
+      "usually thinly sliced"
+    ],
+    "context": [
+      "Italian",
+      "usually means crudo on English menus"
+    ]
+  },
+  "prosciutto crudo": {
+    "core": [
+      "Pig",
+      "uncooked, unsmoked, dry-cured ham"
+    ],
+    "context": [
+      "Italian",
+      "usually thinly sliced"
+    ]
+  },
+  "prosciutto cotto": {
+    "core": [
+      "Pig",
+      "cooked ham"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "speck": {
+    "core": [
+      "Pig",
+      "smoked, dry-cured ham"
+    ],
+    "context": [
+      "South Tyrolean"
+    ]
+  },
+  "coppa": {
+    "core": [
+      "Pig",
+      "dry-cured neck or shoulder"
+    ],
+    "context": []
+  },
+  "capocollo": {
+    "core": [
+      "Pig",
+      "dry-cured neck or shoulder"
+    ],
+    "context": []
+  },
+  "capicola": {
+    "core": [
+      "Pig",
+      "cured neck or shoulder"
+    ],
+    "context": [
+      "Italian-American name"
+    ]
+  },
+  "pancetta": {
+    "core": [
+      "Pig",
+      "salt-cured belly",
+      "Italian bacon"
+    ],
+    "context": []
+  },
+  "guanciale": {
+    "core": [
+      "Pig",
+      "salt-cured cheek or jowl"
+    ],
+    "context": []
+  },
+  "lardo": {
+    "core": [
+      "Pig",
+      "seasoned, cured back fat"
+    ],
+    "context": []
+  },
+  "bresaola": {
+    "core": [
+      "Cow",
+      "air-dried, salted beef",
+      "thinly sliced"
+    ],
+    "context": []
+  },
+  "culatello": {
+    "core": [
+      "Pig",
+      "dry-cured, boneless ham"
+    ],
+    "context": []
+  },
+  "’nduja": {
+    "core": [
+      "Pig",
+      "soft, spicy, spreadable sausage"
+    ],
+    "context": [
+      "Calabrian"
+    ]
+  },
+  "cotechino": {
+    "core": [
+      "Pig",
+      "rich, cooked sausage"
+    ],
+    "context": []
+  },
+  "zampone": {
+    "core": [
+      "Pig",
+      "trotter stuffed with pork sausage"
+    ],
+    "context": []
+  },
+  "porchetta": {
+    "core": [
+      "Pig",
+      "herb-seasoned roast pork"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "lonza": {
+    "core": [
+      "Pig",
+      "cured or roasted loin"
+    ],
+    "context": []
+  },
+  "jambon": {
+    "core": [
+      "Pig",
+      "ham"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "saucisson": {
+    "core": [
+      "Usually pig",
+      "thick, dry-cured sausage"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "andouille": {
+    "core": [
+      "Pig",
+      "smoked sausage"
+    ],
+    "context": [
+      "style varies by country"
+    ]
+  },
+  "andouillette": {
+    "core": [
+      "Pig",
+      "coarse intestine sausage"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "boudin noir": {
+    "core": [
+      "Usually pig",
+      "blood sausage"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "boudin blanc": {
+    "core": [
+      "Animal varies",
+      "white sausage without blood"
+    ],
+    "context": [
+      "French",
+      "often pig, young cow, or poultry"
+    ]
+  },
+  "rillettes": {
+    "core": [
+      "Animal varies",
+      "shredded meat spread"
+    ],
+    "context": [
+      "often pig"
+    ]
+  },
+  "pâté": {
+    "core": [
+      "Animal varies",
+      "seasoned meat paste",
+      "often liver"
+    ],
+    "context": []
+  },
+  "terrine": {
+    "core": [
+      "Animal varies",
+      "coarse pâté or layered meat loaf",
+      "served cold"
+    ],
+    "context": []
+  },
+  "lardons": {
+    "core": [
+      "Pig",
+      "small strips or cubes of fatty bacon"
+    ],
+    "context": []
+  },
+  "confit": {
+    "core": [
+      "Often duck",
+      "slowly cooked and preserved in fat"
+    ],
+    "context": []
+  },
+  "jamón serrano": {
+    "core": [
+      "Pig",
+      "dry-cured ham"
+    ],
+    "context": [
+      "Spanish"
+    ]
+  },
+  "jamón ibérico": {
+    "core": [
+      "Iberian pig",
+      "premium dry-cured ham"
+    ],
+    "context": [
+      "Spanish"
+    ]
+  },
+  "chorizo": {
+    "core": [
+      "Pig",
+      "highly seasoned sausage",
+      "often paprika-red"
+    ],
+    "context": [
+      "Spanish"
+    ]
+  },
+  "morcilla": {
+    "core": [
+      "Usually pig",
+      "blood sausage"
+    ],
+    "context": [
+      "Spanish"
+    ]
+  },
+  "sobrasada": {
+    "core": [
+      "Pig",
+      "soft, spreadable, paprika-seasoned sausage"
+    ],
+    "context": [
+      "Spanish"
+    ]
+  },
+  "lomo": {
+    "core": [
+      "Pig",
+      "cured tenderloin"
+    ],
+    "context": [
+      "Spanish"
+    ]
+  },
+  "manzo": {
+    "core": [
+      "Cow",
+      "beef"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "vitello": {
+    "core": [
+      "Young cow (calf)",
+      "veal"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "maiale": {
+    "core": [
+      "Pig",
+      "pork"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "cinghiale": {
+    "core": [
+      "Wild boar"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "agnello": {
+    "core": [
+      "Young sheep",
+      "lamb"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "capretto": {
+    "core": [
+      "Young goat",
+      "kid"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "anatra": {
+    "core": [
+      "Duck"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "coniglio": {
+    "core": [
+      "Rabbit"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "cervo": {
+    "core": [
+      "Deer",
+      "venison"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "faraona": {
+    "core": [
+      "Guinea fowl"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "bœuf": {
+    "core": [
+      "Cow",
+      "beef"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "veau": {
+    "core": [
+      "Young cow (calf)",
+      "veal"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "porc": {
+    "core": [
+      "Pig",
+      "pork"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "agneau": {
+    "core": [
+      "Young sheep",
+      "lamb"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "canard": {
+    "core": [
+      "Duck"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "lapin": {
+    "core": [
+      "Rabbit"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "chevreuil": {
+    "core": [
+      "Roe deer",
+      "venison"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "filet mignon": {
+    "core": [
+      "Cow",
+      "tenderloin steak",
+      "small and very tender"
+    ],
+    "context": []
+  },
+  "entrecôte": {
+    "core": [
+      "Cow",
+      "rib steak",
+      "similar to ribeye"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "onglet": {
+    "core": [
+      "Cow",
+      "hanger steak"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "bavette": {
+    "core": [
+      "Cow",
+      "flank-style steak"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "côte de bœuf": {
+    "core": [
+      "Cow",
+      "thick, bone-in rib steak"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "bistecca": {
+    "core": [
+      "Usually cow",
+      "steak"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "tagliata": {
+    "core": [
+      "Usually cow",
+      "sliced, grilled steak"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "carpaccio": {
+    "core": [
+      "Meat or fish",
+      "paper-thin",
+      "raw"
+    ],
+    "context": []
+  },
+  "osso buco": {
+    "core": [
+      "Young cow",
+      "cross-cut shank",
+      "braised with its marrow bone"
+    ],
+    "context": []
+  },
+  "braciola": {
+    "core": [
+      "Animal varies",
+      "rolled or grilled meat slice"
+    ],
+    "context": [
+      "Italian",
+      "meaning varies by region"
+    ]
+  },
+  "animelle": {
+    "core": [
+      "Usually young cow or young sheep",
+      "sweetbreads (glands)"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "trippa": {
+    "core": [
+      "Animal varies",
+      "tripe",
+      "edible stomach lining"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "midollo": {
+    "core": [
+      "Animal varies",
+      "bone marrow"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "ris de veau": {
+    "core": [
+      "Young cow",
+      "sweetbreads"
+    ],
+    "context": [
+      "French",
+      "despite the name, not rice"
+    ]
+  },
+  "foie gras": {
+    "core": [
+      "Duck or goose",
+      "fatty liver"
+    ],
+    "context": []
+  },
+  "asiago": {
+    "core": [
+      "Mild when young",
+      "firm when aged"
+    ],
+    "context": [
+      "Italian",
+      "cow’s milk"
+    ]
+  },
+  "bel paese": {
+    "core": [
+      "Mild, semi-soft cheese"
+    ],
+    "context": [
+      "Italian",
+      "cow’s milk"
+    ]
+  },
+  "burrata": {
+    "core": [
+      "Fresh mozzarella pouch filled with cream and curds"
+    ],
+    "context": []
+  },
+  "caciocavallo": {
+    "core": [
+      "Firm, stretched-curd cheese"
+    ],
+    "context": [
+      "Southern Italian"
+    ]
+  },
+  "caciotta": {
+    "core": [
+      "Mild, semi-soft farmhouse cheese"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "crescenza": {
+    "core": [
+      "Soft, mild, creamy cheese"
+    ],
+    "context": [
+      "Italian",
+      "cow’s milk"
+    ]
+  },
+  "fontina": {
+    "core": [
+      "Nutty, semi-soft cheese"
+    ],
+    "context": [
+      "From the Alps",
+      "cow’s milk"
+    ]
+  },
+  "gorgonzola": {
+    "core": [
+      "Blue cheese"
+    ],
+    "context": [
+      "Italian",
+      "cow’s milk"
+    ]
+  },
+  "grana padano": {
+    "core": [
+      "Hard, granular cheese"
+    ],
+    "context": [
+      "Italian",
+      "cow’s milk"
+    ]
+  },
+  "mascarpone": {
+    "core": [
+      "Very rich, mild cream cheese"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "montasio": {
+    "core": [
+      "Firm cheese"
+    ],
+    "context": [
+      "Italian",
+      "from the Alps",
+      "cow’s milk"
+    ]
+  },
+  "mozzarella": {
+    "core": [
+      "Mild, fresh, stretched-curd cheese"
+    ],
+    "context": []
+  },
+  "mozzarella di bufala": {
+    "core": [
+      "Fresh mozzarella made from water-buffalo milk"
+    ],
+    "context": []
+  },
+  "parmigiano reggiano": {
+    "core": [
+      "Hard, granular, aged cheese"
+    ],
+    "context": [
+      "Italian",
+      "cow’s milk"
+    ]
+  },
+  "pecorino": {
+    "core": [
+      "Sheep’s-milk cheese",
+      "a broad family"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "pecorino romano": {
+    "core": [
+      "Hard, salty sheep’s-milk cheese"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "provolone": {
+    "core": [
+      "Semi-hard, stretched-curd cheese"
+    ],
+    "context": [
+      "Italian",
+      "cow’s milk"
+    ]
+  },
+  "ricotta": {
+    "core": [
+      "Mild, fresh whey cheese with a soft, grainy texture"
+    ],
+    "context": []
+  },
+  "ricotta salata": {
+    "core": [
+      "Salted, pressed, aged ricotta for slicing or grating"
+    ],
+    "context": []
+  },
+  "robiola": {
+    "core": [
+      "Soft, creamy cheese"
+    ],
+    "context": [
+      "Northern Italian"
+    ]
+  },
+  "scamorza": {
+    "core": [
+      "Semi-soft, pear-shaped, stretched-curd cheese",
+      "often smoked"
+    ],
+    "context": []
+  },
+  "stracchino": {
+    "core": [
+      "Soft, mild, creamy cheese"
+    ],
+    "context": [
+      "Italian",
+      "cow’s milk"
+    ]
+  },
+  "taleggio": {
+    "core": [
+      "Soft, washed-rind cheese"
+    ],
+    "context": [
+      "Italian",
+      "cow’s milk"
+    ]
+  },
+  "toma": {
+    "core": [
+      "Semi-soft cheese",
+      "milk and style vary"
+    ],
+    "context": [
+      "Alpine-style family"
+    ]
+  },
+  "sottocenere": {
+    "core": [
+      "Semi-soft cheese aged under ash"
+    ],
+    "context": [
+      "Italian",
+      "cow’s milk"
+    ]
+  },
+  "beaufort": {
+    "core": [
+      "Firm, nutty cheese"
+    ],
+    "context": [
+      "French",
+      "from the Alps",
+      "cow’s milk"
+    ]
+  },
+  "brie": {
+    "core": [
+      "Soft, creamy, bloomy-rind cheese"
+    ],
+    "context": [
+      "French",
+      "cow’s milk"
+    ]
+  },
+  "brillat-savarin": {
+    "core": [
+      "Very rich, soft, triple-cream cheese"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "camembert": {
+    "core": [
+      "Soft, earthy, bloomy-rind cheese"
+    ],
+    "context": [
+      "French",
+      "cow’s milk"
+    ]
+  },
+  "cantal": {
+    "core": [
+      "Firm, earthy cheese"
+    ],
+    "context": [
+      "French",
+      "cow’s milk"
+    ]
+  },
+  "chèvre": {
+    "core": [
+      "Goat cheese",
+      "not one specific style"
+    ],
+    "context": [
+      "French term"
+    ]
+  },
+  "comté": {
+    "core": [
+      "Firm, nutty cheese"
+    ],
+    "context": [
+      "French",
+      "Alpine-style",
+      "cow’s milk"
+    ]
+  },
+  "époisses": {
+    "core": [
+      "Soft, pungent, washed-rind cheese"
+    ],
+    "context": [
+      "French",
+      "cow’s milk"
+    ]
+  },
+  "gruyère": {
+    "core": [
+      "Firm, nutty cheese"
+    ],
+    "context": [
+      "Swiss",
+      "Alpine-style",
+      "cow’s milk"
+    ]
+  },
+  "mimolette": {
+    "core": [
+      "Firm, orange cheese"
+    ],
+    "context": [
+      "French",
+      "cow’s milk"
+    ]
+  },
+  "morbier": {
+    "core": [
+      "Semi-soft cheese marked by a dark ash line"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "munster": {
+    "core": [
+      "Soft, pungent, washed-rind cheese"
+    ],
+    "context": [
+      "French",
+      "cow’s milk"
+    ]
+  },
+  "neufchâtel": {
+    "core": [
+      "Soft, bloomy-rind cheese"
+    ],
+    "context": [
+      "French",
+      "cow’s milk"
+    ]
+  },
+  "ossau-iraty": {
+    "core": [
+      "Firm, nutty sheep’s-milk cheese"
+    ],
+    "context": [
+      "French Basque"
+    ]
+  },
+  "pont-l’évêque": {
+    "core": [
+      "Soft, aromatic, washed-rind cheese"
+    ],
+    "context": [
+      "French",
+      "cow’s milk"
+    ]
+  },
+  "raclette": {
+    "core": [
+      "Melting cheese",
+      "also the melted-cheese dish"
+    ],
+    "context": [
+      "Alpine-style",
+      "cow’s milk"
+    ]
+  },
+  "reblochon": {
+    "core": [
+      "Soft, nutty cheese"
+    ],
+    "context": [
+      "French",
+      "from the Alps",
+      "cow’s milk"
+    ]
+  },
+  "roquefort": {
+    "core": [
+      "Tangy blue sheep’s-milk cheese"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "saint-andré": {
+    "core": [
+      "Very rich, soft, triple-cream cheese"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "saint-nectaire": {
+    "core": [
+      "Semi-soft, earthy cheese"
+    ],
+    "context": [
+      "French",
+      "cow’s milk"
+    ]
+  },
+  "tomme": {
+    "core": [
+      "Rustic round cheese",
+      "not one specific style"
+    ],
+    "context": [
+      "French/Swiss term"
+    ]
+  },
+  "triple crème": {
+    "core": [
+      "Very rich, soft cheese with extra cream added"
+    ],
+    "context": []
+  },
+  "valençay": {
+    "core": [
+      "Soft, ash-coated, pyramid-shaped goat cheese"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "feta": {
+    "core": [
+      "Salty, crumbly, brined cheese, usually sheep’s milk"
+    ],
+    "context": [
+      "Greek"
+    ]
+  },
+  "halloumi": {
+    "core": [
+      "Firm, brined cheese that holds its shape when grilled"
+    ],
+    "context": [
+      "Cypriot"
+    ]
+  },
+  "manchego": {
+    "core": [
+      "Firm sheep’s-milk cheese"
+    ],
+    "context": [
+      "Spanish"
+    ]
+  },
+  "cotija": {
+    "core": [
+      "Salty, crumbly cheese"
+    ],
+    "context": [
+      "Mexican",
+      "cow’s milk"
+    ]
+  },
+  "queso fresco": {
+    "core": [
+      "Mild, fresh, crumbly cheese"
+    ],
+    "context": [
+      "Latin American"
+    ]
+  },
+  "quesillo": {
+    "core": [
+      "Stringy, stretched-curd cheese",
+      "Oaxaca cheese"
+    ],
+    "context": [
+      "Mexican"
+    ]
+  },
+  "labneh": {
+    "core": [
+      "Thick, tangy strained yogurt served like a soft cheese"
+    ],
+    "context": []
+  },
+  "gouda": {
+    "core": [
+      "Mild when young",
+      "caramel-like when aged"
+    ],
+    "context": [
+      "Dutch",
+      "cow’s milk"
+    ]
+  },
+  "havarti": {
+    "core": [
+      "Mild, buttery, semi-soft cheese"
+    ],
+    "context": [
+      "Danish",
+      "cow’s milk"
+    ]
+  },
+  "stilton": {
+    "core": [
+      "Blue cheese"
+    ],
+    "context": [
+      "English",
+      "cow’s milk"
+    ]
+  },
+  "pepperoncini": {
+    "core": [
+      "Mild, tangy pickled chili peppers"
+    ],
+    "context": [
+      "not meat"
+    ]
+  },
+  "peperoncino": {
+    "core": [
+      "Chili pepper, usually hot"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "peperoni": {
+    "core": [
+      "Bell peppers"
+    ],
+    "context": [
+      "Italian plural",
+      "not pepperoni sausage"
+    ]
+  },
+  "giardiniera": {
+    "core": [
+      "Pickled mixed vegetables"
+    ],
+    "context": [
+      "Italian style"
+    ]
+  },
+  "mostarda": {
+    "core": [
+      "Candied fruit in mustard-flavored syrup"
+    ],
+    "context": [
+      "Northern Italian"
+    ]
+  },
+  "bottarga": {
+    "core": [
+      "Salt-cured fish roe"
+    ],
+    "context": [
+      "usually grated or thinly sliced"
+    ]
+  },
+  "acciughe": {
+    "core": [
+      "Anchovies"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "baccalà": {
+    "core": [
+      "Salt-cured cod"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "polpo": {
+    "core": [
+      "Octopus"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "seppia": {
+    "core": [
+      "Cuttlefish"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "cozze": {
+    "core": [
+      "Mussels"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "vongole": {
+    "core": [
+      "Clams"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "scampi": {
+    "core": [
+      "Small, lobster-like crustaceans"
+    ],
+    "context": [
+      "usage varies by country"
+    ]
+  },
+  "carciofi": {
+    "core": [
+      "Artichokes"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "radicchio": {
+    "core": [
+      "Bitter red-leaf chicory"
+    ],
+    "context": []
+  },
+  "rapini": {
+    "core": [
+      "Bitter leafy green",
+      "broccoli rabe"
+    ],
+    "context": []
+  },
+  "puntarelle": {
+    "core": [
+      "Crisp, slightly bitter shoots of Catalonian chicory"
+    ],
+    "context": []
+  },
+  "cavolo nero": {
+    "core": [
+      "Dark leafy Tuscan cabbage",
+      "Italian kale"
+    ],
+    "context": []
+  },
+  "cipollini": {
+    "core": [
+      "Small, flat, mildly sweet onions"
+    ],
+    "context": [
+      "Italian"
+    ]
+  },
+  "cornichons": {
+    "core": [
+      "Tiny, tart pickled cucumbers"
+    ],
+    "context": [
+      "French"
+    ]
+  },
+  "gremolata": {
+    "core": [
+      "Chopped parsley, lemon zest, and garlic garnish"
+    ],
+    "context": []
+  },
+  "tapenade": {
+    "core": [
+      "Savory olive spread"
+    ],
+    "context": [
+      "Provençal"
+    ]
+  },
+  "caponata": {
+    "core": [
+      "Sweet-and-sour eggplant relish"
+    ],
+    "context": [
+      "Sicilian"
+    ]
+  }
+}

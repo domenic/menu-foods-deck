@@ -1,0 +1,22 @@
+{
+  "name": "menu-foods-deck",
+  "version": "1.0.0",
+  "description": "An Anki deck for recognizing unfamiliar food words on restaurant menus",
+  "private": true,
+  "type": "module",
+  "author": "Domenic Denicola <d@domenic.me> (https://domenic.me/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domenic/menu-foods-deck.git"
+  },
+  "scripts": {
+    "generate": "node headline-audit.mjs",
+    "test": "node --test",
+    "validate": "node build.mjs",
+    "verify-installation": "node build.mjs --verify"
+  },
+  "engines": {
+    "node": ">=22.17.0"
+  }
+}
