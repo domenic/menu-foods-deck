@@ -5,7 +5,7 @@ focuses on identification, not language production: seeing the bare term should
 be enough to recall what kind of food it is and the characteristics that matter
 most when ordering.
 
-The source currently contains 212 cards:
+The deck currently contains 212 cards:
 
 - 59 pasta shapes and pasta-adjacent dumplings
 - 72 meats, cuts, and charcuterie terms
@@ -13,117 +13,101 @@ The source currently contains 212 cards:
 - 23 other easily misclassified menu terms
 
 All cards live in one mixed `Menu Foods` deck. Category tags make filtering
-possible without giving away whether an unknown word is a pasta, meat, cheese,
-or something else during review.
+possible without giving away whether an unknown word is pasta, meat, cheese, or
+something else during review.
+
+## One source of truth
+
+[menu-foods.yaml](menu-foods.yaml) is the only hand-edited card database. Each
+entry keeps the term, category, structured answer, explanatory details,
+reference, and exact Wikimedia Commons image together:
+
+```yaml
+- term: feta
+  category: cheese
+  answer:
+    core:
+      - Salty, crumbly, brined cheese
+    context:
+      - usually sheep’s milk
+      - Greek
+  details: >-
+    Feta (FET-ə; Greek: φέτα [ˈfeta]) is a Greek brined white cheese made from
+    sheep's milk or from a mixture of sheep and goat's milk. It is soft, with
+    small or no holes, and no skin.
+  reference:
+    label: Wikipedia
+    url: https://en.wikipedia.org/wiki/Feta
+  image: Feta_Cheese.jpg
+```
+
+`answer.core` renders in bold as the fast recognition cue. Optional
+`answer.context` follows in normal weight; it is useful context, not a universal
+grading contract. Semicolons separate the fragments in both lists.
+
+There are no generated headline files, historical audit tables, or executable
+data modules. Downloaded media and the resulting package are ignored build
+artifacts.
+
+## Build the package
+
+Install [uv](https://docs.astral.sh/uv/), then run:
+
+```sh
+uv sync
+uv run python build_deck.py
+```
+
+The first build downloads the 212 explicitly selected Commons images and caches
+them under `.cache/media/`. It writes `dist/menu-foods.apkg`, then opens the
+archive and its embedded SQLite collection to verify the deck, model, stable
+note GUIDs, fields, tags, cards, and bundled media.
+
+Later builds can prohibit network access and require a complete local cache:
+
+```sh
+uv run python build_deck.py --offline
+```
+
+The builder uses a fixed package timestamp, sorted media, and normalized ZIP
+metadata, so identical source and media produce an identical `.apkg` file.
+
+## Validate and test
+
+Validate the YAML without downloading media or writing a package:
+
+```sh
+uv run python build_deck.py --check
+```
+
+Run the source, rendering, stable-ID, image-uniqueness, and grading-policy tests:
+
+```sh
+uv run python -m unittest discover -s test -p 'test_*.py' -v
+```
 
 ## Card design
 
-The front is only the menu term. The back contains:
+The front contains only the menu term. The back contains:
 
-- a compact, sentence-like recognition headline;
+- a compact headline with crucial facts bolded first;
 - a representative image;
-- short non-graded context from Wikipedia or another linked source; and
-- links to the article and image source.
+- short non-graded explanatory context; and
+- links to the text and image sources.
 
-The headline is backed by structured data in `recognition.json`. Crucial facts
-are bold and come first; context follows in normal weight. Semicolons are the
-only separators. For example:
+The note model includes compact desktop styling and readable mobile/night-mode
+colors. Fixed deck/model IDs and deterministic note GUIDs ensure that successive
+packages identify the same generated deck objects.
 
-> **Pig; uncooked, unsmoked, dry-cured ham**; Italian; usually thinly sliced
-
-Bold is a fast recognition cue, not a universal grading contract. A learner can
-decide that cheese texture or a meat's animal source matters while treating
-country, region, or cut location as useful but ungraded context.
-
-## Requirements
-
-- [Node.js](https://nodejs.org/) 22.17 or newer
-- [Anki](https://apps.ankiweb.net/) desktop
-- [AnkiConnect](https://github.com/ankicommunity/anki-desktop-addon-connect),
-  add-on code `2055492159`
-
-Anki must be running for commands that use AnkiConnect. Initial installation
-also needs internet access to download card images from Wikimedia Commons.
-
-## Validate the sources
-
-Install no npm dependencies; there are none. Run the offline source tests with:
-
-```sh
-npm test
-```
-
-Run the full data and cached-source validation with:
-
-```sh
-npm run validate
-```
-
-This default validation mode does not contact or change Anki. The checked-in
-Wikipedia cache makes it reproducible without routine network access; missing
-cache records are fetched from Wikipedia and written back to the cache.
-
-## Install into Anki
-
-With Anki running and AnkiConnect installed:
-
-```sh
-node build.mjs --install
-```
-
-The installer creates the `Menu Foods` deck and `Menu Food Recognition` note
-type if needed, downloads missing media, adds missing notes idempotently,
-assigns a dedicated randomized options preset, and verifies the result.
-
-AnkiConnect defaults to `http://127.0.0.1:8765`. To target another machine,
-provide its endpoint explicitly:
-
-```sh
-ANKI_CONNECT_URL=http://computer-name:8765 node build.mjs --install
-```
-
-Review that URL carefully before using a write mode. The program prints the
-target endpoint before contacting Anki.
-
-## Maintenance commands
-
-`node build.mjs --help` shows the complete list. The important distinction is:
-
-- `--verify` audits the installed notes, cards, fields, model styling, deck
-  placement, and referenced media without writing to Anki.
-- `--install` adds missing notes and media.
-- `--refresh-headlines` updates all recognition headlines and their styling.
-- `--refresh-content` updates headlines, details, references, and explicitly
-  selected card images.
-- `--refresh-presentation` updates styling and explicitly selected images.
-- `--mix` assigns fully random new-card gathering and sorting.
-- `--flatten` moves the 212 tagged cards into the single parent deck, then
-  removes only the known empty legacy category subdecks.
-
-Every write mode performs a full verification afterward. None of the commands
-invoke Anki sync; syncing is intentionally left to the user.
-
-## Editing the deck
-
-Food terms and source/image overrides live in `foods.mjs`. Structured headline
-proposals live in `headline-audit.mjs`. After editing them, regenerate the
-machine-readable headlines and review report with:
-
-```sh
-npm run generate
-```
-
-This rewrites `recognition.json` and `headline-audit.md`. The audit records
-recognition collisions, information-density flags, and a category-by-category
-before/after review. Run `npm test` and `npm run validate` before applying the
-changes to Anki.
+The builder communicates with neither Anki nor AnkiConnect and never invokes
+Anki sync. Import `dist/menu-foods.apkg` through Anki's normal import interface.
 
 ## Third-party material
 
-The repository's MIT license covers the original code and deck data. Cached
-Wikipedia extracts and Wikimedia metadata remain under their respective source
-terms, and downloaded images retain the license shown on each linked Commons
-file page. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
+The repository's MIT license covers the original code and original portions of
+the deck data. Explanatory text and images retain their respective source terms;
+every card includes source links. See
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
 
 ## License
 

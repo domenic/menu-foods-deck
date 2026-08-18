@@ -1,22 +1,23 @@
 # Third-party notices
 
-## Wikipedia text and metadata
+## Wikipedia text
 
-`wikipedia-cache.json` contains article extracts and metadata retrieved from
-the English Wikipedia API. This material is not covered by this repository's
-MIT license. Each cached record retains its article URL and revision metadata
-for attribution and traceability.
+Many `details` values in `menu-foods.yaml` contain short article extracts
+retrieved from English Wikipedia. This material is not covered by the
+repository's MIT license. Every card retains the corresponding article URL for
+attribution and traceability.
 
 Wikipedia text is generally available under the Creative Commons
-Attribution-ShareAlike 4.0 International license and may also be available
-under additional terms. Consult the [Wikimedia Terms of Use][wikimedia-terms]
-and the linked source article before redistributing a generated deck.
+Attribution-ShareAlike 4.0 International license and may also be available under
+additional terms. Consult the [Wikimedia Terms of Use][wikimedia-terms] and the
+linked source article before redistributing a generated deck.
 
 ## Wikimedia Commons images
 
-Image binaries are not stored in this repository. The installer downloads them
-from Wikimedia Commons into the user's Anki media collection. Each card links
-to the corresponding file-description page, where the image's author, license,
-and any attribution requirements are listed. Licenses vary by image.
+Image binaries are not stored in the repository. `menu-foods.yaml` names one
+Wikimedia Commons file per card, and the builder downloads those files into an
+ignored local cache before packaging them. Each generated card links to the
+corresponding file-description page, where the image's author, license, and any
+attribution requirements are listed. Licenses vary by image.
 
 [wikimedia-terms]: https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en#7._Licensing_of_Content

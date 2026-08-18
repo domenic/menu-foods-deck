@@ -1,0 +1,3162 @@
+schema: 1
+deck:
+  id: 2031671180
+  name: Menu Foods
+  model:
+    id: 1244004215
+    name: Menu Food Recognition
+cards:
+  - term: acini di pepe
+    category: pasta
+    answer:
+      core:
+        - Tiny bead-shaped pasta
+    details: >-
+      Acini di pepe (Italian: [ˈaːtʃini di ˈpeːpe]; lit. 'seeds of pepper') is a type of pasta. Acini
+      is the plural of acino whose root is the Latin word acinus.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Acini_di_pepe
+    image: Acini_di_Pepe.jpg
+  - term: agnolotti
+    category: pasta
+    answer:
+      core:
+        - Small stuffed pasta parcels
+    details: >-
+      Agnolotti (Italian: [aɲɲoˈlɔtti]; Piedmontese: agnolòt, Piedmontese: [aɲʊˈlɔt]), also known as agnolotti
+      piemontesi, is a type of stuffed pasta typical of the Piedmont region of Italy, made with small
+      pieces of flattened dough folded over a filling of roasted meat or vegetables. Agnolotti can be
+      di magro or di grasso depending on their filling of vegetables or meat.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Agnolotti
+    image: Agnolotti.JPG
+  - term: anelli
+    category: pasta
+    answer:
+      core:
+        - Small ring-shaped pasta
+    details: >-
+      Anelli (also known as anellini or anelletti) are small, thin rings of pasta. They are generally
+      used for soups and pasta salads.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Anelli
+    image: Uncooked_anellini_pasta.jpg
+  - term: bigoli
+    category: pasta
+    answer:
+      core:
+        - Thick, rough spaghetti-like pasta
+    details: >-
+      Bigoli (Italian: [ˈbiːɡoli]; Venetian: bìgołi) is an extruded pasta in the form of a long and thick
+      strand. Initially bigoli were made with buckwheat flour, but are now more commonly made with whole-wheat
+      flour, and sometimes include duck eggs.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bigoli
+    image: Bigoli2.jpg
+  - term: bucatini
+    category: pasta
+    answer:
+      core:
+        - Thick spaghetti with a hollow center
+    details: >-
+      Bucatini (Italian: [bukaˈtiːni]), also known as perciatelli (Italian: [pertʃaˈtɛlli]), is a thick
+      spaghetti-like pasta with a hole running through the center. It is common throughout Lazio, particularly
+      Rome.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bucatini
+    image: Bucatini.jpg
+  - term: busiate
+    category: pasta
+    answer:
+      core:
+        - Long, tightly twisted pasta
+      context:
+        - Sicilian
+    details: >-
+      Busiate or busiati are a type of long macaroni, originating in the province of Trapani and typical
+      of the Calabria and Sicily regions of Italy. They take their name from busa, the Sicilian word for
+      the stem of Ampelodesmos mauritanicus, a local grass, which is used in preparing them and giving
+      them their helical shape.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Busiate
+    image: Busiate.jpg
+  - term: calamarata
+    category: pasta
+    answer:
+      core:
+        - Thick squid-ring-shaped pasta
+    details: >-
+      Calamarata is a type of thick ring pasta, often dyed with black squid ink to resemble sliced calamari.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Calamarata
+    image: Calamari2.jpg
+  - term: campanelle
+    category: pasta
+    answer:
+      core:
+        - Ruffled cone or bell-shaped pasta
+    details: >-
+      Campanelle (Italian: [kampaˈnɛlle]; Italian for 'bellflowers' or 'little bells') is a type of pasta
+      which is shaped like a cone with a ruffled edge, or a bell-like flower. It is also sometimes referred
+      to as gigli ('lilies') or trompetti ('trumpets').
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Campanelle
+    image: Gigli.jpg
+  - term: cannelloni
+    category: pasta
+    answer:
+      core:
+        - Large pasta tubes meant for stuffing
+    details: >-
+      Cannelloni (Italian: [kannelˈloːni]; Italian for 'large reeds') are a cylindrical type of egg-based
+      stuffed pasta generally served baked with a filling and covered by a sauce in Italian cuisine. Popular
+      stuffings include spinach and ricotta or minced beef.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cannelloni
+    image: Cannelloni2.png
+  - term: capellini
+    category: pasta
+    answer:
+      core:
+        - Very thin strands
+        - angel-hair pasta
+    details: >-
+      Capellini (Italian: [kapelˈliːni]; lit. 'little hairs') is a thin variety of pasta, with a diameter
+      ranging from 0.85 to 0.92 mm (0.033 to 0.036 in). It is made in the form of long, thin strands,
+      similar to spaghetti.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Capellini
+    image: Capelli_angelo_front.jpg
+  - term: cappellacci
+    category: pasta
+    answer:
+      core:
+        - Large hat-shaped stuffed pasta
+    details: >-
+      Cappellacci are large, hat-shaped stuffed egg-pasta parcels associated with Ferrara. The classic
+      cappellacci di zucca are filled with pumpkin, Parmigiano Reggiano, breadcrumbs, and nutmeg, although
+      menu fillings can vary.
+    reference:
+      label: Ferrara tourism
+      url: https://www.inferrara.it/en/p/12/food/i-cappellacci-di-zucca-igp
+    image: Caplét ad suca.jpg
+  - term: cappelletti
+    category: pasta
+    answer:
+      core:
+        - Small hat-shaped stuffed pasta
+    details: >-
+      Cappelletti (Italian: [kappelˈletti]) are ring-shaped stuffed pasta; they are named for the characteristic
+      shape that resembles a hat (cappello in Italian). Compared to tortellini, they have a different
+      shape, larger size, thicker dough and different filling.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cappelletti_(pasta)
+    image: 02_Cappelletti_-_Cappellacci_-_Pasta_ripiena_-_Cucina_tipica_-_Ferrara.jpg
+  - term: casarecce
+    category: pasta
+    answer:
+      core:
+        - Short, loosely rolled S-shaped pasta
+    details: >-
+      Casarecce (from Italian casereccio, 'homemade') are short twists of pasta originating in the Sicily
+      region of Italy which appear rolled up on themselves like a scroll. Casarecce pairs well with cream/cheese,
+      meat, napolitana, seafood, pesto, and vegetables.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Casarecce
+    image: Casarecce2.jpg
+  - term: cavatappi
+    category: pasta
+    answer:
+      core:
+        - Hollow corkscrew-shaped pasta
+    details: >-
+      Cavatappi (Italian: [kavaˈtappi]; lit. 'corkscrews'), also known as spirali, cellentani, amori,
+      fusilli rigati, or curly mac, is macaroni formed in a helical tube shape. Certain areas of the US
+      and Canada may also refer to it as "double elbows" or "scoobi doo" pasta, purportedly because of
+      their resemblance to scoubidou.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cavatappi
+    image: Cellentani2.jpg
+  - term: cavatelli
+    category: pasta
+    answer:
+      core:
+        - Small folded pasta shells with a hollow
+    details: >-
+      Cavatelli are small pasta shells made from semolina or other flour dough, commonly cooked with garlic
+      and broccoli or rapini, or simply with tomato sauce. A variant adds ricotta cheese to the dough
+      mix.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cavatelli
+    image: Cavatelli.jpg
+  - term: conchiglie
+    category: pasta
+    answer:
+      core:
+        - Seashell-shaped pasta
+    details: >-
+      Conchiglie (Italian: [koŋˈkiʎʎe]) are a type of pasta. They are usually sold in the plain durum
+      wheat variety, and also in colored varieties which use natural pigments, such as tomato extract,
+      squid ink or spinach extract.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Conchiglie
+    image: Conchiglie_rigate.png
+  - term: corzetti
+    category: pasta
+    answer:
+      core:
+        - Thin round pasta coins, often stamped
+    details: >-
+      Corzetti or croxetti (Ligurian: [kur'zetˑi] or [kru'ʒetˑi]) are a type of pasta typical of the Ligurian
+      cuisine of northwest Italy, and also traditional in the area of Novi Ligure just across the border
+      with Piedmont, in the province of Alessandria. Corzetti originated in Liguria, in northern Italy
+      along the border with France, during the Middle Ages.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Corzetti
+    image: Croxetti.png
+  - term: ditalini
+    category: pasta
+    answer:
+      core:
+        - Very short, tiny pasta tubes
+    details: >-
+      Ditalini (Italian: [ditaˈliːni]; English: "small thimbles"), also referred to as tubettini, is a
+      type of pasta that is shaped like small tubes. It has been described as "thimble-sized" and as "very
+      short macaroni".
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ditalini
+    image: Ditalini-230.jpg
+  - term: farfalle
+    category: pasta
+    answer:
+      core:
+        - Bow-tie or butterfly-shaped pasta
+    details: >-
+      Farfalle (Italian: [farˈfalle]) are a type of pasta. The name is derived from the Italian word farfalle
+      ('butterflies').
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Farfalle
+    image: Farfalle_Pasta.JPG
+  - term: fettuccine
+    category: pasta
+    answer:
+      core:
+        - Flat, medium-width pasta ribbons
+    details: >-
+      Fettuccine is a type of pasta popular in Roman cuisine. It is descended from the extremely thin
+      capelli d'angelo of the Renaissance, but is a flat, thick pasta traditionally made with egg and
+      flour (usually one egg for every 100 grams or 3.5 ounces of flour).
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Fettuccine
+    image: Fettucine1.JPG
+  - term: fileja
+    category: pasta
+    answer:
+      core:
+        - Long, narrow corkscrews
+      context:
+        - Calabrian
+    details: >-
+      Fileja (pronounced [fɪˈlɛːja]) is a type of pasta typical from the province of Vibo Valentia, Calabria.
+      Made of durum wheat semolina and water, they are prepared by wrapping a sheet of pasta around a
+      thin cane (dinaciulu), creating a hollow tube approximately 20 cm in length.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Fileja
+    image: Fileja.jpg
+  - term: fregola
+    category: pasta
+    answer:
+      core:
+        - Small toasted pasta balls
+      context:
+        - Sardinian
+    details: >-
+      Fregula (often written fregola) is a type of semolina pasta from the Sardinia region of Italy.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Fregula
+    image: UncookedFregula.jpg
+  - term: fusilli
+    category: pasta
+    answer:
+      core:
+        - Short spiral or corkscrew pasta
+    details: >-
+      Fusilli (Italian: [fuˈzilli]) are a variety of pasta from southern Italy, with a helical (corkscrew)
+      or helicoidal shape, also known as rotini in the United States and Canada.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Fusilli
+    image: Fusilli pasta.jpg
+  - term: garganelli
+    category: pasta
+    answer:
+      core:
+        - Ridged pasta tubes with a visible seam
+      context:
+        - egg pasta
+    details: >-
+      Garganelli (Italian: [ɡarɡaˈnɛlli]; Romagnol: garganéi) are a type of egg-based pasta from the Emilia-Romagna
+      region of Italy. They are formed by rolling a flat, square noodle into a cylindrical shape over
+      a ridged wooden board, giving the pasta ridges.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Garganelli
+    image: Garganelli_(10348149363).jpg
+  - term: gemelli
+    category: pasta
+    answer:
+      core:
+        - Short pasta twisted like paired strands
+    details: >-
+      Gemelli (Italian: [dʒeˈmɛlli]; lit. 'twins') are a type of pasta. They are most often used for making
+      casserole or pasta salads.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gemelli_(pasta)
+    image: Gemelli.jpg
+  - term: gnocchi
+    category: pasta
+    answer:
+      core:
+        - Soft dumplings, usually made with potato
+    details: >-
+      Gnocchi are a varied family of pasta-like dumplings in Italian cuisine. They are made of small rolls
+      of dough, such as those composed of a simple combination of wheat flour, potato, egg, and salt.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gnocchi
+    image: Gnocchi_di_ricotta_burro_e_salvia.jpg
+  - term: lasagne
+    category: pasta
+    answer:
+      core:
+        - Wide flat pasta sheets
+        - also the layered dish
+    details: >-
+      Lasagna, also known by the plural form lasagne, is a type of pasta made in wide, flat sheets. It
+      originates in Italian cuisine, where it is served in a number of ways, including in broth (lasagne
+      in brodo), but is best known for its use in a baked dish made by stacking layers of pasta, alternating
+      with fillings such as ragù (ground meats and tomato sauce), béchamel sauce, vegetables, cheeses
+      (which may include ricotta, mozzarella, and Parmesan), and seasonings and spices.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lasagna
+    image: Lasagne_-_stonesoup.jpg
+  - term: linguine
+    category: pasta
+    answer:
+      core:
+        - Long, narrow, slightly flattened strands
+    details: >-
+      Linguine (lit. 'little tongues'), sometimes anglicized as linguini, is a type of pasta similar to
+      fettuccine and trenette, distinguished by its elliptical rather than flat section. Around about
+      4 millimetres (5⁄32 in) in width, it is wider than spaghetti, but less wide than fettuccine.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Linguine
+    image: Linguine.jpg
+  - term: lumache
+    category: pasta
+    answer:
+      core:
+        - Curved, hollow snail-shell-shaped pasta
+    details: >-
+      Lumache (Italian for “snails”) are short, curved, hollow pasta pieces shaped like snail shells,
+      often with ridges and one pinched end. Their hollow shape is well suited to catching thick or chunky
+      sauces.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_pasta#Short-cut_extruded_pasta
+    image: Lumache pasta.jpg
+  - term: mafaldine
+    category: pasta
+    answer:
+      core:
+        - Long ribbons with ruffled edges
+    details: >-
+      Mafaldine, also known as reginette (Italian for 'little queens') or simply mafalde, is a type of
+      ribbon-shaped pasta.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Mafaldine
+    image: Reginette.jpg
+  - term: malloreddus
+    category: pasta
+    answer:
+      core:
+        - Small ridged pasta shells
+      context:
+        - Sardinian
+    details: >-
+      Malloreddus, sometimes Italianized as gnocchetti sardi, are a type of pasta typical of Sardinian
+      cuisine. They have the shape of thin ribbed shells, about 2 cm (0.79 in) long, and are made of semolina
+      flour and water.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Malloreddus
+    image: Sardo_Cucina,_Fitzrovia,_London_(5147126888).jpg
+  - term: manicotti
+    category: pasta
+    answer:
+      core:
+        - Large ridged pasta tubes meant for stuffing
+    details: >-
+      Manicotti (the plural form of the Italian word manicotto; < manica, 'sleeve', + the augmentative
+      ending, -otto) are a type of pasta in Italian and Italian-American cuisine. They are large pasta
+      tubes intended to be stuffed and baked.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Manicotti
+    image: EMS-109321-Manicotti-rule..JPG
+  - term: mezze maniche
+    category: pasta
+    answer:
+      core:
+        - Short, wide ridged pasta tubes
+    details: >-
+      Mezze maniche are short, wide pasta tubes whose name means “half sleeves.” They are about half the
+      length of rigatoni and are commonly ridged to catch thick sauces.
+    reference:
+      label: De Cecco
+      url: https://www.dececco.com/it_it/product/mezze-maniche-rigate-n-136/
+    image: Mezze maniche2.jpg
+  - term: orecchiette
+    category: pasta
+    answer:
+      core:
+        - Small ear-shaped pasta
+    details: >-
+      Orecchiette is a pasta typical of the Apulia region of Italy. Their name comes from the Italian
+      word for "ear," a reference to their shape.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Orecchiette
+    image: Orecchiette_carbonara.jpg
+  - term: orzo
+    category: pasta
+    answer:
+      core:
+        - Rice-shaped pasta—not rice
+    details: >-
+      Orzo (Italian: [ˈɔrdzo]; lit. 'barley'; from Latin hordeum), also known in Italy as risoni (Italian:
+      [riˈzoːni]; 'large [grains of] rice'), and popular in Greek cuisine as kritharaki (κριθαράκι), is
+      a form of short-cut pasta shaped like a large grain of rice. Orzo is made from flour, often with
+      semolina.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Orzo
+    image: Orzo.jpg
+  - term: paccheri
+    category: pasta
+    answer:
+      core:
+        - Very large, wide pasta tubes
+    details: >-
+      Paccheri (Italian: [ˈpakkeri]) is a type of pasta in the shape of a very large tube, originating
+      from the Campania region of Italy. They are generally smooth, but there is also a ribbed version,
+      paccheri millerighe.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Paccheri
+    image: Paccheri3.jpg
+  - term: pappardelle
+    category: pasta
+    answer:
+      core:
+        - Very broad, flat pasta ribbons
+    details: >-
+      Pappardelle (Italian: [papparˈdɛlle]; sing.: pappardella; from the Italian verb pappare, meaning
+      'to gobble up') are large, very broad, flat pasta, similar to wide fettuccine, originating from
+      the Tuscany region of Italy. The fresh types are two to three centimetres (3⁄4–1 inches) wide and
+      may have fluted edges, while dried egg pappardelle have straight sides.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pappardelle
+    image: Pappardelle.jpg
+  - term: passatelli
+    category: pasta
+    answer:
+      core:
+        - Soft breadcrumb-and-egg noodle-like strands
+    details: >-
+      Passatelli are a pasta formed of bread crumbs, eggs, grated Parmesan cheese, and in some regions
+      lemon, and nutmeg; it is typically cooked in chicken broth. Typically, it is found mainly in Romagna,
+      Pesaro and Urbino province (northern Marche), Ancona province (central Marche) and other regions
+      of Italy, such as Umbria.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Passatelli
+    image: Passatelli.jpg
+  - term: pastina
+    category: pasta
+    answer:
+      core:
+        - Any very small pasta
+      context:
+        - usually for soup
+    details: >-
+      Pastina (lit. 'little pasta') is a variety of pasta consisting of tiny pieces, typically of a round
+      (irregular) shape with a diameter of about two millimetres (1⁄16 inch). It is the smallest type
+      of pasta produced.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pastina
+    image: Pasta_2006_4.jpg
+  - term: penne
+    category: pasta
+    answer:
+      core:
+        - Short diagonal-cut pasta tubes
+    details: >-
+      Penne (Italian: [ˈpenne]) are an extruded type of pasta in the shape of tubular pieces with ends
+      cut at an angle. They are usually made from wheat flour.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Penne
+    image: Pennelisce_closeup.png
+  - term: pici
+    category: pasta
+    answer:
+      core:
+        - Thick, hand-rolled spaghetti
+      context:
+        - Tuscan
+    details: >-
+      Pici (Italian: [ˈpiːtʃi], locally [ˈpiːʃi]) is thick, hand-rolled pasta, like fat spaghetti. It
+      originates in the province of Siena, in Tuscany; in the Montalcino area it is also referred to as
+      pinci (Italian: [ˈpintʃi]).
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pici
+    image: Pici_con_albume.jpeg
+  - term: pizzoccheri
+    category: pasta
+    answer:
+      core:
+        - Short, flat buckwheat pasta ribbons
+    details: >-
+      Pizzoccheri (Italian: [pitˈtsɔkkeri]; Lombard: pizzòcher, pronounced [piˈtsɔker, -kar]) is a flat
+      ribbon pasta, made with a blend of buckwheat flour and wheat flour. It is believed to have originated
+      in Valtellina, a valley in the northern Italian region of Lombardy.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pizzoccheri
+    image: Pizzoccheri.jpg
+  - term: radiatori
+    category: pasta
+    answer:
+      core:
+        - Short pasta shaped like little radiators
+    details: >-
+      Radiatori are small, squat pasta shapes that are said to resemble radiators. Although it is rumored
+      that they were created in the 1960s by an industrial designer, their invention was actually between
+      the First and Second World War.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Radiatori
+    image: Radiatori.jpg
+  - term: ravioli
+    category: pasta
+    answer:
+      core:
+        - Filled pasta pillows
+    details: >-
+      Ravioli (Italian: [raviˈɔli]; sing.: raviolo, Italian: [raviˈɔlo]) are a type of stuffed pasta comprising
+      a filling enveloped in thin pasta dough. Usually served in broth or with a sauce, they originated
+      as a traditional food in Italian cuisine.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ravioli
+    image: Flickr_-_cyclonebill_-_Ravioli_med_skinke_og_asparges_i_mascarponecreme.jpg
+  - term: rigatoni
+    category: pasta
+    answer:
+      core:
+        - Large ridged pasta tubes with square-cut ends
+    details: >-
+      Rigatoni (Italian: [riɡaˈtoːni]) is a type of pasta. They are larger than penne and ziti, and sometimes
+      slightly curved, but not as curved as elbow macaroni.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Rigatoni
+    image: Rigatoni.jpg
+  - term: rotelle
+    category: pasta
+    answer:
+      core:
+        - Wagon-wheel-shaped pasta
+    details: >-
+      Rotelle is a type of pasta resembling wheels with spokes. They are similar to fiori.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Rotelle
+    image: Rotelle2.jpg
+  - term: rotini
+    category: pasta
+    answer:
+      core:
+        - Short, tight corkscrew pasta
+    details: >-
+      Fusilli (Italian: [fuˈzilli]) are a variety of pasta from southern Italy, with a helical (corkscrew)
+      or helicoidal shape, also known as rotini in the United States and Canada.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Fusilli
+    image: Rotini.jpg
+  - term: scialatielli
+    category: pasta
+    answer:
+      core:
+        - Short, thick, flat ribbons
+      context:
+        - from Campania
+    details: >-
+      Scialatielli or scialatelli (Italian: [ʃalaˈt(j)ɛlli]), also known as sciliatielli or scivatieddi,
+      is a short, thick pasta with a rectangular cross section and an irregular, slightly curved shape.
+      It is typical of modern Campanian cuisine, having originated on the Amalfi Coast as a chef's specialty,
+      but it has also spread to nearby areas such as Catanzaro, Calabria, and Potenza, Basilicata.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Scialatielli
+    image: Scialatielli.jpg
+  - term: spaghetti
+    category: pasta
+    answer:
+      core:
+        - Long, thin round pasta strands
+    details: >-
+      Spaghetti (Italian: [spaˈɡetti] 'little strings' plural diminutive of spago 'string') is a long,
+      thin, solid, cylindrical pasta. It serves as a staple food of Italian cuisine and is made of milled
+      wheat and water, with the standard Italian version using durum-wheat semolina.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Spaghetti
+    image: Spaghettoni.jpg
+  - term: spaghettini
+    category: pasta
+    answer:
+      core:
+        - Thin spaghetti strands
+    details: >-
+      Spaghettini are long, round pasta strands with a smaller diameter than standard spaghetti. Their
+      thinness gives them a shorter cooking time and makes them well suited to lighter sauces.
+    reference:
+      label: Barilla
+      url: https://www.barilla.com/it-it/prodotti/pasta/i-classici/spaghettini
+    image: Spaghettini Ai Gamberi.jpg
+  - term: strozzapreti
+    category: pasta
+    answer:
+      core:
+        - Short, hand-rolled twisted pasta
+    details: >-
+      Strozzapreti (Italian: [ˌstrɔttsaˈprɛːti]; lit. 'priest choker' or 'priest strangler') are hand-made
+      pasta shape, similar to cavatelli, though longer. The name is also used for a baked cheese and vegetable
+      dumpling, prepared in some regions of Italy.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Strozzapreti
+    image: Strozzapreti_bulk.jpg
+  - term: tagliatelle
+    category: pasta
+    answer:
+      core:
+        - Long, flat pasta ribbons
+      context:
+        - egg pasta
+    details: >-
+      Tagliatelle (Italian: [taʎʎaˈtɛlle]; from the Italian word tagliare, meaning 'to cut') are a traditional
+      type of pasta from the Italian regions of Emilia-Romagna and Marche. Individual pieces of tagliatelle
+      are long, flat ribbons that are similar in shape to fettuccine and are traditionally about 6 mm
+      (1⁄4 in) wide.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tagliatelle
+    image: Nests_of_tagliatelle_bolognesi.jpg
+  - term: tagliolini
+    category: pasta
+    answer:
+      core:
+        - Very narrow, flat pasta ribbons
+      context:
+        - egg pasta
+    details: >-
+      Tagliolini (Italian: [taʎʎoˈliːni]) is a type of ribbon pasta, long like spaghetti, roughly 2–3
+      mm (3⁄32–1⁄8 in) wide, cut from a sheet of dough similar to tagliatelle, but thin like capellini.
+      It is a traditional recipe in the Molise and Piedmont regions of Italy.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tagliolini
+    image: 2016_1129_Turin_Tajarin_al_Castelmagno.jpg
+  - term: tonnarelli
+    category: pasta
+    answer:
+      core:
+        - Thick square-cut spaghetti
+    details: >-
+      Spaghetti alla chitarra (Italian: [spaˈɡetti ˌalla kiˈtarra]), also known as maccheroni alla chitarra,
+      is a variety of egg pasta typical of the Abruzzo region of Italy, with a square cross section about
+      2–3 mm thick. Tonnarelli are a similar pasta from Lazio, used especially in the Roman cacio e pepe.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Spaghetti_alla_chitarra
+    image: Spaghetti_alla_chitarra.jpg
+  - term: tortellini
+    category: pasta
+    answer:
+      core:
+        - Small ring-shaped stuffed pasta
+    details: >-
+      Tortellini is a type of stuffed pasta typical of the Italian cities of Bologna and Modena, in the
+      Emilia-Romagna region. Traditionally it is stuffed with a mix of meat (pork loin, prosciutto, mortadella),
+      Parmesan cheese, egg, and nutmeg and served in capon broth (in brodo di cappone).
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tortellini
+    image: Tortellini_Bolognesi.jpg
+  - term: tortelloni
+    category: pasta
+    answer:
+      core:
+        - Larger ring-shaped stuffed pasta
+    details: >-
+      Tortelloni is a type of stuffed pasta common in northern Italy, with a shape similar to tortellini,
+      but larger and with a cheese-based filling. It is traditionally stuffed with ricotta, Parmesan,
+      leafy herbs or vegetables such as parsley or spinach, egg, and nutmeg.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tortelloni
+    image: Tortelloni.jpg
+  - term: trofie
+    category: pasta
+    answer:
+      core:
+        - Short, thin, hand-twisted pasta
+      context:
+        - Ligurian
+    details: >-
+      Trofie (Italian: [ˈtrɔːfje]), less frequently troffie, strofie or stroffie, is a short, thin, twisted
+      pasta from the Liguria region of Italy. These thin, twisted shapes are believed to have originated
+      in Sori, a town in the province of Genoa.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Trofie
+    image: Trofie_pasta_macro.jpg
+  - term: vermicelli
+    category: pasta
+    answer:
+      core:
+        - Long thin strands, usually thinner than spaghetti
+    details: >-
+      Vermicelli (Italian: [vermiˈtʃɛlli]) is a type of pasta that is round in section, similar to spaghetti.
+      In English-speaking regions, it is usually thinner than spaghetti, while in Italy it is thicker.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Vermicelli
+    image: Fideo_(coiled_vermicelli).JPG
+  - term: ziti
+    category: pasta
+    answer:
+      core:
+        - Long, smooth pasta tubes
+    details: >-
+      Ziti (Italian: [ˈdziːti]) or zite (Italian: [ˈdziːte]) is a shape of extruded pasta originating
+      in the Italian region of Sicily. Factories make ziti out of durum wheat flour and water, forming
+      long, narrow tubes.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ziti
+    image: Ziti_al_ragù.jpg
+  - term: salumi
+    category: meat
+    answer:
+      core:
+        - Usually pig
+        - cured-meat assortment
+      context:
+        - Italian
+    details: >-
+      Salumi (sing.: salume, pronounced [saˈluːme]) are Italian meat products typical of an antipasto,
+      predominantly made from pork and cured. They also include bresaola, which is made from beef, and
+      some cooked products, such as mortadella.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Salumi
+    image: Salumi_e_vino_lucchese.JPG
+  - term: salame
+    category: meat
+    answer:
+      core:
+        - Usually pig
+        - cured sausage
+      context:
+        - Italian
+    details: >-
+      Salami ( sə-LAH-mee; sing.: salame) is a salume consisting of fermented and air-dried meat, typically
+      pork. Historically, salami was popular among Southern, Eastern, and Central European peasants because
+      it could be stored at room temperature for a period of time once cut, supplementing a potentially
+      meager or inconsistent supply of fresh meat.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Salami
+    image: Salame_di_Sauris.jpg
+  - term: salsiccia
+    category: meat
+    answer:
+      core:
+        - Usually pig
+        - sausage
+      context:
+        - Italian
+    details: >-
+      In North America, Italian sausage most often refers to a style of predominantly pork sausage, often
+      with fennel or anise as the primary seasoning. In Italy, a wide variety of sausages, very different
+      from the American product, are made.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Italian_sausage
+    image: Salsiccia_Italian_pork_sausage.jpg
+  - term: soppressata
+    category: meat
+    answer:
+      core:
+        - Usually pig
+        - coarse, dry-cured salami
+      context:
+        - Italian
+    details: >-
+      Soppressata is an Italian dry meat product (salume). Although there are many variations, two principal
+      types are made: a cured dry sausage typical of Basilicata, Apulia, and Calabria, and a very different
+      uncured salami made in Tuscany and Liguria.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Soppressata
+    image: Sliced_sopressata.jpg
+  - term: finocchiona
+    category: meat
+    answer:
+      core:
+        - Pig
+        - fennel-flavored salami
+      context:
+        - Tuscan
+    details: >-
+      Finocchiona (Italian: [finokˈkjoːna]) is a salami variety, typical of Florence, Italy. It is characterized
+      by the use of fennel.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Finocchiona
+    image: Finocchiona_from_Tuscany.JPG
+  - term: mortadella
+    category: meat
+    answer:
+      core:
+        - Pig
+        - mild, cooked sausage
+    details: >-
+      Mortadella (Italian: [mortaˈdɛlla]) is a large salume made of finely hashed or ground cured pork,
+      which incorporates at least 15% small cubes of pork fat (principally the hard fat from the neck
+      of the pig). It is traditionally flavoured with peppercorns, but modern versions can also contain
+      pistachios or, less commonly, myrtle berries.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Mortadella
+    image: Mortadella_tagliata.jpg
+  - term: prosciutto
+    category: meat
+    answer:
+      core:
+        - Pig
+        - dry-cured ham
+      context:
+        - usually thinly sliced
+        - Italian
+        - usually means crudo on English menus
+    details: >-
+      Prosciutto ( prə-SHOO-toh, proh-; Italian: [proʃˈʃutto]), also known as prosciutto crudo, is an
+      uncooked, unsmoked, and dry-cured ham. It is usually served thinly sliced.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Prosciutto
+    image: Prosciutto di Parma - affettato2.jpg
+  - term: prosciutto crudo
+    category: meat
+    answer:
+      core:
+        - Pig
+        - uncooked, unsmoked, dry-cured ham
+      context:
+        - Italian
+        - usually thinly sliced
+    details: >-
+      Prosciutto ( prə-SHOO-toh, proh-; Italian: [proʃˈʃutto]), also known as prosciutto crudo, is an
+      uncooked, unsmoked, and dry-cured ham. It is usually served thinly sliced.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Prosciutto
+    image: Prosciutto di Parma, Tagliere, Italia.jpg
+  - term: prosciutto cotto
+    category: meat
+    answer:
+      core:
+        - Pig
+        - cooked ham
+      context:
+        - Italian
+    details: >-
+      Prosciutto cotto is Italian cooked ham made from a pig’s hind leg, salted and cooked rather than
+      air-dried. It is typically pale pink, mild, and served in slices like deli ham.
+    reference:
+      label: Wikipedia (Italian)
+      url: https://it.wikipedia.org/wiki/Prosciutto_cotto
+    image: Sliced cooked ham.jpg
+  - term: speck
+    category: meat
+    answer:
+      core:
+        - Pig
+        - smoked, dry-cured ham
+      context:
+        - South Tyrolean
+    details: >-
+      Speck Alto Adige is a dry-cured, lightly smoked ham produced in South Tyrol, northern Italy. Parts
+      of its production are regulated by the European Union under the protected geographical indication
+      (PGI) status (see also: Tyrolean speck).
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Speck_Alto_Adige
+    image: Südtiroler_Speck_g.g.A._mit_Gütesiegel.jpg
+  - term: coppa
+    category: meat
+    answer:
+      core:
+        - Pig
+        - dry-cured neck or shoulder
+    details: >-
+      Capocollo (Italian: [kapoˈkɔllo]) or coppa (Italian: [ˈkɔppa, ˈkoppa]) is an Italian pork salted
+      meat made from the dry-cured muscle running from the neck to the fourth or fifth rib of the pig
+      shoulder or neck. It is whole-muscle, dry cured, and typically sliced very thinly.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Capocollo
+    image: Coppa.jpg
+  - term: capocollo
+    category: meat
+    answer:
+      core:
+        - Pig
+        - dry-cured neck or shoulder
+    details: >-
+      Capocollo (Italian: [kapoˈkɔllo]) or coppa (Italian: [ˈkɔppa, ˈkoppa]) is an Italian pork salted
+      meat made from the dry-cured muscle running from the neck to the fourth or fifth rib of the pig
+      shoulder or neck. It is whole-muscle, dry cured, and typically sliced very thinly.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Capocollo
+    image: Coppa_di_Parma.jpg
+  - term: capicola
+    category: meat
+    answer:
+      core:
+        - Pig
+        - cured neck or shoulder
+      context:
+        - Italian-American name
+    details: >-
+      Capocollo (Italian: [kapoˈkɔllo]) or coppa (Italian: [ˈkɔppa, ˈkoppa]) is an Italian pork salted
+      meat made from the dry-cured muscle running from the neck to the fourth or fifth rib of the pig
+      shoulder or neck. It is whole-muscle, dry cured, and typically sliced very thinly.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Capocollo
+    image: Coppa 2.jpg
+  - term: pancetta
+    category: meat
+    answer:
+      core:
+        - Pig
+        - salt-cured belly
+        - Italian bacon
+    details: >-
+      Pancetta (Italian: [panˈtʃetta]) is a salt-cured pork belly meat product in a category known as
+      salume. In Italy, it is often used to add depth to soups and pasta.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pancetta
+    image: Pancetta.jpg
+  - term: guanciale
+    category: meat
+    answer:
+      core:
+        - Pig
+        - salt-cured cheek or jowl
+    details: >-
+      Guanciale (Italian: [ɡwanˈtʃaːle]) is an Italian salt-cured meat product prepared from pork jowl
+      or cheeks. Its name is derived from guancia, meaning 'cheek'.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Guanciale
+    image: Guanciale_closeup_(cropped).jpg
+  - term: lardo
+    category: meat
+    answer:
+      core:
+        - Pig
+        - seasoned, cured back fat
+    details: >-
+      Lardo is a type of salume made by curing strips of fatback with salt, rosemary, and other herbs
+      and spices. The most famous lardo is from the Colonnata, Tuscany, where lardo has been made since
+      Roman times.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lardo
+    image: Lardo-bergamo-20231229_03.jpg
+  - term: bresaola
+    category: meat
+    answer:
+      core:
+        - Cow
+        - air-dried, salted beef
+      context:
+        - usually thinly sliced
+    details: >-
+      Bresaola is air-dried, salted beef (but it can also be made of horse, venison, and pork) that has
+      been aged two or three months until it becomes hard and turns a dark red, almost purple colour.
+      It is made from top (inside) round, and it is lean and tender, with a sweet, musty smell.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bresaola
+    image: Brisaula.jpg
+  - term: culatello
+    category: meat
+    answer:
+      core:
+        - Pig
+        - dry-cured, boneless ham
+    details: >-
+      Culatello di Zibello is a cured meat with a protected designation of origin (PDO) in the EU and
+      UK typical of the province of Parma. Listed among the Slow Food Presidia of Emilia-Romagna, culatello,
+      mentioned for the first time in a document dating back to 1735, is produced from the leg of a pork,
+      which is then stuffed into the pig's bladder.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Culatello_di_Zibello
+    image: Culatello_di_Zibello.jpg
+  - term: ’nduja
+    category: meat
+    answer:
+      core:
+        - Pig
+        - soft, spicy, spreadable sausage
+      context:
+        - Calabrian
+    details: >-
+      'Nduja (Calabrian: [nˈduːja]) or 'nduja di Spilinga is a spicy, spreadable pork sausage from the
+      Calabria region of Italy. It is a salume that comes from the area around Spilinga.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/%27Nduja
+    image: '''Nduja.JPG'
+  - term: cotechino
+    category: meat
+    answer:
+      core:
+        - Pig
+        - rich, cooked sausage
+    details: >-
+      Cotechino (Italian: [koteˈkiːno]) is a large Italian pork sausage requiring slow cooking; usually
+      it is simmered at low heat for several hours. Its name comes from cotica ('rind'), but it may take
+      different names depending on its various locations of production.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cotechino
+    image: Cotechino-Intero.jpg
+  - term: zampone
+    category: meat
+    answer:
+      core:
+        - Pig
+        - trotter stuffed with pork sausage
+    details: >-
+      Cotechino Modena or cotechino di Modena (Italian: [koteˈkiːno di ˈmɔːdena]; spelled cotecchino or
+      coteghino in some major dialects, but not in Italian) is a sausage made with pork, fatback, and
+      pork rind recognised as a product with a protected geographical indication (PGI), originating in
+      the city of Modena, Italy. Zampone Modena or zampone is closely related and also obtained PDO status.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cotechino_Modena
+    image: Cotechino-Servito-Polenta-Lenticchie.jpg
+  - term: porchetta
+    category: meat
+    answer:
+      core:
+        - Pig
+        - herb-seasoned roast pork
+      context:
+        - Italian
+    details: >-
+      Porchetta (Italian: [porˈketta]) is a savory, fatty, and moist boneless pork roast of Italian culinary
+      tradition. The carcass is deboned and spitted or roasted traditionally over wood for at least eight
+      hours, fat and skin still on.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Porchetta
+    image: Porchetta_(3168207946).jpg
+  - term: lonza
+    category: meat
+    answer:
+      core:
+        - Pig
+        - cured or roasted loin
+    details: >-
+      Pork loin is a primal cut of meat from a pig, created from the tissue along the dorsal side of the
+      rib cage.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pork_loin
+    image: Pork_loin_(1027276219).jpg
+  - term: jambon
+    category: meat
+    answer:
+      core:
+        - Pig
+        - ham
+      context:
+        - French
+    details: >-
+      Ham is pork from a leg cut that has been preserved by wet or dry curing, with or without smoking.
+      As a processed meat, the term ham includes both whole cuts of meat and ones that have been mechanically
+      formed.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ham
+    image: Ham_(4).jpg
+  - term: saucisson
+    category: meat
+    answer:
+      core:
+        - Usually pig
+        - dry-cured sausage
+      context:
+        - usually thick
+        - French
+    details: >-
+      Saucisson (French: [sosisɔ̃]), also saucisson sec or saucisse sèche, is a family of thick, dry-cured
+      sausage-shaped charcuterie in French cuisine. Typically made of pork, or a mixture of pork and other
+      meats, saucisson are similar to salami.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Saucisson
+    image: Saucisson_sec_de_l'Aveyron.jpg
+  - term: andouille
+    category: meat
+    answer:
+      core:
+        - Pig
+        - smoked sausage
+      context:
+        - style varies by country
+    details: >-
+      Andouille ( ann-DOO-ee, ahn-; French: [ɑ̃duj]; from Latin induco) is a smoked sausage made using
+      pork, originating in France but also known as an element in Cajun cuisine.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Andouille
+    image: Andouille.jpg
+  - term: andouillette
+    category: meat
+    answer:
+      core:
+        - Pig
+        - coarse intestine sausage
+      context:
+        - French
+    details: >-
+      Andouillette (French pronunciation: [ɑ̃dujɛt]) is a French coarse-grained sausage made from the
+      intestine of pork, pepper, wine, onions, and seasonings. Andouillettes are generally made from the
+      large intestine and are 7–10 cm (2+3⁄4–4 in) in diameter.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Andouillette
+    image: Andouillette_AAAAA_cuite.jpg
+  - term: boudin noir
+    category: meat
+    answer:
+      core:
+        - Usually pig
+        - blood sausage
+      context:
+        - French
+    details: >-
+      Boudin noir is a French blood sausage, usually made with pig’s blood, pork fat, onions, and seasonings.
+      Recipes and texture vary by region, and it is distinct from British black pudding.
+    reference:
+      label: Wikipedia (French)
+      url: https://fr.wikipedia.org/wiki/Boudin_noir
+    image: Boudin noir à l'oignon.jpg
+  - term: boudin blanc
+    category: meat
+    answer:
+      core:
+        - Animal varies
+        - white sausage without blood
+      context:
+        - French
+        - often pig, young cow, or poultry
+    details: >-
+      Boudin blanc is a pale French or Belgian sausage made without blood. It combines meat such as pork
+      (pig), veal (young cow), or poultry with fat and binders such as milk, cream, eggs, bread, or starch.
+    reference:
+      label: OQLF
+      url: https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/2092707/boudin-blanc
+    image: Boudin Blanc.jpg
+  - term: rillettes
+    category: meat
+    answer:
+      core:
+        - Animal varies
+        - shredded meat spread
+      context:
+        - often pig
+    details: >-
+      Rillettes (French: [ʁijɛt]) is a preservation method similar to confit in which meat is seasoned,
+      submerged in fat, and cooked slowly over the course of four to ten hours. The meat is shredded and
+      packed into sterile containers covered in fat.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Rillettes
+    image: Rillettes.jpg
+  - term: pâté
+    category: meat
+    answer:
+      core:
+        - Animal varies
+        - meat paste
+        - often liver
+    details: >-
+      Pâté (UK: PAT-ay, US: pa(h)-TAY, French: [pɑte]) is a forcemeat. Originally, the dish was cooked
+      in a pastry case and called pâté en croute; in more recent times it is more usually cooked without
+      pastry in a terrine, and called pâté en terrine or simply terrine.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/P%C3%A2t%C3%A9
+    image: Pates_p1150435.jpg
+  - term: terrine
+    category: meat
+    answer:
+      core:
+        - Animal varies
+        - coarse pâté or layered meat loaf
+        - served cold
+    details: >-
+      A terrine (French pronunciation: [tɛ.ʁin]), in traditional French cuisine, is a loaf of forcemeat
+      or aspic, similar to a pâté, that is cooked in a covered pottery mold (also called a terrine) in
+      a bain-marie. Modern terrines do not necessarily contain meat or animal fat, but still contain meat-like
+      textures and fat substitutes, such as mushrooms and pureed fruits or vegetables high in pectin.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Terrine_(food)
+    image: Terrine_de_saumon_au_basilic.JPG
+  - term: lardons
+    category: meat
+    answer:
+      core:
+        - Pig
+        - small strips or cubes of fatty bacon
+    details: >-
+      A lardon, also spelled lardoon, is a small strip or cube of fatty bacon, or pork fat (usually subcutaneous
+      fat), used in a wide variety of cuisines to flavor savory food and salads. In French cuisine, lardons
+      are also used for larding, by threading them with a needle into meats that are to be braised or
+      roasted.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lardon
+    image: Tourtiere_Lard.jpg
+  - term: confit
+    category: meat
+    answer:
+      core:
+        - Often duck
+        - slowly cooked and preserved in fat
+    details: >-
+      Confit (French pronunciation: [kɔ̃fi]; Occitan: Confisat) (from the French word confire, literally
+      'to preserve') is any type of food that is cooked slowly over a long period as a method of preservation.
+      Confit, as a cooking term, describes the process of cooking food in fat, whether it be grease or
+      oil, at a lower temperature compared to deep frying.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Confit
+    image: Duck_Confit_(3375036024).jpg
+  - term: jamón serrano
+    category: meat
+    answer:
+      core:
+        - Pig
+        - dry-cured ham
+      context:
+        - Spanish
+    details: >-
+      Jamón (Spanish: [xaˈmon]; pl.: jamones) is a type of dry-cured ham produced in Spain. It is one
+      of the most globally recognised food items of Spanish cuisine.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Jam%C3%B3n
+    image: Despaña_jamon_carving.jpg
+  - term: jamón ibérico
+    category: meat
+    answer:
+      core:
+        - Iberian pig
+        - dry-cured ham
+      context:
+        - Spanish
+    details: >-
+      Jamón ibérico (Spanish: [xaˈmon iˈβeɾiko]; Spanish for "Iberian ham"), known in Portuguese as presunto
+      ibérico (Portuguese: [pɾɨˈzũtu iˈβɛɾiku]), is a variety of jamón or presunto, a type of cured leg
+      of pork (primarily Black Iberian pigs) produced in Spain and Portugal, in the Iberian Peninsula.
+      It is considered a staple of both Portuguese cuisine and Spanish cuisine.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Jam%C3%B3n_ib%C3%A9rico
+    image: Jamon_iberico_de_bellota_2_(cinco_jotas).jpg
+  - term: chorizo
+    category: meat
+    answer:
+      core:
+        - Pig
+        - highly seasoned sausage
+        - often paprika-red
+      context:
+        - Spanish
+    details: >-
+      Chorizo ( chə-REE-zoh, -⁠soh, Spanish: [tʃoˈɾiθo, tʃoˈɾiso]; Portuguese: chouriço [ʃo(w)ˈɾisu])
+      is a type of pork sausage originating from the Iberian Peninsula. It is made in many national and
+      regional varieties in several countries on different continents.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Chorizo
+    image: Chorizos_P6021974.jpg
+  - term: morcilla
+    category: meat
+    answer:
+      core:
+        - Usually pig
+        - blood sausage
+      context:
+        - Spanish
+    details: >-
+      A blood sausage is a sausage filled with blood that is cooked or dried and mixed with a filler until
+      it is thick enough to solidify when cooled. Most commonly, the blood of pigs, sheep, lamb, cow,
+      chicken, or goose is used.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Blood_sausage
+    image: Boudin3.jpg
+  - term: sobrasada
+    category: meat
+    answer:
+      core:
+        - Pig
+        - soft, spreadable, paprika-seasoned sausage
+      context:
+        - Spanish
+    details: >-
+      Sobrassada in Catalan, or sobrasada in Spanish, is a raw, cured sausage from the Balearic Islands
+      (Spain) made with ground pork, paprika, salt and other spices. Sobrassada, along with botifarró,
+      are traditional Balearic meat products prepared in the laborious but festive rites that still mark
+      the autumn and winter pig slaughter known as a matança in Minorca, Majorca and Ibiza.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sobrassada
+    image: Sobrassada.jpg
+  - term: lomo
+    category: meat
+    answer:
+      core:
+        - Pig
+        - cured tenderloin
+      context:
+        - Spanish
+    details: >-
+      Cured pork tenderloin is found in various cuisines in Mediterranean Europe and South America. It
+      is typically salted or brined then dry-cured or smoked.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cured_pork_tenderloin
+    image: Big_lomito.jpg
+  - term: manzo
+    category: meat
+    answer:
+      core:
+        - Cow
+        - beef
+      context:
+        - Italian
+    details: >-
+      Beef is the culinary name for meat from cattle (Bos taurus). Beef can be prepared in various ways;
+      cuts are often used for steak, which can be cooked to varying degrees of doneness, while trimmings
+      are often ground or minced, as found in most hamburgers.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Beef
+    image: Standing-rib-roast.jpg
+  - term: vitello
+    category: meat
+    answer:
+      core:
+        - Young cow (calf)
+        - veal
+      context:
+        - Italian
+    details: >-
+      Veal is the meat of calves, in contrast to the beef from older cattle. Veal can be produced from
+      a calf of either sex and any breed; however, most veal comes from young male calves of dairy breeds
+      which are not used for breeding.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Veal
+    image: Holstein_cow_with_one-day_calf_01.jpg
+  - term: maiale
+    category: meat
+    answer:
+      core:
+        - Pig
+        - pork
+      context:
+        - Italian
+    details: >-
+      Pork is the culinary name for the meat of the pig (Sus domesticus). It is the second most commonly
+      consumed type of meat worldwide, following poultry, with evidence of pig husbandry dating back to
+      8000–9000 bce.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pork
+    image: Schweinebauch-2.jpg
+  - term: cinghiale
+    category: meat
+    answer:
+      core:
+        - Wild boar
+      context:
+        - Italian
+    details: >-
+      The wild boar (Sus scrofa), also known as the wild swine, common wild pig, Eurasian wild pig, or
+      simply wild pig, is a suid native to much of Eurasia and North Africa and has been introduced to
+      the Americas and Oceania. The species is now one of the widest-ranging mammals in the world as well
+      as the most widespread suiform.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Wild_boar
+    image: Wildschwein,_Nähe_Pulverstampftor_(cropped).jpg
+  - term: agnello
+    category: meat
+    answer:
+      core:
+        - Young sheep
+        - lamb
+      context:
+        - Italian
+    details: >-
+      Lamb and mutton, collectively sheep meat (or sheepmeat), is meat from the domestic sheep, Ovis aries.
+      It is generally divided into three types: lamb, from sheep in their first year; hogget, from sheep
+      in their second; and mutton, from older sheep.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lamb_and_mutton
+    image: Lamb_meat_(1).jpg
+  - term: capretto
+    category: meat
+    answer:
+      core:
+        - Young goat
+        - kid
+      context:
+        - Italian
+    details: >-
+      Goat meat is the meat of the domestic goat (Capra hircus). The term denotes especially the meat
+      of older animals, while meat from young goats is called kid meat.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Goat_meat
+    image: Goat_meat.jpg
+  - term: anatra
+    category: meat
+    answer:
+      core:
+        - Duck
+      context:
+        - Italian
+    details: >-
+      In cooking and gastronomy, duck or duckling is the meat of any of several species of bird in the
+      family Anatidae, found in both fresh and salt water. It is found in domestic and wild forms and
+      is a very calorie dense food, containing high fat, protein, and iron.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Duck_as_food
+    image: And_(24559569447).jpg
+  - term: coniglio
+    category: meat
+    answer:
+      core:
+        - Rabbit
+      context:
+        - Italian
+    details: >-
+      Rabbits, or bunnies, are small mammals in the family Leporidae (which also includes the hares),
+      which is in the order Lagomorpha (which also includes pikas). They are familiar throughout the world
+      as a small herbivore, a prey animal, a domesticated form of livestock, and a pet, having a widespread
+      effect on ecologies and cultures.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Rabbit
+    image: Oryctolagus_cuniculus_Rcdo.jpg
+  - term: cervo
+    category: meat
+    answer:
+      core:
+        - Deer
+        - venison
+      context:
+        - Italian
+    details: >-
+      Venison refers primarily to the meat of deer (or antelope in South Africa). Venison can be used
+      to refer to any part of the animal, so long as it is edible, including the internal organs.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Venison
+    image: Venison_Steaks.jpg
+  - term: faraona
+    category: meat
+    answer:
+      core:
+        - Guinea fowl
+      context:
+        - Italian
+    details: >-
+      Guinea fowl or guineafowl are birds of the family Numididae in the order Galliformes. They are endemic
+      to Africa and rank among the oldest of the gallinaceous birds.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Guinea_fowl
+    image: Numida_meleagris_-Serengeti_National_Park,_Tanzania-8_(1).jpg
+  - term: bœuf
+    category: meat
+    answer:
+      core:
+        - Cow
+        - beef
+      context:
+        - French
+    details: >-
+      Beef is the culinary name for meat from cattle (Bos taurus). Beef can be prepared in various ways;
+      cuts are often used for steak, which can be cooked to varying degrees of doneness, while trimmings
+      are often ground or minced, as found in most hamburgers.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Beef
+    image: Beef steak with garlic butter in Savour Cafe.jpg
+  - term: veau
+    category: meat
+    answer:
+      core:
+        - Young cow (calf)
+        - veal
+      context:
+        - French
+    details: >-
+      Veal is the meat of calves, in contrast to the beef from older cattle. Veal can be produced from
+      a calf of either sex and any breed; however, most veal comes from young male calves of dairy breeds
+      which are not used for breeding.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Veal
+    image: Veal piccata.jpg
+  - term: porc
+    category: meat
+    answer:
+      core:
+        - Pig
+        - pork
+      context:
+        - French
+    details: >-
+      Pork is the culinary name for the meat of the pig (Sus domesticus). It is the second most commonly
+      consumed type of meat worldwide, following poultry, with evidence of pig husbandry dating back to
+      8000–9000 bce.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pork
+    image: Pork chops served.jpg
+  - term: agneau
+    category: meat
+    answer:
+      core:
+        - Young sheep
+        - lamb
+      context:
+        - French
+    details: >-
+      Lamb and mutton, collectively sheep meat (or sheepmeat), is meat from the domestic sheep, Ovis aries.
+      It is generally divided into three types: lamb, from sheep in their first year; hogget, from sheep
+      in their second; and mutton, from older sheep.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lamb_and_mutton
+    image: Lamb at La Cour du Louvre, Avignon, France - 20140714.jpg
+  - term: canard
+    category: meat
+    answer:
+      core:
+        - Duck
+      context:
+        - French
+    details: >-
+      In cooking and gastronomy, duck or duckling is the meat of any of several species of bird in the
+      family Anatidae, found in both fresh and salt water. It is found in domestic and wild forms and
+      is a very calorie dense food, containing high fat, protein, and iron.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Duck_as_food
+    image: Duck in orange sauce at restaurant Pri Škofu, Ljubljana, Slovenia.jpg
+  - term: lapin
+    category: meat
+    answer:
+      core:
+        - Rabbit
+      context:
+        - French
+    details: >-
+      Rabbits, or bunnies, are small mammals in the family Leporidae (which also includes the hares),
+      which is in the order Lagomorpha (which also includes pikas). They are familiar throughout the world
+      as a small herbivore, a prey animal, a domesticated form of livestock, and a pet, having a widespread
+      effect on ecologies and cultures.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Rabbit
+    image: L'Assiette de Lapin Metz.jpg
+  - term: chevreuil
+    category: meat
+    answer:
+      core:
+        - Roe deer
+        - venison
+      context:
+        - French
+    details: >-
+      The roe deer (Capreolus capreolus), also known as the roe, western roe deer, or European roe, is
+      a species of deer. The male of the species is sometimes referred to as a roebuck.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Roe_deer
+    image: Roe_deer_(Capreolus_capreolus)_young_male_Cumnor.jpg
+  - term: filet mignon
+    category: meat
+    answer:
+      core:
+        - Cow
+        - tenderloin steak
+        - very tender
+      context:
+        - usually small
+    details: >-
+      Filet mignon (French: [filɛ miɲɔ̃]; lit. 'delicate, fine, or cute fillet') in North America, especially
+      the United States refers solely to a cut of beef taken from the smaller end of a tenderloin, or
+      psoas major of a cow. In France, filet mignon usually refers to cuts of pork tenderloin or veal
+      tenderloin.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Filet_mignon
+    image: Filmin.png
+  - term: entrecôte
+    category: meat
+    answer:
+      core:
+        - Cow
+        - rib steak
+        - similar to ribeye
+      context:
+        - French
+    details: >-
+      The entrecôte (French pronunciation: [ɑ̃.tʁə.kot]), in French cuisine, is a premium cut of beef
+      used for steaks and roasts. It is a boneless cut from the rib area corresponding to the steaks known
+      in English as rib, rib eye, Scotch fillet, club, or Delmonico.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Entrec%C3%B4te
+    image: Beef_cuts_France_Côtes_et_entrecôtes_highlighted.svg
+  - term: onglet
+    category: meat
+    answer:
+      core:
+        - Cow
+        - hanger steak
+      context:
+        - French
+    details: >-
+      A hanger steak, also known as butcher's steak, hanging tenderloin, skirt, or onglet, is a cut of
+      beef steak prized for its flavor and tenderness. This cut is taken from the plate, which is the
+      upper belly of the animal.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Hanger_steak
+    image: BeefCutPlate.svg
+  - term: bavette
+    category: meat
+    answer:
+      core:
+        - Cow
+        - flank-style steak
+      context:
+        - French
+    details: >-
+      Flank steak is a cut of steak taken from the abdominal muscles of the cow, located just behind the
+      plate and in front of the rear quarter. It is long, flat, and has a significant grain that is typically
+      sliced thin to minimize its chewiness.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Flank_steak
+    image: BeefCutFlank.svg
+  - term: côte de bœuf
+    category: meat
+    answer:
+      core:
+        - Cow
+        - thick, bone-in rib steak
+      context:
+        - French
+    details: >-
+      Côte de bœuf is a thick French beef (cow) rib steak served with the rib bone attached. It is usually
+      grilled or roasted and is often large enough to share.
+    reference:
+      label: Wikipedia (French)
+      url: https://fr.wikipedia.org/wiki/C%C3%B4te_de_b%C5%93uf
+    image: Côte de bœuf cuite au barbecue à gaz.JPG
+  - term: bistecca
+    category: meat
+    answer:
+      core:
+        - Usually cow
+        - steak
+      context:
+        - Italian
+    details: >-
+      A beefsteak, often called just steak, is a flat cut of beef with parallel faces, usually cut perpendicular
+      to the muscle fibers. In common restaurant service a single serving has a raw mass ranging from
+      120 to 600 grams (4 to 21 oz).
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Beefsteak
+    image: Steak_frites_-_yummy.jpg
+  - term: tagliata
+    category: meat
+    answer:
+      core:
+        - Usually cow
+        - sliced, grilled steak
+      context:
+        - Italian
+    details: >-
+      Tagliata is an Italian dish of grilled beef (cow) steak rested and then served in slices; its name
+      means “sliced.” It is often accompanied by arugula, shaved Parmesan, olive oil, or balsamic vinegar.
+    reference:
+      label: Wikipedia (Italian)
+      url: https://it.wikipedia.org/wiki/Tagliata
+    image: Tagliata di controfiletto.jpg
+  - term: carpaccio
+    category: meat
+    answer:
+      core:
+        - Meat or fish
+        - paper-thin
+        - raw
+    details: >-
+      Carpaccio is a dish of meat or fish (such as beef, veal, venison, salmon or tuna), thinly sliced
+      or pounded thin, and served raw, typically as an appetiser. It was invented in 1950 by Giuseppe
+      Cipriani, founder of Harry's Bar in Venice, Italy, and popularised during the second half of the
+      twentieth century.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Carpaccio
+    image: Carpaccio_with_cheese_in_Warsaw.jpg
+  - term: osso buco
+    category: meat
+    answer:
+      core:
+        - Young cow
+        - cross-cut shank
+        - braised with its marrow bone
+    details: >-
+      Ossobuco or osso buco (Italian: [ˌɔssoˈbuːko]; Milanese: òss bus [ˌɔz ˈbyːs]), also known as ossobuco
+      alla milanese, is a specialty of Lombard cuisine of cross-cut veal shanks braised with vegetables,
+      white wine, and broth. It is often garnished with gremolada and traditionally served with either
+      risotto alla milanese or polenta, depending on the regional variation.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ossobuco
+    image: Ossobuco.jpg
+  - term: braciola
+    category: meat
+    answer:
+      core:
+        - Animal varies
+        - rolled or grilled meat slice
+      context:
+        - Italian
+        - meaning varies by region
+    details: >-
+      Braciola (Italian: [braˈtʃɔːla]; pl.: braciole, Italian: [braˈtʃɔːle]) may refer to several distinct
+      dishes in Italian cuisine.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Braciola
+    image: Braciola_di_maiale_e_melanzane_ai_ferri.jpg
+  - term: animelle
+    category: meat
+    answer:
+      core:
+        - Usually young cow or young sheep
+        - sweetbreads (glands)
+      context:
+        - Italian
+    details: >-
+      Sweetbread is a culinary name for the thymus or pancreas, typically from calf or lamb. Sweetbreads
+      have a rich, slightly gamey flavour and a tender, succulent texture.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sweetbread
+    image: SweetbreadsChufaCuminBroccoliCocoa_(8311452821).jpg
+  - term: trippa
+    category: meat
+    answer:
+      core:
+        - Animal varies
+        - tripe
+        - edible stomach lining
+      context:
+        - Italian
+    details: >-
+      Tripe is the digestive system of ruminants prepared as edible offal. Most tripe is from cattle and
+      sheep, but may come from other ruminants as well.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tripe
+    image: Trippa.jpg
+  - term: midollo
+    category: meat
+    answer:
+      core:
+        - Animal varies
+        - bone marrow
+      context:
+        - Italian
+    details: >-
+      Humans consume the bone marrow of animals as a food source. It is found in the long bones of animals
+      and comes in two types: yellow and red marrow.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bone_marrow_as_food
+    image: Markkloesschensuppe.jpg
+  - term: ris de veau
+    category: meat
+    answer:
+      core:
+        - Young cow
+        - sweetbreads
+      context:
+        - French
+        - despite the name, not rice
+    details: >-
+      Sweetbread is a culinary name for the thymus or pancreas, typically from calf or lamb. Sweetbreads
+      have a rich, slightly gamey flavour and a tender, succulent texture.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sweetbread
+    image: Ris de Veau.jpg
+  - term: foie gras
+    category: meat
+    answer:
+      core:
+        - Duck or goose
+        - fatty liver
+    details: >-
+      Foie gras (lit. 'fat liver'; French: [fwa ɡʁɑ]; Occitan: foiè grass) is a specialty food product
+      made of the liver of a duck or goose. According to French law, foie gras is defined as the liver
+      of a duck or goose fattened by gavage (force feeding).
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Foie_gras
+    image: Foie_gras_en_cocotte.jpg
+  - term: asiago
+    category: cheese
+    answer:
+      core:
+        - Mild when young
+        - firm when aged
+      context:
+        - Italian
+        - cow’s milk
+    details: >-
+      Asiago (UK: ASS-ee-AH-goh, AZ-, US: AH-s(h)ee-, AH-zhee-, Italian: [aˈzjaːɡo]) is a cow's milk cheese,
+      first produced in Asiago in Italy, that can assume different textures according to its aging, from
+      smooth for the fresh Asiago (called Asiago pressato, which means "pressed Asiago") to a crumbly
+      texture for the aged cheese (Asiago d'allevo, which means "breeding farm Asiago"). The aged cheese
+      is often grated in salads, soups, pastas, and sauces while the fresh Asiago is sliced to prepare
+      panini or sandwiches; it can also be melted on a variety of dishes and cantaloupe.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Asiago_cheese
+    image: Asiago_cheese_1.jpg
+  - term: bel paese
+    category: cheese
+    answer:
+      core:
+        - Mild, semi-soft cheese
+      context:
+        - Italian
+        - cow’s milk
+    details: >-
+      Bel Paese (Italian pronunciation: [ˌbɛl paˈeːze, -eːse]) or Italico is a semi-soft Italian cheese.
+      It was invented in 1906 by Egidio Galbani who wanted to produce a mild and delicate cheese to sell
+      mainly in Italy.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bel_Paese_(cheese)
+    image: Cheese_29_bg_051906.jpg
+  - term: burrata
+    category: cheese
+    answer:
+      core:
+        - Fresh mozzarella pouch filled with cream and curds
+    details: >-
+      Burrata (Italian: [burˈrata]) is an Italian cow's milk (occasionally buffalo milk) cheese made from
+      mozzarella and cream. Burrata has its origins in the Apulia region of Italy.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Burrata
+    image: Burrata2.jpg
+  - term: caciocavallo
+    category: cheese
+    answer:
+      core:
+        - Firm, stretched-curd cheese
+      context:
+        - Southern Italian
+    details: >-
+      Caciocavallo (Italian: [ˌkatʃokaˈvallo]) is a type of pasta filata ('stretched-curd') cheese made
+      out of sheep's or cow's milk. It is produced throughout southern Italy, particularly in the Apennine
+      Mountains and in the Gargano peninsula.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Caciocavallo
+    image: Cacio_cavallo_with_slices.jpg
+  - term: caciotta
+    category: cheese
+    answer:
+      core:
+        - Mild, semi-soft farmhouse cheese
+      context:
+        - Italian
+    details: >-
+      Caciotta, from the Tuscan cacciola, is a type of cheese produced in Italy from the milk of cows,
+      sheep, goats, or water buffalo. Caciotta has more than a dozen variations.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Caciotta
+    image: A_Caciotta_Olives_Cheese_and_Yellow_Cheese_in_Osteria_Ristorante_Italiano.jpg
+  - term: crescenza
+    category: cheese
+    answer:
+      core:
+        - Soft, mild, creamy cheese
+      context:
+        - Italian
+        - cow’s milk
+    details: >-
+      Stracchino (Italian: [strakˈkiːno]), also known as crescenza (Italian: [kreʃˈʃɛntsa]), is an Italian
+      cow's milk cheese typical of the regions of Lombardy, Tuscany, Veneto, Friuli-Venezia Giulia, and
+      Liguria. It is eaten very young, has no rind and has a very soft, creamy texture and normally a
+      mild, slightly acidic flavour.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Stracchino
+    image: Stracchino.jpg
+  - term: fontina
+    category: cheese
+    answer:
+      core:
+        - Nutty, semi-soft cheese
+      context:
+        - From the Alps
+        - cow’s milk
+    details: >-
+      Fontina (French: fontine) is a cow's milk cheese, first produced in Italy. Over time, production
+      of fontina has spread worldwide, including to the United States, Denmark, Sweden, Canada, France,
+      and Argentina.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Fontina
+    image: Fontina_DOP.jpg
+  - term: gorgonzola
+    category: cheese
+    answer:
+      core:
+        - Blue cheese
+      context:
+        - Italian
+        - cow’s milk
+    details: >-
+      Gorgonzola (Italian: [ɡorɡonˈdzɔːla]) is an Italian blue cheese made from unskimmed cow's milk,
+      believed to have been created in the 9th century. Today the use of its name is controlled under
+      the criteria of a protected designation of origin (PDO).
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gorgonzola
+    image: A_Gongonzola_from_Baci.jpg
+  - term: grana padano
+    category: cheese
+    answer:
+      core:
+        - Hard, granular cheese
+      context:
+        - Italian
+        - cow’s milk
+    details: >-
+      Grana Padano is an Italian cheese originating in the Po Valley. It is similar to Parmesan but with
+      less strict regulations governing its production.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Grana_Padano
+    image: Grana_Padano_DOP_Riserva.jpg
+  - term: mascarpone
+    category: cheese
+    answer:
+      core:
+        - Very rich, mild cream cheese
+      context:
+        - Italian
+    details: >-
+      Mascarpone (Italian: [maskarˈpoːne]) is a soft Italian dairy product obtained by acid-heat coagulation
+      of cream. It is a dairy cream, not a cheese in the technical sense, as it is made without rennet
+      and does not undergo true curd formation.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Mascarpone
+    image: Mascarpone_4.png
+  - term: montasio
+    category: cheese
+    answer:
+      core:
+        - Firm cheese
+      context:
+        - Italian
+        - from the Alps
+        - cow’s milk
+    details: >-
+      Montasio is a mountain cheese made from cow's milk produced in northeastern Italy in the regions
+      of Friuli-Venezia Giulia and Veneto. It was awarded a protected designation of origin (PDO) in 1986.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Montasio
+    image: Montasio_01.jpg
+  - term: mozzarella
+    category: cheese
+    answer:
+      core:
+        - Mild, fresh, stretched-curd cheese
+    details: >-
+      Mozzarella is a semi-soft non-aged cheese prepared using the pasta filata ('stretched-curd') method.
+      It originated in southern Italy.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Mozzarella
+    image: Mozzarella_di_bufala3.jpg
+  - term: mozzarella di bufala
+    category: cheese
+    answer:
+      core:
+        - Fresh mozzarella made from water-buffalo milk
+    details: >-
+      Buffalo mozzarella (Italian: mozzarella di bufala; Neapolitan: muzzarella 'e vufera) is a mozzarella
+      made from the milk of the Italian Mediterranean buffalo. A fresh, soft pasta filata cheese, it is
+      traditionally produced in Campania, particularly in the provinces of Caserta and Salerno.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Buffalo_mozzarella
+    image: Buffalo Mozzarella.jpg
+  - term: parmigiano reggiano
+    category: cheese
+    answer:
+      core:
+        - Hard, granular, aged cheese
+      context:
+        - Italian
+        - cow’s milk
+    details: >-
+      Parmesan (Italian: Parmigiano Reggiano, pronounced [parmiˈdʒaːno redˈdʒaːno]) is an Italian hard,
+      granular cheese produced from cow's milk and aged at least 12 months. It is a grana-type cheese,
+      along with Grana Padano, the historic Granone Lodigiano, and others.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Parmesan
+    image: Parmigiano_Reggiano,_Italien,_Europäische_Union.jpg
+  - term: pecorino
+    category: cheese
+    answer:
+      core:
+        - Sheep’s-milk cheese
+        - a broad family
+      context:
+        - Italian
+    details: >-
+      Pecorino is an Italian hard cheese produced from sheep's milk. The name pecorino derives from pecora,
+      which means 'sheep' in Italian.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pecorino
+    image: A_Pecorino_cheese_plate_at_Hong_Kong.jpg
+  - term: pecorino romano
+    category: cheese
+    answer:
+      core:
+        - Hard, salty sheep’s-milk cheese
+      context:
+        - Italian
+    details: >-
+      Pecorino romano (Italian: [pekoˈriːno roˈmaːno]) is a hard, salty Italian cheese made from sheep
+      milk, often used for grating over pasta or other dishes. The name pecorino means 'ovine' or 'of
+      sheep' in Italian; the name of the cheese, although protected, is a description rather than a brand:
+      [formaggio] pecorino romano means 'sheep's [cheese] of Rome'.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pecorino_romano
+    image: Pecorino_romano_cheese.jpg
+  - term: provolone
+    category: cheese
+    answer:
+      core:
+        - Semi-hard, stretched-curd cheese
+      context:
+        - Italian
+        - cow’s milk
+    details: >-
+      Provolone (Italian: [provoˈloːne]) is an Italian semi-hard cheese made from cow's milk. It is an
+      aged pasta filata ('stretched-curd') cheese originating in the Campania region, near Vesuvius, where
+      it is still produced in pear, sausage, or cone shapes 10 to 15 cm (4 to 6 in) long.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Provolone
+    image: Provolone_watermelon_shape.jpg
+  - term: ricotta
+    category: cheese
+    answer:
+      core:
+        - Mild, fresh whey cheese with a soft, grainy texture
+    details: >-
+      Ricotta (Italian: [riˈkɔtta]) is an Italian whey cheese made from sheep, cow, goat, or Italian water
+      buffalo milk whey left over from the production of other cheeses. However, modern ricotta is often
+      made from milk instead of whey.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ricotta
+    image: Ricotte_fresche.jpg
+  - term: ricotta salata
+    category: cheese
+    answer:
+      core:
+        - Salted, pressed, aged ricotta for slicing or grating
+    details: >-
+      Ricotta salata is ricotta that has been pressed, salted, dried, and aged, commonly using sheep’s-milk
+      ricotta. Unlike soft fresh ricotta, it is firm and is sliced, crumbled, grated, or shaved over dishes.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ricotta#Aged_variants
+    image: Ricotta salata al mercato di Siracusa.jpg
+  - term: robiola
+    category: cheese
+    answer:
+      core:
+        - Soft, creamy cheese
+      context:
+        - Northern Italian
+    details: >-
+      Robiola is an Italian soft-ripened cheese of the stracchino family. It is from the Langhe region
+      and made with varying proportions of cow's, goat's, and sheep's milk.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Robiola
+    image: Robiola_della_Valsassina.jpg
+  - term: scamorza
+    category: cheese
+    answer:
+      core:
+        - Semi-soft, stretched-curd cheese
+        - often smoked
+      context:
+        - traditionally pear-shaped
+    details: >-
+      Scamorza (Italian: [skaˈmɔrtsa]) is a southern Italian cheese made from cow's milk, or less commonly
+      from milk of other species. It is a pasta filata cheese, in which the fresh curd is left in its
+      own whey for several hours to allow the acidity to develop as lactose converts to lactic acid.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Scamorza
+    image: Scamorza_chez_un_fromager.jpg
+  - term: stracchino
+    category: cheese
+    answer:
+      core:
+        - Soft, mild, creamy cheese
+      context:
+        - Italian
+        - cow’s milk
+    details: >-
+      Stracchino (Italian: [strakˈkiːno]), also known as crescenza (Italian: [kreʃˈʃɛntsa]), is an Italian
+      cow's milk cheese typical of the regions of Lombardy, Tuscany, Veneto, Friuli-Venezia Giulia, and
+      Liguria. It is eaten very young, has no rind and has a very soft, creamy texture and normally a
+      mild, slightly acidic flavour.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Stracchino
+    image: Stracchino'.jpg
+  - term: taleggio
+    category: cheese
+    answer:
+      core:
+        - Soft, mild cheese
+      context:
+        - strong-smelling
+        - washed-rind
+        - Italian
+        - cow’s milk
+    details: >-
+      Taleggio (Italian: [taˈleddʒo]; Lombard: talegg, taegg or taècc) is a semisoft washed-rind smear-ripened
+      Italian cheese named after Val Taleggio, Italy. The cheese has a thin, edible rind and a strong
+      aroma, but its flavour is comparatively mild with an unusual fruity tang.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Taleggio_cheese
+    image: Taleggio_vecchia_lavorazione_(3323694182).jpg
+  - term: toma
+    category: cheese
+    answer:
+      core:
+        - Semi-soft cheese
+        - milk and style vary
+      context:
+        - Alpine-style family
+    details: >-
+      Toma is a soft or semi-hard Italian cow's milk cheese, noted for its excellent melting qualities.
+      It is made primarily in the Aosta Valley (it is one of the region's specialties) and Piedmont regions
+      of Italy.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Toma_cheese
+    image: Toma_Piemontese_DOP.jpg
+  - term: sottocenere
+    category: cheese
+    answer:
+      core:
+        - Semi-soft cheese aged under ash
+      context:
+        - Italian
+        - cow’s milk
+    details: >-
+      Sottocenere al tartufo is a very pale yellow to off-white cheese with truffles that has a grey-brown
+      ash rind. It has a somewhat mild taste and is semi-soft in firmness.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sottocenere_al_tartufo
+    image: Sottocenere_al_Tartufo.jpg
+  - term: beaufort
+    category: cheese
+    answer:
+      core:
+        - Firm, nutty cheese
+      context:
+        - French
+        - from the Alps
+        - cow’s milk
+    details: >-
+      Beaufort (French pronunciation: [bofɔʁ]) is a firm, raw cow's milk cheese associated with the gruyère
+      family. An Alpine cheese, it is produced in Beaufortain, Tarentaise valley and Maurienne, which
+      are located in the Savoie region of the French Alps.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Beaufort_cheese
+    image: Beaufort.jpg
+  - term: brie
+    category: cheese
+    answer:
+      core:
+        - Soft, creamy cheese
+      context:
+        - bloomy-rind
+        - French
+        - cow’s milk
+    details: >-
+      Brie ( bree; French: [bʁi]) is a soft cow's-milk cheese named after Brie (itself from Gaulish briga,
+      "hill, height"), the French region from which it originated (roughly corresponding to the modern
+      département of Seine-et-Marne). It is pale in colour with a slight greyish tinge under a rind of
+      white mould.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Brie
+    image: Brie_01.jpg
+  - term: brillat-savarin
+    category: cheese
+    answer:
+      core:
+        - Very rich, soft, triple-cream cheese
+      context:
+        - French
+    details: >-
+      Brillat-Savarin (French pronunciation: [bʁija savaʁɛ̃]) is a soft-ripened triple cream cow's milk
+      cheese with at least 72% fat in dry matter (roughly 40% overall). It has a natural, bloomy rind.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Brillat-Savarin_cheese
+    image: Brillat-savarin.jpg
+  - term: camembert
+    category: cheese
+    answer:
+      core:
+        - Soft, earthy cheese
+      context:
+        - bloomy-rind
+        - French
+        - cow’s milk
+    details: >-
+      Camembert ( KAM-əm-bair, UK also -⁠om-, French: [kamɑ̃bɛʁ]) is a moist, soft, creamy, surface-ripened
+      cow's milk cheese. It was first made in the late 18th century in Camembert, Normandy, in northwest
+      France.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Camembert
+    image: Camembert_de_Normandie_(AOP)_11.jpg
+  - term: cantal
+    category: cheese
+    answer:
+      core:
+        - Firm, earthy cheese
+      context:
+        - French
+        - cow’s milk
+    details: >-
+      Cantal cheese (French pronunciation: [kɑ̃tal]) is an uncooked firm cheese produced in the Auvergne
+      region of central France: more particularly in the département of Cantal (named after the Cantal
+      mountains) as well as in certain adjoining districts. Cantal cheese was granted Appellation d'Origine
+      Contrôlée certification in 1956.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cantal_cheese
+    image: Cantal_03.jpg
+  - term: chèvre
+    category: cheese
+    answer:
+      core:
+        - Goat cheese
+        - not one specific style
+      context:
+        - French term
+    details: >-
+      Goat cheese, goat's cheese or chèvre ( SHEV(-rə); from the French fromage de chèvre [fʁɔmaʒ də ʃɛvʁ]
+      with the same meaning) is cheese made from goat's milk. Goats were among the first animals to be
+      domesticated for producing food.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Goat_cheese
+    image: Goat cheese with thymus.JPG
+  - term: comté
+    category: cheese
+    answer:
+      core:
+        - Firm, nutty cheese
+      context:
+        - French
+        - Alpine-style
+        - cow’s milk
+    details: >-
+      Comté (French pronunciation: [kɔ̃te]), also known as Gruyère de Comté, is a hard cheese made from
+      unpasteurised cow's milk in eastern France. The production of Comté is the largest of the Protected
+      designation of origin (PDO) cheeses made in France.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Comt%C3%A9_cheese
+    image: Comte_AOP.jpg
+  - term: époisses
+    category: cheese
+    answer:
+      core:
+        - Soft, pungent cheese
+      context:
+        - washed-rind
+        - French
+        - cow’s milk
+    details: >-
+      Époisses (French pronunciation: [epwas]), also known as Époisses de Bourgogne (French: [epwas də
+      buʁɡɔɲ]), is a legally demarcated cheese made in the village of Époisses and its environs, in the
+      département of Côte-d'Or, about halfway between Dijon and Auxerre, in the former duchy of Burgundy,
+      France, from agricultural processes and resources traditionally found in that region. Époisses is
+      a pungent soft-paste cow's-milk cheese.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/%C3%89poisses
+    image: Époisses_de_Bourgogne.jpg
+  - term: gruyère
+    category: cheese
+    answer:
+      core:
+        - Firm, nutty cheese
+      context:
+        - Swiss
+        - Alpine-style
+        - cow’s milk
+    details: >-
+      Gruyère (French: [ɡʁɥijɛʁ]; German: Greyerzer, Italian: Groviera, Arpitan: Gruviére suisso) is a
+      hard Swiss cheese that originated in the Fribourg, Vaud, Neuchâtel, Jura, and Bern cantons in Switzerland.
+      It is named after the town of Gruyères in Fribourg.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gruy%C3%A8re_cheese
+    image: Gruyere_alpage_th_wa.jpg
+  - term: mimolette
+    category: cheese
+    answer:
+      core:
+        - Firm, orange cheese
+      context:
+        - French
+        - cow’s milk
+    details: >-
+      Mimolette (French pronunciation: [mimɔlɛt]) is a cheese traditionally produced around the city of
+      Lille, France. In France it is also known as boule de Lille after its city of origin, or vieux Hollande
+      because it was originally inspired by the Dutch Edam cheese.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Mimolette
+    image: A_Mimolette_on_the_desk.jpg
+  - term: morbier
+    category: cheese
+    answer:
+      core:
+        - Semi-soft cheese marked by a dark ash line
+      context:
+        - French
+    details: >-
+      Morbier (French pronunciation: [mɔʁbje]) is a semi-soft cows' milk cheese of France named after
+      the small village of Morbier in Franche-Comté. It is ivory colored, soft and slightly elastic, and
+      is immediately recognizable by the distinctive thin black layer separating it horizontally in the
+      middle.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Morbier_cheese
+    image: Morbier_cheese_two_views.jpg
+  - term: munster
+    category: cheese
+    answer:
+      core:
+        - Soft, pungent cheese
+      context:
+        - washed-rind
+        - French
+        - cow’s milk
+    details: >-
+      Munster (French pronunciation: [mœ̃stɛʁ]), Munster-géromé, or (Alsatian) Minschterkaas, is a soft
+      cheese with a strong taste and aroma, made mainly from milk first produced in the Vosges, between
+      the Alsace, Lorraine and Franche-Comté regions in France. The name "Munster" is derived from the
+      Alsatian town of Munster, where, among Vosgian abbeys and monasteries, the cheese was conserved
+      and matured in monks' cellars.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Munster_cheese
+    image: Munster.jpg
+  - term: neufchâtel
+    category: cheese
+    answer:
+      core:
+        - Soft, slightly crumbly cheese
+      context:
+        - bloomy-rind
+        - French
+        - cow’s milk
+    details: >-
+      Neufchâtel (French: [nøʃɑtɛl], [nœfʃɑtɛl]; Norman: Neu(f)câtel) is a soft, slightly crumbly, mold-ripened,
+      bloomy-rind cheese made in the Neufchâtel-en-Bray region of Normandy. One of the oldest kinds of
+      cheese in France, its production is believed to date back as far as the 6th century AD, in the Kingdom
+      of the Franks.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Neufch%C3%A2tel_cheese
+    image: Cœurs_de_Neufchâtel_02.jpg
+  - term: ossau-iraty
+    category: cheese
+    answer:
+      core:
+        - Firm, nutty cheese
+      context:
+        - sheep’s milk
+        - French Basque
+    details: >-
+      Ossau-Iraty (French pronunciation: [ɔso iʁati]) is a Basque cheese made from sheep's milk.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ossau-Iraty
+    image: Ossau-Iraty.jpg
+  - term: pont-l’évêque
+    category: cheese
+    answer:
+      core:
+        - Soft, pungent cheese
+      context:
+        - washed-rind
+        - French
+        - cow’s milk
+    details: >-
+      Pont-l'Évêque (French: [pɔ̃ levɛːk]) is a French cheese, originally manufactured in the area around
+      the commune of Pont-l'Évêque, between Deauville and Lisieux in the Calvados département of Normandy.
+      It is probably the oldest Norman cheese still in production.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pont-l%27%C3%89v%C3%AAque_cheese
+    image: Pont-l'Évêque_02.jpg
+  - term: raclette
+    category: cheese
+    answer:
+      core:
+        - Melting cheese
+        - also the melted-cheese dish
+      context:
+        - Alpine-style
+        - cow’s milk
+    details: >-
+      Raclette (French: [ʁaklɛt]) is a dish of Swiss origin, also popular in other countries, based on
+      heating cheese and scraping off the melted part, then typically served with boiled potatoes. Raclette
+      is historically a dish originating from the canton of Valais in Switzerland.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Raclette
+    image: Raclette_20040817_140816.jpg
+  - term: reblochon
+    category: cheese
+    answer:
+      core:
+        - Soft, nutty cheese
+      context:
+        - French
+        - from the Alps
+        - cow’s milk
+    details: >-
+      Reblochon (French pronunciation: [ʁəblɔʃɔ̃]) is a soft washed-rind French cheese made in the Alpine
+      region of Haute-Savoie from raw cow's milk. It has its own AOC designation.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Reblochon
+    image: Reblochon_AOC.jpg
+  - term: roquefort
+    category: cheese
+    answer:
+      core:
+        - Tangy blue cheese
+      context:
+        - sheep’s milk
+        - French
+    details: >-
+      Roquefort (French pronunciation: [ʁɔkfɔʁ]; Languedocien: Ròcafòrt) is a sheep-milk blue cheese from
+      southern France. EU law dictates that only those cheeses aged in the natural Combalou caves of Roquefort-sur-Soulzon
+      (in the Occitania region) may bear the name "Roquefort", as it is a recognised geographical indication
+      and has a protected designation of origin.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Roquefort
+    image: Wikicheese_-_Roquefort_-_20150417_-_003.jpg
+  - term: saint-andré
+    category: cheese
+    answer:
+      core:
+        - Very rich, soft, triple-cream cheese
+      context:
+        - French
+    details: >-
+      Saint-André is a brand of French triple cream (French language: triple crème) cow's milk cheese
+      with a powdery white, bloomy skin of mold, in the form of a 200 g (7.1 oz) cylinder, 6 cm in diameter
+      and 5 cm high. Saint-André cheese is named after the town of Saint-André-sur-Orne in Normandy.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Saint-Andr%C3%A9_cheese
+    image: Saint-André_Cheese.jpg
+  - term: saint-nectaire
+    category: cheese
+    answer:
+      core:
+        - Semi-soft, earthy cheese
+      context:
+        - French
+        - cow’s milk
+    details: >-
+      Saint-Nectaire (French pronunciation: [sɛ̃ nɛktɛʁ]; Occitan: Sench-Nectari) is a French cheese made
+      in the Auvergne region of central France. The cheese has been made in Auvergne since at least the
+      17th century.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Saint-Nectaire
+    image: Saint-nectaire.jpg
+  - term: tomme
+    category: cheese
+    answer:
+      core:
+        - Rustic cheese family
+        - not one specific style
+      context:
+        - typically round
+        - French/Swiss term
+    details: >-
+      Tomme (French pronunciation: [tɔm]), occasionally spelled Tome, is a class of cheeses produced mainly
+      in the French Alps and in Switzerland. It can be made from cow's, ewe's, or goat's milk.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tomme
+    image: TommedeBeaujolais.jpg
+  - term: triple crème
+    category: cheese
+    answer:
+      core:
+        - Very rich, soft cheese with extra cream added
+    details: >-
+      Triple-crème is a category of cow’s-milk cheese enriched with cream to contain more than 75% fat
+      in its dry matter. The category includes fresh cheeses such as mascarpone and soft-ripened cheeses
+      such as Brillat-Savarin and Saint-André.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Triple_cream
+    image: Délice de Bourgogne.jpg
+  - term: valençay
+    category: cheese
+    answer:
+      core:
+        - Soft, ash-coated, pyramid-shaped cheese
+      context:
+        - goat’s milk
+        - French
+    details: >-
+      Valençay (French pronunciation: [valɑ̃sɛ]) is a cheese made in the historic province of Berry in
+      central France. Its name is derived from the town of Valençay in the Indre department.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Valen%C3%A7ay_cheese
+    image: Valençay_04.jpg
+  - term: feta
+    category: cheese
+    answer:
+      core:
+        - Salty, crumbly, brined cheese
+      context:
+        - usually sheep’s milk
+        - Greek
+    details: >-
+      Feta ( FET-ə; Greek: φέτα [ˈfeta]) is a Greek brined white cheese made from sheep's milk or from
+      a mixture of sheep and goat's milk. It is soft, with small or no holes, and no skin.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Feta
+    image: Feta_Cheese.jpg
+  - term: halloumi
+    category: cheese
+    answer:
+      core:
+        - Firm, brined cheese that holds its shape when grilled
+      context:
+        - Cypriot
+    details: >-
+      Halloumi, or haloumi, is a cheese originating from Cyprus. It is traditionally made from a mixture
+      of goat milk and sheep's milk; however, due to industrial tactics to increase profit, modern halloumi
+      increasingly contains cow's milk.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Halloumi
+    image: Halloumislice_zoom.jpg
+  - term: manchego
+    category: cheese
+    answer:
+      core:
+        - Firm cheese
+      context:
+        - sheep’s milk
+        - Spanish
+    details: >-
+      Manchego (Spanish: queso manchego, pronounced [ˈkeso manˈtʃeɣo]) is a cheese made in the La Mancha
+      region of Spain from the milk of sheep of the Manchega breed. It is aged between 60 days and 2 years.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Manchego
+    image: Queso_Manchego._Inauguración_del_38º_Salón_Gourmets_(cropped).jpg
+  - term: cotija
+    category: cheese
+    answer:
+      core:
+        - Salty, crumbly cheese
+      context:
+        - Mexican
+        - cow’s milk
+    details: >-
+      Cotija ( koh-TEE-khə, Spanish pronunciation: [koˈtixa]) is an aged Mexican cheese made from cow's
+      milk and named after the town of Cotija, Michoacán. It is white and firm, with a salty, milky flavor.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cotija_cheese
+    image: Cotija_(5200441615).jpg
+  - term: queso fresco
+    category: cheese
+    answer:
+      core:
+        - Mild, fresh, crumbly cheese
+      context:
+        - Latin American
+    details: >-
+      Queso fresco is a soft, moist Latin American fresh cheese that is eaten without aging. It is usually
+      mild and lightly salty and is commonly crumbled over dishes; exact styles vary by country.
+    reference:
+      label: Wikipedia (Spanish)
+      url: https://es.wikipedia.org/wiki/Queso_fresco
+    image: Queso fresco.JPG
+  - term: quesillo
+    category: cheese
+    answer:
+      core:
+        - Stringy, stretched-curd cheese
+        - Oaxaca cheese
+      context:
+        - Mexican
+    details: >-
+      Oaxaca cheese (Spanish: queso Oaxaca) ( wə-HAH-kə), also known as quesillo and queso de hebra, is
+      a white, semihard, low-fat cheese that originated in Mexico. It is similar to unaged Monterey Jack,
+      but with a texture similar to mozzarella or string cheese.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Oaxaca_cheese
+    image: Quesillo_de_Oaxaca.png
+  - term: labneh
+    category: cheese
+    answer:
+      core:
+        - Thick, tangy strained yogurt served like a soft cheese
+    details: >-
+      Strained yogurt, Greek or Greek-style yogurt, yogurt cheese, sack yogurt, hung curd, kerned yogurt
+      or labneh, is yogurt that has been strained to remove most of its whey, making it thicker while
+      preserving its sour taste. In Europe and North America, it is often made from low-fat or fat-free
+      cow's milk.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Strained_yogurt
+    image: Labneh01.jpg
+  - term: gouda
+    category: cheese
+    answer:
+      core:
+        - Mild when young
+        - caramel-like when aged
+      context:
+        - Dutch
+        - cow’s milk
+    details: >-
+      Gouda cheese (Dutch: [ˈɣʌudaː]; Dutch: Goudse kaas, "cheese from Gouda") is a family of yellow cow's
+      milk cheeses originally from the Netherlands. Gouda ranges from young and elastic to old and hard,
+      and from low-fat to high-fat.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gouda_cheese
+    image: Chesses_gouda_affinage.JPG
+  - term: havarti
+    category: cheese
+    answer:
+      core:
+        - Mild, buttery, semi-soft cheese
+      context:
+        - Danish
+        - cow’s milk
+    details: >-
+      Havarti (Danish pronunciation: [hæˈvɑːtsʰi]) or cream Havarti (Danish: flødehavarti) is a semisoft
+      Danish cow's milk cheese. It can be sliced, grilled, or melted.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Havarti
+    image: Cream havarti on bread.jpg
+  - term: stilton
+    category: cheese
+    answer:
+      core:
+        - Blue cheese
+      context:
+        - English
+        - cow’s milk
+    details: >-
+      Stilton is an English cheese, produced in two varieties: blue, which has Penicillium roqueforti
+      added to generate a characteristic smell and taste, and white, which does not. Both have been granted
+      the status of a protected designation of origin (PDO) by the European Commission, requiring that
+      only such cheese produced in the three counties of Derbyshire, Leicestershire and Nottinghamshire
+      may be called Stilton.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Stilton_cheese
+    image: Blue_Stilton_01.jpg
+  - term: pepperoncini
+    category: other
+    answer:
+      core:
+        - Mild, tangy pickled chili peppers
+      context:
+        - not meat
+    details: >-
+      Friggitello (pl.: friggitelli) is a sweet Italian chili pepper of the species Capsicum annuum. It
+      is also known as the "Golden Greek pepper", "Sweet Italian pepper", or "Tuscan pepper".
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Friggitello
+    image: Pickled_friggitelli.jpg
+  - term: peperoncino
+    category: other
+    answer:
+      core:
+        - Chili pepper, usually hot
+      context:
+        - Italian
+    details: >-
+      Peperoncino (Italian: [peperonˈtʃiːno]; pl.: peperoncini) is the generic Italian name for a hot
+      chili pepper, specifically some regional cultivars of the species Capsicum annuum and C. frutescens
+      (chili pepper and Tabasco pepper, respectively). (The diminutive suffix ino means smaller; the larger
+      sweet bell pepper is called peperone (pl.: peperoni) in Italian.)
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Peperoncino
+    image: Capsicum_-Chili_-_Peperoncino_-_Il_Viagra_Calabrese_-_Calabria_-_Italy_-_July_17th_2013_-_02.jpg
+  - term: peperoni
+    category: other
+    answer:
+      core:
+        - Bell peppers
+      context:
+        - Italian plural
+        - not pepperoni sausage
+    details: >-
+      The bell pepper (also known as sweet pepper, paprika, pepper, capsicum or, in some parts of the
+      U.S. Midwest, mango) is the fruit of plants in the Grossum Group of the species Capsicum annuum.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bell_pepper
+    image: Green-Yellow-Red-Pepper-2009.jpg
+  - term: giardiniera
+    category: other
+    answer:
+      core:
+        - Pickled mixed vegetables
+      context:
+        - Italian style
+    details: >-
+      Giardiniera (Italian: [dʒardiˈnjɛːra]) is an Italian relish of pickled vegetables in vinegar or
+      oil.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Giardiniera
+    image: GiardinieraSpicy.JPG
+  - term: mostarda
+    category: other
+    answer:
+      core:
+        - Candied fruit in mustard-flavored syrup
+      context:
+        - Northern Italian
+    details: >-
+      Mostarda (sometimes also called mostarda di frutta) is a northern Italian condiment made of candied
+      fruit and a mustard-flavoured syrup. Commercially the essential oil of mustard is employed, which
+      has the advantage of transparency; in home cooking, mustard powder heated in white wine may be used.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Mostarda
+    image: Sapori_mantovani_-_La_mostarda_di_frutta.jpg
+  - term: bottarga
+    category: other
+    answer:
+      core:
+        - Salt-cured fish roe
+      context:
+        - usually grated or thinly sliced
+    details: >-
+      Bottarga is salted, cured fish roe pouch, typically of the grey mullet or the bluefin tuna (Italian:
+      bottarga di tonno). It is a feature of Italian cuisine; forms of the dish from other parts of the
+      world include Taiwanese wūyú zǐ, which is softer, and Korean eoran, from mullet or freshwater drum.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bottarga
+    image: Bottarga_from_Preveza_Greece.jpg
+  - term: acciughe
+    category: other
+    answer:
+      core:
+        - Anchovies
+      context:
+        - Italian
+    details: >-
+      Anchovies are small, common forage fish of the family Engraulidae. Most species are found in marine
+      waters, but several will enter brackish water, and some in South America are restricted to fresh
+      water.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Anchovy
+    image: Anchovy_closeup.jpg
+  - term: baccalà
+    category: other
+    answer:
+      core:
+        - Salt-cured cod
+      context:
+        - Italian
+    details: >-
+      Dried and salted cod, sometimes referred to as salt cod or saltfish or salt dolly, is cod which
+      has been preserved by drying after salting. Cod which has been dried without the addition of salt
+      is stockfish.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Dried_and_salted_cod
+    image: Bacalhau_(Porto).jpg
+  - term: polpo
+    category: other
+    answer:
+      core:
+        - Octopus
+      context:
+        - Italian
+    details: >-
+      People of several cultures eat octopus. The arms and sometimes other body parts are prepared in
+      various ways, often varying by species and/or geography.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Octopus_as_food
+    image: Octopuses_in_Tsukiji.JPG
+  - term: seppia
+    category: other
+    answer:
+      core:
+        - Cuttlefish
+      context:
+        - Italian
+    details: >-
+      Cuttlefish, or cuttles, are marine molluscs of the family Sepiidae. They belong to the class Cephalopoda
+      which also includes squid, octopuses, and nautiluses.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cuttlefish
+    image: Sepia_común_(Sepia_officinalis),_Parque_natural_de_la_Arrábida,_Portugal,_2020-07-21,_DD_62.jpg
+  - term: cozze
+    category: other
+    answer:
+      core:
+        - Mussels
+      context:
+        - Italian
+    details: >-
+      Mussel is the common name used for members of several families of bivalve molluscs, from saltwater
+      and freshwater habitats. These groups have in common a shell whose outline is elongated and asymmetrical
+      compared with other edible clams, which are often more or less rounded or oval.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Mussel
+    image: CornishMussels.JPG
+  - term: vongole
+    category: other
+    answer:
+      core:
+        - Clams
+      context:
+        - Italian
+    details: >-
+      Clam is a common name for several species of bivalve mollusc. The word is often applied only to
+      those that are deemed edible and live as infauna, spending most of their lives halfway buried in
+      the sand of the sea floor or riverbeds.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Clam
+    image: Grilled littleneck clams - Cambridge, MA.jpg
+  - term: scampi
+    category: other
+    answer:
+      core:
+        - Small, lobster-like crustaceans
+      context:
+        - usage varies by country
+    details: >-
+      Scampi is a crustacean-based seafood dish, typically featuring langoustine, shrimp or prawns sautéed
+      in olive oil, garlic, and white wine, and garnished with Parmesan cheese and lemon juice, though
+      exact ingredients vary regionally in preparation. The term "scampi" comes from the Italian name
+      for langoustines, which were the original shellfish used in the dish.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Scampi
+    image: Nephrops_norvegicus.jpg
+  - term: carciofi
+    category: other
+    answer:
+      core:
+        - Artichokes
+      context:
+        - Italian
+    details: >-
+      The artichoke (Cynara cardunculus var. scolymus) is a variety of a species of thistle cultivated
+      as food. The edible portion of the plant consists of the flower buds before the flowers come into
+      bloom.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Artichoke
+    image: Artichoke_J1.jpg
+  - term: radicchio
+    category: other
+    answer:
+      core:
+        - Bitter red-leaf chicory
+    details: >-
+      Radicchio is a perennial cultivated form of leaf chicory (Cichorium intybus, Asteraceae), commonly
+      used in Italian cuisine. It is grown as a leaf vegetable and usually has colourful, white-veined
+      red leaves that form a head.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Radicchio
+    image: RadicchioNL.jpg
+  - term: rapini
+    category: other
+    answer:
+      core:
+        - Bitter leafy green
+        - broccoli rabe
+    details: >-
+      Rapini (broccoli rabe or raab; RAHB) is a green cruciferous vegetable, with the leaves, buds, and
+      stems all being edible; the buds somewhat resemble broccoli. Rapini is known for its bitter taste,
+      and is particularly associated with Mediterranean cuisine.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Rapini
+    image: Rapini.jpg
+  - term: puntarelle
+    category: other
+    answer:
+      core:
+        - Crisp, slightly bitter chicory shoots
+      context:
+        - from Catalonian chicory
+    details: >-
+      Puntarelle or cicoria di catalogna or cicoria asparago is a variant of chicory. The heads are characterized
+      by an elongated shape (about 40–50 cm), light green stems and dandelion shaped leaves.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Puntarelle
+    image: Puntarelle_stehend.jpg
+  - term: cavolo nero
+    category: other
+    answer:
+      core:
+        - Dark leafy cabbage
+        - Italian kale
+      context:
+        - Tuscan
+    details: >-
+      Lacinato kale, also known as Tuscan kale, Italian kale, dinosaur kale, kale, flat back kale, palm
+      tree kale, black Tuscan palm, or, in Italian and often in, cavolo nero, is a variety of kale from
+      the Acephala group of cultivars Brassica oleracea grown for its edible leaves. Lacinato has a long
+      tradition in Italian cuisine, especially that of Tuscany, where it has been grown for centuries,
+      and it is one of the traditional ingredients of minestrone and ribollita.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lacinato_kale
+    image: Brassica_-_Gardenology.org-IMG_0606_bbg09.jpg
+  - term: cipollini
+    category: other
+    answer:
+      core:
+        - Small, flat, mildly sweet onions
+      context:
+        - Italian
+    details: >-
+      Cipollini are small, somewhat flattened Italian onions with thin skins and a mild, sweet flavor.
+      They are often cooked whole by roasting, braising, glazing, or pickling.
+    reference:
+      label: Merriam-Webster
+      url: https://www.merriam-webster.com/dictionary/cipollini
+    image: CipollineOnions.jpg
+  - term: cornichons
+    category: other
+    answer:
+      core:
+        - Tiny, tart pickled cucumbers
+      context:
+        - French
+    details: >-
+      A pickled cucumber – commonly known as a pickle in the United States and Canada and a gherkin (
+      GUR-kin) in Britain, Ireland, South Africa, Australia and New Zealand – is a usually small or miniature
+      cucumber that has been pickled in a brine, vinegar, or other solution and left to ferment. The fermentation
+      process is executed either by immersing the cucumbers in an acidic solution or through souring by
+      lacto-fermentation.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pickled_cucumber
+    image: Pickle.jpg
+  - term: gremolata
+    category: other
+    answer:
+      core:
+        - Chopped parsley, lemon zest, and garlic garnish
+    details: >-
+      Gremolata (Italian: [ɡremoˈlaːta]) or gremolada (Italian: [ɡremoˈlaːda], Lombard: [ɡremuˈlaːda])
+      is a green sauce made with chopped parsley, lemon zest, and garlic. It is the standard accompaniment
+      to the Lombard braised veal shank dish ossobuco.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gremolata
+    image: Gremolata_03.jpg
+  - term: tapenade
+    category: other
+    answer:
+      core:
+        - Savory olive spread
+      context:
+        - Provençal
+    details: >-
+      Tapenade (French pronunciation: [tapəˈnad]; Occitan: tapenada [tapeˈnadɔ]) is a Provençal dish of
+      puréed or finely chopped olives, capers, and sometimes anchovies used as a spread, condiment and
+      culinary ingredient. The name comes from the Provençal word for capers, tapenas (pronounced [taˈpenɔs]).
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tapenade
+    image: Cuillere_de_tapenade.jpg
+  - term: caponata
+    category: other
+    answer:
+      core:
+        - Sweet-and-sour eggplant relish
+      context:
+        - Sicilian
+    details: >-
+      Caponata (Sicilian: capunata) is a Sicilian dish consisting of chopped, fried eggplant and other
+      vegetables, seasoned with olive oil, tomato sauce, celery, olives, and capers, in an agrodolce (sweet
+      and sour) sauce. Variants add carrots, bell peppers, potatoes, pine nuts, and raisins.
+    reference:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Caponata
+    image: Caponata_(14049113982).jpg

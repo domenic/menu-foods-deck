@@ -1,0 +1,20 @@
+[project]
+name = "menu-foods-deck"
+version = "1.0.0"
+description = "An Anki deck for recognizing unfamiliar food words on restaurant menus"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+authors = [
+  { name = "Domenic Denicola", email = "d@domenic.me" },
+]
+dependencies = [
+  "genanki==0.13.1",
+  "pyyaml>=6.0.2,<7",
+]
+
+[project.urls]
+Repository = "https://github.com/domenic/menu-foods-deck"
+
+[tool.uv]
+package = false
