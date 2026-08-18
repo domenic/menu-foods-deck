@@ -1,0 +1,131 @@
+.card {
+  --background: #fffaf2;
+  --text: #211d18;
+  --muted: #6f665d;
+  --accent: #a23f2c;
+  --panel: #f3eadc;
+  background: var(--background);
+  color: var(--text);
+  font-family: ui-rounded, "Avenir Next", Avenir, system-ui, sans-serif;
+  font-size: 20px;
+  line-height: 1.45;
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 32px 22px;
+  text-align: center;
+
+  &.nightMode {
+    --background: #211d18;
+    --text: #fffaf2;
+    --muted: #c6baac;
+    --accent: #f39a7f;
+    --panel: #332b24;
+  }
+
+  @media (min-width: 700px) {
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 1.35;
+    padding: 10px 18px;
+  }
+}
+
+.term {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 9vw, 3.7rem);
+  font-weight: 700;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+
+  @media (min-width: 700px) {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+  }
+}
+
+#answer {
+  border: 0;
+  border-top: 1px solid rgb(128 105 86 / 35%);
+  margin: 20px auto;
+  width: min(14rem, 60%);
+
+  @media (min-width: 700px) {
+    margin: 16px auto 10px;
+  }
+}
+
+.category {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+
+  @media (min-width: 700px) {
+    margin-bottom: 4px;
+  }
+}
+
+.headline {
+  font-size: clamp(1.25rem, 4vw, 1.65rem);
+  font-weight: 500;
+  line-height: 1.25;
+  margin: 0 auto 22px;
+  max-width: 34rem;
+
+  strong {
+    font-weight: 800;
+  }
+
+  @media (min-width: 700px) {
+    margin-bottom: 12px;
+  }
+}
+
+.food-image {
+  img {
+    background: var(--panel);
+    border-radius: 14px;
+    box-shadow: 0 8px 26px rgb(42 28 18 / 15%);
+    display: block;
+    margin: 0 auto;
+    max-height: 380px;
+    max-width: 100%;
+  }
+
+  @media (min-width: 700px) {
+    img {
+      max-height: min(300px, 34vh);
+      max-width: min(100%, 640px);
+    }
+  }
+}
+
+.extra {
+  background: var(--panel);
+  border-radius: 12px;
+  margin: 24px 0 16px;
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 0.9rem;
+
+  @media (min-width: 700px) {
+    line-height: 1.35;
+    margin: 14px 0 8px;
+    padding: 12px 16px;
+  }
+}
+
+footer {
+  color: var(--muted);
+  font-size: 0.72rem;
+  margin-top: 16px;
+
+  @media (min-width: 700px) {
+    margin-top: 8px;
+  }
+}
+
+a {
+  color: var(--accent);
+}

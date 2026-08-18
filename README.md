@@ -5,22 +5,14 @@ focuses on identification, not language production: seeing the bare term should
 be enough to recall what kind of food it is and the characteristics that matter
 most when ordering.
 
-The deck currently contains 212 cards:
-
-- 59 pasta shapes and pasta-adjacent dumplings
-- 72 meats, cuts, and charcuterie terms
-- 58 cheeses
-- 23 other easily misclassified menu terms
-
-All cards live in one mixed `Menu Foods` deck. Category tags make filtering
-possible without giving away whether an unknown word is pasta, meat, cheese, or
-something else during review.
+The cards live in one mixed `Menu Foods` deck and cover pasta, meats and cuts,
+charcuterie, cheeses, and other easily misclassified terms. Category tags allow
+filtering without giving away a term's category during review.
 
 ## One source of truth
 
-[menu-foods.yaml](menu-foods.yaml) is the only hand-edited card database. Each
-entry keeps the term, category, structured answer, explanatory details,
-reference, and exact Wikimedia Commons image together:
+[menu-foods.yaml](menu-foods.yaml) is the hand-edited card database. Here is a
+sample entry:
 
 ```yaml
 - term: feta
@@ -35,6 +27,7 @@ reference, and exact Wikimedia Commons image together:
     Feta (FET-ə; Greek: φέτα [ˈfeta]) is a Greek brined white cheese made from
     sheep's milk or from a mixture of sheep and goat's milk. It is soft, with
     small or no holes, and no skin.
+  details_source: https://en.wikipedia.org/w/index.php?oldid=1367638105
   reference:
     label: Wikipedia
     url: https://en.wikipedia.org/wiki/Feta
@@ -42,26 +35,41 @@ reference, and exact Wikimedia Commons image together:
 ```
 
 `answer.core` renders in bold as the fast recognition cue. Optional
-`answer.context` follows in normal weight; it is useful context, not a universal
-grading contract. Semicolons separate the fragments in both lists.
+`answer.context` follows in normal weight as useful context. Typically, you
+should grade yourself on only remembering the useful core, treating the extra
+context and details as bonus information.
 
-There are no generated headline files, historical audit tables, or executable
-data modules. Downloaded media and the resulting package are ignored build
-artifacts.
+The explanatory `details` are checked-in snapshots; many are short extracts
+retrieved from English Wikipedia. Builds never fetch article text, so upstream
+edits do not silently change the deck; updates must be made deliberately in the
+YAML. (See [below](#development) for how to refresh them semi-automatically.)
 
-## Build the package
+## Card design
+
+The front contains only the menu term. The back contains:
+
+- a compact headline with crucial facts bolded first;
+- a representative image;
+- short explanatory context; and
+- links to the text and image sources.
+
+The note model includes compact desktop styling and readable mobile/night-mode
+colors. Fixed deck/model IDs and deterministic note GUIDs ensure that successive
+packages identify the same generated deck objects.
+
+The build script creates a deck. Import `dist/menu-foods.apkg` through Anki's
+normal import interface.
+
+## Development
 
 Install [uv](https://docs.astral.sh/uv/), then run:
 
 ```sh
-uv sync
 uv run python build_deck.py
 ```
 
 The first build downloads the 212 explicitly selected Commons images and caches
-them under `.cache/media/`. It writes `dist/menu-foods.apkg`, then opens the
-archive and its embedded SQLite collection to verify the deck, model, stable
-note GUIDs, fields, tags, cards, and bundled media.
+them under `.cache/media/`, then writes `dist/menu-foods.apkg`.
 
 Later builds can prohibit network access and require a complete local cache:
 
@@ -72,35 +80,34 @@ uv run python build_deck.py --offline
 The builder uses a fixed package timestamp, sorted media, and normalized ZIP
 metadata, so identical source and media produce an identical `.apkg` file.
 
-## Validate and test
-
 Validate the YAML without downloading media or writing a package:
 
 ```sh
 uv run python build_deck.py --check
 ```
 
-Run the source, rendering, stable-ID, image-uniqueness, and grading-policy tests:
+Run the tests:
 
 ```sh
-uv run python -m unittest discover -s test -p 'test_*.py' -v
+uv run python -m unittest discover -s test -v
 ```
 
-## Card design
+Check tracked Wikipedia descriptions against the current article leads:
 
-The front contains only the menu term. The back contains:
+```sh
+uv run wikipedia_descriptions.py check
+```
 
-- a compact headline with crucial facts bolded first;
-- a representative image;
-- short non-graded explanatory context; and
-- links to the text and image sources.
+The command reports text differences without writing anything. To refresh every
+tracked description and source revision, run:
 
-The note model includes compact desktop styling and readable mobile/night-mode
-colors. Fixed deck/model IDs and deterministic note GUIDs ensure that successive
-packages identify the same generated deck objects.
+```sh
+uv run wikipedia_descriptions.py update
+```
 
-The builder communicates with neither Anki nor AnkiConnect and never invokes
-Anki sync. Import `dist/menu-foods.apkg` through Anki's normal import interface.
+Only changed cards are rewritten; review the resulting `menu-foods.yaml` diff in
+Git before committing it. Descriptions written specifically for this deck have
+no `details_source` and are skipped by both commands.
 
 ## Third-party material
 

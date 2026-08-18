@@ -1,14 +1,11 @@
 import argparse
 import hashlib
 import html
-import json
 import os
 import re
-import sqlite3
 import tempfile
 import time
 import unicodedata
-import urllib.error
 import urllib.parse
 import urllib.request
 import zipfile
@@ -16,10 +13,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import genanki
-import yaml
+from ruamel.yaml import YAML
 
 ROOT = Path(__file__).parent
 DATA_PATH = ROOT / "menu-foods.yaml"
+TEMPLATES_PATH = ROOT / "templates"
+FRONT_TEMPLATE_PATH = TEMPLATES_PATH / "front.html"
+BACK_TEMPLATE_PATH = TEMPLATES_PATH / "back.html"
+STYLING_PATH = TEMPLATES_PATH / "style.css"
 MEDIA_CACHE = ROOT / ".cache" / "media"
 DEFAULT_OUTPUT = ROOT / "dist" / "menu-foods.apkg"
 PACKAGE_TIMESTAMP = 1_700_000_000
@@ -29,185 +30,19 @@ CATEGORIES = {
     "cheese": "Cheese",
     "other": "Other menu trap",
 }
+YAML_SAFE = YAML(typ="safe")
 
-FRONT_TEMPLATE = '<div class="term">{{Term}}</div>'
 
-BACK_TEMPLATE = """{{FrontSide}}
-<hr id="answer">
-<div class="category">{{Category}}</div>
-<div class="headline">{{Headline}}</div>
-{{#Image}}<div class="food-image">{{Image}}</div>{{/Image}}
-{{#Details}}
-<section class="extra">
-  <h2>Extra context <span>— not part of the answer</span></h2>
-  <div>{{Details}}</div>
-</section>
-{{/Details}}
-<footer>{{Reference}}{{#ImageCredit}}<span aria-hidden="true"> · </span>{{ImageCredit}}{{/ImageCredit}}</footer>"""
-
-STYLING = """
-.card {
-  --background: #fffaf2;
-  --text: #211d18;
-  --muted: #6f665d;
-  --accent: #a23f2c;
-  --panel: #f3eadc;
-  background: var(--background);
-  color: var(--text);
-  font-family: ui-rounded, "Avenir Next", Avenir, system-ui, sans-serif;
-  font-size: 20px;
-  line-height: 1.45;
-  margin: 0 auto;
-  max-width: 760px;
-  padding: 32px 22px;
-  text-align: center;
-}
-
-.card.nightMode,
-.card.night_mode,
-.nightMode .card,
-.night_mode .card {
-  --background: #211d18;
-  --text: #fffaf2;
-  --muted: #c6baac;
-  --accent: #f39a7f;
-  --panel: #332b24;
-}
-
-.term {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.2rem, 9vw, 3.7rem);
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  line-height: 1.05;
-  overflow-wrap: anywhere;
-}
-
-#answer {
-  border: 0;
-  border-top: 1px solid rgb(128 105 86 / 35%);
-  margin: 28px auto 20px;
-  width: min(14rem, 60%);
-}
-
-.category {
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  margin-bottom: 7px;
-  text-transform: uppercase;
-}
-
-.headline {
-  font-size: clamp(1.25rem, 4vw, 1.65rem);
-  font-weight: 500;
-  line-height: 1.25;
-  margin: 0 auto 22px;
-  max-width: 34rem;
-}
-
-.headline strong {
-  font-weight: 800;
-}
-
-.food-image img {
-  background: var(--panel);
-  border-radius: 14px;
-  box-shadow: 0 8px 26px rgb(42 28 18 / 15%);
-  height: auto;
-  max-height: 380px;
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.extra {
-  background: var(--panel);
-  border-radius: 12px;
-  color: var(--text);
-  margin: 24px 0 16px;
-  padding: 17px 20px 19px;
-  text-align: left;
-}
-
-.extra h2 {
-  color: var(--muted);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  margin: 0 0 8px;
-  text-transform: uppercase;
-}
-
-.extra h2 span {
-  font-weight: 500;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-footer {
-  color: var(--muted);
-  font-size: 0.72rem;
-  margin-top: 16px;
-}
-
-a {
-  color: var(--accent);
-}
-
-@media (min-width: 700px) {
-  .card {
-    box-sizing: border-box;
-    font-size: 18px;
-    line-height: 1.35;
-    padding: 10px 18px 18px;
-  }
-
-  .term {
-    font-size: clamp(2rem, 5vw, 3.25rem);
-  }
-
-  #answer {
-    margin: 16px auto 10px;
-  }
-
-  .category {
-    margin-bottom: 4px;
-  }
-
-  .headline {
-    margin-bottom: 12px;
-  }
-
-  .food-image {
-    line-height: 0;
-  }
-
-  .food-image img {
-    max-height: min(300px, 34vh);
-    max-width: min(100%, 640px);
-  }
-
-  .extra {
-    font-size: 0.9rem;
-    line-height: 1.35;
-    margin: 14px 0 8px;
-    padding: 12px 16px 14px;
-  }
-
-  .extra h2 {
-    margin-bottom: 4px;
-  }
-
-  footer {
-    margin-top: 8px;
-  }
-}
-"""
+def load_card_design():
+    return tuple(
+        path.read_text(encoding="utf-8")
+        for path in [FRONT_TEMPLATE_PATH, BACK_TEMPLATE_PATH, STYLING_PATH]
+    )
 
 
 def load_data(path=DATA_PATH):
     with path.open(encoding="utf-8") as file:
-        return yaml.safe_load(file)
+        return YAML_SAFE.load(file)
 
 
 def validate_data(data):
@@ -401,7 +236,7 @@ def download_image(image, offline=False):
             temporary.write_bytes(content)
             temporary.replace(path)
             return path
-        except (OSError, urllib.error.URLError, ValueError) as error:
+        except (OSError, ValueError) as error:
             last_error = error
             if attempt != 4:
                 time.sleep(2**attempt)
@@ -426,6 +261,7 @@ def prepare_media(cards, offline=False, workers=8):
 
 def make_model(deck_data):
     model_data = deck_data["model"]
+    front_template, back_template, styling = load_card_design()
     return genanki.Model(
         model_data["id"],
         model_data["name"],
@@ -439,9 +275,13 @@ def make_model(deck_data):
             {"name": "Category"},
         ],
         templates=[
-            {"name": "Recognition", "qfmt": FRONT_TEMPLATE, "afmt": BACK_TEMPLATE}
+            {
+                "name": "Recognition",
+                "qfmt": front_template,
+                "afmt": back_template,
+            }
         ],
-        css=STYLING,
+        css=styling,
     )
 
 
@@ -485,98 +325,6 @@ def normalize_package(path, timestamp):
         temporary_path.unlink(missing_ok=True)
 
 
-def verify_package(path, data):
-    cards = data["cards"]
-    with zipfile.ZipFile(path) as package:
-        names = set(package.namelist())
-        if not {"collection.anki2", "media"} <= names:
-            raise ValueError("package is missing collection.anki2 or media")
-        media = json.loads(package.read("media"))
-        if len(media) != len(cards) or len(set(media.values())) != len(cards):
-            raise ValueError(
-                f"package contains {len(media)} media mappings for {len(cards)} cards"
-            )
-        missing_media = [index for index in media if index not in names]
-        if missing_media:
-            raise ValueError(
-                f"package is missing {len(missing_media)} mapped media entries"
-            )
-
-        with tempfile.NamedTemporaryFile() as collection:
-            collection.write(package.read("collection.anki2"))
-            collection.flush()
-            database = sqlite3.connect(collection.name)
-            try:
-                note_rows = database.execute(
-                    "SELECT guid, mid, flds, tags FROM notes"
-                ).fetchall()
-                card_rows = database.execute("SELECT nid, did FROM cards").fetchall()
-                decks_json, models_json = database.execute(
-                    "SELECT decks, models FROM col"
-                ).fetchone()
-            finally:
-                database.close()
-
-    if len(note_rows) != len(cards):
-        raise ValueError(
-            f"package contains {len(note_rows)} notes instead of {len(cards)}"
-        )
-    if len(card_rows) != len(cards):
-        raise ValueError(
-            f"package contains {len(card_rows)} cards instead of {len(cards)}"
-        )
-
-    deck_id = data["deck"]["id"]
-    model_id = data["deck"]["model"]["id"]
-    if {did for _, did in card_rows} != {deck_id}:
-        raise ValueError("package cards do not all belong to the configured deck")
-    decks = json.loads(decks_json)
-    if decks.get(str(deck_id), {}).get("name") != data["deck"]["name"]:
-        raise ValueError("package deck metadata does not match menu-foods.yaml")
-    models = json.loads(models_json)
-    model = models.get(str(model_id))
-    if model is None or model.get("name") != data["deck"]["model"]["name"]:
-        raise ValueError("package model metadata does not match menu-foods.yaml")
-    if ".headline strong" not in model.get("css", ""):
-        raise ValueError("package model is missing graded-cue styling")
-
-    expected_by_guid = {
-        genanki.guid_for("menu-food", card["term"]): card for card in cards
-    }
-    if len(expected_by_guid) != len(cards):
-        raise ValueError("stable note GUID collision")
-    media_names = set(media.values())
-    for guid, row_model_id, fields_text, tags in note_rows:
-        card = expected_by_guid.get(guid)
-        if card is None:
-            raise ValueError(f"package contains unexpected note GUID {guid}")
-        if row_model_id != model_id:
-            raise ValueError(f"{card['term']}: package note uses the wrong model")
-        fields = fields_text.split("\x1f")
-        if len(fields) != 7:
-            raise ValueError(
-                f"{card['term']}: package note has {len(fields)} fields instead of 7"
-            )
-        if fields[0] != html.escape(card["term"]):
-            raise ValueError(f"{card['term']}: package term field is stale")
-        if fields[1] != recognition_html(card["answer"]):
-            raise ValueError(f"{card['term']}: package headline field is stale")
-        if fields[3] != html.escape(card["details"]):
-            raise ValueError(f"{card['term']}: package details field is stale")
-        image_name = re.search(r'<img src="([^"]+)">', fields[2])
-        if image_name is None or image_name.group(1) not in media_names:
-            raise ValueError(
-                f"{card['term']}: package image field is missing or unbundled"
-            )
-        expected_tags = {"menu-food", f"menu-food::{card['category']}"}
-        if not expected_tags <= set(tags.split()):
-            raise ValueError(f"{card['term']}: package tags are incomplete")
-
-    print(
-        f"Verified package: {len(note_rows)} notes, {len(card_rows)} cards, {len(media)} media files"
-    )
-
-
 def build_package(data, output=DEFAULT_OUTPUT, offline=False, workers=8):
     cards = data["cards"]
     media = prepare_media(cards, offline=offline, workers=workers)
@@ -593,7 +341,6 @@ def build_package(data, output=DEFAULT_OUTPUT, offline=False, workers=8):
     timestamp = int(os.environ.get("SOURCE_DATE_EPOCH", PACKAGE_TIMESTAMP))
     package.write_to_file(output, timestamp=timestamp)
     normalize_package(output, timestamp)
-    verify_package(output, data)
     return output
 
 

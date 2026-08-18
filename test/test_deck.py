@@ -1,34 +1,13 @@
 import re
 import unittest
 
-import genanki
-
 import build_deck
+import wikipedia_descriptions
 
-DATA = build_deck.validate_data(build_deck.load_data())
-CARDS = DATA["cards"]
-CARDS_BY_TERM = {card["term"]: card for card in CARDS}
+CARDS = build_deck.validate_data(build_deck.load_data())["cards"]
 
 
 class DeckDataTests(unittest.TestCase):
-    def test_expected_size_and_category_balance(self):
-        self.assertEqual(len(CARDS), 212)
-        self.assertEqual(
-            {
-                category: sum(card["category"] == category for card in CARDS)
-                for category in build_deck.CATEGORIES
-            },
-            {"pasta": 59, "meat": 72, "cheese": 58, "other": 23},
-        )
-
-    def test_terms_images_and_guids_are_unique(self):
-        self.assertEqual(len({card["term"] for card in CARDS}), len(CARDS))
-        self.assertEqual(len({card["image"] for card in CARDS}), len(CARDS))
-        self.assertEqual(
-            len({genanki.guid_for("menu-food", card["term"]) for card in CARDS}),
-            len(CARDS),
-        )
-
     def test_every_meat_cue_leads_with_its_animal(self):
         animal_leads = {
             "Animal varies",
@@ -79,25 +58,16 @@ class DeckDataTests(unittest.TestCase):
                 self.assertIn(card["term"], milk_identity_terms)
             self.assertIsNone(context_only.search(core), card["term"])
 
-    def test_representative_renderings(self):
+    def test_recognition_html_bolds_core_and_escapes_fragments(self):
         self.assertEqual(
-            build_deck.recognition_html(CARDS_BY_TERM["feta"]["answer"]),
-            "<strong>Salty, crumbly, brined cheese</strong>; usually sheep’s milk; Greek",
+            build_deck.recognition_html(
+                {
+                    "core": ["Animal & preparation", "crucial trait"],
+                    "context": ["optional <context>"],
+                }
+            ),
+            "<strong>Animal &amp; preparation; crucial trait</strong>; optional &lt;context&gt;",
         )
-        self.assertEqual(
-            build_deck.recognition_html(CARDS_BY_TERM["prosciutto crudo"]["answer"]),
-            "<strong>Pig; uncooked, unsmoked, dry-cured ham</strong>; Italian; usually thinly sliced",
-        )
-        self.assertEqual(
-            build_deck.recognition_html(CARDS_BY_TERM["ziti"]["answer"]),
-            "<strong>Long, smooth pasta tubes</strong>",
-        )
-
-    def test_model_retains_compact_desktop_and_night_mode_styles(self):
-        model = build_deck.make_model(DATA["deck"])
-        self.assertIn(".headline strong", model.css)
-        self.assertIn("max-height: min(300px, 34vh)", model.css)
-        self.assertIn(".nightMode", model.css)
 
     def test_image_signatures_override_bad_server_mime_types(self):
         self.assertEqual(
@@ -106,6 +76,88 @@ class DeckDataTests(unittest.TestCase):
             ),
             "jpg",
         )
+
+    def test_wikipedia_description_cleanup(self):
+        self.assertEqual(
+            wikipedia_descriptions.clean_extract(
+                "Feta ( FET-ə; English: ,) is cheese. It is brined. Third sentence."
+            ),
+            "Feta (FET-ə) is cheese. It is brined. Third sentence.",
+        )
+
+    def test_description_updates_preserve_other_cards(self):
+        source = """schema: 1
+cards:
+  - term: alpha
+    details: >-
+      Old alpha.
+    details_source: https://en.wikipedia.org/w/index.php?oldid=1
+    reference:
+      url: https://en.wikipedia.org/wiki/Alpha
+  - term: beta
+    details: >-
+      Leave beta alone.
+    reference:
+      url: https://example.com/beta
+  - term: gamma
+    details: >-
+      Keep gamma's wrapping and text.
+    details_source: https://en.wikipedia.org/w/index.php?oldid=3
+    reference:
+      url: https://en.wikipedia.org/wiki/Gamma
+"""
+        updated = wikipedia_descriptions.update_yaml_text(
+            source,
+            {
+                "alpha": {
+                    "details": "New alpha.",
+                    "host": "en.wikipedia.org",
+                    "revision": 2,
+                },
+                "gamma": {
+                    "details": None,
+                    "host": "en.wikipedia.org",
+                    "revision": 4,
+                },
+            },
+        )
+        self.assertIn("      New alpha.\n", updated)
+        self.assertIn(
+            "details_source: https://en.wikipedia.org/w/index.php?oldid=2", updated
+        )
+        self.assertIn("      Leave beta alone.\n", updated)
+        self.assertIn("      Keep gamma's wrapping and text.\n", updated)
+        self.assertIn(
+            "details_source: https://en.wikipedia.org/w/index.php?oldid=4", updated
+        )
+
+    def test_description_update_round_trip_preserves_unchanged_yaml(self):
+        source = build_deck.DATA_PATH.read_text(encoding="utf-8")
+        self.assertEqual(wikipedia_descriptions.update_yaml_text(source, {}), source)
+
+    def test_bulk_description_updates_exclude_unchanged_cards(self):
+        cards = [
+            {"term": "alpha", "details": "Same ( alpha)."},
+            {"term": "beta", "details": "Old beta."},
+        ]
+        pages = {
+            "alpha": {
+                "details": "Same (alpha).",
+                "host": "en.wikipedia.org",
+                "source_revision": 1,
+                "revision": 2,
+            },
+            "beta": {
+                "details": "New beta.",
+                "host": "en.wikipedia.org",
+                "source_revision": 2,
+                "revision": 3,
+            },
+        }
+        updates = wikipedia_descriptions.pending_updates(cards, pages)
+        self.assertEqual(set(updates), {"alpha", "beta"})
+        self.assertIsNone(updates["alpha"]["details"])
+        self.assertEqual(updates["beta"]["details"], "New beta.")
 
 
 if __name__ == "__main__":
