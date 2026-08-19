@@ -30,6 +30,16 @@ CATEGORIES = {
     "cheese": "Cheese",
     "other": "Other menu trap",
 }
+MODEL_FIELDS = [
+    {"name": "Term", "id": 6064286510114836544},
+    {"name": "Headline", "id": 7562720696105355688},
+    {"name": "Image", "id": 4862974160591875216},
+    {"name": "Details", "id": 5184221410199971603},
+    {"name": "Reference", "id": 2960379663213147101},
+    {"name": "Image Credit", "id": 4601177655232819196},
+    {"name": "Category", "id": 3547631925314965014},
+]
+MODEL_TEMPLATE_ID = 1746720810477752110
 YAML_SAFE = YAML(typ="safe")
 
 
@@ -286,18 +296,11 @@ def make_model(deck_data):
     return genanki.Model(
         model_data["id"],
         model_data["name"],
-        fields=[
-            {"name": "Term"},
-            {"name": "Headline"},
-            {"name": "Image"},
-            {"name": "Details"},
-            {"name": "Reference"},
-            {"name": "ImageCredit"},
-            {"name": "Category"},
-        ],
+        fields=[field.copy() for field in MODEL_FIELDS],
         templates=[
             {
                 "name": "Recognition",
+                "id": MODEL_TEMPLATE_ID,
                 "qfmt": front_template,
                 "afmt": back_template,
             }

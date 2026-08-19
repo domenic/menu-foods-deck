@@ -8,6 +8,34 @@ CARDS = build_deck.validate_data(build_deck.load_data())["cards"]
 
 
 class DeckDataTests(unittest.TestCase):
+    def test_model_schema_has_stable_ids(self):
+        model = build_deck.make_model(build_deck.load_data()["deck"])
+        self.assertEqual(
+            [field["name"] for field in model.fields],
+            [
+                "Term",
+                "Headline",
+                "Image",
+                "Details",
+                "Reference",
+                "Image Credit",
+                "Category",
+            ],
+        )
+        self.assertEqual(
+            [field["id"] for field in model.fields],
+            [
+                6064286510114836544,
+                7562720696105355688,
+                4862974160591875216,
+                5184221410199971603,
+                2960379663213147101,
+                4601177655232819196,
+                3547631925314965014,
+            ],
+        )
+        self.assertEqual(model.templates[0]["id"], 1746720810477752110)
+
     def test_every_meat_cue_leads_with_its_animal(self):
         animal_leads = {
             "animal varies",

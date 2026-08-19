@@ -77,8 +77,10 @@ Later builds can prohibit network access and require a complete local cache:
 uv run python build_deck.py --offline
 ```
 
-The builder uses a fixed package timestamp, sorted media, and normalized ZIP
-metadata, so identical source and media produce an identical `.apkg` file.
+The builder uses `SOURCE_DATE_EPOCH` when provided, plus sorted media and
+normalized ZIP metadata, so identical source, media, and timestamps produce an
+identical `.apkg` file. CI uses the source commit's timestamp, allowing later
+releases to update earlier imports while keeping each release reproducible.
 
 Validate the YAML without downloading media or writing a package:
 

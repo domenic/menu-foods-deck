@@ -38,6 +38,9 @@ jobs:
       - name: Run tests
         run: uv run --locked python -m unittest discover -s test -v
 
+      - name: Set the package timestamp
+        run: echo "SOURCE_DATE_EPOCH=$(git show -s --format=%ct "$GITHUB_SHA")" >> "$GITHUB_ENV"
+
       - name: Build the deck
         run: uv run --locked python build_deck.py
 
