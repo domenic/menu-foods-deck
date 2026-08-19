@@ -126,15 +126,23 @@ def validate_data(data):
         elif re.search(r"\(\s*(?:\)|[,;])", details):
             errors.append(f"{term}: details contain malformed empty punctuation")
 
-        reference = card.get("reference")
-        if not isinstance(reference, dict):
-            errors.append(f"{term}: reference must be a mapping")
+        source = card.get("source")
+        if not isinstance(source, dict):
+            errors.append(f"{term}: source must be a mapping")
         else:
-            if not isinstance(reference.get("label"), str) or not reference["label"]:
-                errors.append(f"{term}: reference.label must be a nonempty string")
-            url = reference.get("url")
+            if not isinstance(source.get("label"), str) or not source["label"]:
+                errors.append(f"{term}: source.label must be a nonempty string")
+            url = source.get("url")
             if not isinstance(url, str) or not url.startswith("https://"):
-                errors.append(f"{term}: reference.url must be an HTTPS URL")
+                errors.append(f"{term}: source.url must be an HTTPS URL")
+            adapted_from = source.get("adapted_from")
+            if adapted_from is not None and (
+                not isinstance(adapted_from, str)
+                or not adapted_from.startswith("https://")
+            ):
+                errors.append(
+                    f"{term}: source.adapted_from must be an HTTPS URL when present"
+                )
 
         image = card.get("image")
         if not isinstance(image, str) or not image:
@@ -154,6 +162,19 @@ def recognition_html(answer):
     core = "; ".join(html.escape(fragment) for fragment in answer["core"])
     context = [html.escape(fragment) for fragment in answer.get("context", [])]
     return f"<strong>{core}</strong>" + (f"; {'; '.join(context)}" if context else "")
+
+
+def source_html(source):
+    link = (
+        f'<a href="{html.escape(source["url"], quote=True)}">'
+        f'{html.escape(source["label"])}</a>'
+    )
+    if adapted_from := source.get("adapted_from"):
+        permalink = (
+            f'<a href="{html.escape(adapted_from, quote=True)}">permalink</a>'
+        )
+        link += f" (adapted from {permalink})"
+    return link
 
 
 def media_stem(image):
@@ -286,14 +307,13 @@ def make_model(deck_data):
 
 
 def make_note(card, model, media_path):
-    reference = card["reference"]
     image_credit = commons_file_url(card["image"])
     fields = [
         html.escape(card["term"]),
         recognition_html(card["answer"]),
         f'<img src="{html.escape(media_path.name, quote=True)}">',
         html.escape(card["details"]),
-        f'<a href="{html.escape(reference["url"], quote=True)}">{html.escape(reference["label"])}</a>',
+        source_html(card["source"]),
         f'<a href="{html.escape(image_credit, quote=True)}">image source</a>',
         html.escape(CATEGORIES[card["category"]]),
     ]

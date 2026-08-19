@@ -69,6 +69,27 @@ class DeckDataTests(unittest.TestCase):
             "<strong>Animal &amp; preparation; crucial trait</strong>; optional &lt;context&gt;",
         )
 
+    def test_source_html_renders_yaml_literally(self):
+        self.assertEqual(
+            build_deck.source_html(
+                {
+                    "label": "Wikipedia",
+                    "url": "https://en.wikipedia.org/wiki/Feta",
+                    "adapted_from": "https://en.wikipedia.org/w/index.php?oldid=123&x=1",
+                }
+            ),
+            '<a href="https://en.wikipedia.org/wiki/Feta">Wikipedia</a> (adapted from <a href="https://en.wikipedia.org/w/index.php?oldid=123&amp;x=1">permalink</a>)',
+        )
+        self.assertEqual(
+            build_deck.source_html(
+                {
+                    "label": "Other & source",
+                    "url": "https://example.com/?a=1&b=2",
+                }
+            ),
+            '<a href="https://example.com/?a=1&amp;b=2">Other &amp; source</a>',
+        )
+
     def test_image_signatures_override_bad_server_mime_types(self):
         self.assertEqual(
             build_deck.extension_for_content(
@@ -91,20 +112,23 @@ cards:
   - term: alpha
     details: >-
       Old alpha.
-    details_source: https://en.wikipedia.org/w/index.php?oldid=1
-    reference:
+    source:
+      label: Wikipedia
       url: https://en.wikipedia.org/wiki/Alpha
+      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1
   - term: beta
     details: >-
       Leave beta alone.
-    reference:
+    source:
+      label: Example
       url: https://example.com/beta
   - term: gamma
     details: >-
       Keep gamma's wrapping and text.
-    details_source: https://en.wikipedia.org/w/index.php?oldid=3
-    reference:
+    source:
+      label: Wikipedia
       url: https://en.wikipedia.org/wiki/Gamma
+      adapted_from: https://en.wikipedia.org/w/index.php?oldid=3
 """
         updated = wikipedia_descriptions.update_yaml_text(
             source,
@@ -123,12 +147,13 @@ cards:
         )
         self.assertIn("      New alpha.\n", updated)
         self.assertIn(
-            "details_source: https://en.wikipedia.org/w/index.php?oldid=2", updated
+            "adapted_from: https://en.wikipedia.org/w/index.php?oldid=2", updated
         )
+        self.assertIn("url: https://en.wikipedia.org/wiki/Alpha", updated)
         self.assertIn("      Leave beta alone.\n", updated)
         self.assertIn("      Keep gamma's wrapping and text.\n", updated)
         self.assertIn(
-            "details_source: https://en.wikipedia.org/w/index.php?oldid=4", updated
+            "adapted_from: https://en.wikipedia.org/w/index.php?oldid=4", updated
         )
 
     def test_description_update_round_trip_preserves_unchanged_yaml(self):

@@ -1,0 +1,74 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v7
+
+      - name: Install uv and Python
+        uses: astral-sh/setup-uv@v10.0.1
+        with:
+          enable-cache: true
+          python-version: "3.12"
+          version: latest-known
+
+      - name: Restore downloaded images
+        uses: actions/cache@v6
+        with:
+          path: .cache/media
+          key: media-${{ runner.os }}-${{ hashFiles('menu-foods.yaml') }}
+          restore-keys: |
+            media-${{ runner.os }}-
+
+      - name: Run tests
+        run: uv run --locked python -m unittest discover -s test -v
+
+      - name: Build the deck
+        run: uv run --locked python build_deck.py
+
+      - name: Upload the deck
+        uses: actions/upload-artifact@v7
+        with:
+          name: menu-foods-deck
+          path: dist/menu-foods.apkg
+          if-no-files-found: error
+          retention-days: 14
+
+  release:
+    if: github.event_name == 'push' && github.ref_type == 'tag'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download the deck
+        uses: actions/download-artifact@v8
+        with:
+          name: menu-foods-deck
+          path: dist
+
+      - name: Create the GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            "dist/menu-foods.apkg" \
+            --notes "Original deck material is MIT-licensed; Wikipedia excerpts and Wikimedia Commons images remain under their linked source licenses. See [third-party notices](https://github.com/${GITHUB_REPOSITORY}/blob/${GITHUB_REF_NAME}/THIRD_PARTY_NOTICES.md)." \
+            --generate-notes \
+            --verify-tag

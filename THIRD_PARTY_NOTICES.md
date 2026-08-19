@@ -4,9 +4,8 @@
 
 Many `details` values in `menu-foods.yaml` contain short article extracts
 retrieved from English Wikipedia. This material is not covered by the
-repository's MIT license. Generated extracts retain a permanent source-revision
-URL in `menu-foods.yaml`; every card also retains the corresponding current
-article URL for attribution and traceability.
+repository's MIT license. Each generated card links to both the current article
+and the permanent Wikipedia revision from which its extract was adapted.
 
 Wikipedia text is generally available under the Creative Commons
 Attribution-ShareAlike 4.0 International license and may also be available under

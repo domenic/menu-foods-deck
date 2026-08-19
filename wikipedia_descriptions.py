@@ -23,7 +23,7 @@ def chunks(values, size):
     return [values[index : index + size] for index in range(0, len(values), size)]
 
 
-def parse_source_url(url):
+def parse_revision_url(url):
     parsed = urllib.parse.urlparse(url)
     old_ids = urllib.parse.parse_qs(parsed.query).get("oldid", [])
     if (
@@ -38,7 +38,7 @@ def parse_source_url(url):
     return parsed.hostname, int(old_ids[0])
 
 
-def parse_reference_url(url):
+def parse_article_url(url):
     parsed = urllib.parse.urlparse(url)
     if (
         parsed.scheme != "https"
@@ -48,6 +48,14 @@ def parse_reference_url(url):
         raise ValueError(f"not a Wikipedia article URL: {url}")
     title = urllib.parse.unquote(parsed.path.removeprefix("/wiki/")).replace("_", " ")
     return parsed.hostname, title
+
+
+def is_wikipedia_revision_url(url):
+    parsed = urllib.parse.urlparse(url)
+    return bool(
+        WIKIPEDIA_HOST.fullmatch(parsed.hostname or "")
+        and parsed.path == "/w/index.php"
+    )
 
 
 def clean_extract(extract):
@@ -105,12 +113,13 @@ def fetch_current_pages(cards):
     requested_by_host = defaultdict(set)
     card_sources = {}
     for card in cards:
-        source_host, source_revision = parse_source_url(card["details_source"])
-        reference_host, title = parse_reference_url(card["reference"]["url"])
-        if source_host != reference_host:
-            raise ValueError(f"{card['term']}: source and reference hosts differ")
-        requested_by_host[source_host].add(title)
-        card_sources[card["term"]] = (source_host, source_revision, title)
+        source = card["source"]
+        host, source_revision = parse_revision_url(source["adapted_from"])
+        article_host, title = parse_article_url(source["url"])
+        if host != article_host:
+            raise ValueError(f"{card['term']}: article and permalink hosts differ")
+        requested_by_host[host].add(title)
+        card_sources[card["term"]] = (host, source_revision, title)
 
     pages = {}
     for host, requested_titles in requested_by_host.items():
@@ -197,8 +206,8 @@ def update_yaml_text(source, updates):
         card = cards_by_term[term]
         if update["details"] is not None:
             card["details"] = FoldedScalarString(update["details"])
-        source_url = f"https://{update['host']}/w/index.php?oldid={update['revision']}"
-        card["details_source"] = source_url
+        permalink = f"https://{update['host']}/w/index.php?oldid={update['revision']}"
+        card["source"]["adapted_from"] = permalink
 
     output = io.StringIO()
     yaml.dump(data, output)
@@ -206,7 +215,11 @@ def update_yaml_text(source, updates):
 
 
 def selected_cards(data, terms):
-    tracked = [card for card in data["cards"] if "details_source" in card]
+    tracked = [
+        card
+        for card in data["cards"]
+        if is_wikipedia_revision_url(card["source"].get("adapted_from", ""))
+    ]
     if not terms:
         return tracked
     by_term = {card["term"]: card for card in tracked}

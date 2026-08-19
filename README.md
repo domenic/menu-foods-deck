@@ -27,10 +27,10 @@ sample entry:
     Feta (FET-ə; Greek: φέτα [ˈfeta]) is a Greek brined white cheese made from
     sheep's milk or from a mixture of sheep and goat's milk. It is soft, with
     small or no holes, and no skin.
-  details_source: https://en.wikipedia.org/w/index.php?oldid=1367638105
-  reference:
+  source:
     label: Wikipedia
     url: https://en.wikipedia.org/wiki/Feta
+    adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367638105
   image: Feta_Cheese.jpg
 ```
 
@@ -106,8 +106,8 @@ uv run wikipedia_descriptions.py update
 ```
 
 Only changed cards are rewritten; review the resulting `menu-foods.yaml` diff in
-Git before committing it. Descriptions written specifically for this deck have
-no `details_source` and are skipped by both commands.
+Git before committing it. Descriptions without a permanent Wikipedia revision
+in `source.adapted_from` are skipped by both commands.
 
 ## Third-party material
 
@@ -115,7 +115,3 @@ The repository's MIT license covers the original code and original portions of
 the deck data. Explanatory text and images retain their respective source terms;
 every card includes source links. See
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
