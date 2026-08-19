@@ -19,7 +19,7 @@ sample entry:
   category: cheese
   answer:
     core:
-      - Salty, crumbly, brined cheese
+      - salty, crumbly, brined cheese
     context:
       - usually sheep’s milk
       - Greek

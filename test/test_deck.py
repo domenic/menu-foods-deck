@@ -10,26 +10,26 @@ CARDS = build_deck.validate_data(build_deck.load_data())["cards"]
 class DeckDataTests(unittest.TestCase):
     def test_every_meat_cue_leads_with_its_animal(self):
         animal_leads = {
-            "Animal varies",
-            "Cow",
-            "Deer",
-            "Duck",
-            "Duck or goose",
-            "Guinea fowl",
+            "animal varies",
+            "cow",
+            "deer",
+            "duck",
+            "duck or goose",
+            "guinea fowl",
             "Iberian pig",
-            "Meat or fish",
-            "Often duck",
-            "Pig",
-            "Rabbit",
-            "Roe deer",
-            "Usually cow",
-            "Usually pig",
-            "Usually young cow or young sheep",
-            "Wild boar",
-            "Young cow",
-            "Young cow (calf)",
-            "Young goat",
-            "Young sheep",
+            "meat or fish",
+            "often duck",
+            "pig",
+            "rabbit",
+            "roe deer",
+            "usually cow",
+            "usually pig",
+            "usually young cow or young sheep",
+            "wild boar",
+            "young cow",
+            "young cow (calf)",
+            "young goat",
+            "young sheep",
         }
         for card in CARDS:
             if card["category"] == "meat":
@@ -43,12 +43,10 @@ class DeckDataTests(unittest.TestCase):
             "chèvre",
         }
         animal_milk = re.compile(
-            r"\b(?:cow|sheep|goat|buffalo|water-buffalo)[’'s-]*(?:milk|cheese)\b",
-            re.IGNORECASE,
+            r"\b(?:cow|sheep|goat|buffalo|water-buffalo)[’'s-]*(?:milk|cheese)\b"
         )
         context_only = re.compile(
-            r"\b(?:aromatic|bloomy-rind|strong-smelling|washed-rind)\b",
-            re.IGNORECASE,
+            r"\b(?:aromatic|bloomy-rind|strong-smelling|washed-rind)\b"
         )
         for card in CARDS:
             if card["category"] != "cheese":
@@ -62,11 +60,11 @@ class DeckDataTests(unittest.TestCase):
         self.assertEqual(
             build_deck.recognition_html(
                 {
-                    "core": ["Animal & preparation", "crucial trait"],
+                    "core": ["animal & preparation", "crucial trait"],
                     "context": ["optional <context>"],
                 }
             ),
-            "<strong>Animal &amp; preparation; crucial trait</strong>; optional &lt;context&gt;",
+            "<strong>animal &amp; preparation; crucial trait</strong>; optional &lt;context&gt;",
         )
 
     def test_source_html_renders_yaml_literally(self):

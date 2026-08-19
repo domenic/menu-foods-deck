@@ -10,7 +10,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Tiny bead-shaped pasta
+        - tiny bead-shaped pasta
     details: >-
       Acini di pepe (Italian: [ˈaːtʃini di ˈpeːpe]; lit. 'seeds of pepper') is a type of pasta. Acini
       is the plural of acino whose root is the Latin word acinus.
@@ -23,7 +23,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Small stuffed pasta parcels
+        - small stuffed pasta parcels
     details: >-
       Agnolotti (Italian: [aɲɲoˈlɔtti]; Piedmontese: agnolòt, Piedmontese: [aɲʊˈlɔt]), also known as agnolotti
       piemontesi, is a type of stuffed pasta typical of the Piedmont region of Italy, made with small
@@ -38,7 +38,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Small ring-shaped pasta
+        - small ring-shaped pasta
     details: >-
       Anelli (also known as anellini or anelletti) are small, thin rings of pasta. They are generally
       used for soups and pasta salads.
@@ -51,7 +51,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Thick, rough spaghetti-like pasta
+        - thick, rough spaghetti-like pasta
     details: >-
       Bigoli (Italian: [ˈbiːɡoli]; Venetian: bìgołi) is an extruded pasta in the form of a long and thick
       strand. Initially bigoli were made with buckwheat flour, but are now more commonly made with whole-wheat
@@ -65,7 +65,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Thick spaghetti with a hollow center
+        - thick spaghetti with a hollow center
     details: >-
       Bucatini (Italian: [bukaˈtiːni]), also known as perciatelli (Italian: [pertʃaˈtɛlli]), is a thick
       spaghetti-like pasta with a hole running through the center. It is common throughout Lazio, particularly
@@ -79,7 +79,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Long, tightly twisted pasta
+        - long, tightly twisted pasta
       context:
         - Sicilian
     details: >-
@@ -96,7 +96,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Thick squid-ring-shaped pasta
+        - thick squid-ring-shaped pasta
     details: >-
       Calamarata is a type of thick ring pasta, often dyed with black squid ink to resemble sliced calamari.
     source:
@@ -108,7 +108,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Ruffled cone or bell-shaped pasta
+        - ruffled cone or bell-shaped pasta
     details: >-
       Campanelle (Italian: [kampaˈnɛlle]; Italian for 'bellflowers' or 'little bells') is a type of pasta
       which is shaped like a cone with a ruffled edge, or a bell-like flower. It is also sometimes referred
@@ -122,7 +122,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Large pasta tubes meant for stuffing
+        - large pasta tubes meant for stuffing
     details: >-
       Cannelloni (Italian: [kannelˈloːni]; Italian for 'large reeds') are a cylindrical type of egg-based
       stuffed pasta generally served baked with a filling and covered by a sauce in Italian cuisine. Popular
@@ -136,7 +136,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Very thin strands
+        - very thin strands
         - angel-hair pasta
     details: >-
       Capellini (Italian: [kapelˈliːni]; lit. 'little hairs') is a thin variety of pasta, with a diameter
@@ -151,7 +151,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Large hat-shaped stuffed pasta
+        - large hat-shaped stuffed pasta
     details: >-
       Cappellacci are large, hat-shaped stuffed egg-pasta parcels associated with Ferrara. The classic
       cappellacci di zucca are filled with pumpkin, Parmigiano Reggiano, breadcrumbs, and nutmeg, although
@@ -164,7 +164,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Small hat-shaped stuffed pasta
+        - small hat-shaped stuffed pasta
     details: >-
       Cappelletti (Italian: [kappelˈletti]) are ring-shaped stuffed pasta; they are named for the characteristic
       shape that resembles a hat (cappello in Italian). Compared to tortellini, they have a different
@@ -178,7 +178,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short, loosely rolled S-shaped pasta
+        - short, loosely rolled S-shaped pasta
     details: >-
       Casarecce (from Italian casereccio, 'homemade') are short twists of pasta originating in the Sicily
       region of Italy which appear rolled up on themselves like a scroll. Casarecce pairs well with cream/cheese,
@@ -192,7 +192,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Hollow corkscrew-shaped pasta
+        - hollow corkscrew-shaped pasta
     details: >-
       Cavatappi (Italian: [kavaˈtappi]; lit. 'corkscrews'), also known as spirali, cellentani, amori,
       fusilli rigati, or curly mac, is macaroni formed in a helical tube shape. Certain areas of the US
@@ -207,7 +207,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Small folded pasta shells with a hollow
+        - small folded pasta shells with a hollow
     details: >-
       Cavatelli are small pasta shells made from semolina or other flour dough, commonly cooked with garlic
       and broccoli or rapini, or simply with tomato sauce. A variant adds ricotta cheese to the dough
@@ -221,7 +221,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Seashell-shaped pasta
+        - seashell-shaped pasta
     details: >-
       Conchiglie (Italian: [koŋˈkiʎʎe]) are a type of pasta. They are usually sold in the plain durum
       wheat variety, and also in colored varieties which use natural pigments, such as tomato extract,
@@ -235,7 +235,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Thin round pasta coins, often stamped
+        - thin round pasta coins, often stamped
     details: >-
       Corzetti or croxetti (Ligurian: [kur'zetˑi] or [kru'ʒetˑi]) are a type of pasta typical of the Ligurian
       cuisine of northwest Italy, and also traditional in the area of Novi Ligure just across the border
@@ -250,7 +250,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Very short, tiny pasta tubes
+        - very short, tiny pasta tubes
     details: >-
       Ditalini (Italian: [ditaˈliːni]; English: "small thimbles"), also referred to as tubettini, is a
       type of pasta that is shaped like small tubes. It has been described as "thimble-sized" and as "very
@@ -264,7 +264,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Bow-tie or butterfly-shaped pasta
+        - bow-tie or butterfly-shaped pasta
     details: >-
       Farfalle (Italian: [farˈfalle]) are a type of pasta. The name is derived from the Italian word farfalle
       ('butterflies').
@@ -277,7 +277,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Flat, medium-width pasta ribbons
+        - flat, medium-width pasta ribbons
     details: >-
       Fettuccine is a type of pasta popular in Roman cuisine. It is descended from the extremely thin
       capelli d'angelo of the Renaissance, but is a flat, thick pasta traditionally made with egg and
@@ -291,7 +291,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Long, narrow corkscrews
+        - long, narrow corkscrews
       context:
         - Calabrian
     details: >-
@@ -307,7 +307,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Small toasted pasta balls
+        - small toasted pasta balls
       context:
         - Sardinian
     details: >-
@@ -321,7 +321,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short spiral or corkscrew pasta
+        - short spiral or corkscrew pasta
     details: >-
       Fusilli (Italian: [fuˈzilli]) are a variety of pasta from southern Italy, with a helical (corkscrew)
       or helicoidal shape, also known as rotini in the United States and Canada.
@@ -334,7 +334,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Ridged pasta tubes with a visible seam
+        - ridged pasta tubes with a visible seam
       context:
         - egg pasta
     details: >-
@@ -350,7 +350,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short pasta twisted like paired strands
+        - short pasta twisted like paired strands
     details: >-
       Gemelli (Italian: [dʒeˈmɛlli]; lit. 'twins') are a type of pasta. They are most often used for making
       casserole or pasta salads.
@@ -363,7 +363,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Soft dumplings, usually made with potato
+        - soft dumplings, usually made with potato
     details: >-
       Gnocchi are a varied family of pasta-like dumplings in Italian cuisine. They are made of small rolls
       of dough, such as those composed of a simple combination of wheat flour, potato, egg, and salt.
@@ -376,7 +376,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Wide flat pasta sheets
+        - wide flat pasta sheets
         - also the layered dish
     details: >-
       Lasagna, also known by the plural form lasagne, is a type of pasta made in wide, flat sheets. It
@@ -393,7 +393,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Long, narrow, slightly flattened strands
+        - long, narrow, slightly flattened strands
     details: >-
       Linguine (lit. 'little tongues'), sometimes anglicized as linguini, is a type of pasta similar to
       fettuccine and trenette, distinguished by its elliptical rather than flat section. Around about
@@ -407,7 +407,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Curved, hollow snail-shell-shaped pasta
+        - curved, hollow snail-shell-shaped pasta
     details: >-
       Lumache (Italian for “snails”) are short, curved, hollow pasta pieces shaped like snail shells,
       often with ridges and one pinched end. Their hollow shape is well suited to catching thick or chunky
@@ -420,7 +420,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Long ribbons with ruffled edges
+        - long ribbons with ruffled edges
     details: >-
       Mafaldine, also known as reginette (Italian for 'little queens') or simply mafalde, is a type of
       ribbon-shaped pasta.
@@ -433,7 +433,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Small ridged pasta shells
+        - small ridged pasta shells
       context:
         - Sardinian
     details: >-
@@ -449,7 +449,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Large ridged pasta tubes meant for stuffing
+        - large ridged pasta tubes meant for stuffing
     details: >-
       Manicotti (the plural form of the Italian word manicotto; < manica, 'sleeve', + the augmentative
       ending, -otto) are a type of pasta in Italian and Italian-American cuisine. They are large pasta
@@ -463,7 +463,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short, wide ridged pasta tubes
+        - short, wide ridged pasta tubes
     details: >-
       Mezze maniche are short, wide pasta tubes whose name means “half sleeves.” They are about half the
       length of rigatoni and are commonly ridged to catch thick sauces.
@@ -475,7 +475,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Small ear-shaped pasta
+        - small ear-shaped pasta
     details: >-
       Orecchiette is a pasta typical of the Apulia region of Italy. Their name comes from the Italian
       word for "ear," a reference to their shape.
@@ -488,7 +488,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Rice-shaped pasta—not rice
+        - rice-shaped pasta—not rice
     details: >-
       Orzo (Italian: [ˈɔrdzo]; lit. 'barley'; from Latin hordeum), also known in Italy as risoni (Italian:
       [riˈzoːni]; 'large [grains of] rice'), and popular in Greek cuisine as kritharaki (κριθαράκι), is
@@ -503,7 +503,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Very large, wide pasta tubes
+        - very large, wide pasta tubes
     details: >-
       Paccheri (Italian: [ˈpakkeri]) is a type of pasta in the shape of a very large tube, originating
       from the Campania region of Italy. They are generally smooth, but there is also a ribbed version,
@@ -517,7 +517,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Very broad, flat pasta ribbons
+        - very broad, flat pasta ribbons
     details: >-
       Pappardelle (Italian: [papparˈdɛlle]; sing.: pappardella; from the Italian verb pappare, meaning
       'to gobble up') are large, very broad, flat pasta, similar to wide fettuccine, originating from
@@ -532,7 +532,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Soft breadcrumb-and-egg noodle-like strands
+        - soft breadcrumb-and-egg noodle-like strands
     details: >-
       Passatelli are a pasta formed of bread crumbs, eggs, grated Parmesan cheese, and in some regions
       lemon, and nutmeg; it is typically cooked in chicken broth. Typically, it is found mainly in Romagna,
@@ -547,7 +547,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Any very small pasta
+        - any very small pasta
       context:
         - usually for soup
     details: >-
@@ -563,7 +563,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short diagonal-cut pasta tubes
+        - short diagonal-cut pasta tubes
     details: >-
       Penne (Italian: [ˈpenne]) are an extruded type of pasta in the shape of tubular pieces with ends
       cut at an angle. They are usually made from wheat flour.
@@ -576,7 +576,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Thick, hand-rolled spaghetti
+        - thick, hand-rolled spaghetti
       context:
         - Tuscan
     details: >-
@@ -592,7 +592,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short, flat buckwheat pasta ribbons
+        - short, flat buckwheat pasta ribbons
     details: >-
       Pizzoccheri (Italian: [pitˈtsɔkkeri]; Lombard: pizzòcher, pronounced [piˈtsɔker, -kar]) is a flat
       ribbon pasta, made with a blend of buckwheat flour and wheat flour. It is believed to have originated
@@ -606,7 +606,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short pasta shaped like little radiators
+        - short pasta shaped like little radiators
     details: >-
       Radiatori are small, squat pasta shapes that are said to resemble radiators. Although it is rumored
       that they were created in the 1960s by an industrial designer, their invention was actually between
@@ -620,7 +620,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Filled pasta pillows
+        - filled pasta pillows
     details: >-
       Ravioli (Italian: [raviˈɔli]; sing.: raviolo, Italian: [raviˈɔlo]) are a type of stuffed pasta comprising
       a filling enveloped in thin pasta dough. Usually served in broth or with a sauce, they originated
@@ -634,7 +634,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Large ridged pasta tubes with square-cut ends
+        - large ridged pasta tubes with square-cut ends
     details: >-
       Rigatoni (Italian: [riɡaˈtoːni]) is a type of pasta. They are larger than penne and ziti, and sometimes
       slightly curved, but not as curved as elbow macaroni.
@@ -647,7 +647,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Wagon-wheel-shaped pasta
+        - wagon-wheel-shaped pasta
     details: >-
       Rotelle is a type of pasta resembling wheels with spokes. They are similar to fiori.
     source:
@@ -659,7 +659,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short, tight corkscrew pasta
+        - short, tight corkscrew pasta
     details: >-
       Fusilli (Italian: [fuˈzilli]) are a variety of pasta from southern Italy, with a helical (corkscrew)
       or helicoidal shape, also known as rotini in the United States and Canada.
@@ -672,7 +672,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short, thick, flat ribbons
+        - short, thick, flat ribbons
       context:
         - from Campania
     details: >-
@@ -689,7 +689,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Long, thin round pasta strands
+        - long, thin round pasta strands
     details: >-
       Spaghetti (Italian: [spaˈɡetti] 'little strings' plural diminutive of spago 'string') is a long,
       thin, solid, cylindrical pasta. It serves as a staple food of Italian cuisine and is made of milled
@@ -703,7 +703,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Thin spaghetti strands
+        - thin spaghetti strands
     details: >-
       Spaghettini are long, round pasta strands with a smaller diameter than standard spaghetti. Their
       thinness gives them a shorter cooking time and makes them well suited to lighter sauces.
@@ -715,7 +715,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short, hand-rolled twisted pasta
+        - short, hand-rolled twisted pasta
     details: >-
       Strozzapreti (Italian: [ˌstrɔttsaˈprɛːti]; lit. 'priest choker' or 'priest strangler') are hand-made
       pasta shape, similar to cavatelli, though longer. The name is also used for a baked cheese and vegetable
@@ -729,7 +729,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Long, flat pasta ribbons
+        - long, flat pasta ribbons
       context:
         - egg pasta
     details: >-
@@ -746,7 +746,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Very narrow, flat pasta ribbons
+        - very narrow, flat pasta ribbons
       context:
         - egg pasta
     details: >-
@@ -762,7 +762,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Thick square-cut spaghetti
+        - thick square-cut spaghetti
     details: >-
       Spaghetti alla chitarra (Italian: [spaˈɡetti ˌalla kiˈtarra]), also known as maccheroni alla chitarra,
       is a variety of egg pasta typical of the Abruzzo region of Italy, with a square cross section about
@@ -776,7 +776,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Small ring-shaped stuffed pasta
+        - small ring-shaped stuffed pasta
     details: >-
       Tortellini is a type of stuffed pasta typical of the Italian cities of Bologna and Modena, in the
       Emilia-Romagna region. Traditionally it is stuffed with a mix of meat (pork loin, prosciutto, mortadella),
@@ -790,7 +790,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Larger ring-shaped stuffed pasta
+        - larger ring-shaped stuffed pasta
     details: >-
       Tortelloni is a type of stuffed pasta common in northern Italy, with a shape similar to tortellini,
       but larger and with a cheese-based filling. It is traditionally stuffed with ricotta, Parmesan,
@@ -804,7 +804,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Short, thin, hand-twisted pasta
+        - short, thin, hand-twisted pasta
       context:
         - Ligurian
     details: >-
@@ -820,7 +820,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Long thin strands, usually thinner than spaghetti
+        - long thin strands, usually thinner than spaghetti
     details: >-
       Vermicelli (Italian: [vermiˈtʃɛlli]) is a type of pasta that is round in section, similar to spaghetti.
       In English-speaking regions, it is usually thinner than spaghetti, while in Italy it is thicker.
@@ -833,7 +833,7 @@ cards:
     category: pasta
     answer:
       core:
-        - Long, smooth pasta tubes
+        - long, smooth pasta tubes
     details: >-
       Ziti (Italian: [ˈdziːti]) or zite (Italian: [ˈdziːte]) is a shape of extruded pasta originating
       in the Italian region of Sicily. Factories make ziti out of durum wheat flour and water, forming
@@ -847,7 +847,7 @@ cards:
     category: meat
     answer:
       core:
-        - Usually pig
+        - usually pig
         - cured-meat assortment
       context:
         - Italian
@@ -864,7 +864,7 @@ cards:
     category: meat
     answer:
       core:
-        - Usually pig
+        - usually pig
         - cured sausage
       context:
         - Italian
@@ -882,7 +882,7 @@ cards:
     category: meat
     answer:
       core:
-        - Usually pig
+        - usually pig
         - sausage
       context:
         - Italian
@@ -899,7 +899,7 @@ cards:
     category: meat
     answer:
       core:
-        - Usually pig
+        - usually pig
         - coarse, dry-cured salami
       context:
         - Italian
@@ -916,7 +916,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - fennel-flavored salami
       context:
         - Tuscan
@@ -932,7 +932,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - mild, cooked sausage
     details: >-
       Mortadella (Italian: [mortaˈdɛlla]) is a large salume made of finely hashed or ground cured pork,
@@ -948,7 +948,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - dry-cured ham
       context:
         - usually thinly sliced
@@ -966,7 +966,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - uncooked, unsmoked, dry-cured ham
       context:
         - Italian
@@ -983,7 +983,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - cooked ham
       context:
         - Italian
@@ -998,7 +998,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - smoked, dry-cured ham
       context:
         - South Tyrolean
@@ -1015,7 +1015,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - dry-cured neck or shoulder
     details: >-
       Capocollo (Italian: [kapoˈkɔllo]) or coppa (Italian: [ˈkɔppa, ˈkoppa]) is an Italian pork salted
@@ -1030,7 +1030,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - dry-cured neck or shoulder
     details: >-
       Capocollo (Italian: [kapoˈkɔllo]) or coppa (Italian: [ˈkɔppa, ˈkoppa]) is an Italian pork salted
@@ -1045,7 +1045,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - cured neck or shoulder
       context:
         - Italian-American name
@@ -1062,7 +1062,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - salt-cured belly
         - Italian bacon
     details: >-
@@ -1077,7 +1077,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - salt-cured cheek or jowl
     details: >-
       Guanciale (Italian: [ɡwanˈtʃaːle]) is an Italian salt-cured meat product prepared from pork jowl
@@ -1091,7 +1091,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - seasoned, cured back fat
     details: >-
       Lardo is a type of salume made by curing strips of fatback with salt, rosemary, and other herbs
@@ -1106,7 +1106,7 @@ cards:
     category: meat
     answer:
       core:
-        - Cow
+        - cow
         - air-dried, salted beef
       context:
         - usually thinly sliced
@@ -1123,7 +1123,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - dry-cured, boneless ham
     details: >-
       Culatello di Zibello is a cured meat with a protected designation of origin (PDO) in the EU and
@@ -1139,7 +1139,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - soft, spicy, spreadable sausage
       context:
         - Calabrian
@@ -1155,7 +1155,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - rich, cooked sausage
     details: >-
       Cotechino (Italian: [koteˈkiːno]) is a large Italian pork sausage requiring slow cooking; usually
@@ -1170,7 +1170,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - trotter stuffed with pork sausage
     details: >-
       Cotechino Modena or cotechino di Modena (Italian: [koteˈkiːno di ˈmɔːdena]; spelled cotecchino or
@@ -1186,7 +1186,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - herb-seasoned roast pork
       context:
         - Italian
@@ -1203,7 +1203,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - cured or roasted loin
     details: >-
       Pork loin is a primal cut of meat from a pig, created from the tissue along the dorsal side of the
@@ -1217,7 +1217,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - ham
       context:
         - French
@@ -1234,7 +1234,7 @@ cards:
     category: meat
     answer:
       core:
-        - Usually pig
+        - usually pig
         - dry-cured sausage
       context:
         - usually thick
@@ -1252,7 +1252,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - smoked sausage
       context:
         - style varies by country
@@ -1268,7 +1268,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - coarse intestine sausage
       context:
         - French
@@ -1285,7 +1285,7 @@ cards:
     category: meat
     answer:
       core:
-        - Usually pig
+        - usually pig
         - blood sausage
       context:
         - French
@@ -1300,7 +1300,7 @@ cards:
     category: meat
     answer:
       core:
-        - Animal varies
+        - animal varies
         - white sausage without blood
       context:
         - French
@@ -1316,7 +1316,7 @@ cards:
     category: meat
     answer:
       core:
-        - Animal varies
+        - animal varies
         - shredded meat spread
       context:
         - often pig
@@ -1333,7 +1333,7 @@ cards:
     category: meat
     answer:
       core:
-        - Animal varies
+        - animal varies
         - meat paste
         - often liver
     details: >-
@@ -1349,7 +1349,7 @@ cards:
     category: meat
     answer:
       core:
-        - Animal varies
+        - animal varies
         - coarse pâté or layered meat loaf
         - served cold
     details: >-
@@ -1366,7 +1366,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - small strips or cubes of fatty bacon
     details: >-
       A lardon, also spelled lardoon, is a small strip or cube of fatty bacon, or pork fat (usually subcutaneous
@@ -1382,7 +1382,7 @@ cards:
     category: meat
     answer:
       core:
-        - Often duck
+        - often duck
         - slowly cooked and preserved in fat
     details: >-
       Confit (French pronunciation: [kɔ̃fi]; Occitan: Confisat) (from the French word confire, literally
@@ -1398,7 +1398,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - dry-cured ham
       context:
         - Spanish
@@ -1432,7 +1432,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - highly seasoned sausage
         - often paprika-red
       context:
@@ -1450,7 +1450,7 @@ cards:
     category: meat
     answer:
       core:
-        - Usually pig
+        - usually pig
         - blood sausage
       context:
         - Spanish
@@ -1467,7 +1467,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - soft, spreadable, paprika-seasoned sausage
       context:
         - Spanish
@@ -1485,7 +1485,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - cured tenderloin
       context:
         - Spanish
@@ -1501,7 +1501,7 @@ cards:
     category: meat
     answer:
       core:
-        - Cow
+        - cow
         - beef
       context:
         - Italian
@@ -1518,7 +1518,7 @@ cards:
     category: meat
     answer:
       core:
-        - Young cow (calf)
+        - young cow (calf)
         - veal
       context:
         - Italian
@@ -1535,7 +1535,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - pork
       context:
         - Italian
@@ -1552,7 +1552,7 @@ cards:
     category: meat
     answer:
       core:
-        - Wild boar
+        - wild boar
       context:
         - Italian
     details: >-
@@ -1569,7 +1569,7 @@ cards:
     category: meat
     answer:
       core:
-        - Young sheep
+        - young sheep
         - lamb
       context:
         - Italian
@@ -1586,7 +1586,7 @@ cards:
     category: meat
     answer:
       core:
-        - Young goat
+        - young goat
         - kid
       context:
         - Italian
@@ -1602,7 +1602,7 @@ cards:
     category: meat
     answer:
       core:
-        - Duck
+        - duck
       context:
         - Italian
     details: >-
@@ -1618,7 +1618,7 @@ cards:
     category: meat
     answer:
       core:
-        - Rabbit
+        - rabbit
       context:
         - Italian
     details: >-
@@ -1635,7 +1635,7 @@ cards:
     category: meat
     answer:
       core:
-        - Deer
+        - deer
         - venison
       context:
         - Italian
@@ -1651,7 +1651,7 @@ cards:
     category: meat
     answer:
       core:
-        - Guinea fowl
+        - guinea fowl
       context:
         - Italian
     details: >-
@@ -1666,7 +1666,7 @@ cards:
     category: meat
     answer:
       core:
-        - Cow
+        - cow
         - beef
       context:
         - French
@@ -1683,7 +1683,7 @@ cards:
     category: meat
     answer:
       core:
-        - Young cow (calf)
+        - young cow (calf)
         - veal
       context:
         - French
@@ -1700,7 +1700,7 @@ cards:
     category: meat
     answer:
       core:
-        - Pig
+        - pig
         - pork
       context:
         - French
@@ -1717,7 +1717,7 @@ cards:
     category: meat
     answer:
       core:
-        - Young sheep
+        - young sheep
         - lamb
       context:
         - French
@@ -1734,7 +1734,7 @@ cards:
     category: meat
     answer:
       core:
-        - Duck
+        - duck
       context:
         - French
     details: >-
@@ -1750,7 +1750,7 @@ cards:
     category: meat
     answer:
       core:
-        - Rabbit
+        - rabbit
       context:
         - French
     details: >-
@@ -1767,7 +1767,7 @@ cards:
     category: meat
     answer:
       core:
-        - Roe deer
+        - roe deer
         - venison
       context:
         - French
@@ -1783,7 +1783,7 @@ cards:
     category: meat
     answer:
       core:
-        - Cow
+        - cow
         - tenderloin steak
         - very tender
       context:
@@ -1802,7 +1802,7 @@ cards:
     category: meat
     answer:
       core:
-        - Cow
+        - cow
         - rib steak
         - similar to ribeye
       context:
@@ -1820,7 +1820,7 @@ cards:
     category: meat
     answer:
       core:
-        - Cow
+        - cow
         - hanger steak
       context:
         - French
@@ -1837,7 +1837,7 @@ cards:
     category: meat
     answer:
       core:
-        - Cow
+        - cow
         - flank-style steak
       context:
         - French
@@ -1854,7 +1854,7 @@ cards:
     category: meat
     answer:
       core:
-        - Cow
+        - cow
         - thick, bone-in rib steak
       context:
         - French
@@ -1869,7 +1869,7 @@ cards:
     category: meat
     answer:
       core:
-        - Cow
+        - cow
         - steak
       context:
         - Italian
@@ -1886,7 +1886,7 @@ cards:
     category: meat
     answer:
       core:
-        - Usually cow
+        - usually cow
         - sliced, grilled steak
       context:
         - Italian
@@ -1901,7 +1901,7 @@ cards:
     category: meat
     answer:
       core:
-        - Meat or fish
+        - meat or fish
         - paper-thin
         - raw
     details: >-
@@ -1918,7 +1918,7 @@ cards:
     category: meat
     answer:
       core:
-        - Young cow
+        - young cow
         - cross-cut shank
         - braised with its marrow bone
     details: >-
@@ -1935,7 +1935,7 @@ cards:
     category: meat
     answer:
       core:
-        - Animal varies
+        - animal varies
         - rolled or grilled meat slice
       context:
         - Italian
@@ -1952,7 +1952,7 @@ cards:
     category: meat
     answer:
       core:
-        - Usually young cow or young sheep
+        - usually young cow or young sheep
         - sweetbreads (glands)
       context:
         - Italian
@@ -1968,7 +1968,7 @@ cards:
     category: meat
     answer:
       core:
-        - Animal varies
+        - animal varies
         - tripe
         - edible stomach lining
       context:
@@ -1985,7 +1985,7 @@ cards:
     category: meat
     answer:
       core:
-        - Animal varies
+        - animal varies
         - bone marrow
       context:
         - Italian
@@ -2001,7 +2001,7 @@ cards:
     category: meat
     answer:
       core:
-        - Young cow
+        - young cow
         - sweetbreads
       context:
         - French
@@ -2018,7 +2018,7 @@ cards:
     category: meat
     answer:
       core:
-        - Duck or goose
+        - duck or goose
         - fatty liver
     details: >-
       Foie gras (lit. 'fat liver'; French: [fwa ɡʁɑ]; Occitan: foiè grass) is a specialty food product
@@ -2033,7 +2033,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Mild when young
+        - mild when young
         - firm when aged
       context:
         - Italian
@@ -2054,7 +2054,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Mild, semi-soft cheese
+        - mild, semi-soft cheese
       context:
         - Italian
         - cow’s milk
@@ -2071,7 +2071,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Fresh mozzarella pouch filled with cream and curds
+        - fresh mozzarella pouch filled with cream and curds
     details: >-
       Burrata (Italian: [burˈrata]) is an Italian cow's milk (occasionally buffalo milk) cheese made from
       mozzarella and cream. Burrata has its origins in the Apulia region of Italy.
@@ -2084,7 +2084,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Firm, stretched-curd cheese
+        - firm, stretched-curd cheese
       context:
         - Southern Italian
     details: >-
@@ -2100,7 +2100,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Mild, semi-soft farmhouse cheese
+        - mild, semi-soft farmhouse cheese
       context:
         - Italian
     details: >-
@@ -2115,7 +2115,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, mild, creamy cheese
+        - soft, mild, creamy cheese
       context:
         - Italian
         - cow’s milk
@@ -2133,9 +2133,9 @@ cards:
     category: cheese
     answer:
       core:
-        - Nutty, semi-soft cheese
+        - nutty, semi-soft cheese
       context:
-        - From the Alps
+        - from the Alps
         - cow’s milk
     details: >-
       Fontina (French: fontine) is a cow's milk cheese, first produced in Italy. Over time, production
@@ -2150,7 +2150,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Blue cheese
+        - blue cheese
       context:
         - Italian
         - cow’s milk
@@ -2167,7 +2167,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Hard, granular cheese
+        - hard, granular cheese
       context:
         - Italian
         - cow’s milk
@@ -2183,7 +2183,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Very rich, mild cream cheese
+        - very rich, mild cream cheese
       context:
         - Italian
     details: >-
@@ -2199,7 +2199,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Firm cheese
+        - firm cheese
       context:
         - Italian
         - from the Alps
@@ -2216,7 +2216,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Mild, fresh, stretched-curd cheese
+        - mild, fresh, stretched-curd cheese
     details: >-
       Mozzarella is a semi-soft non-aged cheese prepared using the pasta filata ('stretched-curd') method.
       It originated in southern Italy.
@@ -2229,7 +2229,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Fresh mozzarella made from water-buffalo milk
+        - fresh mozzarella made from water-buffalo milk
     details: >-
       Buffalo mozzarella (Italian: mozzarella di bufala; Neapolitan: muzzarella 'e vufera) is a mozzarella
       made from the milk of the Italian Mediterranean buffalo. A fresh, soft pasta filata cheese, it is
@@ -2243,7 +2243,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Hard, granular, aged cheese
+        - hard, granular, aged cheese
       context:
         - Italian
         - cow’s milk
@@ -2260,7 +2260,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Sheep’s-milk cheese
+        - sheep’s-milk cheese
         - a broad family
       context:
         - Italian
@@ -2276,7 +2276,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Hard, salty sheep’s-milk cheese
+        - hard, salty sheep’s-milk cheese
       context:
         - Italian
     details: >-
@@ -2293,7 +2293,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Semi-hard, stretched-curd cheese
+        - semi-hard, stretched-curd cheese
       context:
         - Italian
         - cow’s milk
@@ -2310,7 +2310,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Mild, fresh whey cheese with a soft, grainy texture
+        - mild, fresh whey cheese with a soft, grainy texture
     details: >-
       Ricotta (Italian: [riˈkɔtta]) is an Italian whey cheese made from sheep, cow, goat, or Italian water
       buffalo milk whey left over from the production of other cheeses. However, modern ricotta is often
@@ -2324,7 +2324,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Salted, pressed, aged ricotta for slicing or grating
+        - salted, pressed, aged ricotta for slicing or grating
     details: >-
       Ricotta salata is ricotta that has been pressed, salted, dried, and aged, commonly using sheep’s-milk
       ricotta. Unlike soft fresh ricotta, it is firm and is sliced, crumbled, grated, or shaved over dishes.
@@ -2336,7 +2336,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, creamy cheese
+        - soft, creamy cheese
       context:
         - Northern Italian
     details: >-
@@ -2351,7 +2351,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Semi-soft, stretched-curd cheese
+        - semi-soft, stretched-curd cheese
         - often smoked
       context:
         - traditionally pear-shaped
@@ -2368,7 +2368,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, mild, creamy cheese
+        - soft, mild, creamy cheese
       context:
         - Italian
         - cow’s milk
@@ -2386,7 +2386,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, mild cheese
+        - soft, mild cheese
       context:
         - strong-smelling
         - washed-rind
@@ -2405,7 +2405,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Semi-soft cheese
+        - semi-soft cheese
         - milk and style vary
       context:
         - Alpine-style family
@@ -2422,7 +2422,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Semi-soft cheese aged under ash
+        - semi-soft cheese aged under ash
       context:
         - Italian
         - cow’s milk
@@ -2438,7 +2438,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Firm, nutty cheese
+        - firm, nutty cheese
       context:
         - French
         - from the Alps
@@ -2456,7 +2456,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, creamy cheese
+        - soft, creamy cheese
       context:
         - bloomy-rind
         - French
@@ -2475,7 +2475,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Very rich, soft, triple-cream cheese
+        - very rich, soft, triple-cream cheese
       context:
         - French
     details: >-
@@ -2490,7 +2490,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, earthy cheese
+        - soft, earthy cheese
       context:
         - bloomy-rind
         - French
@@ -2508,7 +2508,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Firm, earthy cheese
+        - firm, earthy cheese
       context:
         - French
         - cow’s milk
@@ -2526,7 +2526,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Goat cheese
+        - goat cheese
         - not one specific style
       context:
         - French term
@@ -2543,7 +2543,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Firm, nutty cheese
+        - firm, nutty cheese
       context:
         - French
         - Alpine-style
@@ -2561,7 +2561,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, pungent cheese
+        - soft, pungent cheese
       context:
         - washed-rind
         - French
@@ -2581,7 +2581,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Firm, nutty cheese
+        - firm, nutty cheese
       context:
         - Swiss
         - Alpine-style
@@ -2599,7 +2599,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Firm, orange cheese
+        - firm, orange cheese
       context:
         - French
         - cow’s milk
@@ -2616,7 +2616,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Semi-soft cheese marked by a dark ash line
+        - semi-soft cheese marked by a dark ash line
       context:
         - French
     details: >-
@@ -2633,7 +2633,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, pungent cheese
+        - soft, pungent cheese
       context:
         - washed-rind
         - French
@@ -2653,7 +2653,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, slightly crumbly cheese
+        - soft, slightly crumbly cheese
       context:
         - bloomy-rind
         - French
@@ -2672,7 +2672,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Firm, nutty cheese
+        - firm, nutty cheese
       context:
         - sheep’s milk
         - French Basque
@@ -2687,7 +2687,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, pungent cheese
+        - soft, pungent cheese
       context:
         - washed-rind
         - French
@@ -2705,7 +2705,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Melting cheese
+        - melting cheese
         - also the melted-cheese dish
       context:
         - Alpine-style
@@ -2723,7 +2723,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, nutty cheese
+        - soft, nutty cheese
       context:
         - French
         - from the Alps
@@ -2740,7 +2740,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Tangy blue cheese
+        - tangy blue cheese
       context:
         - sheep’s milk
         - French
@@ -2758,7 +2758,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Very rich, soft, triple-cream cheese
+        - very rich, soft, triple-cream cheese
       context:
         - French
     details: >-
@@ -2774,7 +2774,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Semi-soft, earthy cheese
+        - semi-soft, earthy cheese
       context:
         - French
         - cow’s milk
@@ -2791,7 +2791,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Rustic cheese family
+        - rustic cheese family
         - not one specific style
       context:
         - typically round
@@ -2808,7 +2808,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Very rich, soft cheese with extra cream added
+        - very rich, soft cheese with extra cream added
     details: >-
       Triple-crème is a category of cow’s-milk cheese enriched with cream to contain more than 75% fat
       in its dry matter. The category includes fresh cheeses such as mascarpone and soft-ripened cheeses
@@ -2821,7 +2821,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Soft, ash-coated, pyramid-shaped cheese
+        - soft, ash-coated, pyramid-shaped cheese
       context:
         - goat’s milk
         - French
@@ -2837,7 +2837,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Salty, crumbly, brined cheese
+        - salty, crumbly, brined cheese
       context:
         - usually sheep’s milk
         - Greek
@@ -2853,7 +2853,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Firm, brined cheese that holds its shape when grilled
+        - firm, brined cheese that holds its shape when grilled
       context:
         - Cypriot
     details: >-
@@ -2869,7 +2869,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Firm cheese
+        - firm cheese
       context:
         - sheep’s milk
         - Spanish
@@ -2885,7 +2885,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Salty, crumbly cheese
+        - salty, crumbly cheese
       context:
         - Mexican
         - cow’s milk
@@ -2901,7 +2901,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Mild, fresh, crumbly cheese
+        - mild, fresh, crumbly cheese
       context:
         - Latin American
     details: >-
@@ -2915,7 +2915,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Stringy, stretched-curd cheese
+        - stringy, stretched-curd cheese
         - Oaxaca cheese
       context:
         - Mexican
@@ -2932,7 +2932,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Thick, tangy strained yogurt served like a soft cheese
+        - thick, tangy strained yogurt served like a soft cheese
     details: >-
       Strained yogurt, Greek or Greek-style yogurt, yogurt cheese, sack yogurt, hung curd, kerned yogurt
       or labneh, is yogurt that has been strained to remove most of its whey, making it thicker while
@@ -2947,7 +2947,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Mild when young
+        - mild when young
         - caramel-like when aged
       context:
         - Dutch
@@ -2965,7 +2965,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Mild, buttery, semi-soft cheese
+        - mild, buttery, semi-soft cheese
       context:
         - Danish
         - cow’s milk
@@ -2981,7 +2981,7 @@ cards:
     category: cheese
     answer:
       core:
-        - Blue cheese
+        - blue cheese
       context:
         - English
         - cow’s milk
@@ -3000,7 +3000,7 @@ cards:
     category: other
     answer:
       core:
-        - Mild, tangy pickled chili peppers
+        - mild, tangy pickled chili peppers
       context:
         - not meat
     details: >-
@@ -3015,7 +3015,7 @@ cards:
     category: other
     answer:
       core:
-        - Chili pepper, usually hot
+        - chili pepper, usually hot
       context:
         - Italian
     details: >-
@@ -3032,7 +3032,7 @@ cards:
     category: other
     answer:
       core:
-        - Bell peppers
+        - bell peppers
       context:
         - Italian plural
         - not pepperoni sausage
@@ -3049,7 +3049,7 @@ cards:
     category: other
     answer:
       core:
-        - Pickled mixed vegetables
+        - pickled mixed vegetables
       context:
         - Italian style
     details: >-
@@ -3064,7 +3064,7 @@ cards:
     category: other
     answer:
       core:
-        - Candied fruit in mustard-flavored syrup
+        - candied fruit in mustard-flavored syrup
       context:
         - Northern Italian
     details: >-
@@ -3080,7 +3080,7 @@ cards:
     category: other
     answer:
       core:
-        - Salt-cured fish roe
+        - salt-cured fish roe
       context:
         - usually grated or thinly sliced
     details: >-
@@ -3096,7 +3096,7 @@ cards:
     category: other
     answer:
       core:
-        - Anchovies
+        - anchovies
       context:
         - Italian
     details: >-
@@ -3112,7 +3112,7 @@ cards:
     category: other
     answer:
       core:
-        - Salt-cured cod
+        - salt-cured cod
       context:
         - Italian
     details: >-
@@ -3128,7 +3128,7 @@ cards:
     category: other
     answer:
       core:
-        - Octopus
+        - octopus
       context:
         - Italian
     details: >-
@@ -3143,7 +3143,7 @@ cards:
     category: other
     answer:
       core:
-        - Cuttlefish
+        - cuttlefish
       context:
         - Italian
     details: >-
@@ -3158,7 +3158,7 @@ cards:
     category: other
     answer:
       core:
-        - Mussels
+        - mussels
       context:
         - Italian
     details: >-
@@ -3174,7 +3174,7 @@ cards:
     category: other
     answer:
       core:
-        - Clams
+        - clams
       context:
         - Italian
     details: >-
@@ -3190,7 +3190,7 @@ cards:
     category: other
     answer:
       core:
-        - Small, lobster-like crustaceans
+        - small, lobster-like crustaceans
       context:
         - usage varies by country
     details: >-
@@ -3207,7 +3207,7 @@ cards:
     category: other
     answer:
       core:
-        - Artichokes
+        - artichokes
       context:
         - Italian
     details: >-
@@ -3221,7 +3221,7 @@ cards:
     category: other
     answer:
       core:
-        - Bitter red-leaf chicory
+        - bitter red-leaf chicory
     details: >-
       Radicchio is a perennial cultivated form of leaf chicory (Cichorium intybus, Asteraceae), commonly
       used in Italian cuisine. It is grown as a leaf vegetable and usually has colourful, white-veined
@@ -3235,7 +3235,7 @@ cards:
     category: other
     answer:
       core:
-        - Bitter leafy green
+        - bitter leafy green
         - broccoli rabe
     details: >-
       Rapini (broccoli rabe or raab; RAHB) is a green cruciferous vegetable, with the leaves, buds, and
@@ -3250,7 +3250,7 @@ cards:
     category: other
     answer:
       core:
-        - Crisp, slightly bitter chicory shoots
+        - crisp, slightly bitter chicory shoots
       context:
         - from Catalonian chicory
     details: >-
@@ -3265,7 +3265,7 @@ cards:
     category: other
     answer:
       core:
-        - Dark leafy cabbage
+        - dark leafy cabbage
         - Italian kale
       context:
         - Tuscan
@@ -3284,7 +3284,7 @@ cards:
     category: other
     answer:
       core:
-        - Small, flat, mildly sweet onions
+        - small, flat, mildly sweet onions
       context:
         - Italian
     details: >-
@@ -3298,7 +3298,7 @@ cards:
     category: other
     answer:
       core:
-        - Tiny, tart pickled cucumbers
+        - tiny, tart pickled cucumbers
       context:
         - French
     details: >-
@@ -3316,7 +3316,7 @@ cards:
     category: other
     answer:
       core:
-        - Chopped parsley, lemon zest, and garlic garnish
+        - chopped parsley, lemon zest, and garlic garnish
     details: >-
       Gremolata (Italian: [ɡremoˈlaːta]) or gremolada (Italian: [ɡremoˈlaːda], Lombard: [ɡremuˈlaːda])
       is a green sauce made with chopped parsley, lemon zest, and garlic. It is the standard accompaniment
@@ -3330,7 +3330,7 @@ cards:
     category: other
     answer:
       core:
-        - Savory olive spread
+        - savory olive spread
       context:
         - Provençal
     details: >-
@@ -3346,7 +3346,7 @@ cards:
     category: other
     answer:
       core:
-        - Sweet-and-sour eggplant relish
+        - sweet-and-sour eggplant relish
       context:
         - Sicilian
     details: >-
