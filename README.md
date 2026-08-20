@@ -5,6 +5,8 @@ focuses on identification, not language production: seeing the bare term should
 be enough to recall what kind of food it is and the characteristics that matter
 most when ordering.
 
+**[Download the latest Menu Foods deck](https://github.com/domenic/menu-foods-deck/releases/latest/download/menu-foods.apkg)**
+
 The cards live in one mixed `Menu Foods` deck and cover pasta, meats and
 charcuterie, cheeses, and other easily misclassified terms.
 
