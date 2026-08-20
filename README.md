@@ -5,11 +5,25 @@ focuses on identification, not language production: seeing the bare term should
 be enough to recall what kind of food it is and the characteristics that matter
 most when ordering.
 
-The cards live in one mixed `Menu Foods` deck and cover pasta, meats and cuts,
-charcuterie, cheeses, and other easily misclassified terms. Category tags allow
-filtering without giving away a term's category during review.
+The cards live in one mixed `Menu Foods` deck and cover pasta, meats and
+charcuterie, cheeses, and other easily misclassified terms.
 
-## One source of truth
+Category tags allow filtering if you'd prefer to just study pastas or similar.
+But at least for me, "is this mystery foreign word a pasta or a meat?" is
+important, so I suggest studying them all jumbled together.
+
+## Example cards
+
+<p align="center">
+  <img src="screenshots/orecchiette.png" alt="Anki answer card for orecchiette: small ear-shaped pasta" width="360">
+  <img src="screenshots/guanciale.png" alt="Anki answer card for guanciale: pig; salt-cured cheek or jowl" width="360">
+</p>
+<p align="center">
+  <img src="screenshots/pecorino-romano.png" alt="Anki answer card for pecorino romano: hard, salty sheep's-milk cheese; Italian" width="360">
+  <img src="screenshots/peperoncino.png" alt="Anki answer card for peperoncino: chili pepper, usually hot; Italian" width="360">
+</p>
+
+## The data
 
 [menu-foods.yaml](menu-foods.yaml) is the hand-edited card database. Here is a
 sample entry:
@@ -62,6 +76,8 @@ normal import interface.
 
 ## Development
 
+### Build the deck
+
 Install [uv](https://docs.astral.sh/uv/), then run:
 
 ```sh
@@ -82,6 +98,8 @@ normalized ZIP metadata, so identical source, media, and timestamps produce an
 identical `.apkg` file. CI uses the source commit's timestamp, allowing later
 releases to update earlier imports while keeping each release reproducible.
 
+### Validate and test
+
 Validate the YAML without downloading media or writing a package:
 
 ```sh
@@ -93,6 +111,18 @@ Run the tests:
 ```sh
 uv run python -m unittest discover -s test -v
 ```
+
+### Regenerate screenshots
+
+After installing the [Playwright](https://playwright.dev/) CLI and its Chromium
+browser, regenerate the README card screenshots with:
+
+```sh
+playwright install chromium
+uv run python generate_screenshots.py
+```
+
+### Refresh Wikipedia descriptions
 
 Check tracked Wikipedia descriptions against the current article leads:
 
@@ -108,8 +138,8 @@ uv run wikipedia_descriptions.py update
 ```
 
 Only changed cards are rewritten; review the resulting `menu-foods.yaml` diff in
-Git before committing it. Descriptions without a permanent Wikipedia revision
-in `source.adapted_from` are skipped by both commands.
+Git before committing it. Descriptions without a permanent Wikipedia revision in
+`source.adapted_from` are skipped by both commands.
 
 ## Third-party material
 

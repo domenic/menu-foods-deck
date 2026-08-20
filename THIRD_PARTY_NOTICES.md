@@ -14,10 +14,12 @@ linked source article before redistributing a generated deck.
 
 ## Wikimedia Commons images
 
-Image binaries are not stored in the repository. `menu-foods.yaml` names one
-Wikimedia Commons file per card, and the builder downloads those files into an
-ignored local cache before packaging them. Each generated card links to the
-corresponding file-description page, where the image's author, license, and any
-attribution requirements are listed. Licenses vary by image.
+Apart from the rendered card screenshots used by the README, image binaries are
+not stored in the repository. `menu-foods.yaml` names one Wikimedia Commons file
+per card, and the builder downloads those files into an ignored local cache
+before packaging them. Each generated card links to the corresponding
+file-description page, where the image's author, license, and any attribution
+requirements are listed. Sources for the README screenshots are recorded in the
+corresponding `menu-foods.yaml` entries. Licenses vary by image.
 
 [wikimedia-terms]: https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use/en#7._Licensing_of_Content
