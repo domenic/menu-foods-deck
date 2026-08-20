@@ -141,6 +141,24 @@ Only changed cards are rewritten; review the resulting `menu-foods.yaml` diff in
 Git before committing it. Descriptions without a permanent Wikipedia revision in
 `source.adapted_from` are skipped by both commands.
 
+### Publish a release
+
+Release tags must be `v` followed by the version in `pyproject.toml`; CI rejects
+mismatches. Use `uv` to update both the project metadata and lockfile, then
+commit and tag the result. For example, to promote `1.0.0.dev0` to `1.0.0`:
+
+```sh
+uv version --bump stable
+version=$(uv version --short)
+git add pyproject.toml uv.lock
+git commit -m "v$version"
+git tag -a "v$version" -m "v$version"
+git push --atomic origin main "v$version"
+```
+
+For later releases, `uv version --bump major`, `minor`, or `patch` provides the
+corresponding version increments.
+
 ## Third-party material
 
 The repository's MIT license covers the original code and original portions of

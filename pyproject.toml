@@ -1,6 +1,6 @@
 [project]
 name = "menu-foods-deck"
-version = "1.0.0"
+version = "1.0.0.dev0"
 description = "An Anki deck for recognizing unfamiliar food words on restaurant menus"
 readme = "README.md"
 requires-python = ">=3.12"
