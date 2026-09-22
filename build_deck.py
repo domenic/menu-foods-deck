@@ -93,6 +93,7 @@ def validate_data(data):
         cards = []
 
     seen_terms = set()
+    seen_ids = set()
     seen_images = set()
     for index, card in enumerate(cards):
         prefix = f"cards[{index}]"
@@ -106,6 +107,14 @@ def validate_data(data):
         elif term in seen_terms:
             errors.append(f"duplicate term: {term}")
         seen_terms.add(term)
+
+        card_id = card.get("id", term)
+        if not isinstance(card_id, str) or not card_id:
+            errors.append(f"{term}: id must be a nonempty string when present")
+        elif card_id in seen_ids:
+            errors.append(f"duplicate card id: {card_id}")
+        else:
+            seen_ids.add(card_id)
 
         if card.get("category") not in CATEGORIES:
             errors.append(f"{term}: unknown category {card.get('category')!r}")
@@ -324,7 +333,7 @@ def make_note(card, model, media_path):
         model=model,
         fields=fields,
         tags=["menu-food", f"menu-food::{card['category']}"],
-        guid=genanki.guid_for("menu-food", card["term"]),
+        guid=genanki.guid_for("menu-food", card.get("id", card["term"])),
     )
 
 
