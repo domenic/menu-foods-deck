@@ -36,6 +36,14 @@ class DeckDataTests(unittest.TestCase):
         )
         self.assertEqual(model.templates[0]["id"], 1746720810477752110)
 
+    def test_card_id_preserves_guid_when_term_changes(self):
+        card = next(card for card in CARDS if card.get("id") == "salame")
+        model = build_deck.make_model(build_deck.load_data()["deck"])
+        note = build_deck.make_note(card, model, build_deck.Path(card["image"]))
+
+        self.assertEqual(note.fields[0], "salami / salame")
+        self.assertEqual(note.guid, build_deck.genanki.guid_for("menu-food", "salame"))
+
     def test_every_meat_cue_leads_with_its_animal(self):
         animal_leads = {
             "animal varies",

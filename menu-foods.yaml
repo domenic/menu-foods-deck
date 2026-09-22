@@ -860,7 +860,8 @@ cards:
       url: https://en.wikipedia.org/wiki/Salumi
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1345761002
     image: Salumi_e_vino_lucchese.JPG
-  - term: salame
+  - term: salami / salame
+    id: salame
     category: meat
     answer:
       core:

@@ -55,6 +55,9 @@ sample entry:
 should grade yourself on only remembering the useful core, treating the extra
 context and details as bonus information.
 
+Cards normally derive their stable note identity from `term`. An optional `id`
+preserves that identity when a displayed term needs to change.
+
 The explanatory `details` are checked-in snapshots; many are short extracts
 retrieved from English Wikipedia. Builds never fetch article text, so upstream
 edits do not silently change the deck; updates must be made deliberately in the
