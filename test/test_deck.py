@@ -85,12 +85,93 @@ class DeckDataTests(unittest.TestCase):
             r"\b(?:aromatic|bloomy-rind|strong-smelling|washed-rind)\b"
         )
         for card in CARDS:
-            if card["category"] != "cheese":
+            if card["category"] != "cheese" or build_deck.is_reworked(card):
                 continue
             core = "; ".join(card["answer"]["core"])
             if animal_milk.search(core):
                 self.assertIn(card["term"], milk_identity_terms)
             self.assertIsNone(context_only.search(core), card["term"])
+
+    def test_reworked_cards_must_link_the_jargon_they_use(self):
+        data = build_deck.load_data()
+        card = next(card for card in data["cards"] if card["term"] == "whey")
+        card["answer"]["core"] = ["the liquid left over from curds"]
+        with self.assertRaisesRegex(
+            ValueError, "whey: uses .curds. without building on .curds."
+        ):
+            build_deck.validate_data(data)
+
+    def test_dependency_cycles_are_rejected(self):
+        data = build_deck.load_data()
+        card = next(card for card in data["cards"] if card["term"] == "curds")
+        card["details"] += " See [[whey]]."
+        with self.assertRaisesRegex(ValueError, "dependency cycle: .*curds"):
+            build_deck.validate_data(data)
+
+    def test_study_order_puts_prerequisites_first(self):
+        order = [build_deck.card_key(card) for card in build_deck.study_order(CARDS)]
+        cards_by_key = build_deck.index_cards(CARDS)
+        for card in CARDS:
+            key = build_deck.card_key(card)
+            for dependency in build_deck.dependencies(card, cards_by_key):
+                self.assertLess(order.index(dependency), order.index(key), key)
+
+    def test_kind_of_inherits_and_overrides_the_parent_profile(self):
+        cards_by_key = build_deck.index_cards(CARDS)
+        profile = build_deck.merged_profile(
+            cards_by_key["mozzarella di bufala"], cards_by_key
+        )
+        self.assertEqual(profile["milk"], ["water buffalo"])
+        self.assertEqual(profile["family"], "stretched-curd")
+
+    def test_reworked_details_render_profile_glosses_and_references(self):
+        cards_by_key = build_deck.index_cards(CARDS)
+        backlinks = build_deck.card_backlinks(CARDS)
+        burrata = build_deck.details_html(
+            cards_by_key["burrata"], cards_by_key, backlinks.get("burrata", {})
+        )
+        self.assertIn(
+            "<dt>rind</dt><dd>none</dd>",
+            burrata,
+        )
+        self.assertIn(
+            '<span class="ref">stretched-curd</span> <span class="gloss">(',
+            burrata,
+        )
+        self.assertIn("<li><b>stracciatella (cheese)</b>: ", burrata)
+        self.assertIn("burrata", backlinks["stretched-curd cheese"]["examples"])
+
+    def test_headlines_must_order_adjectives_consistently(self):
+        data = build_deck.load_data()
+        card = next(card for card in data["cards"] if card["term"] == "brie")
+        card["answer"]["core"] = ["buttery, soft, bloomy-rind cheese"]
+        with self.assertRaisesRegex(
+            ValueError, "brie: headline puts firmness 'soft' after flavor 'buttery'"
+        ):
+            build_deck.validate_data(data)
+
+    def test_image_from_borrows_another_cards_image(self):
+        cards_by_key = build_deck.index_cards(CARDS)
+        self.assertEqual(
+            build_deck.card_image(cards_by_key["fresco"], cards_by_key),
+            cards_by_key["fresh cheese"]["image"],
+        )
+
+    def test_prose_mentions_of_linked_cards_are_marked(self):
+        cards_by_key = build_deck.index_cards(CARDS)
+        fields = build_deck.note_fields(
+            cards_by_key["mascarpone"],
+            "",
+            cards_by_key,
+            build_deck.card_backlinks(CARDS),
+        )
+        self.assertIn('like <span class="ref">tiramisu</span>', fields[1])
+
+    def test_text_html_renders_references(self):
+        self.assertEqual(
+            build_deck.text_html("a [[curds]] & [[aged cheese|aging]]"),
+            'a <span class="ref">curds</span> &amp; <span class="ref">aging</span>',
+        )
 
     def test_recognition_html_bolds_core_and_escapes_fragments(self):
         self.assertEqual(

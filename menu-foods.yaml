@@ -2030,746 +2030,2273 @@ cards:
       url: https://en.wikipedia.org/wiki/Foie_gras
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368764317
     image: Foie_gras_en_cocotte.jpg
+  - term: curds
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - the soft white solids that milk separates into when making cheese
+    details: >-
+      Cheesemaking starts by souring milk or adding rennet, a natural substance that makes milk set, which makes it separate
+      into soft white clumps (the curds) and a thin, watery liquid that is drained away. Nearly every cheese is made by salting,
+      shaping and often [[aged cheese|aging]] these curds. Eaten as-is, fresh curds are mild and squeak against your teeth.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Curd
+    image: Draining Curds.jpg
+  - term: whey
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - the thin, watery liquid left over when milk separates into [[curds]]
+    details: >-
+      Most cheesemaking drains the whey away and keeps the curds. It's slightly sweet and cloudy yellow-green. It still has
+      some protein, which is why a few cheeses, like ricotta, are made by reheating it, and why it's sold dried as whey protein
+      powder.
+    compare:
+      - ricotta
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Whey
+    image: Joehrerhof Schafkaeseproduktion Abschoepfen der Molke 13062014 754.jpg
+  - term: whey cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - made by reheating leftover [[whey]] instead of from [[curds]]
+    details: >-
+      Heating the whey makes its remaining protein clump into tiny, soft, grainy curds, which are scooped out. The result
+      is mild, moist and slightly sweet. Ricotta, Italian for “re-cooked”, is the best-known one.
+    compare:
+      - ricotta
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Whey_cheese
+    image: Schiumatura del siero per la produzione della ricotta.jpg
+  - term: pressed cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - '[[curds]] squeezed under weights to force out liquid'
+    details: >-
+      Pressing drives more liquid out of the curds than draining alone, packing them into a dense, solid block. So pressed
+      cheeses end up firmer and keep longer. Cheddar and parmesan are both pressed.
+    compare:
+      - cheddar
+      - parmesan
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese_press
+    image: Gruyere making-IMG 5349.JPG
+  - term: aged cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - stored for weeks to years before eating, to develop flavor
+    details: >-
+      Also called “ripened” or “matured”. While a cheese is stored in a cool, damp room, moisture slowly evaporates and bacteria
+      and [[mold (cheese)|mold]] slowly break it down. So the longer a cheese ages, the firmer, drier and stronger-tasting
+      it usually gets: cheddar aged a couple of months is mild and bendy, while cheddar aged over a year is crumbly and bites
+      back.
+    compare:
+      - cheddar
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese_ripening
+    image: Obere Bundalp BE Käsekeller 01.jpg
+  - term: fresh cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - eaten within days of being made, without [[aged cheese|aging]]
+    details: >-
+      Fresh cheeses are soft, moist, mild and milky, often a little [[tangy cheese|tangy]], and have no [[rind]]. Cream cheese
+      is one. They spoil quickly, so they are often sold in tubs or sitting in liquid.
+    compare:
+      - cream cheese
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Fresh_and_whey_cheeses
+    image: Cheese 55 bg 061806.jpg
+  - term: wheel (cheese)
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - a whole cheese in the flat, round shape it was made in
+    details: >-
+      Cheeses are shaped in containers, and most come out as flat rounds, from palm-sized to over 40 kg (90 lb). Shops and
+      restaurants cut big ones into wedges: triangular pieces running from the center to the edge.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Truckle
+    image: Cut wheels of cheese (Unsplash).jpg
+  - term: mold (cheese)
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - harmless mold grown on purpose, for flavor and texture
+    details: >-
+      Cheesemakers add particular molds that are safe to eat. Some grow as a white, fuzzy coat on the outside of a cheese;
+      others grow as blue-green streaks inside. Unexpected spots of other colors still mean a cheese has gone bad.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Mold
+    image: Homemade Stilton Blue Cheese in UK.jpg
+  - term: rind
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - the outer layer or skin that forms on a cheese as it [[aged cheese|ages]]
+    details: >-
+      Like a crust on bread, it's drier and tougher than the inside. Some form on their own as the outside dries out; others
+      are grown on purpose from [[mold (cheese)|mold]], or by rubbing the cheese with salt water; some cheeses are sealed
+      in wax instead. Thin, soft rinds are usually eaten; hard crusts and wax are not. Cheeses eaten within days of being
+      made have none.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Rind
+    image: WikiCheese - Tomme de Savoie - 20150619 - 002.jpg
+  - term: natural rind
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - a dry, hard [[rind]] that forms on its own as a cheese’s outside dries out
+    details: >-
+      The most common kind of rind, usually brownish, grayish or tan. Cheesemakers may brush, oil or turn the cheese while
+      it [[aged cheese|ages]], but they don't grow anything on it. Found mostly on [[firm cheese|firm]] and [[hard cheese|hard]]
+      cheeses, like parmesan's crust, and usually too hard to eat.
+    compare:
+      - parmesan
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Hard_cheese
+    image_from: tomme
+  - term: bloomy rind
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - a thin, white, fuzzy [[rind]] of edible [[mold (cheese)|mold]]
+    details: >-
+      The white mold is sprayed on and grows over a few weeks like velvet (it “blooms”). As it grows, it softens the cheese
+      from the outside in and gives it buttery, [[earthy cheese|earthy]], mushroomy flavors. Found almost only on [[soft cheese|soft
+      cheeses]]; also called “soft-ripened”. The rind is meant to be eaten.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bloomy_rind
+    image: Wikicheese - Coulommiers - 20150515 - 020.jpg
+  - term: washed rind
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - an orange, sticky [[rind]] made by repeatedly washing the cheese with salt water
+    details: >-
+      The washing encourages particular bacteria, related to the ones living on human skin, which is why these cheeses can
+      smell like feet. They are famously [[pungent cheese|pungent]], but usually taste much milder than they smell: salty
+      and buttery. Some are washed with beer, wine or brandy instead.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Washed-rind_cheese
+    image: Époisses Gaugry 06.jpg
+  - term: wax rind
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - a coating of wax sealed around a cheese to protect it; not eaten
+    details: >-
+      Instead of letting a [[rind]] form, some cheeses are dipped in wax, often red, yellow or black, which keeps them moist
+      as they [[aged cheese|age]]. Peel it off before eating.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese
+    image: SmallEdamCheese.jpg
+  - term: ash (cheese)
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - fine, edible charcoal powder dusted on or through a cheese
+    details: >-
+      Made from burned plants. It started as a way to protect the outside of a cheese; today it helps [[mold (cheese)|mold]]
+      grow evenly and looks striking: a gray-black coat, or a thin line through the middle. It has almost no taste. Common
+      on French goat cheeses.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Surface_mold-ripened_(white)
+    image: Selles-sur-cher 1.jpg
+  - term: cave-aged cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - '[[aged cheese|aged]] in a cool, damp cave or cellar'
+    details: >-
+      Caves stay cool and humid all year, which keeps cheeses from drying out and helps their [[rind|rinds]] develop. Some
+      famous cheeses must be aged in particular caves, like roquefort; elsewhere the phrase is mostly marketing for aging
+      in a cellar.
+    compare:
+      - roquefort
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese_ripening
+    image: Cheeses stored at Wookey Hole Caves.JPG
+  - term: brined cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - stored in salt water, which keeps it moist and salty
+    details: >-
+      Brine is just very salty water. Brined cheeses sit in it until they're sold, so they have no [[rind]] and taste noticeably
+      salty. Feta and halloumi are the best-known. (Many other cheeses get a short brine bath just to salt them, but aren't
+      called brined cheeses.)
+    compare:
+      - feta
+      - halloumi
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Brined_cheese
+    image: Nabulsi cheese sold in brine.jpg
+  - term: protected designation of origin
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - 'a legal label: made in its traditional home region by traditional rules'
+    details: >-
+      Only cheese made in a particular region, following its traditional rules, may use a protected name. So shaker parmesan
+      made in the US isn't parmigiano reggiano. Each language abbreviates the label differently.
+    compare:
+      - parmigiano reggiano
+      - parmesan
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Geographical_indications_and_traditional_specialities_in_the_European_Union
+    image: Parmigiano Reggiano DOP Billa.jpg
+  - term: PDO
+    category: cheese
+    kind: concept
+    translates: protected designation of origin
+    answer:
+      core:
+        - '[[protected designation of origin]]'
+      context:
+        - English abbreviation
+    details: >-
+      The EU-wide label, as written in English.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Geographical_indications_and_traditional_specialities_in_the_European_Union
+  - term: DOP
+    category: cheese
+    kind: concept
+    translates: protected designation of origin
+    answer:
+      core:
+        - '[[protected designation of origin]]'
+      context:
+        - Italian and Spanish abbreviation (denominazione di origine protetta; denominación de origen protegida)
+    details: >-
+      Common on Italian menus, as in parmigiano reggiano DOP.
+    compare:
+      - parmigiano reggiano
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Geographical_indications_and_traditional_specialities_in_the_European_Union
+  - term: AOP
+    category: cheese
+    kind: concept
+    translates: protected designation of origin
+    answer:
+      core:
+        - '[[protected designation of origin]]'
+      context:
+        - French abbreviation (appellation d’origine protégée)
+    details: >-
+      The newer, EU-wide version of France's [[AOC]] label.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Geographical_indications_and_traditional_specialities_in_the_European_Union
+  - term: AOC
+    category: cheese
+    kind: concept
+    translates: protected designation of origin
+    answer:
+      core:
+        - '[[protected designation of origin]]'
+      context:
+        - French abbreviation of the older national label (appellation d’origine contrôlée)
+    details: >-
+      France's original national label, also used for wines.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Geographical_indications_and_traditional_specialities_in_the_European_Union
+  - term: melting cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - melts smooth and gooey
+    details: >-
+      The cheeses for fondue, grilled cheese, pizza and burgers. American cheese is the extreme example, and pepper jack melts
+      well too. Other cheeses soften but don't melt: they stay in shape when heated, or separate into grease and lumps.
+    compare:
+      - fondue
+      - American cheese
+      - pepper jack
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese
+    image: A delicious, freshly baked paneer pizza with an incredible cheese pull.jpg
+  - term: soft cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - soft enough to spread, scoop or ooze
+    details: >-
+      Soft cheeses have lots of moisture: think cream cheese, or an older brie oozing when cut. Most are eaten [[young cheese|young]].
+    compare:
+      - brie
+      - cream cheese
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Soft_cheese
+    image: VacherinInside (8323389420).jpg
+  - term: semi-soft cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - slices easily, but bends
+    details: >-
+      Moist, smooth and a little [[springy cheese|springy]]; often melts well. American cheese, string cheese and pepper jack
+      are all semi-soft.
+    compare:
+      - American cheese
+      - string cheese
+      - pepper jack
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Semi-soft_cheese
+    image: DeutschButterkäse.jpg
+  - term: firm cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - slices cleanly; breaks rather than bends
+    details: >-
+      Also called “semi-hard” or “semi-firm”. Cheddar is the classic example. Most firm cheeses are [[pressed cheese|pressed]]
+      and [[aged cheese|aged]] for months.
+    compare:
+      - cheddar
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Semi-hard_cheese
+    image: Somerset-Cheddar.jpg
+  - term: hard cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - dry and hard enough to grate
+    details: >-
+      Hard cheeses are [[aged cheese|aged]] a long time, often a year or more, until much of their moisture is gone. They
+      are usually grated or shaved over food, like shaker parmesan, or broken into chunks.
+    compare:
+      - parmesan
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Hard_cheese
+    image: Fine Microplane Grating Hard Cheese.jpg
+  - term: cheese firmness
+    id: cheese firmness ladder
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - soft → semi-soft → firm → hard
+    details: >-
+      [[soft cheese|Soft]]: spreads or oozes (cream cheese). [[semi-soft cheese|Semi-soft]]: slices but bends (American, string
+      cheese). [[firm cheese|Firm]]: slices cleanly and breaks (cheddar). [[hard cheese|Hard]]: grates (shaker parmesan).
+      Firmness is mostly about moisture, so a cheese gets firmer the longer it [[aged cheese|ages]].
+    compare:
+      - cream cheese
+      - string cheese
+      - cheddar
+      - parmesan
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Moisture:_soft_to_hard
+  - term: sharp cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - a [[tangy cheese|tangy]] taste that tingles on your tongue and grows as a cheese [[aged cheese|ages]]
+    details: >-
+      The difference between mild and sharp cheddar. It's a kind of strong flavor, felt most at the sides of your tongue.
+    compare:
+      - cheddar
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese
+  - term: pungent cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - strong-smelling; stinky
+    details: >-
+      Pungent cheeses can smell like feet, a barnyard or cooked cabbage. It's a kind of strong flavor, but one you smell rather
+      than taste: many pungent cheeses taste much milder than they smell.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pungency
+  - term: tangy cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - pleasantly sour, like yogurt or cream cheese
+    details: >-
+      A mild sourness, like sour cream or buttermilk. Common in [[young cheese|young]] cheeses and in goat's-milk cheeses.
+    compare:
+      - cream cheese
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese
+  - term: nutty cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - toasty, like roasted nuts
+    details: >-
+      A toasty, slightly sweet flavor that develops as [[firm cheese|firm cheeses]] [[aged cheese|age]]. Parmesan has some
+      of it. It's the classic flavor of cheeses like gruyère.
+    compare:
+      - gruyère
+      - parmesan
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese
+  - term: earthy cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - tasting and smelling like mushrooms or damp soil
+    details: >-
+      Usually comes from what grows on the outside of the cheese, so it's strongest near the [[rind]].
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese
+  - term: springy cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - bounces back when you press or bite it, like string cheese
+    details: >-
+      A rubbery, elastic give: squeeze it and it pushes back, then returns to its shape. Common in [[young cheese|young]],
+      moist cheeses like mozzarella, and in halloumi, which also squeaks against your teeth.
+    compare:
+      - mozzarella
+      - halloumi
+      - string cheese
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese
+  - term: cheese flavor strength
+    id: cheese flavor strength ladder
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - mild → medium → strong
+      context:
+        - strong can mean [[sharp cheese|sharp]] (a taste) or [[pungent cheese|pungent]] (a smell)
+    details: >-
+      Mild: milky and gentle, like American or string cheese. Medium: clearly flavorful, like a medium cheddar. Strong comes
+      in two separate kinds, and a cheese can have either or both: sharp is a strong, biting taste, like extra-sharp cheddar;
+      pungent is a strong smell. Many pungent cheeses taste only mild or medium, which is why cards list smell separately
+      from strength. Flavor generally gets stronger as a cheese [[aged cheese|ages]].
+    compare:
+      - string cheese
+      - cheddar
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese
+  - term: stretched-curd cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - '[[curds]] heated and stretched like taffy, making it stringy and [[springy cheese|springy]]'
+    details: >-
+      The curds are dipped in hot water, then pulled, stretched and folded until smooth and elastic. That's why string cheese
+      peels into strings and why mozzarella stretches on pizza.
+    compare:
+      - mozzarella
+      - string cheese
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_stretch-curd_cheeses
+    image: Mozzatura mozzarella.jpg
+  - term: blue cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - streaks of blue-green [[mold (cheese)|mold]] grown inside
+    details: >-
+      The cheese is pierced with needles so air can reach the mold inside. Blue cheeses are [[tangy cheese|tangy]], salty
+      and strong, often [[pungent cheese|pungent]], and either creamy or crumbly. Blue cheese dressing is made from them.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Blue_cheese
+    image: Bleu de Gex.jpg
+  - term: Alpine-style cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - big, [[firm cheese|firm]] [[wheel (cheese)|wheels]] of [[nutty cheese|nutty]] cow’s-milk cheese that melt well
+    details: >-
+      Made in and around the Alps, the mountains of Switzerland, France and Italy, from the milk of cows grazing high pastures.
+      The [[curds]] are heated, [[pressed cheese|pressed]] into wheels of up to 40 kg (90 lb), then [[aged cheese|aged]] for
+      months to years. They melt smoothly, which is why fondue uses them. Gruyère is the best-known, and French speakers once
+      called the whole family “gruyère”. Not every cheese from the Alps is in this style.
+    compare:
+      - gruyère
+      - fondue
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Swiss-type_cheeses
+    image: Affinage Gruyère (landscape).jpg
+  - term: grana
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - hard, grainy Italian cheese [[aged cheese|aged]] a year or more, for grating
+    details: >-
+      Grana means “grain”: the texture is grainy and dotted with tiny crunchy crystals. Made in huge [[wheel (cheese)|wheels]]
+      and protected by [[DOP]] labels. Shaker parmesan is a US imitation.
+    compare:
+      - parmesan
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Grana_(cheese)
+    image: Parmigiano reggiano piece.jpg
+  - term: young cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - '[[aged cheese|aged]] only briefly, so still mild and soft'
+    details: >-
+      The opposite of long-aged. Many cheeses are sold both young and old, and the young version is milder, softer and moister.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese_ripening
+  - term: processed cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - cheese melted down with additives and re-formed, so it melts perfectly smooth
+    details: >-
+      Made by melting [[young cheese|young]] cheese, often cheddar, with milk and special salts that stop the fat separating,
+      then shaping it into slices, blocks or cans. It never turns greasy or lumpy when heated. American cheese is the best-known.
+    compare:
+      - cheddar
+      - American cheese
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Processed_cheese
+    image: Velveeta Cheese.JPG
+  - term: double crème / double cream
+    id: double crème
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - '[[soft cheese]] with some extra cream added; fairly high in fat'
+    details: >-
+      Like [[triple crème]], but with less added cream. Usually a [[bloomy rind|bloomy-rind]] cheese from France.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Triple_cream
+    image: Chaource (fromage) 01.jpg
+  - term: fresco / fresca
+    id: fresco
+    category: cheese
+    kind: concept
+    translates: fresh cheese
+    answer:
+      core:
+        - '[[fresh cheese|fresh]]'
+      context:
+        - Italian and Spanish
+    details: >-
+      The ending changes to match the noun it describes.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Fresh_and_whey_cheeses
+    image_from: fresh cheese
+  - term: frais / fraîche
+    id: frais
+    category: cheese
+    kind: concept
+    translates: fresh cheese
+    answer:
+      core:
+        - '[[fresh cheese|fresh]]'
+      context:
+        - French
+    details: >-
+      The ending changes to match the noun it describes. [[fromage|Fromage]] frais is a spoonable fresh cheese.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Types_of_cheese#Fresh_and_whey_cheeses
+    image_from: fresh cheese
+  - term: stagionato / stagionata
+    id: stagionato
+    category: cheese
+    kind: concept
+    translates: aged cheese
+    answer:
+      core:
+        - '[[aged cheese|aged]]'
+      context:
+        - Italian
+    details: >-
+      The ending changes to match the noun it describes.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese_ripening
+    image_from: aged cheese
+  - term: stravecchio
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - very old; aged extra long
+      context:
+        - Italian
+    details: >-
+      Used for the longest-[[aged cheese|aged]] versions of a cheese, often two years or more, which are hard and strong.
+      Vecchio means old.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese_ripening
+    image_from: aged cheese
+  - term: affiné / affinée
+    id: affiné
+    category: cheese
+    kind: concept
+    translates: aged cheese
+    answer:
+      core:
+        - '[[aged cheese|aged]]'
+      context:
+        - French
+    details: >-
+      An affineur is a specialist who buys [[young cheese|young]] cheeses from cheesemakers and ages them; cheese menus sometimes
+      name one.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese_ripening
+    image_from: aged cheese
+  - term: añejo / añeja
+    id: añejo
+    category: cheese
+    kind: concept
+    translates: aged cheese
+    answer:
+      core:
+        - '[[aged cheese|aged]]'
+      context:
+        - Spanish
+    details: >-
+      Also used for aged rum and tequila. [[queso|Queso]] añejo is an aged, salty Mexican cheese much like [[cotija]].
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese_ripening
+    image_from: aged cheese
+  - term: tierno / tierna
+    id: tierno
+    category: cheese
+    kind: concept
+    translates: young cheese
+    answer:
+      core:
+        - '[[young cheese|young]]'
+      context:
+        - Spanish; literally “tender”
+    details: >-
+      Used for cheeses aged only a few weeks, which are mild and soft.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese_ripening
+    image: Queso de Campo Real tierno.jpg
+  - term: curado / curada
+    id: curado
+    category: cheese
+    kind: concept
+    translates: aged cheese
+    answer:
+      core:
+        - '[[aged cheese|aged]]'
+      context:
+        - Spanish; literally “cured”
+    details: >-
+      Spanish cheeses are often labeled by age, from youngest to oldest: [[tierno]], semicurado, curado and viejo (“old”).
+      Manchego curado is aged about four months to a year.
+    compare:
+      - manchego
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese_ripening
+    image_from: aged cheese
+  - term: dolce (cheese)
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - the [[young cheese|young]], milder version
+      context:
+        - Italian; after a cheese name
+    details: >-
+      As in gorgonzola dolce or provolone dolce.
+    compare:
+      - gorgonzola
+      - gorgonzola dolce
+      - provolone
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gorgonzola
+    image_from: gorgonzola dolce
+  - term: piccante (cheese)
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - the longer-[[aged cheese|aged]], [[sharp cheese|sharper]] version
+      context:
+        - Italian; after a cheese name
+    details: >-
+      As in gorgonzola piccante or provolone piccante.
+    compare:
+      - gorgonzola
+      - gorgonzola piccante
+      - provolone
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gorgonzola
+    image_from: gorgonzola piccante
+  - term: affumicato / affumicata
+    id: affumicato
+    category: cheese
+    kind: concept
+    translates: smoked cheese
+    answer:
+      core:
+        - '[[smoked cheese|smoked]]'
+      context:
+        - Italian
+    details: >-
+      As in scamorza affumicata.
+    compare:
+      - scamorza
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Smoked_cheese
+    image_from: provola
+  - term: pasta filata
+    category: cheese
+    kind: concept
+    translates: stretched-curd cheese
+    answer:
+      core:
+        - '[[stretched-curd cheese|stretched-curd]]'
+      context:
+        - Italian
+    details: >-
+      A cheesemakers' term that sometimes shows up on menus and cheese shop labels.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_stretch-curd_cheeses
+    image_from: stretched-curd cheese
+  - term: formaggio
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - cheese
+      context:
+        - Italian
+    details: >-
+      Plural formaggi: a plate of formaggi misti is a selection of mixed cheeses.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese
+    image: Mercato rionale di Castegnato - formaggi.jpg
+  - term: fromage
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - cheese
+      context:
+        - French
+    details: >-
+      A plateau de fromages is a cheese board, often served in France as its own course between the main course and dessert.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheese
+    image: Plateau de fromages aux Halles de Lyon-Paul Bocuse en mai 2017.jpg
+  - term: queso
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - cheese
+      context:
+        - Spanish
+    details: >-
+      On American menus, queso alone usually means queso dip: melted cheese, often with chilies, for tortilla chips.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Queso
+    image: (Cantina Diablo's) Chile Con Queso.jpg
+  - term: brebis
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - sheep’s-milk cheese
+      context:
+        - French; literally “ewe”, a female sheep
+    details: >-
+      Marks a sheep's-milk cheese on French menus and cheese boards, like roquefort.
+    compare:
+      - roquefort
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sheep_milk_cheese
+    image_from: ossau-iraty
+  - term: bleu
+    category: cheese
+    kind: concept
+    translates: blue cheese
+    answer:
+      core:
+        - '[[blue cheese|blue cheese]]'
+      context:
+        - French
+    details: >-
+      As in bleu d'Auvergne. American menus sometimes spell blue cheese as “bleu cheese”.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Blue_cheese
+    image_from: blue cheese
+  - term: smoked cheese
+    category: cheese
+    kind: concept
+    answer:
+      core:
+        - cheese hung in wood smoke, for a brown outside and a campfire flavor
+    details: >-
+      Many cheeses come in smoked versions, hung over smoldering wood or straw for hours or days, like scamorza, provola and
+      gouda.
+    compare:
+      - scamorza
+      - provola
+      - gouda
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Smoked_cheese
   - term: asiago
     category: cheese
     answer:
       core:
-        - mild when young
-        - firm when aged
-      context:
-        - Italian
-        - cow’s milk
+        - springy and mild when [[young cheese|young]]; hard and sharp when aged
+    profile:
+      rind: natural
+      firmness: [semi-soft, hard]
+      texture: [springy, grainy]
+      strength: [mild, strong]
+      flavor: [milky, buttery, nutty, sharp]
+      milk: [cow]
+      age: young or aged, 1 month to 2 years
+      made: [pressed]
+      origin: northern Italy
+      label: DOP
     details: >-
-      Asiago (UK: ASS-ee-AH-goh, AZ-, US: AH-s(h)ee-, AH-zhee-, Italian: [aˈzjaːɡo]) is a cow's milk cheese,
-      first produced in Asiago in Italy, that can assume different textures according to its aging, from
-      smooth for the fresh Asiago (called Asiago pressato, which means "pressed Asiago") to a crumbly
-      texture for the aged cheese (Asiago d'allevo, which means "breeding farm Asiago"). The aged cheese
-      is often grated in salads, soups, pastas, and sauces while the fresh Asiago is sliced to prepare
-      panini or sandwiches; it can also be melted on a variety of dishes and cantaloupe.
+      Two styles share the name. Asiago [[fresco]] (also called pressato) is aged about a month: pale, springy and mild, with
+      small holes. Asiago d'allevo is aged for months to years until firm to hard, nutty and sharp. In the US, “asiago” usually
+      means an aged, grating kind.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Asiago_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365730076
-    image: Asiago_cheese_1.jpg
+    image: Asiago cheese.jpg
   - term: bel paese
     category: cheese
     answer:
       core:
-        - mild, semi-soft cheese
+        - semi-soft, mild, buttery cheese
       context:
         - Italian
-        - cow’s milk
+    profile:
+      rind: wax
+      firmness: semi-soft
+      texture: [creamy, melts well]
+      strength: mild
+      flavor: [milky, buttery]
+      milk: [cow]
+      age: aged 6 to 8 weeks
+      origin: northern Italy
     details: >-
-      Bel Paese (Italian pronunciation: [ˌbɛl paˈeːze, -eːse]) or Italico is a semi-soft Italian cheese.
-      It was invented in 1906 by Egidio Galbani who wanted to produce a mild and delicate cheese to sell
-      mainly in Italy.
+      The name means “beautiful country”: Italy. A smooth, gentle cheese first made in a factory in 1906, eaten as a snack
+      or dessert cheese, or melted on pizza and sandwiches in place of [[mozzarella]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Bel_Paese_(cheese)
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1331913594
     image: Cheese_29_bg_051906.jpg
   - term: burrata
     category: cheese
     answer:
       core:
-        - fresh mozzarella pouch filled with cream and curds
+        - a pouch of fresh [[mozzarella]] filled with [[stracciatella (cheese)|stracciatella]]
+    profile:
+      family: stretched-curd
+      rind: none
+      firmness: soft
+      texture: [creamy, high in fat]
+      strength: mild
+      flavor: [milky, buttery]
+      milk: [cow]
+      age: fresh
+      origin: southern Italy
     details: >-
-      Burrata (Italian: [burˈrata]) is an Italian cow's milk (occasionally buffalo milk) cheese made from
-      mozzarella and cream. Burrata has its origins in the Apulia region of Italy.
+      The outside is a thin skin of mozzarella; cut it open and the soft, creamy filling spills out. It spoils within a couple
+      of days, so it's served whole and very fresh, typically with tomatoes, olive oil and bread.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Burrata
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1363847040
-    image: Burrata2.jpg
+    image: Burrata 05.jpg
+  - term: stracciatella (cheese)
+    category: cheese
+    answer:
+      core:
+        - shreds of fresh [[mozzarella]] soaked in cream
+    profile:
+      family: stretched-curd
+      rind: none
+      firmness: soft
+      texture: [creamy, high in fat]
+      strength: mild
+      flavor: [milky, buttery]
+      milk: [cow]
+      age: fresh
+      origin: southern Italy
+    details: >-
+      Italian for “little rags”. It's the filling inside burrata, also served on its own, spooned over pasta, pizza or toast.
+    compare:
+      - burrata
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Stracciatella_(cheese)
+    image: Stracciatella formaggio fresco 2.jpg
   - term: caciocavallo
     category: cheese
     answer:
       core:
-        - firm, stretched-curd cheese
+        - teardrop-shaped, firm, stretched-curd cheese
+        - mild when [[young cheese|young]]
+        - sharp when long-aged
       context:
-        - Southern Italian
+        - southern Italian
+    profile:
+      family: stretched-curd
+      rind: natural
+      firmness: firm
+      texture: [springy, melts well]
+      strength: [mild, strong]
+      flavor: [milky, salty, sharp]
+      milk: [cow]
+      age: young or aged, 3 months to 2 years
+      origin: southern Italy
+      label: DOP, caciocavallo silano only
     details: >-
-      Caciocavallo (Italian: [ˌkatʃokaˈvallo]) is a type of pasta filata ('stretched-curd') cheese made
-      out of sheep's or cow's milk. It is produced throughout southern Italy, particularly in the Apennine
-      Mountains and in the Gargano peninsula.
+      The name means “cheese on horseback”: pairs of teardrop-shaped cheeses are tied together and hung over a pole to age,
+      as if straddling a saddle. Mild and springy when [[young cheese|young]], sharp after long aging; often grilled or melted.
+      A close relative of provolone.
+    compare:
+      - provolone
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Caciocavallo
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369716810
     image: Cacio_cavallo_with_slices.jpg
   - term: caciotta
     category: cheese
     answer:
       core:
-        - mild, semi-soft farmhouse cheese
+        - small, semi-soft, mild cheese
       context:
-        - Italian
+        - central Italian
+    profile:
+      rind: natural
+      firmness: semi-soft
+      texture: [creamy]
+      strength: mild
+      flavor: [milky, buttery]
+      milk: [cow, sheep, goat]
+      age: young, 2 weeks to a few months
+      origin: central Italy
     details: >-
-      Caciotta, from the Tuscan cacciola, is a type of cheese produced in Italy from the milk of cows,
-      sheep, goats, or water buffalo. Caciotta has more than a dozen variations.
+      A general name, roughly “little cheese”, for small rounds made across central Italy from whatever milk is at hand: cow,
+      sheep, goat or a mix. Usually eaten [[young cheese|young]], while mild and soft enough to slice easily.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Caciotta
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1292023836
-    image: A_Caciotta_Olives_Cheese_and_Yellow_Cheese_in_Osteria_Ristorante_Italiano.jpg
+    image: Caciotta marchigiana 2.jpg
   - term: crescenza
     category: cheese
+    kind_of: stracchino
     answer:
       core:
-        - soft, mild, creamy cheese
-      context:
-        - Italian
-        - cow’s milk
+        - often just another name for it
+    profile: {}
     details: >-
-      Stracchino (Italian: [strakˈkiːno]), also known as crescenza (Italian: [kreʃˈʃɛntsa]), is an Italian
-      cow's milk cheese typical of the regions of Lombardy, Tuscany, Veneto, Friuli-Venezia Giulia, and
-      Liguria. It is eaten very young, has no rind and has a very soft, creamy texture and normally a
-      mild, slightly acidic flavour.
+      Some cheesemakers use crescenza for the youngest, softest stracchino, but many use the two names interchangeably. A
+      classic filling for focaccia di Recco, a thin, cheese-stuffed flatbread from northwest Italy.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Stracchino
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1346840287
-    image: Stracchino.jpg
+    image_from: stracchino
   - term: fontina
     category: cheese
     answer:
       core:
-        - nutty, semi-soft cheese
+        - semi-soft, nutty cheese that melts well
       context:
-        - from the Alps
-        - cow’s milk
+        - Italian
+    profile:
+      rind: natural
+      firmness: semi-soft
+      texture: [creamy, melts well]
+      strength: medium
+      flavor: [nutty, buttery, earthy]
+      milk: [cow]
+      age: aged about 3 months
+      made: [pressed]
+      origin: the Italian Alps
+      label: DOP, fontina Val d’Aosta only
     details: >-
-      Fontina (French: fontine) is a cow's milk cheese, first produced in Italy. Over time, production
-      of fontina has spread worldwide, including to the United States, Denmark, Sweden, Canada, France,
-      and Argentina.
+      The original is fontina Val d'Aosta, [[DOP]]-protected, from the Italian Alps, with a thin brown rind and an earthy
+      smell. Fontina made elsewhere, often sealed in red wax, is milder. Melts smoothly into sauces, and onto pizza and grilled
+      sandwiches.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Fontina
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365730587
-    image: Fontina_DOP.jpg
+    image: Fontina PDO.jpg
   - term: gorgonzola
     category: cheese
     answer:
       core:
-        - blue cheese
-      context:
-        - Italian
-        - cow’s milk
+        - Italian blue cheese, sold [[dolce (cheese)|dolce]] or [[piccante (cheese)|piccante]]
+    profile:
+      family: blue
+      rind: natural
+      smell: pungent
+      milk: [cow]
+      origin: northern Italy
+      label: DOP
     details: >-
-      Gorgonzola (Italian: [ɡorɡonˈdzɔːla]) is an Italian blue cheese made from unskimmed cow's milk,
-      believed to have been created in the 9th century. Today the use of its name is controlled under
-      the criteria of a protected designation of origin (PDO).
+      One of the oldest blue cheeses, named after a town near Milan. Menus often say just gorgonzola; in the US that usually
+      means the milder dolce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Gorgonzola
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369841634
     image: A_Gongonzola_from_Baci.jpg
+  - term: gorgonzola dolce
+    category: cheese
+    kind_of: gorgonzola
+    answer:
+      core:
+        - soft, creamy and mild
+    profile:
+      firmness: soft
+      texture: [creamy, spreadable]
+      strength: mild
+      flavor: [buttery, tangy]
+      age: young, 2 to 3 months
+      style: [dolce]
+    details: >-
+      [[dolce (cheese)|Dolce]] means “sweet”. [[young cheese|Young]], pale and spoonable, with soft blue-green streaks; melted
+      into pasta sauces and risotto.
+    compare:
+      - risotto
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gorgonzola
+    image: Gorgonzola 1.jpg
+  - term: gorgonzola piccante
+    category: cheese
+    kind_of: gorgonzola
+    answer:
+      core:
+        - firmer, crumbly and sharp
+    profile:
+      firmness: semi-soft
+      texture: [crumbly]
+      strength: strong
+      flavor: [tangy, salty, sharp]
+      age: aged 3 months to a year
+      style: [piccante]
+    details: >-
+      [[piccante (cheese)|Piccante]] means “spicy”. [[aged cheese|Aged]] longer, so it's firmer, more heavily streaked with
+      blue and much sharper; crumbled on salads or eaten with honey.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gorgonzola
+    image: GorgonzolaDSC4233.jpg
   - term: grana padano
     category: cheese
     answer:
       core:
-        - hard, granular cheese
+        - hard, grainy grating cheese
       context:
-        - Italian
-        - cow’s milk
+        - Italian; a milder, cheaper parmigiano reggiano
+    profile:
+      family: grana
+      rind: natural
+      firmness: hard
+      texture: [grainy]
+      strength: medium
+      flavor: [nutty, salty, milky]
+      milk: [cow]
+      age: aged 9 months to 2 years
+      made: [pressed]
+      origin: northern Italy (Po Valley)
+      label: DOP
     details: >-
-      Grana Padano is an Italian cheese originating in the Po Valley. It is similar to Parmesan but with
-      less strict regulations governing its production.
+      Made over a wider area than parmigiano reggiano, under looser rules, and often aged less, so it's milder and cheaper.
+      Grated over pasta and risotto, or broken into chunks.
+    compare:
+      - parmigiano reggiano
+      - risotto
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Grana_Padano
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368285363
     image: Grana_Padano_DOP_Riserva.jpg
   - term: mascarpone
     category: cheese
     answer:
       core:
-        - very rich, mild cream cheese
+        - high-fat, mild Italian cream cheese
       context:
-        - Italian
+        - used in desserts like tiramisu
+    profile:
+      rind: none
+      firmness: soft
+      texture: [spreadable, high in fat]
+      strength: mild
+      flavor: [milky, buttery, slightly sweet]
+      milk: [cow]
+      age: fresh
+      origin: northern Italy
     details: >-
-      Mascarpone (Italian: [maskarˈpoːne]) is a soft Italian dairy product obtained by acid-heat coagulation
-      of cream. It is a dairy cream, not a cheese in the technical sense, as it is made without rennet
-      and does not undergo true curd formation.
+      Made by thickening cream, not milk, with a little acid, so it's much higher in fat than American cream cheese and barely
+      [[tangy cheese|tangy]]. It isn't sweetened, but its mild, faintly sweet taste suits desserts; it also goes into risotto
+      and pasta sauces.
+    compare:
+      - tiramisu
+      - risotto
+      - cream cheese
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Mascarpone
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367569513
     image: Mascarpone_4.png
   - term: montasio
     category: cheese
     answer:
       core:
-        - firm cheese
+        - firm cheese, mild when [[young cheese|young]] and sharp when aged
       context:
         - Italian
-        - from the Alps
-        - cow’s milk
+    profile:
+      rind: natural
+      firmness: firm
+      texture: [melts well]
+      strength: [mild, strong]
+      flavor: [milky, nutty, sharp]
+      milk: [cow]
+      age: young or aged, 2 months to over a year
+      made: [pressed]
+      origin: northeast Italy
+      label: DOP
     details: >-
-      Montasio is a mountain cheese made from cow's milk produced in northeastern Italy in the regions
-      of Friuli-Venezia Giulia and Veneto. It was awarded a protected designation of origin (PDO) in 1986.
+      From the Alps in Italy's northeast corner, [[DOP]]-protected. Young montasio is the classic cheese for frico, a crisp,
+      fried cheese pancake.
+    compare:
+      - frico
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Montasio
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365730830
-    image: Montasio_01.jpg
+    image: Montasio 02 (1).jpg
   - term: mozzarella
     category: cheese
     answer:
       core:
         - mild, fresh, stretched-curd cheese
+      context:
+        - soft white balls kept in liquid
+    profile:
+      family: stretched-curd
+      rind: none
+      firmness: semi-soft
+      texture: [moist, springy, melts well]
+      strength: mild
+      flavor: [milky]
+      milk: [cow, water buffalo]
+      age: fresh
+      origin: southern Italy
     details: >-
-      Mozzarella is a semi-soft non-aged cheese prepared using the pasta filata ('stretched-curd') method.
-      It originated in southern Italy.
+      Fresh mozzarella is best within days of being made. In the US, plain “mozzarella” may instead mean low-moisture mozzarella,
+      the firmer, saltier kind used for pizza and string cheese.
+    compare:
+      - string cheese
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Mozzarella
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368265172
     image: Mozzarella_di_bufala3.jpg
   - term: mozzarella di bufala
     category: cheese
+    kind_of: mozzarella
     answer:
       core:
-        - fresh mozzarella made from water-buffalo milk
+        - made from water-buffalo milk
+    profile:
+      texture: [moist, creamy, springy]
+      flavor: [milky, tangy]
+      milk: [water buffalo]
+      origin: southern Italy
+      label: DOP, as mozzarella di bufala campana
     details: >-
-      Buffalo mozzarella (Italian: mozzarella di bufala; Neapolitan: muzzarella 'e vufera) is a mozzarella
-      made from the milk of the Italian Mediterranean buffalo. A fresh, soft pasta filata cheese, it is
-      traditionally produced in Campania, particularly in the provinces of Caserta and Salerno.
+      Softer, creamier and a little tangier than cow's-milk mozzarella. Water buffalo are large, cattle-like animals, common
+      in Asia and raised in southern Italy mainly for this cheese. The version from its home region is labeled mozzarella
+      di bufala campana [[DOP]]: Campania is the region around Naples.
+    compare:
+      - fior di latte (cheese)
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Buffalo_mozzarella
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366001451
     image: Buffalo Mozzarella.jpg
+  - term: fior di latte (cheese)
+    category: cheese
+    kind_of: mozzarella
+    answer:
+      core:
+        - made from cow’s milk
+    profile:
+      milk: [cow]
+    details: >-
+      Italian for “flower of milk”. Pizza menus use it to tell cow's-milk mozzarella apart from mozzarella di bufala.
+    compare:
+      - mozzarella di bufala
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Mozzarella#Varieties
+    image: Mozzarella fior di latte.jpg
   - term: parmigiano reggiano
     category: cheese
     answer:
       core:
-        - hard, granular, aged cheese
+        - hard, grainy, aged grating cheese
       context:
-        - Italian
-        - cow’s milk
+        - Italian; the original parmesan
+    profile:
+      family: grana
+      rind: natural
+      firmness: hard
+      texture: [grainy]
+      strength: strong
+      flavor: [nutty, salty]
+      milk: [cow]
+      age: aged at least 12 months, often 2 years or more
+      made: [pressed]
+      origin: northern Italy (Parma and Reggio Emilia)
+      label: DOP
     details: >-
-      Parmesan (Italian: Parmigiano Reggiano, pronounced [parmiˈdʒaːno redˈdʒaːno]) is an Italian hard,
-      granular cheese produced from cow's milk and aged at least 12 months. It is a grana-type cheese,
-      along with Grana Padano, the historic Granone Lodigiano, and others.
+      Italy's most famous cheese, made in huge [[wheel (cheese)|wheels]] whose rind is stamped all over with its name. [[DOP]]
+      rules require cow's milk from one small region and at least a year of aging; the tiny crunchy crystals come from long
+      aging. Grated over pasta, or broken into chunks and eaten on its own.
+    compare:
+      - grana padano
+      - parmesan
+      - risotto
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Parmesan
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369024528
     image: Parmigiano_Reggiano,_Italien,_Europäische_Union.jpg
   - term: pecorino
     category: cheese
     answer:
       core:
-        - sheep’s-milk cheese
-        - a broad family
-      context:
-        - Italian
+        - Italian sheep’s-milk cheese
+        - semi-soft and mild when [[young cheese|young]]
+        - hard and sharp when aged
+    profile:
+      rind: natural
+      firmness: [semi-soft, hard]
+      strength: [mild, strong]
+      flavor: [milky, nutty, salty, sharp]
+      milk: [sheep]
+      age: young or aged, 1 month to over a year
+      made: [pressed]
+      origin: Italy
     details: >-
-      Pecorino is an Italian hard cheese produced from sheep's milk. The name pecorino derives from pecora,
-      which means 'sheep' in Italian.
+      From pecora, “sheep”: any Italian sheep's-milk cheese. Each region makes its own, like pecorino toscano, often young
+      and mild, or pecorino sardo. On a menu, plain pecorino often means pecorino romano.
+    compare:
+      - pecorino romano
+      - pecorino toscano
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pecorino
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1358396743
     image: A_Pecorino_cheese_plate_at_Hong_Kong.jpg
   - term: pecorino romano
     category: cheese
+    kind_of: pecorino
     answer:
       core:
-        - hard, salty sheep’s-milk cheese
+        - hard, salty grating cheese
       context:
         - Italian
+    profile:
+      firmness: hard
+      texture: [grainy]
+      strength: strong
+      flavor: [salty, sharp]
+      age: aged 5 months to over a year
+      origin: central Italy (Rome) and the island of Sardinia
+      label: DOP
     details: >-
-      Pecorino romano (Italian: [pekoˈriːno roˈmaːno]) is a hard, salty Italian cheese made from sheep
-      milk, often used for grating over pasta or other dishes. The name pecorino means 'ovine' or 'of
-      sheep' in Italian; the name of the cheese, although protected, is a description rather than a brand:
-      [formaggio] pecorino romano means 'sheep's [cheese] of Rome'.
+      Much saltier and sharper than parmesan; despite the name, most is made in Sardinia. The traditional cheese for Roman
+      pasta dishes like cacio e pepe and carbonara.
+    compare:
+      - cacio e pepe
+      - carbonara
+      - parmesan
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pecorino_romano
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365731032
     image: Pecorino_romano_cheese.jpg
+  - term: pecorino toscano
+    category: cheese
+    kind_of: pecorino
+    answer:
+      core:
+        - semi-soft and mild when [[young cheese|young]]
+        - firm and nutty when aged
+      context:
+        - Italian
+    profile:
+      firmness: [semi-soft, firm]
+      texture: [creamy]
+      strength: [mild, medium]
+      flavor: [milky, buttery, nutty]
+      age: young or aged, 3 weeks to over 4 months
+      origin: central Italy (Tuscany)
+      label: DOP
+    details: >-
+      Tuscany's pecorino: milder and less salty than pecorino romano, and usually eaten in slices rather than grated, often
+      with honey or pears. Sold [[fresco]] (young) or [[stagionato]] (aged).
+    compare:
+      - pecorino romano
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pecorino_toscano
+    image: Pecorino di Pienza.jpg
   - term: provolone
     category: cheese
     answer:
       core:
-        - semi-hard, stretched-curd cheese
+        - firm, stretched-curd cheese, mild when [[young cheese|young]] and sharp when aged
       context:
         - Italian
-        - cow’s milk
+    profile:
+      family: stretched-curd
+      rind: natural
+      firmness: firm
+      texture: [springy, melts well]
+      strength: [mild, strong]
+      flavor: [milky, buttery, sharp]
+      milk: [cow]
+      age: young or aged, 2 months to over a year
+      style: [dolce, piccante]
+      origin: southern Italy, now mostly made in the north
+      label: DOP, provolone Valpadana only
     details: >-
-      Provolone (Italian: [provoˈloːne]) is an Italian semi-hard cheese made from cow's milk. It is an
-      aged pasta filata ('stretched-curd') cheese originating in the Campania region, near Vesuvius, where
-      it is still produced in pear, sausage, or cone shapes 10 to 15 cm (4 to 6 in) long.
+      Shaped into pears, cones or huge sausages hung up to age. It's sold [[dolce (cheese)|dolce]] or [[piccante (cheese)|piccante]];
+      American deli provolone is the young, mild kind, and “sharp provolone” is aged longer.
+    compare:
+      - caciocavallo
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Provolone
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365731323
     image: Provolone_watermelon_shape.jpg
   - term: ricotta
     category: cheese
     answer:
       core:
-        - mild, fresh whey cheese with a soft, grainy texture
+        - mild, fresh whey cheese
+      context:
+        - soft and grainy
+    profile:
+      family: whey cheese
+      rind: none
+      firmness: soft
+      texture: [moist, grainy]
+      strength: mild
+      flavor: [milky, slightly sweet]
+      milk: [cow, sheep]
+      age: fresh
+      made: [from whey]
+      origin: Italy
     details: >-
-      Ricotta (Italian: [riˈkɔtta]) is an Italian whey cheese made from sheep, cow, goat, or Italian water
-      buffalo milk whey left over from the production of other cheeses. However, modern ricotta is often
-      made from milk instead of whey.
+      Italian for “re-cooked”: it's made by reheating the whey left over from making other cheeses, which forms tiny, soft
+      [[curds]]. Used in [[lasagne]], stuffed pasta and cannoli filling, or spooned onto toast and pasta.
+    compare:
+      - cannoli
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Ricotta
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368334681
     image: Ricotte_fresche.jpg
   - term: ricotta salata
     category: cheese
+    kind_of: ricotta
     answer:
       core:
-        - salted, pressed, aged ricotta for slicing or grating
+        - firm, salted version, pressed and aged for months
+      context:
+        - sliced, shaved or grated
+    profile:
+      firmness: firm
+      texture: [crumbly, doesn’t melt]
+      strength: medium
+      flavor: [salty, milky]
+      age: aged at least 3 months
+      made: [from whey, pressed]
     details: >-
-      Ricotta salata is ricotta that has been pressed, salted, dried, and aged, commonly using sheep’s-milk
-      ricotta. Unlike soft fresh ricotta, it is firm and is sliced, crumbled, grated, or shaved over dishes.
+      Salata means “salted”. Fresh ricotta is salted, [[pressed cheese|pressed]] to squeeze out liquid, and dried for months.
+      The result is white, firm and crumbly, a bit like a milder feta, and is shaved or grated over pasta and salads.
+    compare:
+      - feta
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Ricotta#Aged_variants
-    image: Ricotta salata al mercato di Siracusa.jpg
+    image: Noto, Cavatelli pomodoro ricotta salata (cropped).jpg
   - term: robiola
     category: cheese
     answer:
       core:
-        - soft, creamy cheese
+        - soft, creamy cheese, often of mixed milks
       context:
-        - Northern Italian
+        - Italian
+    profile:
+      rind: bloomy
+      firmness: soft
+      texture: [creamy]
+      strength: mild
+      flavor: [tangy, buttery, earthy]
+      milk: [cow, goat, sheep]
+      age: fresh or young, a few days to a few weeks
+      origin: northern Italy
+      label: DOP, robiola di Roccaverano only
     details: >-
-      Robiola is an Italian soft-ripened cheese of the stracchino family. It is from the Langhe region
-      and made with varying proportions of cow's, goat's, and sheep's milk.
+      A family of small square or round cheeses, each a slightly different mix of cow's, goat's and sheep's milk. [[young
+      cheese|Young]] robiola is fresh and tangy with no rind; left a little longer, it grows a thin bloomy rind and turns
+      buttery and mushroomy.
+    compare:
+      - stracchino
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Robiola
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1363817427
-    image: Robiola_della_Valsassina.jpg
+    image: Upload (8243148076).jpg
   - term: scamorza
     category: cheese
     answer:
       core:
-        - semi-soft, stretched-curd cheese
-        - often smoked
+        - pear-shaped, semi-soft, stretched-curd cheese
       context:
-        - traditionally pear-shaped
+        - often smoked ([[affumicato|affumicata]])
+    profile:
+      family: stretched-curd
+      rind: none
+      firmness: semi-soft
+      texture: [springy, melts well]
+      strength: mild
+      flavor: [milky, smoky]
+      milk: [cow]
+      age: young, about 2 weeks
+      made: [often smoked]
+      origin: southern Italy
     details: >-
-      Scamorza (Italian: [skaˈmɔrtsa]) is a southern Italian cheese made from cow's milk, or less commonly
-      from milk of other species. It is a pasta filata cheese, in which the fresh curd is left in its
-      own whey for several hours to allow the acidity to develop as lactose converts to lactic acid.
+      Made like [[mozzarella]], but hung up by a string to dry for a couple of weeks, so it's firmer and less moist, with
+      a thin skin. The smoked kind is golden-brown outside and tastes of campfire. Both melt well, on pizza or grilled.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Scamorza
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1321665954
     image: Scamorza_chez_un_fromager.jpg
+  - term: provola
+    category: cheese
+    answer:
+      core:
+        - small, semi-soft, stretched-curd cheese, often smoked
+      context:
+        - from Naples; not provolone
+    profile:
+      family: stretched-curd
+      rind: none
+      firmness: semi-soft
+      texture: [springy, melts well]
+      strength: mild
+      flavor: [milky, smoky]
+      milk: [cow]
+      age: young, a few days to a few weeks
+      made: [often smoked]
+      origin: southern Italy
+    details: >-
+      Made like [[mozzarella]], but drier, so it melts without making a pizza soggy. Neapolitan pizza menus often use provola
+      [[affumicato|affumicata]], the smoked kind. Despite the name, it isn't provolone, which is aged much longer; it's closer
+      to scamorza.
+    compare:
+      - provolone
+      - scamorza
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Provola
+    image: Provola delle Moddonie1.jpg
   - term: stracchino
     category: cheese
     answer:
       core:
-        - soft, mild, creamy cheese
+        - soft, creamy, mild fresh cheese
       context:
-        - Italian
-        - cow’s milk
+        - northern Italian
+    profile:
+      rind: none
+      firmness: soft
+      texture: [creamy, spreadable]
+      strength: mild
+      flavor: [milky, tangy]
+      milk: [cow]
+      age: fresh
+      origin: northern Italy
     details: >-
-      Stracchino (Italian: [strakˈkiːno]), also known as crescenza (Italian: [kreʃˈʃɛntsa]), is an Italian
-      cow's milk cheese typical of the regions of Lombardy, Tuscany, Veneto, Friuli-Venezia Giulia, and
-      Liguria. It is eaten very young, has no rind and has a very soft, creamy texture and normally a
-      mild, slightly acidic flavour.
+      Eaten within days of being made, with no rind, and soft enough to spread. The name comes from stracco, “tired”: it was
+      first made from the milk of cows tired from walking down from summer mountain pastures.
+    compare:
+      - robiola
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Stracchino
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1346840287
-    image: Stracchino'.jpg
+    image: Stracchino 2.jpg
   - term: taleggio
     category: cheese
     answer:
       core:
-        - soft, mild cheese
+        - square, semi-soft, washed-rind cheese
       context:
-        - strong-smelling
-        - washed-rind
-        - Italian
-        - cow’s milk
+        - Italian; smells strong, tastes mild
+    profile:
+      rind: washed
+      firmness: semi-soft
+      texture: [creamy, melts well]
+      strength: mild
+      flavor: [buttery, tangy, salty]
+      smell: pungent
+      milk: [cow]
+      age: aged 6 to 10 weeks
+      made: [cave-aged]
+      origin: northern Italy
+      label: DOP
     details: >-
-      Taleggio (Italian: [taˈleddʒo]; Lombard: talegg, taegg or taècc) is a semisoft washed-rind smear-ripened
-      Italian cheese named after Val Taleggio, Italy. The cheese has a thin, edible rind and a strong
-      aroma, but its flavour is comparatively mild with an unusual fruity tang.
+      Named after Val Taleggio, a valley in northern Italy, where it was aged in caves. The thin orange rind is edible. Melted
+      into risotto, polenta and pasta.
+    compare:
+      - pont-l’évêque
+      - risotto
+      - polenta
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Taleggio_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369245914
     image: Taleggio_vecchia_lavorazione_(3323694182).jpg
   - term: toma
     category: cheese
     answer:
       core:
-        - semi-soft cheese
-        - milk and style vary
+        - round cheese from the Italian Alps
+        - semi-soft when [[young cheese|young]]
+        - firm when aged
       context:
-        - Alpine-style family
+        - Italian
+    profile:
+      rind: natural
+      firmness: [semi-soft, firm]
+      texture: [creamy, melts well]
+      strength: mild
+      flavor: [milky, buttery, earthy]
+      milk: [cow]
+      age: young or aged, 2 months to a year
+      made: [pressed]
+      origin: the Italian Alps
+      label: DOP, toma piemontese only
     details: >-
-      Toma is a soft or semi-hard Italian cow's milk cheese, noted for its excellent melting qualities.
-      It is made primarily in the Aosta Valley (it is one of the region's specialties) and Piedmont regions
-      of Italy.
+      A general name in northern Italy for simple round cheeses, usually of cow's milk; toma piemontese is [[DOP]]-protected.
+      Milky when young; firmer and more earthy with age. The Italian cousin of tomme.
+    compare:
+      - tomme
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Toma_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365731675
     image: Toma_Piemontese_DOP.jpg
   - term: sottocenere
     category: cheese
     answer:
       core:
-        - semi-soft cheese aged under ash
+        - semi-soft cheese with [[truffle (fungus)|truffles]] and an [[ash (cheese)|ash]]-coated rind
       context:
         - Italian
-        - cow’s milk
+    profile:
+      rind: natural
+      firmness: semi-soft
+      texture: [creamy, melts well]
+      strength: medium
+      flavor: [earthy, buttery]
+      milk: [cow]
+      age: aged about 3 months
+      made: [ash-coated]
+      origin: northern Italy
     details: >-
-      Sottocenere al tartufo is a very pale yellow to off-white cheese with truffles that has a grey-brown
-      ash rind. It has a somewhat mild taste and is semi-soft in firmness.
+      The name means “under ash”; the full name, sottocenere al tartufo, adds “with truffle”. It's studded with slivers of
+      [[truffle (fungus)|black truffle]], and its rind is rubbed with ash and spices. [[tartufo (fungus)|Tartufo]] is Italian
+      for truffle.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Sottocenere_al_tartufo
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1280672773
     image: Sottocenere_al_Tartufo.jpg
   - term: beaufort
     category: cheese
     answer:
       core:
-        - firm, nutty cheese
+        - firm, nutty, Alpine-style cheese
       context:
         - French
-        - from the Alps
-        - cow’s milk
+    profile:
+      family: Alpine-style
+      rind: natural
+      firmness: firm
+      texture: [creamy, melts well]
+      strength: medium
+      flavor: [nutty, buttery, salty]
+      milk: [cow]
+      age: aged 5 months to over a year
+      made: [pressed]
+      origin: the French Alps
+      label: AOP
     details: >-
-      Beaufort (French pronunciation: [bofɔʁ]) is a firm, raw cow's milk cheese associated with the gruyère
-      family. An Alpine cheese, it is produced in Beaufortain, Tarentaise valley and Maurienne, which
-      are located in the Savoie region of the French Alps.
+      Very similar to comté and gruyère. Its [[wheel (cheese)|wheels]] are easy to spot because their sides curve inward.
+      Beaufort d'été (“summer”) is made while the cows graze on high mountain pastures, and is the most prized.
+    compare:
+      - comté
+      - gruyère
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Beaufort_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365686518
     image: Beaufort.jpg
   - term: brie
     category: cheese
     answer:
       core:
-        - soft, creamy cheese
+        - soft, buttery, bloomy-rind cheese
       context:
-        - bloomy-rind
         - French
-        - cow’s milk
+    profile:
+      rind: bloomy
+      firmness: soft
+      texture: [creamy]
+      strength: mild
+      flavor: [buttery, earthy]
+      milk: [cow]
+      age: aged 4 to 8 weeks
+      origin: France, near Paris
+      label: AOP, brie de Meaux and brie de Melun only
     details: >-
-      Brie ( bree; French: [bʁi]) is a soft cow's-milk cheese named after Brie (itself from Gaulish briga,
-      "hill, height"), the French region from which it originated (roughly corresponding to the modern
-      département of Seine-et-Marne). It is pale in colour with a slight greyish tinge under a rind of
-      white mould.
+      Made in large, flat [[wheel (cheese)|wheels]] and sold in wedges; the white rind is edible. The inside softens as it
+      ages, so an older brie oozes when cut. Camembert is a smaller, stronger cousin.
+    compare:
+      - camembert
+      - neufchâtel
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Brie
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368523289
     image: Brie_01.jpg
   - term: brillat-savarin
     category: cheese
+    kind_of: triple crème
     answer:
       core:
-        - very rich, soft, triple-cream cheese
+        - small, buttery and slightly tangy
       context:
         - French
+    profile:
+      rind: bloomy
+      firmness: soft
+      texture: [creamy, high in fat]
+      strength: mild
+      flavor: [buttery, tangy]
+      milk: [cow]
+      age: fresh or young, up to 4 weeks
+      origin: northern France
     details: >-
-      Brillat-Savarin (French pronunciation: [bʁija savaʁɛ̃]) is a soft-ripened triple cream cow's milk
-      cheese with at least 72% fat in dry matter (roughly 40% overall). It has a natural, bloomy rind.
+      Named after an 18th-century French food writer. Sold as small, tall rounds; [[young cheese|young]] ones are fluffy and
+      tangy, older ones buttery and mushroomy.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Brillat-Savarin_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1337041770
     image: Brillat-savarin.jpg
   - term: camembert
     category: cheese
     answer:
       core:
-        - soft, earthy cheese
+        - soft, earthy, bloomy-rind cheese
       context:
-        - bloomy-rind
         - French
-        - cow’s milk
+    profile:
+      rind: bloomy
+      firmness: soft
+      texture: [creamy]
+      strength: medium
+      flavor: [buttery, earthy]
+      milk: [cow]
+      age: aged 3 to 5 weeks
+      origin: northern France
+      label: AOP, camembert de Normandie only
     details: >-
-      Camembert ( KAM-əm-bair, UK also -⁠om-, French: [kamɑ̃bɛʁ]) is a moist, soft, creamy, surface-ripened
-      cow's milk cheese. It was first made in the late 18th century in Camembert, Normandy, in northwest
-      France.
+      Smaller and stronger-tasting than brie, and sold whole in a round wooden box. Often baked whole and eaten with bread.
+      The white rind is edible.
+    compare:
+      - brie
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Camembert
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366043358
     image: Camembert_de_Normandie_(AOP)_11.jpg
   - term: cantal
     category: cheese
     answer:
       core:
-        - firm, earthy cheese
-      context:
-        - French
-        - cow’s milk
+        - firm, crumbly French cheese
+        - mild when [[young cheese|young]]
+        - sharp when aged
+    profile:
+      rind: natural
+      firmness: firm
+      texture: [crumbly]
+      strength: [mild, strong]
+      flavor: [milky, nutty, sharp]
+      milk: [cow]
+      age: young or aged, 1 month to over a year
+      made: [pressed]
+      origin: central France
+      label: AOP
     details: >-
-      Cantal cheese (French pronunciation: [kɑ̃tal]) is an uncooked firm cheese produced in the Auvergne
-      region of central France: more particularly in the département of Cantal (named after the Cantal
-      mountains) as well as in certain adjoining districts. Cantal cheese was granted Appellation d'Origine
-      Contrôlée certification in 1956.
+      One of France's oldest cheeses, often compared to cheddar. Sold by age: jeune (young, a month or two), entre-deux (“in
+      between”) and vieux (old, over six months).
+    compare:
+      - cheddar
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cantal_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365686902
     image: Cantal_03.jpg
   - term: chèvre
     category: cheese
     answer:
       core:
-        - goat cheese
-        - not one specific style
+        - tangy fresh goat’s-milk cheese
       context:
-        - French term
+        - French; in France, any goat cheese
+    profile:
+      rind: none
+      firmness: soft
+      texture: [creamy, crumbly]
+      strength: mild
+      flavor: [tangy, milky]
+      milk: [goat]
+      age: fresh
+      origin: France, now everywhere
     details: >-
-      Goat cheese, goat's cheese or chèvre ( SHEV(-rə); from the French fromage de chèvre [fʁɔmaʒ də ʃɛvʁ]
-      with the same meaning) is cheese made from goat's milk. Goats were among the first animals to be
-      domesticated for producing food.
+      French for goat. On American menus it usually means fresh goat cheese: soft white logs or rounds, tangy, creamy and
+      a little crumbly, often crumbled onto salads. In French, [[fromage]] de chèvre covers every goat cheese, aged ones included,
+      like valençay.
+    compare:
+      - valençay
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Goat_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1357772520
     image: Goat cheese with thymus.JPG
   - term: comté
     category: cheese
     answer:
       core:
-        - firm, nutty cheese
+        - firm, nutty, Alpine-style cheese
       context:
-        - French
-        - Alpine-style
-        - cow’s milk
+        - French; France's best-selling cheese
+    profile:
+      family: Alpine-style
+      rind: natural
+      firmness: firm
+      texture: [creamy, melts well]
+      strength: medium
+      flavor: [nutty, buttery, salty]
+      milk: [cow]
+      age: aged 4 months to 3 years
+      made: [pressed]
+      origin: eastern France, near Switzerland
+      label: AOP
     details: >-
-      Comté (French pronunciation: [kɔ̃te]), also known as Gruyère de Comté, is a hard cheese made from
-      unpasteurised cow's milk in eastern France. The production of Comté is the largest of the Protected
-      designation of origin (PDO) cheeses made in France.
+      Made from the milk of cows grazing in the mountains near Switzerland. Younger comté is mild and buttery; older comté
+      gets nuttier, with tiny crunchy crystals. Also called gruyère de comté.
+    compare:
+      - beaufort
+      - gruyère
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Comt%C3%A9_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365687040
     image: Comte_AOP.jpg
   - term: époisses
     category: cheese
     answer:
       core:
-        - soft, pungent cheese
+        - soft, runny, washed-rind cheese
       context:
-        - washed-rind
-        - French
-        - cow’s milk
+        - French; famously stinky
+    profile:
+      rind: washed
+      firmness: soft
+      texture: [creamy]
+      strength: strong
+      flavor: [salty]
+      smell: pungent
+      milk: [cow]
+      age: aged 4 to 8 weeks
+      origin: eastern France
+      label: AOP
     details: >-
-      Époisses (French pronunciation: [epwas]), also known as Époisses de Bourgogne (French: [epwas də
-      buʁɡɔɲ]), is a legally demarcated cheese made in the village of Époisses and its environs, in the
-      département of Côte-d'Or, about halfway between Dijon and Auxerre, in the former duchy of Burgundy,
-      France, from agricultural processes and resources traditionally found in that region. Époisses is
-      a pungent soft-paste cow's-milk cheese.
+      Its orange rind is washed with brandy. Smelly enough that, by a popular story, it's banned on French public transport.
+      Sold in a round wooden box and often eaten with a spoon.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/%C3%89poisses
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365687138
-    image: Époisses_de_Bourgogne.jpg
+    image: Époisses Gaugry 08.jpg
   - term: gruyère
     category: cheese
     answer:
       core:
-        - firm, nutty cheese
+        - firm, nutty, Alpine-style cheese
       context:
-        - Swiss
-        - Alpine-style
-        - cow’s milk
+        - Swiss; the original of the style
+    profile:
+      family: Alpine-style
+      rind: natural
+      firmness: firm
+      texture: [creamy, melts well]
+      strength: medium
+      flavor: [nutty, salty]
+      milk: [cow]
+      age: aged 5 months to over a year
+      made: [pressed]
+      origin: western Switzerland
+      label: AOP
     details: >-
-      Gruyère (French: [ɡʁɥijɛʁ]; German: Greyerzer, Italian: Groviera, Arpitan: Gruviére suisso) is a
-      hard Swiss cheese that originated in the Fribourg, Vaud, Neuchâtel, Jura, and Bern cantons in Switzerland.
-      It is named after the town of Gruyères in Fribourg.
+      Named after the Swiss town of Gruyères. Unlike emmental, it has few or no holes. Essential for fondue and French onion
+      soup; older gruyère has tiny crunchy crystals.
+    compare:
+      - comté
+      - beaufort
+      - emmental
+      - fondue
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Gruy%C3%A8re_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1360835519
     image: Gruyere_alpage_th_wa.jpg
+  - term: emmental
+    id: emmental
+    category: cheese
+    answer:
+      core:
+        - firm, mild, nutty cheese with big holes
+      context:
+        - from Switzerland; the original Swiss cheese
+    profile:
+      family: Alpine-style
+      rind: natural
+      firmness: firm
+      texture: [springy, big holes, melts well]
+      strength: mild
+      flavor: [nutty, slightly sweet]
+      milk: [cow]
+      age: aged 4 months to over a year
+      made: [pressed]
+      origin: central Switzerland (Emmental valley)
+      label: AOP, Swiss emmentaler only
+    details: >-
+      The holes come from gas bubbles made by bacteria as the cheese [[aged cheese|ages]]. Aged in huge wheels with a hard
+      rind. With gruyère, the classic cheese for fondue. American Swiss cheese is a milder copy.
+    compare:
+      - gruyère
+      - fondue
+      - Swiss cheese
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Emmental_cheese
+    image: Emmental (fromage) 01.jpg
+  - term: Swiss cheese
+    category: cheese
+    answer:
+      core:
+        - sliced, mild American copy of [[emmental]]
+      context:
+        - with big holes
+    profile:
+      rind: none
+      firmness: firm
+      texture: [springy, big holes, melts well]
+      strength: mild
+      flavor: [nutty, slightly sweet]
+      milk: [cow]
+      age: aged about 2 to 4 months
+      made: [pressed]
+      origin: United States
+    details: >-
+      Made in factories and aged in plastic-wrapped blocks, so it has no rind and a milder flavor than the Swiss original.
+      The classic sandwich slice, as in turkey and Swiss. Baby Swiss is a younger, creamier version with smaller holes.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Swiss_cheese_(North_America)
+    image: Emmental slices.jpg
   - term: mimolette
     category: cheese
     answer:
       core:
-        - firm, orange cheese
+        - round, orange cheese
+        - firm and mild when [[young cheese|young]]
+        - hard and caramel-like when aged
       context:
         - French
-        - cow’s milk
+    profile:
+      rind: natural
+      firmness: [firm, hard]
+      texture: [crumbly]
+      strength: [mild, strong]
+      flavor: [nutty, caramel-like, salty]
+      milk: [cow]
+      age: young or aged, 6 weeks to 2 years
+      made: [pressed]
+      origin: northern France
     details: >-
-      Mimolette (French pronunciation: [mimɔlɛt]) is a cheese traditionally produced around the city of
-      Lille, France. In France it is also known as boule de Lille after its city of origin, or vieux Hollande
-      because it was originally inspired by the Dutch Edam cheese.
+      Colored bright orange with annatto, a tasteless plant seed, and shaped like a cantaloupe. Its gray rind, covered in
+      tiny holes, is the work of cheese mites, tiny bugs deliberately allowed to nibble it; the rind isn't eaten. Aged mimolette
+      is much like aged gouda.
+    compare:
+      - gouda
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Mimolette
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1359013708
-    image: A_Mimolette_on_the_desk.jpg
+    image: Mimolette vieille etuvee.jpg
   - term: morbier
     category: cheese
     answer:
       core:
-        - semi-soft cheese marked by a dark ash line
+        - semi-soft cheese with a line of [[ash (cheese)|ash]] through the middle
       context:
         - French
+    profile:
+      rind: washed
+      firmness: semi-soft
+      texture: [creamy, springy, melts well]
+      strength: mild
+      flavor: [buttery, salty]
+      milk: [cow]
+      age: aged 2 to 3 months
+      made: [pressed, with an ash line]
+      origin: eastern France, near Switzerland
+      label: AOP
     details: >-
-      Morbier (French pronunciation: [mɔʁbje]) is a semi-soft cows' milk cheese of France named after
-      the small village of Morbier in Franche-Comté. It is ivory colored, soft and slightly elastic, and
-      is immediately recognizable by the distinctive thin black layer separating it horizontally in the
-      middle.
+      The ash line once separated the morning's [[curds|curd]] from the evening's; today it's decorative. Its rind is lightly
+      washed, so it smells stronger than it tastes.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Morbier_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365687395
     image: Morbier_cheese_two_views.jpg
   - term: munster
     category: cheese
     answer:
       core:
-        - soft, pungent cheese
+        - soft, pungent, washed-rind cheese
       context:
-        - washed-rind
-        - French
-        - cow’s milk
+        - French; not American muenster
+    profile:
+      rind: washed
+      firmness: soft
+      texture: [creamy]
+      strength: strong
+      flavor: [buttery, salty]
+      smell: pungent
+      milk: [cow]
+      age: aged 3 weeks to 3 months
+      origin: northeast France
+      label: AOP
     details: >-
-      Munster (French pronunciation: [mœ̃stɛʁ]), Munster-géromé, or (Alsatian) Minschterkaas, is a soft
-      cheese with a strong taste and aroma, made mainly from milk first produced in the Vosges, between
-      the Alsace, Lorraine and Franche-Comté regions in France. The name "Munster" is derived from the
-      Alsatian town of Munster, where, among Vosgian abbeys and monasteries, the cheese was conserved
-      and matured in monks' cellars.
+      Made by monks in the mountains of northeast France since the Middle Ages, and often served with boiled potatoes and
+      caraway seeds, the seeds in rye bread. American muenster is an unrelated, mild sandwich cheese.
+    compare:
+      - muenster
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Munster_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368497449
-    image: Munster.jpg
+    image: 15-01 Val de Weiss Petite Munster Géromé Lokal K 01.jpg
+  - term: muenster
+    category: cheese
+    answer:
+      core:
+        - semi-soft, mild sandwich cheese with an orange outside
+      context:
+        - American
+    profile:
+      rind: none
+      firmness: semi-soft
+      texture: [creamy, melts well]
+      strength: mild
+      flavor: [milky, buttery]
+      milk: [cow]
+      age: young, about a month
+      origin: United States
+    details: >-
+      An American copy of French munster that kept only the name: mild, smooth and good for melting, with its outside colored
+      orange with annatto, a tasteless plant seed. Common in delis and grilled cheese.
+    compare:
+      - munster
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Muenster_cheese
+    image: Block of Muenster cheese.jpg
   - term: neufchâtel
     category: cheese
     answer:
       core:
-        - soft, slightly crumbly cheese
+        - heart-shaped, soft, bloomy-rind cheese
       context:
-        - bloomy-rind
-        - French
-        - cow’s milk
+        - French; in the US, also a lighter cream cheese
+    profile:
+      rind: bloomy
+      firmness: soft
+      texture: [crumbly, creamy]
+      strength: medium
+      flavor: [tangy, salty, earthy]
+      milk: [cow]
+      age: aged 8 to 10 weeks
+      origin: northern France
+      label: AOP
     details: >-
-      Neufchâtel (French: [nøʃɑtɛl], [nœfʃɑtɛl]; Norman: Neu(f)câtel) is a soft, slightly crumbly, mold-ripened,
-      bloomy-rind cheese made in the Neufchâtel-en-Bray region of Normandy. One of the oldest kinds of
-      cheese in France, its production is believed to date back as far as the 6th century AD, in the Kingdom
-      of the Franks.
+      Often shaped like a heart; one of France's oldest cheeses. Firmer, saltier and more crumbly than brie. American neufchâtel
+      is something else: a lower-fat cream cheese.
+    compare:
+      - brie
+      - cream cheese
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Neufch%C3%A2tel_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369038035
     image: Cœurs_de_Neufchâtel_02.jpg
   - term: ossau-iraty
     category: cheese
     answer:
       core:
-        - firm, nutty cheese
+        - firm, nutty sheep’s-milk cheese
       context:
-        - sheep’s milk
-        - French Basque
+        - from southwest France
+    profile:
+      rind: natural
+      firmness: firm
+      texture: [creamy]
+      strength: medium
+      flavor: [nutty, buttery, slightly sweet]
+      milk: [sheep]
+      age: aged 3 months to over a year
+      made: [pressed]
+      origin: southwest France
+      label: AOP
     details: >-
-      Ossau-Iraty (French pronunciation: [ɔso iʁati]) is a Basque cheese made from sheep's milk.
+      From the mountains between France and Spain. Traditionally served with black cherry jam. Similar to manchego, but softer
+      and sweeter.
+    compare:
+      - manchego
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Ossau-Iraty
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365687515
     image: Ossau-Iraty.jpg
   - term: pont-l’évêque
     category: cheese
     answer:
       core:
-        - soft, pungent cheese
+        - square, soft, washed-rind cheese
       context:
-        - washed-rind
         - French
-        - cow’s milk
+    profile:
+      rind: washed
+      firmness: soft
+      texture: [creamy]
+      strength: medium
+      flavor: [buttery, salty]
+      smell: pungent
+      milk: [cow]
+      age: aged at least 3 weeks
+      origin: northern France
+      label: AOP
     details: >-
-      Pont-l'Évêque (French: [pɔ̃ levɛːk]) is a French cheese, originally manufactured in the area around
-      the commune of Pont-l'Évêque, between Deauville and Lisieux in the Calvados département of Normandy.
-      It is probably the oldest Norman cheese still in production.
+      One of France's oldest cheeses, and easy to spot because it's square. Like most washed-rind cheeses, it smells much
+      stronger than it tastes.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pont-l%27%C3%89v%C3%AAque_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365978654
     image: Pont-l'Évêque_02.jpg
-  - term: raclette
+  - term: raclette (cheese)
+    id: raclette
     category: cheese
     answer:
       core:
-        - melting cheese
-        - also the melted-cheese dish
+        - semi-soft melting cheese
       context:
-        - Alpine-style
-        - cow’s milk
+        - Swiss and French
+    profile:
+      rind: washed
+      firmness: semi-soft
+      texture: [creamy, melts well]
+      strength: medium
+      flavor: [milky, nutty, buttery]
+      smell: pungent
+      milk: [cow]
+      age: aged 3 to 6 months
+      made: [pressed]
+      origin: Switzerland and the French Alps
+      label: AOP, raclette du Valais only
     details: >-
-      Raclette (French: [ʁaklɛt]) is a dish of Swiss origin, also popular in other countries, based on
-      heating cheese and scraping off the melted part, then typically served with boiled potatoes. Raclette
-      is historically a dish originating from the canton of Valais in Switzerland.
+      Named after the dish it's made for, from racler, “to scrape”. Its washed rind gives it a strong smell, especially when
+      melted, though it tastes milder.
+    compare:
+      - raclette (dish)
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Raclette
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1361117366
-    image: Raclette_20040817_140816.jpg
+    image: Raclette (6300310978).jpg
   - term: reblochon
     category: cheese
     answer:
       core:
-        - soft, nutty cheese
+        - soft, nutty, washed-rind cheese
       context:
-        - French
-        - from the Alps
-        - cow’s milk
+        - from the French Alps
+    profile:
+      rind: washed
+      firmness: soft
+      texture: [creamy, melts well]
+      strength: mild
+      flavor: [nutty, buttery]
+      milk: [cow]
+      age: aged 6 to 8 weeks
+      made: [pressed]
+      origin: the French Alps
+      label: AOP
     details: >-
-      Reblochon (French pronunciation: [ʁəblɔʃɔ̃]) is a soft washed-rind French cheese made in the Alpine
-      region of Haute-Savoie from raw cow's milk. It has its own AOC designation.
+      Its name comes from reblocher, “to milk again”: farmers once held back some milk from the landowner and milked the cows
+      a second time for themselves. Milder than most washed-rind cheeses. The star of tartiflette, a baked dish of potatoes,
+      bacon, onions and melted reblochon.
+    compare:
+      - tartiflette
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Reblochon
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365687781
     image: Reblochon_AOC.jpg
   - term: roquefort
     category: cheese
     answer:
       core:
-        - tangy blue cheese
+        - crumbly, tangy sheep’s-milk blue cheese
       context:
-        - sheep’s milk
         - French
+    profile:
+      family: blue
+      rind: none
+      firmness: semi-soft
+      texture: [crumbly, creamy]
+      strength: strong
+      flavor: [tangy, salty, sharp]
+      smell: pungent
+      milk: [sheep]
+      age: aged at least 3 months
+      made: [cave-aged]
+      origin: southern France
+      label: AOP
     details: >-
-      Roquefort (French pronunciation: [ʁɔkfɔʁ]; Languedocien: Ròcafòrt) is a sheep-milk blue cheese from
-      southern France. EU law dictates that only those cheeses aged in the natural Combalou caves of Roquefort-sur-Soulzon
-      (in the Occitania region) may bear the name "Roquefort", as it is a recognised geographical indication
-      and has a protected designation of origin.
+      By law, it must be [[cave-aged cheese|aged]] in the natural caves of one village in southern France; its blue mold originally
+      came from rye bread left in those caves. Sold wrapped in foil, with no rind.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Roquefort
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365687885
     image: Wikicheese_-_Roquefort_-_20150417_-_003.jpg
   - term: saint-andré
     category: cheese
+    kind_of: triple crème
     answer:
       core:
-        - very rich, soft, triple-cream cheese
+        - cylinder-shaped; buttery and slightly tangy
       context:
         - French
+    profile:
+      rind: bloomy
+      firmness: soft
+      texture: [creamy, high in fat]
+      strength: mild
+      flavor: [buttery, tangy]
+      milk: [cow]
+      age: aged 3 to 4 weeks
+      origin: northern France
     details: >-
-      Saint-André is a brand of French triple cream (French language: triple crème) cow's milk cheese
-      with a powdery white, bloomy skin of mold, in the form of a 200 g (7.1 oz) cylinder, 6 cm in diameter
-      and 5 cm high. Saint-André cheese is named after the town of Saint-André-sur-Orne in Normandy.
+      A brand name, and one of the easiest triple crèmes to find in the US. Sold as tall cylinders with a thin white rind;
+      eaten on bread or crackers.
+    compare:
+      - brillat-savarin
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Saint-Andr%C3%A9_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1361008317
     image: Saint-André_Cheese.jpg
   - term: saint-nectaire
     category: cheese
@@ -2778,227 +4305,554 @@ cards:
         - semi-soft, earthy cheese
       context:
         - French
-        - cow’s milk
+    profile:
+      rind: natural
+      firmness: semi-soft
+      texture: [creamy, springy]
+      strength: medium
+      flavor: [earthy, nutty]
+      milk: [cow]
+      age: aged 5 to 8 weeks
+      made: [pressed]
+      origin: central France
+      label: AOP
     details: >-
-      Saint-Nectaire (French pronunciation: [sɛ̃ nɛktɛʁ]; Occitan: Sench-Nectari) is a French cheese made
-      in the Auvergne region of central France. The cheese has been made in Auvergne since at least the
-      17th century.
+      Aged on rye straw in cool, damp cellars, where it grows a grayish rind speckled with white, yellow and red [[mold (cheese)|molds]].
+      Smells of mushrooms and cellar.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Saint-Nectaire
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365687923
     image: Saint-nectaire.jpg
   - term: tomme
     category: cheese
     answer:
       core:
-        - rustic cheese family
-        - not one specific style
+        - small, round cheese from the Alps
+        - semi-soft when [[young cheese|young]]
+        - firm when aged
       context:
-        - typically round
-        - French/Swiss term
+        - French and Swiss; a family, not one cheese
+    profile:
+      rind: natural
+      firmness: [semi-soft, firm]
+      texture: [creamy]
+      strength: mild
+      flavor: [earthy, nutty]
+      milk: [cow, sheep, goat]
+      age: young or aged, 2 to 4 months
+      made: [pressed]
+      origin: the French and Swiss Alps
     details: >-
-      Tomme (French pronunciation: [tɔm]), occasionally spelled Tome, is a class of cheeses produced mainly
-      in the French Alps and in Switzerland. It can be made from cow's, ewe's, or goat's milk.
+      A name covering many small round cheeses from the French and Swiss Alps, traditionally made from the milk left over
+      after butter-making, so they're lower in fat. The best-known is tomme de Savoie, with a thick gray-brown rind. Toma
+      is its Italian cousin.
+    compare:
+      - toma
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Tomme
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1322624318
-    image: TommedeBeaujolais.jpg
-  - term: triple crème
+    image: Tomme de Savoie2.jpg
+  - term: triple crème / triple cream
+    id: triple crème
     category: cheese
+    kind: concept
     answer:
       core:
-        - very rich, soft cheese with extra cream added
+        - soft cheese with extra cream added; high in fat
     details: >-
-      Triple-crème is a category of cow’s-milk cheese enriched with cream to contain more than 75% fat
-      in its dry matter. The category includes fresh cheeses such as mascarpone and soft-ripened cheeses
-      such as Brillat-Savarin and Saint-André.
+      Cream is added to the milk, so the cheese is much higher in fat than most; it tastes like whipped butter. Almost always
+      a [[soft cheese]] with a [[bloomy rind]], from France. (Mascarpone has as much fat, but isn't called this.)
+    compare:
+      - mascarpone
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Triple_cream
-    image: Délice de Bourgogne.jpg
+    image: Brillatsavarin.JPG
   - term: valençay
     category: cheese
     answer:
       core:
-        - soft, ash-coated, pyramid-shaped cheese
+        - pyramid-shaped, soft, [[ash (cheese)|ash]]-coated goat’s-milk cheese
       context:
-        - goat’s milk
         - French
+    profile:
+      rind: bloomy
+      firmness: soft
+      texture: [creamy, crumbly]
+      strength: mild
+      flavor: [tangy, earthy]
+      milk: [goat]
+      age: aged 3 to 5 weeks
+      made: [ash-coated]
+      origin: central France
+      label: AOP
     details: >-
-      Valençay (French pronunciation: [valɑ̃sɛ]) is a cheese made in the historic province of Berry in
-      central France. Its name is derived from the town of Valençay in the Indre department.
+      A small pyramid with its top cut off; legend says Napoleon, back from a defeat in Egypt, chopped it off in anger. The
+      ash under its wrinkly white rind turns it bluish-gray. The inside is white, tangy and dense.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Valen%C3%A7ay_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365687984
     image: Valençay_04.jpg
   - term: feta
     category: cheese
     answer:
       core:
-        - salty, crumbly, brined cheese
+        - crumbly, salty, brined cheese
       context:
-        - usually sheep’s milk
         - Greek
+    profile:
+      family: brined
+      rind: none
+      firmness: semi-soft
+      texture: [crumbly, doesn’t melt]
+      strength: medium
+      flavor: [salty, tangy]
+      milk: [sheep]
+      age: aged at least 2 months, in brine
+      origin: Greece
+      label: PDO
     details: >-
-      Feta ( FET-ə; Greek: φέτα [ˈfeta]) is a Greek brined white cheese made from sheep's milk or from
-      a mixture of sheep and goat's milk. It is soft, with small or no holes, and no skin.
+      Sold in white blocks, ideally still in their salty liquid. Made from sheep's milk, sometimes with some goat's milk mixed
+      in; in Europe, only Greek cheese made that way may be called feta, though US “feta” is often cow's milk. Crumbled onto
+      salads or baked into pastries like spanakopita, a Greek spinach pie.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Feta
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367638105
     image: Feta_Cheese.jpg
   - term: halloumi
     category: cheese
     answer:
       core:
-        - firm, brined cheese that holds its shape when grilled
+        - firm, springy, salty, brined cheese
       context:
-        - Cypriot
+        - from Cyprus; grilled or fried
+    profile:
+      family: brined
+      rind: none
+      firmness: firm
+      texture: [springy, doesn’t melt]
+      strength: mild
+      flavor: [salty, milky]
+      milk: [goat, sheep, cow]
+      age: fresh, stored in brine
+      made: [pressed]
+      origin: Cyprus
+      label: PDO
     details: >-
-      Halloumi, or haloumi, is a cheese originating from Cyprus. It is traditionally made from a mixture
-      of goat milk and sheep's milk; however, due to industrial tactics to increase profit, modern halloumi
-      increasingly contains cow's milk.
+      Its [[curds]] are heated in their [[whey]] while it's made, so it doesn't melt: it's sliced and grilled or fried until
+      golden outside and soft inside, and squeaks against your teeth. Traditionally goat's and sheep's milk; now often with
+      cow's milk.
+    compare:
+      - feta
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Halloumi
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368023173
     image: Halloumislice_zoom.jpg
   - term: manchego
     category: cheese
     answer:
       core:
-        - firm cheese
+        - firm, nutty sheep’s-milk cheese with a zigzag rind
       context:
-        - sheep’s milk
         - Spanish
+    profile:
+      rind: natural
+      firmness: firm
+      texture: [creamy, crumbly]
+      strength: medium
+      flavor: [nutty, buttery, tangy]
+      milk: [sheep]
+      age: young or aged, 2 months to 2 years
+      made: [pressed]
+      origin: Spain (La Mancha)
+      label: DOP
     details: >-
-      Manchego (Spanish: queso manchego, pronounced [ˈkeso manˈtʃeɣo]) is a cheese made in the La Mancha
-      region of Spain from the milk of sheep of the Manchega breed. It is aged between 60 days and 2 years.
+      Made from the milk of La Mancha's Manchega sheep, in forms that press a zigzag basket-weave pattern into the rind. Labeled
+      by age, from [[tierno]] and semicurado to [[curado]] and viejo (old); older manchego is sharper and more crumbly. Served
+      in slices with quince paste (membrillo).
+    compare:
+      - membrillo
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Manchego
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368072587
     image: Queso_Manchego._Inauguración_del_38º_Salón_Gourmets_(cropped).jpg
   - term: cotija
     category: cheese
     answer:
       core:
-        - salty, crumbly cheese
+        - crumbly, salty, aged Mexican cheese
       context:
-        - Mexican
-        - cow’s milk
+        - crumbled or grated over food
+    profile:
+      rind: natural
+      firmness: firm
+      texture: [crumbly, doesn’t melt]
+      strength: medium
+      flavor: [salty, milky]
+      milk: [cow]
+      age: young or aged, 3 months to a year
+      made: [pressed]
+      origin: western Mexico
     details: >-
-      Cotija ( koh-TEE-khə, Spanish pronunciation: [koˈtixa]) is an aged Mexican cheese made from cow's
-      milk and named after the town of Cotija, Michoacán. It is white and firm, with a salty, milky flavor.
+      Used much like shaker parmesan: crumbled or grated over tacos, beans, salads and Mexican street corn (elote). [[young
+      cheese|Young]] cotija crumbles like feta; long-aged cotija is hard enough to grate. Named after the town of Cotija in
+      Mexico; despite the similar sound, it has nothing to do with cottage cheese.
+    compare:
+      - feta
+      - cottage cheese
+      - elote
+      - parmesan
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cotija_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1329401283
-    image: Cotija_(5200441615).jpg
+    image: NuestroMercadoQuesos40.JPG
   - term: queso fresco
     category: cheese
     answer:
       core:
-        - mild, fresh, crumbly cheese
+        - crumbly, mild fresh cheese
       context:
-        - Latin American
+        - Mexican and Latin American
+    profile:
+      rind: none
+      firmness: soft
+      texture: [crumbly, moist, doesn’t melt]
+      strength: mild
+      flavor: [milky, salty]
+      milk: [cow]
+      age: fresh
+      origin: Mexico and Latin America
     details: >-
-      Queso fresco is a soft, moist Latin American fresh cheese that is eaten without aging. It is usually
-      mild and lightly salty and is commonly crumbled over dishes; exact styles vary by country.
+      Spanish for “fresh cheese” ([[queso]] + [[fresco]]). Crumbled over tacos, beans and enchiladas (sauced, rolled tortillas);
+      it softens when heated but doesn't melt. Cotija is its aged, saltier cousin.
+    compare:
+      - cotija
     source:
       label: Wikipedia (Spanish)
       url: https://es.wikipedia.org/wiki/Queso_fresco
     image: Queso fresco.JPG
   - term: quesillo
+    id: quesillo
     category: cheese
     answer:
       core:
-        - stringy, stretched-curd cheese
-        - Oaxaca cheese
+        - stringy, stretched-curd cheese wound into balls
       context:
-        - Mexican
+        - Mexican; also called Oaxaca cheese
+    profile:
+      family: stretched-curd
+      rind: none
+      firmness: semi-soft
+      texture: [stringy, melts well]
+      strength: mild
+      flavor: [milky, salty]
+      milk: [cow]
+      age: fresh
+      origin: southern Mexico (Oaxaca)
     details: >-
-      Oaxaca cheese (Spanish: queso Oaxaca) ( wə-HAH-kə), also known as quesillo and queso de hebra, is
-      a white, semihard, low-fat cheese that originated in Mexico. It is similar to unaged Monterey Jack,
-      but with a texture similar to mozzarella or string cheese.
+      Made like [[mozzarella]], then stretched into long ribbons and wound into balls like yarn. Pulls apart into strings
+      and melts beautifully in quesadillas. Quesillo is the usual name in Mexico.
+    compare:
+      - Oaxaca cheese
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Oaxaca_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1335563422
     image: Quesillo_de_Oaxaca.png
+  - term: Oaxaca cheese
+    category: cheese
+    answer:
+      core:
+        - stringy, stretched-curd cheese wound into balls
+      context:
+        - Mexican; also called quesillo
+    profile:
+      family: stretched-curd
+      rind: none
+      firmness: semi-soft
+      texture: [stringy, melts well]
+      strength: mild
+      flavor: [milky, salty]
+      milk: [cow]
+      age: fresh
+      origin: southern Mexico (Oaxaca)
+    details: >-
+      Named after Oaxaca, the southern Mexican state it comes from; the usual name on American menus. Made like [[mozzarella]],
+      then stretched into long ribbons and wound into balls like yarn. Pulls apart into strings and melts beautifully in quesadillas.
+    compare:
+      - quesillo
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Oaxaca_cheese
+    image_from: quesillo
   - term: labneh
     category: cheese
     answer:
       core:
-        - thick, tangy strained yogurt served like a soft cheese
+        - tangy strained yogurt, spread like cream cheese
+      context:
+        - Middle Eastern
+    profile:
+      rind: none
+      firmness: soft
+      texture: [spreadable, creamy]
+      strength: mild
+      flavor: [tangy, salty]
+      milk: [cow, goat, sheep]
+      age: fresh
+      origin: Middle East
     details: >-
-      Strained yogurt, Greek or Greek-style yogurt, yogurt cheese, sack yogurt, hung curd, kerned yogurt
-      or labneh, is yogurt that has been strained to remove most of its whey, making it thicker while
-      preserving its sour taste. In Europe and North America, it is often made from low-fat or fat-free
-      cow's milk.
+      Yogurt hung in cloth until most of its [[whey]] drips out, leaving a thick, spreadable cheese. Served drizzled with
+      olive oil and za’atar, with pita. Greek yogurt is made the same way but strained less.
+    compare:
+      - za’atar
+      - cream cheese
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Strained_yogurt
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367334890
     image: Labneh01.jpg
   - term: gouda
     category: cheese
     answer:
       core:
-        - mild when young
-        - caramel-like when aged
+        - springy and mild when [[young cheese|young]]
+        - hard and caramel-like when aged
       context:
         - Dutch
-        - cow’s milk
+    profile:
+      rind: wax
+      firmness: [semi-soft, hard]
+      texture: [springy, grainy]
+      strength: [mild, strong]
+      flavor: [milky, buttery, caramel-like, nutty]
+      milk: [cow]
+      age: young or aged, 1 month to over 3 years
+      made: [pressed]
+      origin: Netherlands
+      label: PDO, Noord-Hollandse gouda only
     details: >-
-      Gouda cheese (Dutch: [ˈɣʌudaː]; Dutch: Goudse kaas, "cheese from Gouda") is a family of yellow cow's
-      milk cheeses originally from the Netherlands. Gouda ranges from young and elastic to old and hard,
-      and from low-fat to high-fat.
+      Named after the Dutch town of Gouda. Young gouda is sealed in red or yellow [[wax rind|wax]]; aged gouda turns deep
+      gold, hard and sweet like butterscotch, with crunchy crystals. Smoked gouda is popular in the US.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Gouda_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1358452537
-    image: Chesses_gouda_affinage.JPG
+    image: WikiCheese - Gouda jeune 02.jpg
   - term: havarti
     category: cheese
     answer:
       core:
-        - mild, buttery, semi-soft cheese
+        - semi-soft, creamy, mild, buttery cheese
       context:
         - Danish
-        - cow’s milk
+    profile:
+      rind: none
+      firmness: semi-soft
+      texture: [creamy, small holes, melts well]
+      strength: mild
+      flavor: [buttery, milky]
+      milk: [cow]
+      age: aged about 3 months
+      made: [pressed]
+      origin: Denmark
     details: >-
-      Havarti (Danish pronunciation: [hæˈvɑːtsʰi]) or cream Havarti (Danish: flødehavarti) is a semisoft
-      Danish cow's milk cheese. It can be sliced, grilled, or melted.
+      Smooth and pale, dotted with small, irregular holes. Cream havarti has extra cream added; dill havarti is flavored with
+      dill. Popular in sandwiches.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Havarti
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1356680797
     image: Cream havarti on bread.jpg
   - term: stilton
     category: cheese
     answer:
       core:
-        - blue cheese
-      context:
-        - English
-        - cow’s milk
+        - crumbly English blue cheese
+    profile:
+      family: blue
+      rind: natural
+      firmness: semi-soft
+      texture: [crumbly, creamy]
+      strength: strong
+      flavor: [tangy, salty]
+      smell: pungent
+      milk: [cow]
+      age: aged at least 9 weeks
+      origin: central England
+      label: PDO
     details: >-
-      Stilton is an English cheese, produced in two varieties: blue, which has Penicillium roqueforti
-      added to generate a characteristic smell and taste, and white, which does not. Both have been granted
-      the status of a protected designation of origin (PDO) by the European Commission, requiring that
-      only such cheese produced in the three counties of Derbyshire, Leicestershire and Nottinghamshire
-      may be called Stilton.
+      Only cheese from three English counties may use the name, under a [[PDO]]. Its crusty rind is brushed, not eaten. Traditionally
+      served at Christmas with port, a sweet, strong Portuguese wine. White stilton, without the blue mold, is sold too, often
+      mixed with fruit.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Stilton_cheese
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366995673
     image: Blue_Stilton_01.jpg
+  - term: cream cheese
+    category: cheese
+    answer:
+      core:
+        - spreadable, mild, tangy fresh cheese
+    profile:
+      rind: none
+      firmness: soft
+      texture: [spreadable, creamy]
+      strength: mild
+      flavor: [milky, tangy]
+      milk: [cow]
+      age: fresh
+      origin: United States
+    details: >-
+      Made from milk and cream, soured and thickened. Spread on bagels, and the base of cheesecake and frosting. Mascarpone
+      is a higher-fat, less tangy Italian cousin.
+    compare:
+      - mascarpone
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cream_cheese
+    image: Toasted bagel with cream cheese.jpg
+  - term: cottage cheese
+    category: cheese
+    answer:
+      core:
+        - lumpy, mild fresh cheese
+      context:
+        - eaten by the spoonful
+    profile:
+      rind: none
+      firmness: soft
+      texture: [moist, lumpy]
+      strength: mild
+      flavor: [milky, tangy]
+      milk: [cow]
+      age: fresh
+      origin: widespread
+    details: >-
+      Loose, soft [[curds]], rinsed and mixed with a little cream or milk instead of being shaped into a solid cheese. Often
+      eaten with fruit, or as a high-protein snack.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cottage_cheese
+    image: Cottagecheese200px.jpg
+  - term: cheddar
+    category: cheese
+    answer:
+      core:
+        - firm cheese, mild when [[young cheese|young]] and sharp when aged
+      context:
+        - English, now made everywhere
+    profile:
+      rind: natural
+      firmness: firm
+      texture: [creamy, crumbly, melts well]
+      strength: [mild, strong]
+      flavor: [milky, sharp, nutty]
+      milk: [cow]
+      age: young or aged, 2 months to over 2 years
+      made: [pressed]
+      origin: England, now made everywhere
+    details: >-
+      US labels from mild through medium and sharp to extra-sharp say how long it was aged, from about two months to over
+      a year. Orange cheddar is dyed with annatto, a tasteless plant seed; white cheddar is undyed. Traditional English cheddar
+      is wrapped in cloth and aged in [[wheel (cheese)|wheels]] that grow a rind; supermarket blocks are aged in plastic and
+      have none.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cheddar_cheese
+    image: White cheddar cheese.jpg
+  - term: American cheese
+    category: cheese
+    answer:
+      core:
+        - mild, processed cheese that melts perfectly
+      context:
+        - usually sliced
+    profile:
+      family: processed
+      rind: none
+      firmness: semi-soft
+      texture: [creamy, melts well]
+      strength: mild
+      flavor: [milky, salty]
+      milk: [cow]
+      age: young, then processed
+      origin: United States
+    details: >-
+      Usually sold as individually wrapped slices: the classic cheese for burgers and grilled cheese. It's made from young
+      cheeses like cheddar.
+    compare:
+      - cheddar
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/American_cheese
+    image: Wrapped American cheese slices.jpg
+  - term: string cheese
+    category: cheese
+    kind_of: mozzarella
+    answer:
+      core:
+        - low-moisture sticks that peel into strings
+    profile:
+      texture: [stringy, springy, melts well]
+      flavor: [milky, salty]
+      age: young, a few weeks
+    details: >-
+      Low-moisture mozzarella is [[aged cheese|aged]] a little, so it's drier, firmer and saltier than fresh mozzarella. Stretching
+      the [[curds]] lines up the cheese's proteins, so a stick peels into strings.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/String_cheese
+    image: String Cheese (7973943306).jpg
+  - term: parmesan
+    category: cheese
+    answer:
+      core:
+        - hard, salty grating cheese
+      context:
+        - the US name for parmigiano reggiano copies
+    profile:
+      rind: natural
+      firmness: hard
+      texture: [grainy]
+      strength: medium
+      flavor: [salty, nutty]
+      milk: [cow]
+      age: aged at least 10 months
+      origin: United States, copying Italy
+    details: >-
+      In Europe, the name parmesan is reserved for the real parmigiano reggiano; in the US it's a general name. US [[wheel
+      (cheese)|wedges]] are usually aged around 10 months, versus at least a year for the Italian original. Shaker parmesan
+      is grated and dried so it keeps without refrigeration.
+    compare:
+      - parmigiano reggiano
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Parmesan
+    image: 2019-11-16 02 59 40 A small pile of Giant Real Grated Parmesan Cheese in the Dulles section of Sterling, 
+      Loudoun County, Virginia.jpg
+  - term: pepper jack
+    category: cheese
+    answer:
+      core:
+        - semi-soft, mild cheese studded with hot peppers
+    profile:
+      rind: none
+      firmness: semi-soft
+      texture: [creamy, melts well]
+      strength: medium
+      flavor: [milky, buttery, spicy]
+      milk: [cow]
+      age: young, 1 to 3 months
+      made: [pressed]
+      origin: United States
+    details: >-
+      Monterey Jack, a mild, buttery American cheese, mixed with bits of jalapeño or other chili peppers. Popular on sandwiches,
+      burgers and quesadillas.
+    compare:
+      - American cheese
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pepper_jack_cheese
+    image: Pepperjack Cheese.jpg
   - term: pepperoncini
-    category: other
+    category: vegetable
     answer:
       core:
         - mild, tangy pickled chili peppers
@@ -3013,7 +4867,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1358107466
     image: Pickled_friggitelli.jpg
   - term: peperoncino
-    category: other
+    category: vegetable
     answer:
       core:
         - chili pepper, usually hot
@@ -3030,7 +4884,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1362170697
     image: Capsicum_-Chili_-_Peperoncino_-_Il_Viagra_Calabrese_-_Calabria_-_Italy_-_July_17th_2013_-_02.jpg
   - term: peperoni
-    category: other
+    category: vegetable
     answer:
       core:
         - bell peppers
@@ -3047,7 +4901,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369811711
     image: Green-Yellow-Red-Pepper-2009.jpg
   - term: giardiniera
-    category: other
+    category: condiment
     answer:
       core:
         - pickled mixed vegetables
@@ -3062,7 +4916,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368138130
     image: GiardinieraSpicy.JPG
   - term: mostarda
-    category: other
+    category: condiment
     answer:
       core:
         - candied fruit in mustard-flavored syrup
@@ -3078,7 +4932,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1348441112
     image: Sapori_mantovani_-_La_mostarda_di_frutta.jpg
   - term: bottarga
-    category: other
+    category: seafood
     answer:
       core:
         - salt-cured fish roe
@@ -3094,7 +4948,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367062366
     image: Bottarga_from_Preveza_Greece.jpg
   - term: acciughe
-    category: other
+    category: seafood
     answer:
       core:
         - anchovies
@@ -3110,7 +4964,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366941610
     image: Anchovy_closeup.jpg
   - term: baccalà
-    category: other
+    category: seafood
     answer:
       core:
         - salt-cured cod
@@ -3126,7 +4980,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369866122
     image: Bacalhau_(Porto).jpg
   - term: polpo
-    category: other
+    category: seafood
     answer:
       core:
         - octopus
@@ -3141,7 +4995,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368348997
     image: Octopuses_in_Tsukiji.JPG
   - term: seppia
-    category: other
+    category: seafood
     answer:
       core:
         - cuttlefish
@@ -3156,7 +5010,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366797170
     image: Sepia_común_(Sepia_officinalis),_Parque_natural_de_la_Arrábida,_Portugal,_2020-07-21,_DD_62.jpg
   - term: cozze
-    category: other
+    category: seafood
     answer:
       core:
         - mussels
@@ -3172,7 +5026,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365738489
     image: CornishMussels.JPG
   - term: vongole
-    category: other
+    category: seafood
     answer:
       core:
         - clams
@@ -3188,7 +5042,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367271677
     image: Grilled littleneck clams - Cambridge, MA.jpg
   - term: scampi
-    category: other
+    category: seafood
     answer:
       core:
         - small, lobster-like crustaceans
@@ -3205,7 +5059,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1351903831
     image: Nephrops_norvegicus.jpg
   - term: carciofi
-    category: other
+    category: vegetable
     answer:
       core:
         - artichokes
@@ -3219,7 +5073,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369636019
     image: Artichoke_J1.jpg
   - term: radicchio
-    category: other
+    category: vegetable
     answer:
       core:
         - bitter red-leaf chicory
@@ -3233,7 +5087,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368109245
     image: RadicchioNL.jpg
   - term: rapini
-    category: other
+    category: vegetable
     answer:
       core:
         - bitter leafy green
@@ -3248,7 +5102,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1357556647
     image: Rapini.jpg
   - term: puntarelle
-    category: other
+    category: vegetable
     answer:
       core:
         - crisp, slightly bitter chicory shoots
@@ -3263,7 +5117,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366439526
     image: Puntarelle_stehend.jpg
   - term: cavolo nero
-    category: other
+    category: vegetable
     answer:
       core:
         - dark leafy cabbage
@@ -3282,7 +5136,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1351789579
     image: Brassica_-_Gardenology.org-IMG_0606_bbg09.jpg
   - term: cipollini
-    category: other
+    category: vegetable
     answer:
       core:
         - small, flat, mildly sweet onions
@@ -3296,7 +5150,7 @@ cards:
       url: https://www.merriam-webster.com/dictionary/cipollini
     image: CipollineOnions.jpg
   - term: cornichons
-    category: other
+    category: condiment
     answer:
       core:
         - tiny, tart pickled cucumbers
@@ -3314,7 +5168,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1358911642
     image: Pickle.jpg
   - term: gremolata
-    category: other
+    category: condiment
     answer:
       core:
         - chopped parsley, lemon zest, and garlic garnish
@@ -3328,7 +5182,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1351657558
     image: Gremolata_03.jpg
   - term: tapenade
-    category: other
+    category: condiment
     answer:
       core:
         - savory olive spread
@@ -3344,7 +5198,7 @@ cards:
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1361913932
     image: Cuillere_de_tapenade.jpg
   - term: caponata
-    category: other
+    category: condiment
     answer:
       core:
         - sweet-and-sour eggplant relish
@@ -3359,3 +5213,325 @@ cards:
       url: https://en.wikipedia.org/wiki/Caponata
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1321304956
     image: Caponata_(14049113982).jpg
+  - term: gelato
+    category: dessert
+    answer:
+      core:
+        - Italian ice cream
+      context:
+        - denser and silkier than American ice cream
+    details: >-
+      Gelato has less cream and less air whipped in than American ice cream, and is served a little warmer, so it tastes more
+      intense and feels softer. Gelato shops show their flavors in open trays.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gelato
+    image: Delicious Gelato on display.jpg
+  - term: fior di latte (gelato)
+    category: dessert
+    answer:
+      core:
+        - plain sweet-cream [[gelato]]
+    details: >-
+      Italian for “flower of milk”. Just milk, cream and sugar with no other flavoring: the base that many other gelato flavors
+      start from.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Gelato
+    image: Il Gelato al Fiordilatte.jpg
+  - term: stracciatella (gelato)
+    category: dessert
+    answer:
+      core:
+        - '[[gelato]] with fine shavings of chocolate'
+    details: >-
+      Italian for “little rags”. Melted chocolate is drizzled into plain sweet-cream gelato as it churns, where it hardens
+      and breaks into thin, crisp shreds, like chocolate-chip ice cream but finer.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Stracciatella_(ice_cream)
+    image: Cono LaStracciatellailgelatodiBergamo.jpg
+  - term: stracciatella (soup)
+    category: dish
+    answer:
+      core:
+        - Roman egg-drop soup
+    details: >-
+      Italian for “little rags”. Beaten egg and grated cheese are stirred into hot broth, where they set into thin, ragged
+      shreds.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Stracciatella_(soup)
+    image: Straciatella - bowl.JPG
+  - term: dolce (dessert)
+    category: dessert
+    kind: concept
+    answer:
+      core:
+        - dessert
+      context:
+        - Italian; plural dolci; as an adjective, sweet
+    details: >-
+      The dolci section of an Italian menu lists the desserts. As an adjective it means sweet, as in vino dolce, a sweet wine.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/dolce#Italian
+  - term: piccante (dish)
+    category: other
+    kind: concept
+    answer:
+      core:
+        - spicy; hot with chili
+      context:
+        - Italian
+    details: >-
+      As in [[salame]] piccante, a salami made with chili, or a pizza piccante.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/piccante#Italian
+  - term: raclette (dish)
+    category: dish
+    answer:
+      core:
+        - melted cheese scraped over boiled potatoes
+      context:
+        - Swiss; with pickles
+    details: >-
+      A [[wheel (cheese)|half-wheel]] of [[raclette|raclette cheese]] is heated until its surface melts, then scraped onto
+      each plate. Today, tabletop grills with little pans are common. Served with [[cornichons]] and pickled onions.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Raclette
+    image: Raclette_20040817_140816.jpg
+  - term: fondue
+    category: dish
+    answer:
+      core:
+        - a shared pot of melted cheese for dipping bread
+      context:
+        - Swiss
+    details: >-
+      Cheese is melted with white wine and garlic in a pot kept warm at the table, and everyone dips cubes of bread on long
+      forks. Classic fondue uses [[Alpine-style cheese|Alpine cheeses]] like gruyère and emmental. Chocolate fondue, for dipping
+      fruit, is a dessert version.
+    compare:
+      - gruyère
+      - emmental
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Fondue
+    image: Swiss fondue.jpg
+  - term: tartiflette
+    category: dish
+    answer:
+      core:
+        - baked potatoes, bacon and onions under melted [[reblochon]]
+      context:
+        - from the French Alps
+    details: >-
+      A bubbling, cheesy casserole from the French Alps: a whole reblochon is halved and laid on top, so its rind browns as
+      it melts into the potatoes.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tartiflette
+    image: Une tartiflette sortie du four.jpg
+  - term: frico
+    category: dish
+    answer:
+      core:
+        - a crisp, fried cheese pancake
+      context:
+        - from northeast Italy
+    details: >-
+      Grated [[montasio]] is fried until it melts into a lacy, golden disk. Thin frico is crunchy, like a cracker; thicker
+      versions are made with potatoes and onions and stay soft inside.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Frico
+    image: Fricoepolenta.jpg
+  - term: cacio e pepe
+    category: dish
+    answer:
+      core:
+        - pasta with [[pecorino romano]] and black pepper
+      context:
+        - Roman
+    details: >-
+      Italian for “cheese and pepper”. Grated pecorino and pasta water are tossed with hot pasta until they make a creamy
+      sauce, with lots of black pepper. Usually made with long pasta like [[spaghetti]] or [[tonnarelli]].
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cacio_e_pepe
+    image: Cacio e pepe.jpg
+  - term: elote
+    category: dish
+    answer:
+      core:
+        - grilled corn on the cob with mayonnaise, [[cotija]] and chili
+      context:
+        - Mexican street food
+    details: >-
+      Mexican Spanish for corn on the cob. The grilled corn is slathered with mayonnaise or sour cream, rolled in crumbled
+      cotija, and sprinkled with chili powder and lime. Esquites is the same thing cut off the cob and served in a cup.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Elote
+    image: ELOTE.jpg
+  - term: truffle (fungus)
+    category: vegetable
+    answer:
+      core:
+        - a costly, strongly aromatic underground mushroom
+      context:
+        - shaved over food
+    details: >-
+      Truffles grow underground on tree roots and are sniffed out by trained dogs or pigs. Black and white truffles are shaved
+      raw over pasta, eggs or risotto; a little goes a long way. “Truffle oil” and truffle fries are usually flavored with
+      a synthetic aroma instead.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Truffle
+    image: Tuber melanosporum Vittadini 1831 (Fungi Ascomycota Pezizomycotina Pezizomycetes Pezizales Tuberaceæ) 
+      (25817500456) cropped.jpg
+  - term: truffle (chocolate)
+    category: dessert
+    answer:
+      core:
+        - a ball of chocolate mixed with cream, coated in cocoa or chocolate
+    details: >-
+      Named for its resemblance to the lumpy, cocoa-colored fungus.
+    compare:
+      - truffle (fungus)
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Chocolate_truffle
+    image: Truffles with nuts and chocolate dusting in detail.jpg
+  - term: tartufo (fungus)
+    category: vegetable
+    kind: concept
+    translates: truffle (fungus)
+    answer:
+      core:
+        - '[[truffle (fungus)|truffle]]'
+      context:
+        - Italian
+    details: >-
+      As in [[tagliatelle]] al tartufo. Tartufo nero is black truffle; tartufo bianco, white truffle.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/tartufo#Italian
+    image_from: truffle (fungus)
+  - term: tartufo (dessert)
+    category: dessert
+    answer:
+      core:
+        - a ball of [[gelato]] with a hidden center, coated in cocoa or chocolate
+      context:
+        - Italian
+    details: >-
+      Named for its resemblance to a truffle. The classic version, from southern Italy, is hazelnut and chocolate gelato around
+      a molten chocolate center.
+    compare:
+      - truffle (fungus)
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tartufo
+    image: Italian tartufo with rolled chocolate sticks.jpg
+  - term: membrillo
+    category: condiment
+    answer:
+      core:
+        - firm, sweet paste of quince, an apple-like fruit
+      context:
+        - Spanish; served with [[manchego]]
+    details: >-
+      Quince is hard and sour when raw; cooked down with sugar, it sets into a sliceable, jelly-like block. A slice on top
+      of a slice of manchego is a classic Spanish snack.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Quince_cheese
+    image: Manchego and membrillo.jpg
+  - term: za’atar
+    category: condiment
+    answer:
+      core:
+        - a spice mix of dried thyme, sesame seeds and sumac, a tart red berry powder
+      context:
+        - Middle Eastern
+    details: >-
+      Za'atar is sprinkled on flatbread with olive oil (manakish), on [[labneh]], or over eggs and salads.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Za%27atar
+    image: Zaʿtar.jpg
+  - term: risotto
+    category: dish
+    answer:
+      core:
+        - creamy rice dish, slowly stirred with broth
+      context:
+        - northern Italian
+    details: >-
+      Short, starchy rice is cooked by adding hot broth a ladle at a time and stirring, which makes it creamy without any
+      cream. Usually finished with butter and grated [[parmigiano reggiano]], and named for its main flavor, like risotto
+      ai funghi (with mushrooms).
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Risotto
+    image: Risotto parmagiana, Parma.jpg
+  - term: polenta
+    category: dish
+    answer:
+      core:
+        - cornmeal porridge
+      context:
+        - northern Italian; soft, or set and grilled
+    details: >-
+      Coarse cornmeal simmered in water or broth until thick. Served soft and spoonable, often topped with melted cheese or
+      a sauce, or left to set, then sliced and grilled or fried.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Polenta
+    image: Polenta con salsicce.jpg
+  - term: carbonara
+    category: dish
+    answer:
+      core:
+        - pasta with egg, [[pecorino romano]] and [[guanciale]]
+      context:
+        - Roman
+    details: >-
+      Egg yolks and grated cheese are tossed with hot pasta and crisp guanciale until they turn into a silky sauce; the Roman
+      original has no cream. Usually made with [[spaghetti]] or [[rigatoni]].
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Carbonara
+    image: Autentica Carbonara.jpg
+  - term: tiramisu
+    category: dessert
+    answer:
+      core:
+        - layers of coffee-soaked sponge cookies and [[mascarpone]] cream, dusted with cocoa
+      context:
+        - Italian
+    details: >-
+      Italian for “pick me up”. Ladyfingers, light finger-shaped sponge cookies, are dipped in espresso and layered with mascarpone
+      whipped with eggs and sugar, then chilled.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tiramisu
+    image: Classic Italian Tiramisu-3 (29989504485).jpg
+  - term: cannoli
+    category: dessert
+    answer:
+      core:
+        - crisp fried pastry tubes filled with sweetened [[ricotta]]
+      context:
+        - from Sicily
+    details: >-
+      The singular is cannolo. The shells are filled just before serving so they stay crunchy; the ricotta filling often has
+      chocolate chips or candied fruit, and the ends may be dipped in chopped pistachios.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cannoli
+    image: Cannolo siciliano with chocolate squares.jpg

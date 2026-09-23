@@ -4,13 +4,12 @@
   --muted: #6f665d;
   --accent: #a23f2c;
   --panel: #f3eadc;
+  --content-width: 724px;
   background: var(--background);
   color: var(--text);
   font-family: ui-rounded, "Avenir Next", Avenir, system-ui, sans-serif;
   font-size: 20px;
   line-height: 1.45;
-  margin: 0 auto;
-  max-width: 760px;
   padding: 32px 22px;
   text-align: center;
 
@@ -71,7 +70,6 @@
   font-weight: 500;
   line-height: 1.25;
   margin: 0 auto 22px;
-  max-width: 34rem;
 
   strong {
     font-weight: 800;
@@ -80,6 +78,14 @@
   @media (min-width: 700px) {
     margin-bottom: 12px;
   }
+}
+
+/* The term and headline span the whole card; everything else keeps a readable width. */
+.food-image,
+.extra,
+footer {
+  margin-inline: auto;
+  max-width: var(--content-width);
 }
 
 .food-image {
@@ -104,15 +110,65 @@
 .extra {
   background: var(--panel);
   border-radius: 12px;
-  margin: 24px 0 16px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  gap: 12px;
+  margin-block: 24px 16px;
   padding: 16px 20px;
   text-align: left;
-  font-size: 0.9rem;
+
+  p,
+  ul {
+    margin: 0;
+  }
 
   @media (min-width: 700px) {
     line-height: 1.35;
-    margin: 14px 0 8px;
+    margin-block: 14px 8px;
     padding: 12px 16px;
+  }
+}
+
+.profile {
+  display: grid;
+  gap: 3px 12px;
+  grid-template-columns: max-content 1fr;
+  margin: 0;
+
+  dt {
+    color: var(--muted);
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding-top: 0.15em;
+    text-transform: uppercase;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+.ref {
+  text-decoration: underline dotted rgb(128 105 86 / 60%);
+  text-underline-offset: 0.2em;
+}
+
+.gloss,
+.terms,
+.examples {
+  color: var(--muted);
+  font-size: 0.88em;
+}
+
+.terms {
+  list-style: none;
+  padding: 0;
+
+  b {
+    color: var(--text);
+    font-weight: 600;
   }
 }
 

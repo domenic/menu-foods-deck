@@ -1,0 +1,213 @@
+# The deck's house style: the words cards may use and how they are checked.
+# build_deck.py reads this file alongside menu-foods.yaml; see the README's
+# "Writing cards" and "What the build checks" sections for how it's used.
+
+# Card categories, each with the label shown on the card's back.
+categories:
+  pasta: Pasta
+  meat: Meat & charcuterie
+  cheese: Cheese
+  seafood: Seafood
+  vegetable: Vegetable
+  condiment: Condiment
+  dessert: Dessert
+  dish: Dish
+  other: Other menu trap
+
+# The rows of a cheese's profile, in display order: what kind of cheese it is,
+# what it's like to eat, what it's made from and how, then where it's from.
+#
+# Each row has a label shown on the card and a shape:
+#   text:   free text
+#   single: one word
+#   range:  one word, or a list of two for a range ("soft to semi-soft")
+#   list:   a list of words, shown separated by `joiner`
+#   stages: words separated by " or ", then optional details after a comma
+#           ("young or aged, 1 month to 2 years")
+#
+# `words` lists the words a row may use. A word naming a card links that card,
+# which is glossed on the back; a word with no card after it is plain English.
+# Rows marked `required` must appear in every cheese's profile, unless the cheese
+# has narrower kinds that fill them in.
+profile:
+  family:
+    label: family
+    shape: single
+    words:
+      stretched-curd: stretched-curd cheese
+      whey cheese: whey cheese
+      brined: brined cheese
+      processed: processed cheese
+      blue: blue cheese
+      Alpine-style: Alpine-style cheese
+      grana: grana
+  rind:
+    label: rind
+    shape: single
+    required: true
+    words:
+      none:
+      natural: natural rind
+      bloomy: bloomy rind
+      washed: washed rind
+      wax: wax rind
+  firmness:
+    label: firmness
+    shape: range
+    required: true
+    words:
+      soft: soft cheese
+      semi-soft: semi-soft cheese
+      firm: firm cheese
+      hard: hard cheese
+  texture:
+    label: texture
+    shape: list
+    joiner: ", "
+    words:
+      big holes:
+      creamy:
+      crumbly:
+      doesn’t melt:
+      grainy:
+      high in fat:
+      lumpy:
+      melts well: melting cheese
+      moist:
+      small holes:
+      springy: springy cheese
+      spreadable:
+      stringy:
+  strength:
+    label: strength
+    shape: range
+    required: true
+    words:
+      mild:
+      medium:
+      strong:
+  flavor:
+    label: flavor
+    shape: list
+    joiner: ", "
+    words:
+      buttery:
+      caramel-like:
+      earthy: earthy cheese
+      milky:
+      nutty: nutty cheese
+      salty:
+      sharp: sharp cheese
+      slightly sweet:
+      smoky:
+      spicy:
+      tangy: tangy cheese
+  smell:
+    label: smell
+    shape: single
+    words:
+      pungent: pungent cheese
+  milk:
+    label: milk
+    shape: list
+    joiner: " or "
+    required: true
+    words:
+      cow:
+      sheep:
+      goat:
+      water buffalo:
+  age:
+    label: age
+    shape: stages
+    required: true
+    words:
+      fresh: fresh cheese
+      young: young cheese
+      aged: aged cheese
+  style:
+    label: style
+    shape: list
+    joiner: " or "
+    words:
+      dolce: dolce (cheese)
+      piccante: piccante (cheese)
+  made:
+    label: made
+    shape: list
+    joiner: ", "
+    words:
+      pressed: pressed cheese
+      from whey: whey
+      ash-coated: ash (cheese)
+      with an ash line: ash (cheese)
+      cave-aged: cave-aged cheese
+      often smoked: smoked cheese
+  origin:
+    label: from
+    shape: text
+    required: true
+  label:
+    label: label
+    shape: stages
+    words:
+      DOP: DOP
+      AOP: AOP
+      PDO: PDO
+
+# The kinds of adjective that may come before "cheese" in a cheese's headline,
+# in the order they must appear. `*` matches any word, as in "pear-shaped".
+headline_order:
+  - kind: size, shape or color
+    words: [small, large, big, round, square, flat, "*-shaped", orange, white]
+  - kind: firmness
+    words: [soft, semi-soft, firm, hard]
+  - kind: texture
+    words: [creamy, crumbly, grainy, granular, stringy, springy, spreadable, lumpy, moist, smooth, high-fat]
+  - kind: flavor
+    words: [mild, medium, strong, sharp, pungent, tangy, nutty, earthy, buttery, salty, milky, sweet, smoky, spicy,
+            strong-smelling]
+  - kind: age
+    words: [fresh, young, aged, cave-aged]
+  - kind: origin
+    words: [Italian, French, Swiss, Spanish, Greek, Mexican, Dutch, Danish, English, Cypriot, American]
+  - kind: kind
+    words: [bloomy-rind, washed-rind, stretched-curd, blue, brined, whey, processed, Alpine-style, grating, melting,
+            cream, triple-cream, "*’s-milk", "*'s-milk"]
+
+# Terms of art, each with the card explaining it and the word forms that count
+# as using it. A card may use one only if it builds on that card, directly or
+# through its prerequisites. (Every card's own term is also checked, as written.)
+jargon:
+  Alpine-style cheese: [Alpine]
+  ash (cheese): [ash]
+  aged cheese: [aged, aging, ages, ripe, ripened, ripens, ripening]
+  bloomy rind: [bloomy]
+  blue cheese: [blue cheese, blue cheeses]
+  brined cheese: [brine, brined]
+  cave-aged cheese: [cave-aged]
+  curds: [curd, curds]
+  earthy cheese: [earthy]
+  fresh cheese: [fresh cheese, fresh cheeses]
+  grana: [grana]
+  melting cheese: [melting cheese, melting cheeses]
+  mold (cheese): [mold]
+  nutty cheese: [nutty]
+  pressed cheese: [pressed]
+  processed cheese: [processed]
+  pungent cheese: [pungent]
+  rind: [rind, rinds]
+  semi-soft cheese: [semi-soft]
+  firm cheese: [semi-hard, semi-firm]
+  sharp cheese: [sharp]
+  springy cheese: [springy]
+  stretched-curd cheese: [stretched-curd]
+  tangy cheese: [tangy]
+  triple crème: [triple crème, triple creme, triple-crème, triple-creme]
+  washed rind: [washed]
+  wheel (cheese): [wedge, wedges, wheel, wheels]
+  whey: [whey]
+  young cheese: [young]
+
+# Vague words with no card, which reworked cards may not use at all.
+banned: [farmhouse, mountain cheese, mountain cheeses, rustic]
