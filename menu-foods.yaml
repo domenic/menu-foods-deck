@@ -843,154 +843,1037 @@ cards:
       url: https://en.wikipedia.org/wiki/Ziti
       adapted_from: https://en.wikipedia.org/w/index.php?oldid=1351237415
     image: Ziti_al_ragù.jpg
-  - term: salumi
+  - term: pork
     category: meat
+    kind: concept
     answer:
       core:
-        - usually pig
-        - cured-meat assortment
+        - meat from a pig
+    details: >-
+      Pigs are raised for meat almost everywhere; much of it is eaten salted, [[smoked meat|smoked]] or made into [[sausage|sausages]].
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pork
+    image: Truie Landrace.jpg
+  - term: beef
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - meat from a grown cow
+    details: >-
+      Roast beef and hamburgers are beef. Cows raised for meat are called beef cattle.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Beef
+    image: Horned Hereford cow Nevada.jpg
+  - term: veal
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - meat from a young cow (a calf)
+    details: >-
+      Paler, milder and more tender than [[beef]], because the calf is only a few months old.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Veal
+    image: Hereford calf on Ufton Hill Farm - geograph.org.uk - 1570020.jpg
+    mirror_image: true
+  - term: lamb
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - meat from a young sheep
+    details: >-
+      Sheep under about a year old. Mild and tender; often roasted, or served as chops (small [[steak|steaks]] cut with a
+      [[rib (meat)|rib]] or [[loin]] bone).
+    compare:
+      - mutton
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lamb_and_mutton
+    image: Sheep in a field in Alsager 02.jpg
+  - term: mutton
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - meat from an adult sheep
+    details: >-
+      Tougher and stronger-tasting than [[lamb]]; common in British, Middle Eastern and South Asian cooking.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lamb_and_mutton
+    image: Lleyn sheep.jpg
+  - term: kid (meat)
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - meat from a young goat
+    details: >-
+      Lean and mild, a little like [[lamb]]. Common in Italian, Greek, Middle Eastern and Caribbean cooking.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Goat_meat
+    image: Baby goat Prašivá.jpg
+  - term: gamey meat
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - a strong, wild, slightly iron-like flavor
+    details: >-
+      Typical of meat from animals that roam and forage, like deer and wild pigs, and of older animals.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Game_(hunting)
+  - term: venison
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - meat from a deer
+    details: >-
+      Dark red, very lean and a little [[gamey meat|gamey]]. Usually served rare to medium, since it dries out easily.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Venison
+    image: Red Deer Cervus Elaphus in Richmond Park 2023 02.jpg
+  - term: wild boar
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - meat from a wild pig
+    details: >-
+      Darker, leaner and more [[gamey meat|gamey]] than [[pork]]; often slow-cooked into stews and pasta sauces in Italy.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Wild_boar
+    image: Wild boar in San Rossore, Pisa, Italy.jpg
+  - term: poultry
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - farmed birds, and their meat
+    details: >-
+      Chicken, turkey, duck and goose. Wild birds, like pheasant, count as [[game (meat)|game]] instead.
+    compare:
+      - game (meat)
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Poultry
+    image: Rooster and Hen 03.jpg
+  - term: game (meat)
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - meat from animals traditionally hunted, even if now farmed
+    details: >-
+      Like [[venison]], [[wild boar]], rabbit and wild birds such as pheasant. Usually leaner and more [[gamey meat|gamey]]
+      than farm meat.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Game_(hunting)
+    image: Common pheasant (Phasianus colchicus) male 2.jpg
+  - term: offal
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - an animal’s organs and other inner parts, eaten as food
+    details: >-
+      Liver, kidneys, heart, tongue and more. Common in many cuisines; menus sometimes call them variety meats.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Offal
+    image: Liver and Onions, Naxos Greek Restaurant, Thunder Bay (42214775140).jpg
+  - term: steak
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - a thick slice of meat, quickly grilled or pan-fried
+    details: >-
+      Usually [[beef]], but tuna, [[pork]] and even cauliflower steaks exist. Beef steaks are named for the part of the cow
+      they’re cut from; the most tender come from along the back.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Steak
+    image: Steack sauce au madère.jpg
+  - term: marbled meat
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - with thin streaks of fat running through the red meat
+    details: >-
+      The fat melts as the meat cooks, keeping it juicy and rich-tasting, so marbled [[steak|steaks]] cost more.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Marbled_meat
+    image: T-bone-raw-MCB.jpg
+  - term: dry-aged beef
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - '[[beef]] hung in a cold, dry room for weeks before cooking'
+    details: >-
+      Aging tenderizes the meat and concentrates its flavor, making it deeper and a little nutty. It’s costly, since the outside
+      dries out and is trimmed away.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Beef_aging
+    image: Dry-aged beef-01.jpg
+  - term: braised meat
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - browned, then simmered slowly in a little liquid until tender
+    details: >-
+      Braising turns tough, cheap [[cut of meat|cuts]] soft enough to cut with a fork, as in pot roast or osso buco.
+    compare:
+      - osso buco
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Braising
+    image: American pot roast.jpg
+  - term: sausage
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - seasoned ground meat stuffed into a thin tube, or casing
+    details: >-
+      The casing is traditionally cleaned intestine, now sometimes man-made. Some sausages must be cooked before eating; others
+      are already cooked, or dried to be eaten as is.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sausage
+    image: Assorted Sausages with Fries.jpg
+  - term: meatball
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - a ball of seasoned ground meat, usually [[beef]] or [[pork]]
+    details: >-
+      Spaghetti with meatballs is Italian-American; in Italy they’re usually smaller and served on their own.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Meatball
+    image: Spaghetti and meatballs 1.jpg
+    compare:
+      - spaghetti
+  - term: cold cuts
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - cooked or [[cured meat|cured]] meats, sliced thin and served cold
+    details: >-
+      The meats in a deli sandwich or on a platter: [[ham]], turkey, [[salame|salami]], bologna and the like. Also called
+      lunch meat.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lunch_meat
+    image: Deli Meat, Tomatoes and Pickles.jpg
+    compare:
+      - bologna
+  - term: deli meat
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - cooked or cured meats, sliced thin to order for sandwiches
+    details: >-
+      Sold at a deli counter, where it’s sliced from a big loaf or [[cut of meat|cut]], like deli turkey (turkey breast cooked
+      in a loaf). The same thing as [[cold cuts]].
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lunch_meat
+    image: Meat slicer.jpg
+  - term: cured meat
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - meat preserved with salt, often with spices, so it keeps much longer
+    details: >-
+      Salt draws water out of the meat, so bacteria can’t grow. Some cured meats keep for months without a fridge; others
+      still need one.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Curing_(food_preservation)
+    image: Salado Jamon Bellota Guijuelo Salamanca BEHER Bernardo Hernandez.jpg
+  - term: dry-cured meat
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - '[[cured meat|cured]], then hung to dry for months; eaten raw, sliced thin'
+    details: >-
+      The long drying firms the meat and deepens its flavor.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Curing_(food_preservation)
+    image: Bodega Curado Jamon BEHER Bernardo Hernandez Guijuelo Salamanca.JPG
+  - term: smoked meat
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - meat hung in wood smoke, for flavor and to help preserve it
+    details: >-
+      Smoke gives meat a brown outside and a campfire flavor. Many meats are [[cured meat|cured]] first and then smoked.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Smoking_(cooking)
+    image: Prosciutto smokehouse.JPG
+  - term: crudo (meat)
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'raw: [[cured meat|cured]] rather than cooked'
       context:
         - Italian
     details: >-
-      Salumi (sing.: salume, pronounced [saˈluːme]) are Italian meat products typical of an antipasto,
-      predominantly made from pork and cured. They also include bresaola, which is made from beef, and
-      some cooked products, such as mortadella.
+      Italian for raw. Prosciutto crudo is the raw, cured [[ham]], as opposed to cooked ham.
+    compare:
+      - prosciutto crudo
+      - prosciutto
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/crudo#Italian
+  - term: cotto
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - cooked
+      context:
+        - Italian
+    details: >-
+      Italian, as in prosciutto cotto, cooked [[ham]].
+    compare:
+      - prosciutto cotto
+      - prosciutto
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/cotto#Italian
+  - term: ham
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - "[[pork]] from a pig’s back [[leg (meat)|leg]], [[cured meat|cured]], then cooked or dried"
+    details: >-
+      Cooked ham is the pink, moist sandwich kind; dried ham, like prosciutto, is salted and dried for months and eaten raw
+      in paper-thin slices.
+    compare:
+      - prosciutto
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ham
+    image: A Spanish Ham at The Verandah.jpg
+  - term: bacon
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - '[[cured meat|cured]], usually [[smoked meat|smoked]] [[pork]], sliced and fried'
+    details: >-
+      American bacon is strips with bands of fat, from the [[belly (meat)|belly]]; British and Canadian bacon are leaner,
+      from the back. Pancetta is Italian bacon, usually unsmoked.
+    compare:
+      - pancetta
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bacon
+    image: Crispy Oven Roasted Bacon (8461921033).jpg
+  - term: cured cut
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - a whole piece of meat, [[dry-cured meat|dry-cured]] and sliced thin
+    details: >-
+      Unlike [[salame|salami]], it isn’t ground, so each slice shows one solid piece of muscle. Coppa, bresaola and lonza
+      are cured cuts.
+    compare:
+      - coppa
+      - bresaola
+      - lonza
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Salumi
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1345761002
-    image: Salumi_e_vino_lucchese.JPG
-  - term: salami / salame
-    id: salame
+  - term: fresh sausage
     category: meat
+    kind: concept
     answer:
       core:
-        - usually pig
-        - cured sausage
+        - raw [[sausage]] that must be cooked before eating
+    details: >-
+      Italian sausage and breakfast sausage (usually ground [[pork]] with sage) are fresh sausages; they’re grilled, fried,
+      or crumbled into sauces.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sausage
+    image: Raw sausages.jpg
+  - term: cooked sausage
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - "[[sausage]] cooked when it’s made, so it’s ready to eat"
+    details: >-
+      Hot dogs and bologna are cooked sausages. They’re served cold in slices, or just heated through.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sausage
+    image: Wiener Wuerstchen (fcm).jpg
+    compare:
+      - bologna
+  - term: blood sausage
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - "[[sausage]] made with animal blood, so it’s nearly black"
+    details: >-
+      The blood is mixed with fat and a filler like oats, rice or onions. Soft, and a little iron-tasting.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Blood_sausage
+    image: Morcilla-burgos 2.jpg
+  - term: meat spread
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - finely ground or shredded meat, served cold on bread or in slices
+    details: >-
+      Pâté is smooth, rillettes are shredded, and a terrine is a chunky loaf served in slices.
+    compare:
+      - pâté
+      - rillettes
+      - terrine
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/P%C3%A2t%C3%A9
+    image: Rillettes and toast.JPG
+  - term: charcuterie
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - cured and prepared meats, especially [[pork]], served cold
+    details: >-
+      Also the board they’re served on: a charcuterie board is a platter of sliced [[cured meat|cured]] meats, [[sausage|sausages]]
+      and pâtés, often with cheese, pickles and bread.
+    compare:
+      - pâté
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Charcuterie
+    image: Charcuterie board - Massachusetts.jpg
+  - term: cut of meat
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - a piece of meat as a butcher sells it, taken from one part of the animal
+    details: >-
+      A part is a region of the animal, like the [[loin]] or the [[belly (meat)|belly]]; a cut is a particular piece taken
+      from it, like a [[pork]] chop or a strip steak. One part yields several cuts. Tough cuts come from hard-working muscles
+      and need slow cooking.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cut_of_meat
+  - term: leg (meat)
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'the upper back leg: large and lean'
+    details: >-
+      Any animal’s. On a pig it’s cured or cooked whole; on a cow it’s called the round, a lean [[cut of meat|cut]] often
+      roasted; leg of [[lamb]] is a classic roast.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ham
+    image: Schwein-Schinken.png
+  - term: belly (meat)
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'the underside: layers of fat and meat'
+    details: >-
+      Any animal’s, though [[pork]] belly is by far the most common on menus. Rich and fatty; roasted until its skin turns
+      crisp, or [[cured meat|cured]] and sliced.
+    compare:
+      - pancetta
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pork_belly
+    image: Schwein-Bauch.png
+  - term: jowl
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'the cheek and lower jaw: very fatty'
+    details: >-
+      Almost always a pig’s; on a cow, menus say cheek instead. [[pork|Pork]] jowl is [[cured meat|cured]] as guanciale, the
+      traditional meat in carbonara.
+    compare:
+      - guanciale
+      - carbonara
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Jowl
+    image: Porc-Bajoue.png
+  - term: neck (meat)
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'the neck: [[marbled meat|marbled]] and flavorful'
+    details: >-
+      Any animal’s. [[lamb|Lamb]] neck is stewed; [[pork]] neck, together with the top of the [[shoulder (meat)|shoulder]],
+      is [[cured meat|cured]] as coppa.
+    compare:
+      - coppa
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Capocollo
+    image: Schwein-Nacken.png
+  - term: shoulder (meat)
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'the upper front [[leg (meat)|leg]]: hard-working, so tough, and fairly fatty'
+    details: >-
+      Any animal’s. [[pork|Pork]] and [[lamb]] shoulder are roasted or slow-cooked, and pulled pork is pork shoulder; on a
+      cow, the shoulder is called the chuck, used for pot roast and ground [[beef]].
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pork_shoulder
+    image: Schwein-Schulter.png
+  - term: loin
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'the strip along the back: lean and tender'
+    details: >-
+      Any animal’s. Tender and costly: [[pork]] chops (steaks cut with a bone) and the best beef [[steak|steaks]] are cut
+      from it.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Loin
+    image: Schwein-Ruecken.png
+  - term: tenderloin
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - a small, very tender muscle tucked under the [[loin]]
+    details: >-
+      It does little work as the animal moves, and muscles that work less stay tender, so it’s the most tender cut of all,
+      and costly. Any animal’s: in beef it gives filet mignon, and [[pork]] tenderloin is common too.
+    compare:
+      - filet mignon
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tenderloin
+    image: Beef cuts France Filet highlighted.svg
+    mirror_image: true
+  - term: rib (meat)
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - the ribs and the meat around them, toward the front of the animal
+    details: >-
+      Any animal’s. Beef ribs are richly [[marbled meat|marbled]] and give ribeye steaks and prime rib; [[pork]] gives spare
+      ribs.
+    compare:
+      - ribeye
+      - prime rib
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Rib_steak
+    image: Beef cuts France Côtes et entrecôtes highlighted.svg
+    mirror_image: true
+  - term: flank (meat)
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'the lower belly behind the [[rib (meat)|ribs]]: lean and chewy'
+    details: >-
+      Menus mean a cow’s: a long, flat muscle, best grilled quickly and sliced thin against its long fibers. (The fatty [[belly
+      (meat)|belly]] of a pig is further forward.)
+    compare:
+      - flank steak
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Flank_steak
+    image: Beef cuts France Flanchet highlighted.svg
+    mirror_image: true
+  - term: shank
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'the lower [[leg (meat)|leg]]: tough, and best cooked slowly'
+    details: >-
+      Any animal’s. Full of tough, stretchy tissue that turns soft and silky with long [[braised meat|braising]]: [[veal]]
+      shank is osso buco, and [[lamb]] shanks are braised whole.
+    compare:
+      - osso buco
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Shank_(meat)
+    image: Beef cuts France Gîte highlighted.svg
+    mirror_image: true
+  - term: trotter
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - a pig’s foot
+    details: >-
+      Always a pig’s; other animals’ feet are just called feet. Mostly skin, tendons and bone, cooked slowly until soft and
+      sticky, or stuffed, as in zampone.
+    compare:
+      - zampone
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pig%27s_trotters
+    image: Schwein-Pfoten.png
+  - term: back fat
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - the thick layer of pure fat along a pig’s back
+    details: >-
+      Always a pig’s. Used in [[sausage|sausages]], or [[cured meat|cured]] on its own as lardo.
+    compare:
+      - lardo
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Fatback
+    image: Schwein-Rueckenspeck.png
+  - term: protected geographical indication
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'a looser legal label: made in its home region, though not every ingredient or step must be local'
+    details: >-
+      Weaker than a [[protected designation of origin]]: a [[ham]] labeled this way must be [[cured meat|cured]] in its home
+      region, but its pigs may come from elsewhere.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Protected_geographical_indication
+    image: Speck of South Tyrol.jpg
+  - term: IGP
+    category: meat
+    kind: concept
+    translates: protected geographical indication
+    answer:
+      core:
+        - '[[protected geographical indication]]'
+      context:
+        - Italian and French abbreviation (indicazione geografica protetta; indication géographique protégée)
+    details: >-
+      As in mortadella Bologna IGP or speck Alto Adige IGP.
+    compare:
+      - mortadella
+      - speck
+      - bologna
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Protected_geographical_indication
+  - term: PGI
+    category: meat
+    kind: concept
+    translates: protected geographical indication
+    answer:
+      core:
+        - '[[protected geographical indication]]'
+      context:
+        - English abbreviation
+    details: >-
+      The EU-wide label, as written in English.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Protected_geographical_indication
+  - term: bleu (steak)
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - 'very rare: browned quickly outside, cool and red inside'
+      context:
+        - French
+    details: >-
+      The rarest [[steak]] you can order in France; ask for it only if you like meat nearly raw.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/bleu#French
+  - term: saignant
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - rare
+      context:
+        - French
+    details: >-
+      Literally “bleeding”: red and warm in the middle.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/saignant#French
+  - term: à point
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - medium rare to medium
+      context:
+        - French
+    details: >-
+      Literally “just right”: pink in the middle.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/%C3%A0_point#French
+  - term: bien cuit
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - well done
+      context:
+        - French
+    details: >-
+      Literally “well cooked”: no pink left.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/bien_cuit#French
+  - term: al sangue
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - rare
       context:
         - Italian
     details: >-
-      Salami ( sə-LAH-mee; sing.: salame) is a salume consisting of fermented and air-dried meat, typically
-      pork. Historically, salami was popular among Southern, Eastern, and Central European peasants because
-      it could be stored at room temperature for a period of time once cut, supplementing a potentially
-      meager or inconsistent supply of fresh meat.
+      Literally “in the blood”: red in the middle.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/al_sangue#Italian
+  - term: ben cotto
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - well done
+      context:
+        - Italian
+    details: >-
+      Literally “well [[cotto|cooked]]”: no pink left.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/ben_cotto#Italian
+  - term: polpette
+    category: meat
+    kind: concept
+    translates: meatball
+    answer:
+      core:
+        - '[[meatball|meatballs]]'
+      context:
+        - Italian
+    details: >-
+      The singular is polpetta.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/polpetta#Italian
+    image_from: meatball
+  - term: salumi
+    category: meat
+    kind: concept
+    translates: charcuterie
+    answer:
+      core:
+        - '[[charcuterie]]: cured meats'
+      context:
+        - Italian; not salami, which is one kind
+    details: >-
+      A plate of salumi misti is a mixed selection: prosciutto, [[salame|salami]], coppa and more.
+    compare:
+      - salame
+      - prosciutto
+      - coppa
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Salumi
+    image_from: charcuterie
+  - term: salami / salame
+    id: salame
+    category: meat
+    kind: concept
+    answer:
+      core:
+        - '[[dry-cured meat|dry-cured]] [[sausage]], sliced and eaten without cooking'
+      context:
+        - Italian; salame is the singular
+    details: >-
+      Ground meat and fat are seasoned, stuffed into a casing, and left to ferment and dry for weeks or months, which gives
+      salami a slightly tangy taste. The white coating on some is a harmless [[mold (cheese)|mold]]. Pepperoni is an American
+      salami.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Salami
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1357862052
-    image: Salame_di_Sauris.jpg
+    image: Salame di Varzi.jpg
+    compare:
+      - pepperoni
   - term: salsiccia
     category: meat
     answer:
       core:
-        - usually pig
-        - sausage
+        - '[[fresh sausage]], often with fennel'
       context:
         - Italian
+    profile:
+      family: fresh sausage
+      animal: [pig]
+      part: [various parts]
+      made: [raw]
+      served: [grilled, crumbled into dishes]
+      strength: mild
+      flavor: [herby, fennel-flavored]
+      origin: Italy
     details: >-
-      In North America, Italian sausage most often refers to a style of predominantly pork sausage, often
-      with fennel or anise as the primary seasoning. In Italy, a wide variety of sausages, very different
-      from the American product, are made.
+      Italian for sausage. Often flavored with fennel seeds, which taste like licorice. Grilled whole or crumbled into pasta
+      sauces; American “Italian sausage” is the same idea, sold sweet or hot.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Italian_sausage
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1353444174
     image: Salsiccia_Italian_pork_sausage.jpg
   - term: soppressata
     category: meat
     answer:
       core:
-        - usually pig
-        - coarse, dry-cured salami
+        - chunky, pressed [[salame|salami]]
       context:
         - Italian
+    profile:
+      family: salami
+      animal: [pig]
+      made: [dry-cured]
+      served: [thinly sliced]
+      texture: [chunky]
+      strength: medium
+      flavor: [spicy, peppery]
+      cured for: 1 to 3 months
+      origin: southern Italy
+      label: DOP, soppressata di Calabria only
     details: >-
-      Soppressata is an Italian dry meat product (salume). Although there are many variations, two principal
-      types are made: a cured dry sausage typical of Basilicata, Apulia, and Calabria, and a very different
-      uncured salami made in Tuscany and Liguria.
+      Chunky means coarsely chopped: each slice shows separate bits of meat and fat. Pressed flat while it dries, so slices
+      are slightly oval; the southern kind is often hot with chili. In Tuscany, soppressata means something else: a cooked
+      loaf of [[pork]] head meat.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Soppressata
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1355754673
     image: Sliced_sopressata.jpg
   - term: finocchiona
     category: meat
     answer:
       core:
-        - pig
-        - fennel-flavored salami
+        - soft [[salame|salami]] flavored with fennel seeds
       context:
-        - Tuscan
+        - Italian
+    profile:
+      family: salami
+      animal: [pig]
+      made: [dry-cured]
+      served: [thinly sliced]
+      texture: [soft]
+      fat: [fatty]
+      strength: mild
+      flavor: [fennel-flavored, peppery]
+      origin: central Italy
+      label: IGP
     details: >-
-      Finocchiona (Italian: [finokˈkjoːna]) is a salami variety, typical of Florence, Italy. It is characterized
-      by the use of fennel.
+      Named for finocchio, fennel, whose seeds give it a sweet, licorice-like flavor.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Finocchiona
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1335310918
     image: Finocchiona_from_Tuscany.JPG
+  - term: pepperoni
+    category: meat
+    answer:
+      core:
+        - spicy, smoky [[salame|salami]], sliced thin for pizza
+      context:
+        - American
+    profile:
+      family: salami
+      animal: [pig, cow]
+      made: [dry-cured]
+      served: [thinly sliced]
+      strength: medium
+      flavor: [spicy, paprika-flavored, smoky]
+      origin: United States
+    details: >-
+      An Italian-American salami of [[pork]], often mixed with [[beef]], colored red with paprika; the classic pizza topping.
+      Italy has no pepperoni: in Italian, peperoni are bell peppers.
+    compare:
+      - peperoni
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pepperoni
+    image: Nice pepperoni pizza.jpg
   - term: mortadella
     category: meat
     answer:
       core:
-        - pig
-        - mild, cooked sausage
+        - large, mild [[cooked sausage]] studded with cubes of fat
+      context:
+        - Italian
+    profile:
+      family: cooked sausage
+      animal: [pig]
+      part: [various parts]
+      made: [cooked]
+      served: [thinly sliced, in sandwiches]
+      texture: [smooth]
+      strength: mild
+      flavor: [peppery]
+      origin: northern Italy (Bologna)
+      label: IGP, mortadella Bologna
     details: >-
-      Mortadella (Italian: [mortaˈdɛlla]) is a large salume made of finely hashed or ground cured pork,
-      which incorporates at least 15% small cubes of pork fat (principally the hard fat from the neck
-      of the pig). It is traditionally flavoured with peppercorns, but modern versions can also contain
-      pistachios or, less commonly, myrtle berries.
+      Finely ground [[pork]] cooked in huge sausages, sliced paper-thin; often dotted with pistachios. American bologna (baloney)
+      is named after its home city, Bologna, and copies it without the cubes of fat.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Mortadella
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366496565
     image: Mortadella_tagliata.jpg
+    compare:
+      - bologna
+  - term: bologna / baloney
+    id: bologna
+    category: meat
+    answer:
+      core:
+        - smooth, mild [[cooked sausage]], sliced for sandwiches
+      context:
+        - American
+    profile:
+      family: cooked sausage
+      animal: [pig, cow]
+      made: [cooked]
+      served: [thinly sliced, in sandwiches]
+      texture: [smooth]
+      strength: mild
+      origin: United States
+    details: >-
+      Named after Bologna, the Italian home city of mortadella, which it copies without the cubes of fat. A lunchbox sandwich
+      staple; sometimes fried.
+    compare:
+      - mortadella
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bologna_sausage
+    image: Bologna lunch meat style sausage.JPG
   - term: prosciutto
     category: meat
     answer:
       core:
-        - pig
-        - dry-cured ham
+        - '[[ham]]; on US menus, the raw, [[dry-cured meat|dry-cured]] kind'
       context:
-        - usually thinly sliced
         - Italian
-        - usually means crudo on English menus
+    profile:
+      family: ham
+      animal: [pig]
+      part: [leg]
+      made: [dry-cured]
+      served: [thinly sliced]
+      texture: [silky]
+      strength: mild
+      flavor: [salty, sweet]
+      origin: Italy
     details: >-
-      Prosciutto ( prə-SHOO-toh, proh-; Italian: [proʃˈʃutto]), also known as prosciutto crudo, is an
-      uncooked, unsmoked, and dry-cured ham. It is usually served thinly sliced.
+      In Italy, prosciutto means any ham: prosciutto [[crudo (meat)|crudo]] is raw and cured, prosciutto [[cotto]] cooked.
+      On English menus, plain prosciutto means crudo.
+    compare:
+      - prosciutto crudo
+      - prosciutto cotto
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Prosciutto
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368248475
     image: Prosciutto di Parma - affettato2.jpg
   - term: prosciutto crudo
     category: meat
     answer:
       core:
-        - pig
-        - uncooked, unsmoked, dry-cured ham
+        - '[[dry-cured meat|dry-cured]] [[ham]], eaten raw in paper-thin slices'
       context:
         - Italian
-        - usually thinly sliced
+    profile:
+      family: ham
+      animal: [pig]
+      part: [leg]
+      made: [dry-cured]
+      served: [thinly sliced]
+      texture: [silky]
+      strength: mild
+      flavor: [salty, sweet]
+      cured for: 12 to 36 months
+      origin: Italy
+      label: DOP, e.g. prosciutto di Parma and San Daniele
     details: >-
-      Prosciutto ( prə-SHOO-toh, proh-; Italian: [proʃˈʃutto]), also known as prosciutto crudo, is an
-      uncooked, unsmoked, and dry-cured ham. It is usually served thinly sliced.
+      [[crudo (meat)|Crudo]] means raw: the ham is salted and dried for a year or more, never cooked. Often draped over melon
+      or served on a board.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Prosciutto
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368248475
     image: Prosciutto di Parma, Tagliere, Italia.jpg
   - term: prosciutto cotto
     category: meat
     answer:
       core:
-        - pig
-        - cooked ham
+        - cooked [[ham]]
       context:
         - Italian
+    profile:
+      family: ham
+      animal: [pig]
+      part: [leg]
+      made: [cooked]
+      served: [thinly sliced, in sandwiches]
+      texture: [soft]
+      strength: mild
+      flavor: [sweet]
+      origin: Italy
     details: >-
-      Prosciutto cotto is Italian cooked ham made from a pig’s hind leg, salted and cooked rather than
-      air-dried. It is typically pale pink, mild, and served in slices like deli ham.
+      [[cotto|Cotto]] means cooked: a moist, pink ham, like good deli ham.
     source:
       label: Wikipedia (Italian)
       url: https://it.wikipedia.org/wiki/Prosciutto_cotto
@@ -999,300 +1882,481 @@ cards:
     category: meat
     answer:
       core:
-        - pig
-        - smoked, dry-cured ham
+        - '[[smoked meat|smoked]], [[dry-cured meat|dry-cured]] [[ham]]'
       context:
-        - South Tyrolean
+        - Italian
+    profile:
+      family: ham
+      animal: [pig]
+      part: [leg]
+      made: [dry-cured, smoked]
+      served: [thinly sliced]
+      fat: [lean]
+      strength: medium
+      flavor: [smoky, herby]
+      cured for: about 5 months
+      origin: the Italian Alps
+      label: IGP, speck Alto Adige
     details: >-
-      Speck Alto Adige is a dry-cured, lightly smoked ham produced in South Tyrol, northern Italy. Parts
-      of its production are regulated by the European Union under the protected geographical indication
-      (PGI) status (see also: Tyrolean speck).
+      Spiced with juniper (piney berries, as in gin) and lightly smoked, so it tastes smokier than prosciutto. In German,
+      Speck just means [[bacon]] or fat.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Speck_Alto_Adige
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369805547
-    image: Südtiroler_Speck_g.g.A._mit_Gütesiegel.jpg
+    image: Speck - Cambridge, MA.jpg
+    compare:
+      - prosciutto
   - term: coppa
     category: meat
     answer:
       core:
-        - pig
-        - dry-cured neck or shoulder
+        - '[[cured cut]] from the [[neck (meat)|neck]] and [[shoulder (meat)|shoulder]]'
+      context:
+        - Italian
+    profile:
+      family: cured cut
+      animal: [pig]
+      part: [neck, shoulder]
+      made: [dry-cured]
+      served: [thinly sliced]
+      fat: [marbled]
+      strength: medium
+      flavor: [salty, peppery]
+      cured for: about 6 months
+      origin: Italy
     details: >-
-      Capocollo (Italian: [kapoˈkɔllo]) or coppa (Italian: [ˈkɔppa, ˈkoppa]) is an Italian pork salted
-      meat made from the dry-cured muscle running from the neck to the fourth or fifth rib of the pig
-      shoulder or neck. It is whole-muscle, dry cured, and typically sliced very thinly.
+      Deep red and [[marbled meat|marbled]] with fat. The same thing as capocollo and capicola.
+    compare:
+      - capocollo
+      - capicola
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Capocollo
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368582175
     image: Coppa.jpg
   - term: capocollo
     category: meat
     answer:
       core:
-        - pig
-        - dry-cured neck or shoulder
+        - '[[cured cut]] from the [[neck (meat)|neck]] and [[shoulder (meat)|shoulder]]'
+      context:
+        - Italian
+    profile:
+      family: cured cut
+      animal: [pig]
+      part: [neck, shoulder]
+      made: [dry-cured]
+      served: [thinly sliced]
+      fat: [marbled]
+      strength: medium
+      flavor: [salty, peppery]
+      origin: southern Italy
     details: >-
-      Capocollo (Italian: [kapoˈkɔllo]) or coppa (Italian: [ˈkɔppa, ˈkoppa]) is an Italian pork salted
-      meat made from the dry-cured muscle running from the neck to the fourth or fifth rib of the pig
-      shoulder or neck. It is whole-muscle, dry cured, and typically sliced very thinly.
+      Another name for coppa, common in southern Italy; literally “head-neck”.
+    compare:
+      - coppa
+      - capicola
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Capocollo
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368582175
-    image: Coppa_di_Parma.jpg
+    image_from: coppa
   - term: capicola
     category: meat
     answer:
       core:
-        - pig
-        - cured neck or shoulder
+        - '[[cured cut]] from the [[neck (meat)|neck]] and [[shoulder (meat)|shoulder]]'
       context:
-        - Italian-American name
+        - Italian-American
+    profile:
+      family: cured cut
+      animal: [pig]
+      part: [neck, shoulder]
+      made: [dry-cured]
+      served: [thinly sliced, in sandwiches]
+      fat: [marbled]
+      strength: medium
+      flavor: [spicy, salty]
+      origin: United States, from southern Italy
     details: >-
-      Capocollo (Italian: [kapoˈkɔllo]) or coppa (Italian: [ˈkɔppa, ˈkoppa]) is an Italian pork salted
-      meat made from the dry-cured muscle running from the neck to the fourth or fifth rib of the pig
-      shoulder or neck. It is whole-muscle, dry cured, and typically sliced very thinly.
+      The Italian-American name for coppa, a deli sandwich staple, often coated in hot pepper; slangily “gabagool”.
+    compare:
+      - coppa
+      - capocollo
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Capocollo
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368582175
-    image: Coppa 2.jpg
+    image_from: coppa
   - term: pancetta
     category: meat
     answer:
       core:
-        - pig
-        - salt-cured belly
-        - Italian bacon
+        - '[[cured meat|cured]] [[belly (meat)|belly]]; Italian [[bacon]], usually unsmoked'
+      context:
+        - Italian
+    profile:
+      animal: [pig]
+      part: [belly]
+      made: [cured]
+      served: [cooked in dishes, thinly sliced]
+      fat: [fatty]
+      strength: medium
+      flavor: [salty, peppery]
+      origin: Italy
     details: >-
-      Pancetta (Italian: [panˈtʃetta]) is a salt-cured pork belly meat product in a category known as
-      salume. In Italy, it is often used to add depth to soups and pasta.
+      Diced and fried as a base for sauces, or rolled and sliced thin like [[salame|salami]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pancetta
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366595321
     image: Pancetta.jpg
   - term: guanciale
     category: meat
     answer:
       core:
-        - pig
-        - salt-cured cheek or jowl
+        - '[[cured meat|cured]] [[jowl]]'
+      context:
+        - Italian
+    profile:
+      animal: [pig]
+      part: [jowl]
+      made: [cured]
+      served: [cooked in dishes]
+      fat: [fatty]
+      strength: medium
+      flavor: [salty, peppery]
+      origin: central Italy
     details: >-
-      Guanciale (Italian: [ɡwanˈtʃaːle]) is an Italian salt-cured meat product prepared from pork jowl
-      or cheeks. Its name is derived from guancia, meaning 'cheek'.
+      Richer and fattier than pancetta. Fried until crisp, it’s the traditional meat in Roman pasta dishes like carbonara
+      and amatriciana, a tomato sauce.
+    compare:
+      - pancetta
+      - carbonara
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Guanciale
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1351238949
     image: Guanciale_closeup_(cropped).jpg
   - term: lardo
     category: meat
     answer:
       core:
-        - pig
-        - seasoned, cured back fat
+        - '[[cured meat|cured]] [[back fat]], sliced paper-thin'
+      context:
+        - Italian
+    profile:
+      animal: [pig]
+      part: [back fat]
+      made: [cured]
+      served: [thinly sliced]
+      texture: [silky]
+      fat: [fatty]
+      strength: mild
+      flavor: [salty, herby]
+      cured for: 6 months or more
+      origin: central Italy
+      label: IGP, lardo di Colonnata
     details: >-
-      Lardo is a type of salume made by curing strips of fatback with salt, rosemary, and other herbs
-      and spices. The most famous lardo is from the Colonnata, Tuscany, where lardo has been made since
-      Roman times.
+      Pure white fat cured with rosemary, garlic and salt, traditionally in marble tubs. It melts on warm toast.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Lardo
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1346932633
     image: Lardo-bergamo-20231229_03.jpg
   - term: bresaola
     category: meat
     answer:
       core:
-        - cow
-        - air-dried, salted beef
+        - '[[dry-cured meat|dry-cured]] [[beef]], lean and dark red'
       context:
-        - usually thinly sliced
+        - Italian
+    profile:
+      family: cured cut
+      animal: [cow]
+      part: [leg]
+      made: [dry-cured]
+      served: [thinly sliced]
+      fat: [lean]
+      strength: mild
+      flavor: [salty]
+      cured for: 1 to 3 months
+      origin: the Italian Alps
+      label: IGP, bresaola della Valtellina
     details: >-
-      Bresaola is air-dried, salted beef (but it can also be made of horse, venison, and pork) that has
-      been aged two or three months until it becomes hard and turns a dark red, almost purple colour.
-      It is made from top (inside) round, and it is lean and tender, with a sweet, musty smell.
+      A lean beef [[cured cut]], sliced paper-thin; often served with arugula, lemon and olive oil.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Bresaola
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1362071477
-    image: Brisaula.jpg
+    image: Bresaola with Rocket and Shavings of Parmesan.jpg
   - term: culatello
     category: meat
     answer:
       core:
-        - pig
-        - dry-cured, boneless ham
+        - the boneless inner core of the back [[leg (meat)|leg]], [[dry-cured meat|dry-cured]]
+      context:
+        - Italian
+    profile:
+      family: ham
+      animal: [pig]
+      part: [leg]
+      made: [dry-cured]
+      served: [thinly sliced]
+      texture: [silky]
+      strength: medium
+      flavor: [sweet]
+      cured for: 12 months or more
+      origin: northern Italy
+      label: DOP, culatello di Zibello
     details: >-
-      Culatello di Zibello is a cured meat with a protected designation of origin (PDO) in the EU and
-      UK typical of the province of Parma. Listed among the Slow Food Presidia of Emilia-Romagna, culatello,
-      mentioned for the first time in a document dating back to 1735, is produced from the leg of a pork,
-      which is then stuffed into the pig's bladder.
+      Among Italy’s most expensive hams: the heart of the leg, cured in damp, foggy cellars.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Culatello_di_Zibello
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366968567
-    image: Culatello_di_Zibello.jpg
+    image: Culatello, trattoria gigina's, bologna (4107678942).jpg
   - term: ’nduja
     category: meat
     answer:
       core:
-        - pig
-        - soft, spicy, spreadable sausage
+        - soft, spicy, spreadable [[salame|salami]]
       context:
-        - Calabrian
+        - Italian
+    profile:
+      family: salami
+      animal: [pig]
+      made: [cured]
+      served: [spread on bread, cooked in dishes]
+      texture: [spreadable]
+      strength: strong
+      flavor: [spicy]
+      origin: southern Italy
     details: >-
-      'Nduja (Calabrian: [nˈduːja]) or 'nduja di Spilinga is a spicy, spreadable pork sausage from the
-      Calabria region of Italy. It is a salume that comes from the area around Spilinga.
+      Fatty [[pork]] packed with hot chili until it’s fiery red and soft enough to spread; also melted into pasta sauces and
+      pizza.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/%27Nduja
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1331535043
     image: '''Nduja.JPG'
   - term: cotechino
     category: meat
     answer:
       core:
-        - pig
-        - rich, cooked sausage
+        - large, fatty [[fresh sausage]] made with [[pork]] skin; soft as gelatin once cooked
+      context:
+        - Italian
+    profile:
+      family: fresh sausage
+      animal: [pig]
+      part: [skin, various parts]
+      made: [raw]
+      served: [simmered]
+      texture: [soft]
+      strength: medium
+      origin: northern Italy
+      label: IGP, cotechino Modena
     details: >-
-      Cotechino (Italian: [koteˈkiːno]) is a large Italian pork sausage requiring slow cooking; usually
-      it is simmered at low heat for several hours. Its name comes from cotica ('rind'), but it may take
-      different names depending on its various locations of production.
+      Simmered for hours, then sliced; eaten with lentils at New Year. Often sold already cooked.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cotechino
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1312309256
-    image: Cotechino-Intero.jpg
+    image: Cotechino.jpg
   - term: zampone
     category: meat
     answer:
       core:
-        - pig
-        - trotter stuffed with pork sausage
+        - a [[trotter]] stuffed with [[cotechino]] sausage
+      context:
+        - Italian
+    profile:
+      family: fresh sausage
+      animal: [pig]
+      part: [trotter, skin]
+      made: [raw]
+      served: [simmered]
+      texture: [soft]
+      strength: medium
+      origin: northern Italy
+      label: IGP, zampone Modena
     details: >-
-      Cotechino Modena or cotechino di Modena (Italian: [koteˈkiːno di ˈmɔːdena]; spelled cotecchino or
-      coteghino in some major dialects, but not in Italian) is a sausage made with pork, fatback, and
-      pork rind recognised as a product with a protected geographical indication (PGI), originating in
-      the city of Modena, Italy. Zampone Modena or zampone is closely related and also obtained PDO status.
+      The pig’s foot is the casing. Simmered, sliced and served with lentils at New Year.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cotechino_Modena
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366534726
-    image: Cotechino-Servito-Polenta-Lenticchie.jpg
+    image: Zampone.jpg
   - term: porchetta
     category: meat
     answer:
       core:
-        - pig
-        - herb-seasoned roast pork
+        - boneless pork rolled with herbs and roasted until the skin is crisp
       context:
         - Italian
+    profile:
+      animal: [pig]
+      part: [belly, loin]
+      made: [roasted]
+      served: [sliced, in sandwiches]
+      fat: [fatty]
+      strength: medium
+      flavor: [herby, garlicky]
+      origin: central Italy
     details: >-
-      Porchetta (Italian: [porˈketta]) is a savory, fatty, and moist boneless pork roast of Italian culinary
-      tradition. The carcass is deboned and spitted or roasted traditionally over wood for at least eight
-      hours, fat and skin still on.
+      A whole pig, or a [[pork]] belly wrapped around a loin, stuffed with garlic, rosemary and fennel (a licorice-flavored
+      herb) and roasted for hours; sold in sandwiches from street stalls.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Porchetta
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1326620788
     image: Porchetta_(3168207946).jpg
   - term: lonza
     category: meat
     answer:
       core:
-        - pig
-        - cured or roasted loin
+        - '[[cured cut]] of [[loin]]'
+      context:
+        - Italian
+    profile:
+      family: cured cut
+      animal: [pig]
+      part: [loin]
+      made: [dry-cured]
+      served: [thinly sliced]
+      fat: [lean]
+      strength: mild
+      flavor: [salty]
+      origin: Italy
     details: >-
-      Pork loin is a primal cut of meat from a pig, created from the tissue along the dorsal side of the
-      rib cage.
+      In most of Italy a cured cut like coppa, but leaner; in some regions, lonza just means roast [[pork]] loin.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pork_loin
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1346004652
-    image: Pork_loin_(1027276219).jpg
+    image: Lonzino.jpg
+    compare:
+      - coppa
   - term: jambon
     category: meat
+    kind: concept
+    translates: ham
     answer:
       core:
-        - pig
-        - ham
+        - '[[ham]]'
       context:
         - French
     details: >-
-      Ham is pork from a leg cut that has been preserved by wet or dry curing, with or without smoking.
-      As a processed meat, the term ham includes both whole cuts of meat and ones that have been mechanically
-      formed.
+      Jambon de Paris is cooked ham; jambon de Bayonne is [[dry-cured meat|dry-cured]], like prosciutto; jambon-beurre is
+      a ham-and-butter baguette.
+    compare:
+      - prosciutto
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Ham
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1360270859
-    image: Ham_(4).jpg
+    image_from: ham
   - term: saucisson
     category: meat
     answer:
       core:
-        - usually pig
-        - dry-cured sausage
+        - garlicky [[salame|salami]], sliced thick
       context:
-        - usually thick
         - French
+    profile:
+      family: salami
+      animal: [pig]
+      made: [dry-cured]
+      served: [sliced]
+      texture: [chunky]
+      strength: medium
+      flavor: [garlicky, peppery]
+      origin: France
     details: >-
-      Saucisson (French: [sosisɔ̃]), also saucisson sec or saucisse sèche, is a family of thick, dry-cured
-      sausage-shaped charcuterie in French cuisine. Typically made of pork, or a mixture of pork and other
-      meats, saucisson are similar to salami.
+      Saucisson sec, dry sausage, is sliced thick for snacking.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Saucisson
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1335210611
     image: Saucisson_sec_de_l'Aveyron.jpg
-  - term: andouille
+  - term: andouille (Cajun)
+    id: andouille
     category: meat
     answer:
       core:
-        - pig
-        - smoked sausage
+        - spicy [[smoked meat|smoked]] [[sausage]], cooked in Cajun dishes
       context:
-        - style varies by country
+        - 'Cajun: the French-rooted cooking of Louisiana'
+    profile:
+      animal: [pig]
+      part: [various parts]
+      made: [smoked, cooked]
+      served: [cooked in dishes]
+      texture: [chunky]
+      strength: strong
+      flavor: [smoky, spicy]
+      origin: United States (Louisiana)
     details: >-
-      Andouille ( ann-DOO-ee, ahn-; French: [ɑ̃duj]; from Latin induco) is a smoked sausage made using
-      pork, originating in France but also known as an element in Cajun cuisine.
+      The sausage in gumbo, a thick stew, and jambalaya, a rice dish. The French andouille is something quite different.
+    compare:
+      - andouille (French)
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Andouille
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365299329
-    image: Andouille.jpg
+    image: Andouille and shrimp jambalaya.jpg
   - term: andouillette
     category: meat
     answer:
       core:
-        - pig
-        - coarse intestine sausage
+        - chunky [[sausage]] of intestines, grilled
       context:
         - French
+    profile:
+      animal: [pig]
+      part: [intestines, stomach]
+      made: [cooked]
+      served: [grilled]
+      texture: [chunky]
+      strength: strong
+      origin: France
     details: >-
-      Andouillette (French pronunciation: [ɑ̃dujɛt]) is a French coarse-grained sausage made from the
-      intestine of pork, pepper, wine, onions, and seasonings. Andouillettes are generally made from the
-      large intestine and are 7–10 cm (2+3⁄4–4 in) in diameter.
+      Made from [[pork]] intestines and stomach, with a strong, farmyard smell that divides people.
+    compare:
+      - andouille (French)
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Andouillette
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1364529871
     image: Andouillette_AAAAA_cuite.jpg
+  - term: andouille (French)
+    category: meat
+    answer:
+      core:
+        - '[[smoked meat|smoked]] sausage of intestines, served cold in slices'
+      context:
+        - French
+    profile:
+      animal: [pig]
+      part: [intestines, stomach]
+      made: [smoked, cooked]
+      served: [sliced]
+      texture: [chewy]
+      strength: strong
+      origin: France
+    details: >-
+      Sliced, it shows rings of tightly packed intestine; an acquired taste. Cajun andouille is a different, everyday [[sausage]].
+    compare:
+      - andouille
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Andouille
+    image: Andouille de Guémené-sur-Scorff.jpg
   - term: boudin noir
     category: meat
     answer:
       core:
-        - usually pig
-        - blood sausage
+        - '[[blood sausage]]'
       context:
         - French
+    profile:
+      family: blood sausage
+      animal: [pig]
+      part: [blood]
+      made: [cooked]
+      served: [pan-fried]
+      texture: [soft]
+      strength: medium
+      flavor: [sweet]
+      origin: France
     details: >-
-      Boudin noir is a French blood sausage, usually made with pig’s blood, pork fat, onions, and seasonings.
-      Recipes and texture vary by region, and it is distinct from British black pudding.
+      Often served fried with apples and mashed potatoes.
+    compare:
+      - boudin blanc
     source:
       label: Wikipedia (French)
       url: https://fr.wikipedia.org/wiki/Boudin_noir
@@ -1301,599 +2365,985 @@ cards:
     category: meat
     answer:
       core:
-        - animal varies
-        - white sausage without blood
+        - pale sausage of white meat, milk and eggs; no blood
       context:
         - French
-        - often pig, young cow, or poultry
+    profile:
+      family: cooked sausage
+      animal: [pig, chicken, young cow]
+      made: [cooked]
+      served: [pan-fried]
+      texture: [soft, smooth]
+      strength: mild
+      origin: France
     details: >-
-      Boudin blanc is a pale French or Belgian sausage made without blood. It combines meat such as pork
-      (pig), veal (young cow), or poultry with fat and binders such as milk, cream, eggs, bread, or starch.
+      Simmered gently in water when made, then browned in a pan; a Christmas tradition in France. In Louisiana, boudin is
+      a different, rice-filled [[pork]] sausage.
+    compare:
+      - boudin noir
     source:
       label: OQLF
       url: https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/2092707/boudin-blanc
-    image: Boudin Blanc.jpg
+    image: Boudin blanc aux pommes et oignons (1).jpg
   - term: rillettes
     category: meat
     answer:
       core:
-        - animal varies
-        - shredded meat spread
+        - shredded meat slow-cooked in fat, spread on bread
       context:
-        - often pig
+        - French
+    profile:
+      family: meat spread
+      animal: [pig, duck]
+      made: [slow-cooked in fat]
+      served: [spread on bread]
+      texture: [spreadable]
+      fat: [fatty]
+      strength: mild
+      origin: France
     details: >-
-      Rillettes (French: [ʁijɛt]) is a preservation method similar to confit in which meat is seasoned,
-      submerged in fat, and cooked slowly over the course of four to ten hours. The meat is shredded and
-      packed into sterile containers covered in fat.
+      [[pork|Pork]] or duck cooked slowly in its own fat until it falls apart, then shredded and packed into jars under a
+      layer of fat.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Rillettes
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1363357118
     image: Rillettes.jpg
   - term: pâté
     category: meat
     answer:
       core:
-        - animal varies
-        - meat paste
-        - often liver
+        - smooth [[meat spread]], often of liver
+      context:
+        - French
+    profile:
+      family: meat spread
+      animal: [pig, duck, chicken]
+      part: [liver]
+      made: [cooked]
+      served: [spread on bread]
+      texture: [smooth, spreadable]
+      strength: medium
+      origin: France
     details: >-
-      Pâté (UK: PAT-ay, US: pa(h)-TAY, French: [pɑte]) is a forcemeat. Originally, the dish was cooked
-      in a pastry case and called pâté en croute; in more recent times it is more usually cooked without
-      pastry in a terrine, and called pâté en terrine or simply terrine.
+      Finely ground meat, usually liver, mixed with fat and seasonings and baked; eaten cold on bread.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/P%C3%A2t%C3%A9
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1350694988
-    image: Pates_p1150435.jpg
+    image: Chicken Liver Pâté.jpg
   - term: terrine
     category: meat
     answer:
       core:
-        - animal varies
-        - coarse pâté or layered meat loaf
-        - served cold
+        - chunky meat loaf, like a chunky [[pâté]], served cold in slices
+      context:
+        - French
+    profile:
+      family: meat spread
+      animal: [various animals]
+      made: [cooked]
+      served: [sliced]
+      texture: [chunky]
+      strength: medium
+      origin: France
     details: >-
-      A terrine (French pronunciation: [tɛ.ʁin]), in traditional French cuisine, is a loaf of forcemeat
-      or aspic, similar to a pâté, that is cooked in a covered pottery mold (also called a terrine) in
-      a bain-marie. Modern terrines do not necessarily contain meat or animal fat, but still contain meat-like
-      textures and fat substitutes, such as mushrooms and pureed fruits or vegetables high in pectin.
+      Named for the deep dish it’s baked in. Chunkier than pâté, sometimes layered with whole pieces of meat.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Terrine_(food)
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1334563412
-    image: Terrine_de_saumon_au_basilic.JPG
+    image: La Tuilière - Montloup - Ferme auberge Au pré de mon arbre - Terrine de campagne.jpg
   - term: lardons
     category: meat
     answer:
       core:
-        - pig
-        - small strips or cubes of fatty bacon
+        - small strips or cubes of fatty [[bacon]]
+      context:
+        - French
+    profile:
+      animal: [pig]
+      part: [belly]
+      made: [cured]
+      served: [cooked in dishes]
+      fat: [fatty]
+      strength: medium
+      flavor: [salty, smoky]
+      origin: France
     details: >-
-      A lardon, also spelled lardoon, is a small strip or cube of fatty bacon, or pork fat (usually subcutaneous
-      fat), used in a wide variety of cuisines to flavor savory food and salads. In French cuisine, lardons
-      are also used for larding, by threading them with a needle into meats that are to be braised or
-      roasted.
+      Fried crisp and scattered over salads, or cooked into stews and egg dishes.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Lardon
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1328720221
-    image: Tourtiere_Lard.jpg
+    image: 2021-01-08 16-22-27 ILCE-6500 DSC00620 DxO (50922197276).jpg
   - term: confit
     category: meat
+    kind: concept
     answer:
       core:
-        - often duck
-        - slowly cooked and preserved in fat
+        - meat slowly cooked in its own fat, and stored in it
+      context:
+        - French; often duck
     details: >-
-      Confit (French pronunciation: [kɔ̃fi]; Occitan: Confisat) (from the French word confire, literally
-      'to preserve') is any type of food that is cooked slowly over a long period as a method of preservation.
-      Confit, as a cooking term, describes the process of cooking food in fat, whether it be grease or
-      oil, at a lower temperature compared to deep frying.
+      Traditionally a way to preserve meat. Duck confit is a [[leg (meat)|leg]] cooked this way, then crisped: meltingly tender
+      inside.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Confit
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1364924129
     image: Duck_Confit_(3375036024).jpg
   - term: jamón serrano
     category: meat
     answer:
       core:
-        - pig
-        - dry-cured ham
+        - '[[dry-cured meat|dry-cured]] [[ham]]'
       context:
         - Spanish
+    profile:
+      family: ham
+      animal: [pig]
+      part: [leg]
+      made: [dry-cured]
+      served: [thinly sliced]
+      fat: [lean]
+      strength: medium
+      flavor: [salty]
+      cured for: 7 to 18 months
+      origin: Spain
     details: >-
-      Jamón (Spanish: [xaˈmon]; pl.: jamones) is a type of dry-cured ham produced in Spain. It is one
-      of the most globally recognised food items of Spanish cuisine.
+      Spain’s everyday cured ham, like a firmer, saltier prosciutto; served in thin slices as tapas (small Spanish snack plates).
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Jam%C3%B3n
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1354791321
     image: Despaña_jamon_carving.jpg
+    compare:
+      - prosciutto
   - term: jamón ibérico
     category: meat
     answer:
       core:
-        - Iberian pig
-        - dry-cured ham
+        - '[[dry-cured meat|dry-cured]] [[ham]] from a dark Spanish breed, often acorn-fed'
       context:
         - Spanish
+    profile:
+      family: ham
+      animal: [pig]
+      part: [leg]
+      made: [dry-cured]
+      served: [thinly sliced]
+      texture: [silky]
+      fat: [marbled]
+      strength: strong
+      cured for: 2 to 4 years
+      origin: Spain
+      label: DOP, some regions only
     details: >-
-      Jamón ibérico (Spanish: [xaˈmon iˈβeɾiko]; Spanish for "Iberian ham"), known in Portuguese as presunto
-      ibérico (Portuguese: [pɾɨˈzũtu iˈβɛɾiku]), is a variety of jamón or presunto, a type of cured leg
-      of pork (primarily Black Iberian pigs) produced in Spain and Portugal, in the Iberian Peninsula.
-      It is considered a staple of both Portuguese cuisine and Spanish cuisine.
+      Iberian pigs are a dark breed native to Spain and Portugal. The best, labeled bellota (Spanish for acorn), roam oak
+      forests eating acorns, which makes the fat sweet and nutty. Cured for years.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Jam%C3%B3n_ib%C3%A9rico
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366979213
     image: Jamon_iberico_de_bellota_2_(cinco_jotas).jpg
-  - term: chorizo
+  - term: chorizo (Spanish)
+    id: chorizo
     category: meat
     answer:
       core:
-        - pig
-        - highly seasoned sausage
-        - often paprika-red
+        - firm, paprika-red [[salame|salami]]
       context:
         - Spanish
+    profile:
+      family: salami
+      animal: [pig]
+      made: [dry-cured]
+      served: [sliced, cooked in dishes]
+      texture: [chunky]
+      strength: medium
+      flavor: [paprika-flavored, garlicky, smoky]
+      origin: Spain
     details: >-
-      Chorizo ( chə-REE-zoh, -⁠soh, Spanish: [tʃoˈɾiθo, tʃoˈɾiso]; Portuguese: chouriço [ʃo(w)ˈɾisu])
-      is a type of pork sausage originating from the Iberian Peninsula. It is made in many national and
-      regional varieties in several countries on different continents.
+      Sliced as tapas (small Spanish snack plates) or cooked into stews. Mexican chorizo is a quite different, [[fresh sausage]].
+    compare:
+      - chorizo (Mexican)
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Chorizo
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1364367784
-    image: Chorizos_P6021974.jpg
+    image: A churizo geneva janv 2024.jpg
+  - term: chorizo (Mexican)
+    category: meat
+    answer:
+      core:
+        - loose, spicy [[fresh sausage]], fried and crumbled
+      context:
+        - Mexican
+    profile:
+      family: fresh sausage
+      animal: [pig]
+      part: [various parts]
+      made: [raw]
+      served: [crumbled into dishes]
+      fat: [fatty]
+      strength: strong
+      flavor: [spicy, garlicky]
+      origin: Mexico
+    details: >-
+      Raw ground [[pork]] with chili and vinegar, usually squeezed out of its casing and fried; in tacos and breakfast burritos.
+      Unlike Spanish chorizo, it can’t be eaten without cooking.
+    compare:
+      - chorizo
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Chorizo
+    image: Mexican Chorizo (13153117055).jpg
   - term: morcilla
     category: meat
     answer:
       core:
-        - usually pig
-        - blood sausage
+        - '[[blood sausage]], often with rice or onion'
       context:
         - Spanish
+    profile:
+      family: blood sausage
+      animal: [pig]
+      part: [blood]
+      made: [cooked]
+      served: [pan-fried]
+      texture: [soft]
+      strength: medium
+      flavor: [paprika-flavored]
+      origin: Spain
     details: >-
-      A blood sausage is a sausage filled with blood that is cooked or dried and mixed with a filler until
-      it is thick enough to solidify when cooled. Most commonly, the blood of pigs, sheep, lamb, cow,
-      chicken, or goose is used.
+      Sliced and fried, as tapas (small Spanish snack plates) or in stews.
+    compare:
+      - boudin noir
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Blood_sausage
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369225837
-    image: Boudin3.jpg
+    image: Morcilla de Burgos (4006205518).jpg
+  - term: black pudding
+    category: meat
+    answer:
+      core:
+        - '[[blood sausage]], often with oats'
+      context:
+        - British and Irish
+    profile:
+      family: blood sausage
+      animal: [pig]
+      part: [blood]
+      made: [cooked]
+      served: [sliced, pan-fried]
+      texture: [soft]
+      strength: medium
+      origin: Britain and Ireland
+    details: >-
+      Sliced and fried as part of a full English or Irish breakfast, a plate of eggs, [[bacon]], sausages and more. White
+      pudding is a similar sausage without the blood.
+    compare:
+      - boudin noir
+      - morcilla
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Black_pudding
+    image: -2021-07-24 Sliced Black pudding sausage, Trimingham, Norfolk.JPG
   - term: sobrasada
     category: meat
     answer:
       core:
-        - pig
-        - soft, spreadable, paprika-seasoned sausage
+        - soft, spreadable, paprika-red [[salame|salami]]
       context:
         - Spanish
+    profile:
+      family: salami
+      animal: [pig]
+      made: [cured]
+      served: [spread on bread]
+      texture: [spreadable]
+      strength: medium
+      flavor: [paprika-flavored]
+      origin: Spain (Mallorca, a Spanish island)
+      label: IGP
     details: >-
-      Sobrassada in Catalan, or sobrasada in Spanish, is a raw, cured sausage from the Balearic Islands
-      (Spain) made with ground pork, paprika, salt and other spices. Sobrassada, along with botifarró,
-      are traditional Balearic meat products prepared in the laborious but festive rites that still mark
-      the autumn and winter pig slaughter known as a matança in Minorca, Majorca and Ibiza.
+      Spain’s answer to ’nduja: spread on toast, sometimes drizzled with honey.
+    compare:
+      - ’nduja
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Sobrassada
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1222565114
     image: Sobrassada.jpg
   - term: lomo
     category: meat
     answer:
       core:
-        - pig
-        - cured tenderloin
+        - '[[cured cut]] of [[loin]], rubbed with paprika'
       context:
         - Spanish
+    profile:
+      family: cured cut
+      animal: [pig]
+      part: [loin]
+      made: [dry-cured]
+      served: [thinly sliced]
+      fat: [lean]
+      strength: mild
+      flavor: [paprika-flavored]
+      origin: Spain
     details: >-
-      Cured pork tenderloin is found in various cuisines in Mediterranean Europe and South America. It
-      is typically salted or brined then dry-cured or smoked.
+      Lean [[pork]] loin rubbed with paprika and garlic and dried. On other Spanish or Latin American menus, lomo just means
+      loin, often of beef.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cured_pork_tenderloin
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1357616634
     image: Big_lomito.jpg
   - term: manzo
     category: meat
+    kind: concept
+    translates: beef
     answer:
       core:
-        - cow
-        - beef
+        - '[[beef|beef]]'
       context:
         - Italian
     details: >-
-      Beef is the culinary name for meat from cattle (Bos taurus). Beef can be prepared in various ways;
-      cuts are often used for steak, which can be cooked to varying degrees of doneness, while trimmings
-      are often ground or minced, as found in most hamburgers.
+      As in carpaccio di manzo, raw beef carpaccio.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Beef
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368835562
-    image: Standing-rib-roast.jpg
+    image_from: beef
+    compare:
+      - carpaccio
   - term: vitello
     category: meat
+    kind: concept
+    translates: veal
     answer:
       core:
-        - young cow (calf)
-        - veal
+        - '[[veal|veal]]'
       context:
         - Italian
     details: >-
-      Veal is the meat of calves, in contrast to the beef from older cattle. Veal can be produced from
-      a calf of either sex and any breed; however, most veal comes from young male calves of dairy breeds
-      which are not used for breeding.
+      As in vitello tonnato, cold sliced veal in a tuna sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Veal
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1362588244
-    image: Holstein_cow_with_one-day_calf_01.jpg
+    image_from: veal
   - term: maiale
     category: meat
+    kind: concept
+    translates: pork
     answer:
       core:
-        - pig
-        - pork
+        - '[[pork|pork]]'
       context:
         - Italian
     details: >-
-      Pork is the culinary name for the meat of the pig (Sus domesticus). It is the second most commonly
-      consumed type of meat worldwide, following poultry, with evidence of pig husbandry dating back to
-      8000–9000 bce.
+      As in arrosto di maiale, roast pork.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pork
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368169822
-    image: Schweinebauch-2.jpg
+    image_from: pork
   - term: cinghiale
     category: meat
+    kind: concept
+    translates: wild boar
     answer:
       core:
-        - wild boar
+        - '[[wild boar|wild boar]]'
       context:
         - Italian
     details: >-
-      The wild boar (Sus scrofa), also known as the wild swine, common wild pig, Eurasian wild pig, or
-      simply wild pig, is a suid native to much of Eurasia and North Africa and has been introduced to
-      the Americas and Oceania. The species is now one of the widest-ranging mammals in the world as well
-      as the most widespread suiform.
+      A favorite in Tuscany: slow-cooked into stews, or into meat sauce for pappardelle.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Wild_boar
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369774462
-    image: Wildschwein,_Nähe_Pulverstampftor_(cropped).jpg
+    image_from: wild boar
+    compare:
+      - pappardelle
   - term: agnello
     category: meat
+    kind: concept
+    translates: lamb
     answer:
       core:
-        - young sheep
-        - lamb
+        - '[[lamb|lamb]]'
       context:
         - Italian
     details: >-
-      Lamb and mutton, collectively sheep meat (or sheepmeat), is meat from the domestic sheep, Ovis aries.
-      It is generally divided into three types: lamb, from sheep in their first year; hogget, from sheep
-      in their second; and mutton, from older sheep.
+      As in agnello arrosto, roast lamb.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Lamb_and_mutton
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369797913
-    image: Lamb_meat_(1).jpg
+    image_from: lamb
   - term: capretto
     category: meat
+    kind: concept
+    translates: kid (meat)
     answer:
       core:
-        - young goat
-        - kid
+        - '[[kid (meat)|kid]]'
       context:
         - Italian
     details: >-
-      Goat meat is the meat of the domestic goat (Capra hircus). The term denotes especially the meat
-      of older animals, while meat from young goats is called kid meat.
+      Roast capretto is an Easter dish in much of Italy.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Goat_meat
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366785214
-    image: Goat_meat.jpg
+    image_from: kid (meat)
   - term: anatra
     category: meat
+    kind: concept
     answer:
       core:
         - duck
       context:
         - Italian
     details: >-
-      In cooking and gastronomy, duck or duckling is the meat of any of several species of bird in the
-      family Anatidae, found in both fresh and salt water. It is found in domestic and wild forms and
-      is a very calorie dense food, containing high fat, protein, and iron.
+      As in anatra all’arancia, duck with orange sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Duck_as_food
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368926842
-    image: And_(24559569447).jpg
+    image: Mallard drake at Marymoor Park.jpg
   - term: coniglio
     category: meat
+    kind: concept
     answer:
       core:
         - rabbit
       context:
         - Italian
     details: >-
-      Rabbits, or bunnies, are small mammals in the family Leporidae (which also includes the hares),
-      which is in the order Lagomorpha (which also includes pikas). They are familiar throughout the world
-      as a small herbivore, a prey animal, a domesticated form of livestock, and a pet, having a widespread
-      effect on ecologies and cultures.
+      As in coniglio alla cacciatora, rabbit stewed with tomatoes and herbs.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Rabbit
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367166125
-    image: Oryctolagus_cuniculus_Rcdo.jpg
+    image: 2018-06-22 AT Wien 13 Hietzing, Tiergarten Schönbrunn, Oryctolagus cuniculus f. domesticus (49019471113).jpg
   - term: cervo
     category: meat
+    kind: concept
+    translates: venison
     answer:
       core:
-        - deer
-        - venison
+        - '[[venison|venison]]'
       context:
         - Italian
     details: >-
-      Venison refers primarily to the meat of deer (or antelope in South Africa). Venison can be used
-      to refer to any part of the animal, so long as it is edible, including the internal organs.
+      As in filetto di cervo, venison fillet.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Venison
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366835717
-    image: Venison_Steaks.jpg
+    image_from: venison
   - term: faraona
     category: meat
+    kind: concept
     answer:
       core:
         - guinea fowl
       context:
         - Italian
     details: >-
-      Guinea fowl or guineafowl are birds of the family Numididae in the order Galliformes. They are endemic
-      to Africa and rank among the oldest of the gallinaceous birds.
+      A bird like a small, darker-fleshed chicken, with a slightly [[gamey meat|gamey]] flavor.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Guinea_fowl
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1363421854
     image: Numida_meleagris_-Serengeti_National_Park,_Tanzania-8_(1).jpg
   - term: bœuf
     category: meat
+    kind: concept
+    translates: beef
     answer:
       core:
-        - cow
-        - beef
+        - '[[beef|beef]]'
       context:
         - French
     details: >-
-      Beef is the culinary name for meat from cattle (Bos taurus). Beef can be prepared in various ways;
-      cuts are often used for steak, which can be cooked to varying degrees of doneness, while trimmings
-      are often ground or minced, as found in most hamburgers.
+      As in bœuf bourguignon, beef stewed in red wine.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Beef
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368835562
-    image: Beef steak with garlic butter in Savour Cafe.jpg
+    image_from: beef
   - term: veau
     category: meat
+    kind: concept
+    translates: veal
     answer:
       core:
-        - young cow (calf)
-        - veal
+        - '[[veal|veal]]'
       context:
         - French
     details: >-
-      Veal is the meat of calves, in contrast to the beef from older cattle. Veal can be produced from
-      a calf of either sex and any breed; however, most veal comes from young male calves of dairy breeds
-      which are not used for breeding.
+      As in blanquette de veau, veal in a creamy white sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Veal
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1362588244
-    image: Veal piccata.jpg
+    image_from: veal
   - term: porc
     category: meat
+    kind: concept
+    translates: pork
     answer:
       core:
-        - pig
-        - pork
+        - '[[pork|pork]]'
       context:
         - French
     details: >-
-      Pork is the culinary name for the meat of the pig (Sus domesticus). It is the second most commonly
-      consumed type of meat worldwide, following poultry, with evidence of pig husbandry dating back to
-      8000–9000 bce.
+      As in rôti de porc, roast pork.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pork
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368169822
-    image: Pork chops served.jpg
+    image_from: pork
   - term: agneau
     category: meat
+    kind: concept
+    translates: lamb
     answer:
       core:
-        - young sheep
-        - lamb
+        - '[[lamb|lamb]]'
       context:
         - French
     details: >-
-      Lamb and mutton, collectively sheep meat (or sheepmeat), is meat from the domestic sheep, Ovis aries.
-      It is generally divided into three types: lamb, from sheep in their first year; hogget, from sheep
-      in their second; and mutton, from older sheep.
+      As in gigot d’agneau, a roast [[leg (meat)|leg]] of lamb.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Lamb_and_mutton
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369797913
-    image: Lamb at La Cour du Louvre, Avignon, France - 20140714.jpg
+    image_from: lamb
   - term: canard
     category: meat
+    kind: concept
     answer:
       core:
         - duck
       context:
         - French
     details: >-
-      In cooking and gastronomy, duck or duckling is the meat of any of several species of bird in the
-      family Anatidae, found in both fresh and salt water. It is found in domestic and wild forms and
-      is a very calorie dense food, containing high fat, protein, and iron.
+      Canard à l’orange is duck with orange sauce; magret is a fattened duck’s breast.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Duck_as_food
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368926842
-    image: Duck in orange sauce at restaurant Pri Škofu, Ljubljana, Slovenia.jpg
+    image_from: anatra
   - term: lapin
     category: meat
+    kind: concept
     answer:
       core:
         - rabbit
       context:
         - French
     details: >-
-      Rabbits, or bunnies, are small mammals in the family Leporidae (which also includes the hares),
-      which is in the order Lagomorpha (which also includes pikas). They are familiar throughout the world
-      as a small herbivore, a prey animal, a domesticated form of livestock, and a pet, having a widespread
-      effect on ecologies and cultures.
+      As in lapin à la moutarde, rabbit in mustard sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Rabbit
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367166125
-    image: L'Assiette de Lapin Metz.jpg
+    image_from: coniglio
   - term: chevreuil
     category: meat
+    kind: concept
+    translates: venison
     answer:
       core:
-        - roe deer
-        - venison
+        - '[[venison|venison]]'
       context:
         - French
     details: >-
-      The roe deer (Capreolus capreolus), also known as the roe, western roe deer, or European roe, is
-      a species of deer. The male of the species is sometimes referred to as a roebuck.
+      Strictly roe deer, a small deer; its meat is common in autumn [[game (meat)|game]] dishes.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Roe_deer
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368845972
-    image: Roe_deer_(Capreolus_capreolus)_young_male_Cumnor.jpg
+    image_from: venison
   - term: filet mignon
     category: meat
     answer:
       core:
-        - cow
-        - tenderloin steak
-        - very tender
+        - small, very tender [[steak]] from the [[tenderloin]]
       context:
-        - usually small
+        - French name; in France it usually means [[pork]] tenderloin
+    profile:
+      family: steak
+      animal: [cow]
+      part: [tenderloin]
+      made: [cooked]
+      served: [pan-fried, grilled]
+      texture: [tender]
+      fat: [lean]
+      strength: mild
+      origin: United States
     details: >-
-      Filet mignon (French: [filɛ miɲɔ̃]; lit. 'delicate, fine, or cute fillet') in North America, especially
-      the United States refers solely to a cut of beef taken from the smaller end of a tenderloin, or
-      psoas major of a cow. In France, filet mignon usually refers to cuts of pork tenderloin or veal
-      tenderloin.
+      The most tender and most expensive steak, but milder than fattier ones; often wrapped in [[bacon]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Filet_mignon
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1347096547
-    image: Filmin.png
+    image: Filet Mignon with Asparagus Spears.jpg
+  - term: ribeye
+    category: meat
+    answer:
+      core:
+        - rich, [[marbled meat|marbled]] [[steak]] from the [[rib (meat)|rib]]
+      context:
+        - American
+    profile:
+      family: steak
+      animal: [cow]
+      part: [rib]
+      made: [cooked]
+      served: [grilled, pan-fried]
+      texture: [tender]
+      fat: [marbled]
+      strength: medium
+      flavor: [beefy]
+      origin: United States
+    details: >-
+      One of the fattiest, most flavorful steaks. Bone-in, it’s a rib steak, or a tomahawk when the long rib bone is left
+      on.
+    compare:
+      - entrecôte
+      - côte de bœuf
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Rib_eye_steak
+    image: Rib eye beef steak with salad and fries.jpg
+  - term: New York strip
+    category: meat
+    answer:
+      core:
+        - firm, fairly lean [[steak]] from the [[loin]]
+      context:
+        - American
+    profile:
+      family: steak
+      animal: [cow]
+      part: [loin]
+      made: [cooked]
+      served: [grilled, pan-fried]
+      texture: [firm]
+      strength: medium
+      flavor: [beefy]
+      origin: United States
+    details: >-
+      Also called strip steak or Kansas City strip. Leaner and chewier than [[ribeye]], with a strong beef flavor and a strip
+      of fat along one edge.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Strip_steak
+    image: New York Strip Steak Longhorn.jpg
+  - term: sirloin
+    category: meat
+    answer:
+      core:
+        - lean, affordable [[steak]] from the hip end of the [[loin]]
+      context:
+        - American
+    profile:
+      family: steak
+      animal: [cow]
+      part: [loin, hip]
+      made: [cooked]
+      served: [grilled, pan-fried]
+      texture: [chewy]
+      fat: [lean]
+      strength: medium
+      flavor: [beefy]
+      origin: United States
+    details: >-
+      Less tender than strip or ribeye, and cheaper; top sirloin is the best part. In Britain, sirloin means the cut Americans
+      call strip.
+    compare:
+      - New York strip
+      - ribeye
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sirloin_steak
+    image: Sirloin steak.JPG
+  - term: T-bone
+    category: meat
+    answer:
+      core:
+        - '[[steak]] on a T-shaped bone: [[New York strip]] on one side, [[tenderloin]] on the other'
+      context:
+        - American
+    profile:
+      family: steak
+      animal: [cow]
+      part: [loin, tenderloin]
+      made: [cooked]
+      served: [grilled]
+      texture: [tender]
+      strength: medium
+      flavor: [beefy]
+      origin: United States
+    details: >-
+      Two steaks in one, divided by the bone; the tenderloin side is small.
+    compare:
+      - filet mignon
+      - porterhouse
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/T-bone_steak
+    image: 2018-02-19 212112 T-Bone Steak in Sydney anagoria.jpg
+  - term: porterhouse
+    category: meat
+    answer:
+      core:
+        - an extra-large [[T-bone]] with a bigger piece of [[tenderloin]]
+      context:
+        - American
+    profile:
+      family: steak
+      animal: [cow]
+      part: [loin, tenderloin]
+      made: [cooked]
+      served: [grilled]
+      texture: [tender]
+      strength: medium
+      flavor: [beefy]
+      origin: United States
+    details: >-
+      Cut from the rear of the loin, where the tenderloin is widest; often big enough for two.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/T-bone_steak
+    image: USDA Prime Porterhouse Steak.jpg
+  - term: flank steak
+    category: meat
+    answer:
+      core:
+        - lean, chewy [[steak]] from the [[flank (meat)|flank]], sliced thin against its fibers
+      context:
+        - American
+    profile:
+      family: steak
+      animal: [cow]
+      part: [flank]
+      made: [cooked]
+      served: [grilled, sliced]
+      texture: [chewy]
+      fat: [lean]
+      strength: medium
+      flavor: [beefy]
+      origin: United States
+    details: >-
+      Best marinated, grilled quickly and sliced against its long fibers, which makes it tender; common in fajitas (grilled
+      strips wrapped in tortillas).
+    compare:
+      - skirt steak
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Flank_steak
+    image: London Broil is my favorite cut to cook on the grill- it comes off juicy, and leftovers are yummy cold. 
+      (9014143888).jpg
+  - term: skirt steak
+    category: meat
+    answer:
+      core:
+        - long, thin, chewy [[steak]] from the diaphragm, full of flavor
+      context:
+        - American
+    profile:
+      family: steak
+      animal: [cow]
+      part: [diaphragm]
+      made: [cooked]
+      served: [grilled, sliced]
+      texture: [chewy]
+      fat: [fatty]
+      strength: strong
+      flavor: [beefy]
+      origin: United States
+    details: >-
+      The diaphragm is the muscle beneath the lungs. Grilled hot and fast, and the classic meat for fajitas, grilled strips
+      wrapped in tortillas.
+    compare:
+      - flank steak
+      - hanger steak
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Skirt_steak
+    image: Homemade Grilled Skirt Steak 05-24-2021.jpg
+  - term: hanger steak
+    category: meat
+    answer:
+      core:
+        - thick, tender, strongly flavored [[steak]] that hangs from the diaphragm
+      context:
+        - American
+    profile:
+      family: steak
+      animal: [cow]
+      part: [diaphragm]
+      made: [cooked]
+      served: [grilled, sliced]
+      texture: [tender]
+      strength: strong
+      flavor: [beefy]
+      origin: United States
+    details: >-
+      Only one per cow, so butchers once kept it for themselves. Best cooked rare to medium rare.
+    compare:
+      - skirt steak
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Hanger_steak
+    image: Hanger-steak-cooked-MCB.jpg
+  - term: prime rib
+    category: meat
+    answer:
+      core:
+        - a large roast from the [[rib (meat)|rib]], carved into thick slices
+      context:
+        - American
+    profile:
+      animal: [cow]
+      part: [rib]
+      made: [roasted]
+      served: [sliced]
+      texture: [tender]
+      fat: [marbled]
+      strength: medium
+      flavor: [beefy]
+      origin: United States
+    details: >-
+      Roasted whole, pink inside, and served in thick slabs with its juices (au jus) and horseradish. The same meat as [[ribeye]],
+      before it’s cut into steaks.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Standing_rib_roast
+    image: El Dorado Kitchen - December 2025 - Sarah Stierch 04.jpg
+  - term: brisket
+    category: meat
+    answer:
+      core:
+        - tough chest [[cut of meat|cut]], smoked or [[braised meat|braised]] for hours until tender
+      context:
+        - American
+    profile:
+      animal: [cow]
+      part: [chest]
+      made: [smoked, braised]
+      served: [sliced, in sandwiches]
+      texture: [tender]
+      fat: [fatty]
+      strength: medium
+      flavor: [smoky, beefy]
+      origin: United States
+    details: >-
+      The star of Texas barbecue, smoked low and slow; also braised for Jewish holiday meals and cured into corned beef and
+      pastrami.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Brisket
+    image: Texas-style Brisket -smokering (15720631008).jpg
   - term: entrecôte
     category: meat
     answer:
       core:
-        - cow
-        - rib steak
-        - similar to ribeye
+        - boneless [[steak]] from the [[rib (meat)|rib]]; the French ribeye
       context:
         - French
+    profile:
+      family: steak
+      animal: [cow]
+      part: [rib]
+      made: [cooked]
+      served: [grilled, pan-fried]
+      fat: [marbled]
+      strength: medium
+      flavor: [beefy]
+      origin: France
     details: >-
-      The entrecôte (French pronunciation: [ɑ̃.tʁə.kot]), in French cuisine, is a premium cut of beef
-      used for steaks and roasts. It is a boneless cut from the rib area corresponding to the steaks known
-      in English as rib, rib eye, Scotch fillet, club, or Delmonico.
+      Literally “between the ribs”. The classic French bistro steak, served with fries.
+    compare:
+      - ribeye
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Entrec%C3%B4te
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1345565786
-    image: Beef_cuts_France_Côtes_et_entrecôtes_highlighted.svg
+    image: Entrecôte at restaurant Grill it! Tapiola Garden.jpg
   - term: onglet
     category: meat
+    kind: concept
+    translates: hanger steak
     answer:
       core:
-        - cow
-        - hanger steak
+        - '[[hanger steak]]'
       context:
         - French
     details: >-
-      A hanger steak, also known as butcher's steak, hanging tenderloin, skirt, or onglet, is a cut of
-      beef steak prized for its flavor and tenderness. This cut is taken from the plate, which is the
-      upper belly of the animal.
+      A French bistro favorite, usually served rare with shallots (small, mild onions).
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Hanger_steak
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1345573080
-    image: BeefCutPlate.svg
+    image_from: hanger steak
   - term: bavette
     category: meat
+    kind: concept
+    translates: flank steak
     answer:
       core:
-        - cow
-        - flank-style steak
+        - '[[flank steak]]'
       context:
-        - French
+        - French; sometimes skirt steak
     details: >-
-      Flank steak is a cut of steak taken from the abdominal muscles of the cow, located just behind the
-      plate and in front of the rear quarter. It is long, flat, and has a significant grain that is typically
-      sliced thin to minimize its chewiness.
+      French butchers use bavette for a few long, chewy cuts from the [[belly (meat)|belly]], including flank and skirt.
+    compare:
+      - skirt steak
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Flank_steak
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368206342
-    image: BeefCutFlank.svg
+    image_from: flank steak
   - term: côte de bœuf
     category: meat
     answer:
       core:
-        - cow
-        - thick, bone-in rib steak
+        - thick, bone-in [[rib (meat)|rib]] [[steak]], usually for two
       context:
         - French
+    profile:
+      family: steak
+      animal: [cow]
+      part: [rib]
+      made: [cooked]
+      served: [grilled]
+      fat: [marbled]
+      strength: medium
+      flavor: [beefy]
+      origin: France
     details: >-
-      Côte de bœuf is a thick French beef (cow) rib steak served with the rib bone attached. It is usually
-      grilled or roasted and is often large enough to share.
+      A bone-in ribeye cut several fingers thick, grilled and carved at the table.
+    compare:
+      - ribeye
     source:
       label: Wikipedia (French)
       url: https://fr.wikipedia.org/wiki/C%C3%B4te_de_b%C5%93uf
     image: Côte de bœuf cuite au barbecue à gaz.JPG
   - term: bistecca
     category: meat
+    kind: concept
+    translates: steak
     answer:
       core:
-        - cow
-        - steak
+        - '[[steak]]'
       context:
         - Italian
     details: >-
-      A beefsteak, often called just steak, is a flat cut of beef with parallel faces, usually cut perpendicular
-      to the muscle fibers. In common restaurant service a single serving has a raw mass ranging from
-      120 to 600 grams (4 to 21 oz).
+      Bistecca alla fiorentina, from Florence, is a huge T-bone grilled rare and shared.
+    compare:
+      - T-bone
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Beefsteak
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365041531
     image: Steak_frites_-_yummy.jpg
   - term: tagliata
     category: meat
     answer:
       core:
-        - usually cow
-        - sliced, grilled steak
+        - grilled [[steak]], sliced and served over greens
       context:
         - Italian
+    profile:
+      family: steak
+      animal: [cow]
+      made: [cooked]
+      served: [grilled, sliced]
+      texture: [tender]
+      strength: medium
+      origin: Italy
     details: >-
-      Tagliata is an Italian dish of grilled beef (cow) steak rested and then served in slices; its name
-      means “sliced.” It is often accompanied by arugula, shaved Parmesan, olive oil, or balsamic vinegar.
+      Italian for “cut”: the steak is sliced after grilling and fanned over arugula, often with shaved parmigiano.
+    compare:
+      - parmigiano reggiano
     source:
       label: Wikipedia (Italian)
       url: https://it.wikipedia.org/wiki/Tagliata
@@ -1902,134 +3352,219 @@ cards:
     category: meat
     answer:
       core:
-        - meat or fish
-        - paper-thin
-        - raw
+        - paper-thin slices of raw [[beef]], dressed with oil
+      context:
+        - Italian
+    profile:
+      animal: [cow]
+      made: [raw]
+      served: [thinly sliced]
+      texture: [silky]
+      fat: [lean]
+      strength: mild
+      origin: northern Italy (Venice)
     details: >-
-      Carpaccio is a dish of meat or fish (such as beef, veal, venison, salmon or tuna), thinly sliced
-      or pounded thin, and served raw, typically as an appetiser. It was invented in 1950 by Giuseppe
-      Cipriani, founder of Harry's Bar in Venice, Italy, and popularised during the second half of the
-      twentieth century.
+      Raw beef sliced so thin you can see through it, with olive oil, lemon and shaved cheese. Menus also use the name for
+      raw fish or even vegetables sliced the same way.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Carpaccio
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1354151599
     image: Carpaccio_with_cheese_in_Warsaw.jpg
   - term: osso buco
     category: meat
     answer:
       core:
-        - young cow
-        - cross-cut shank
-        - braised with its marrow bone
+        - '[[shank]] sawn across the bone into thick rounds and [[braised meat|braised]]'
+      context:
+        - Italian
+    profile:
+      animal: [young cow]
+      part: [shank, bone marrow]
+      made: [braised]
+      served: [cooked in dishes]
+      texture: [tender]
+      strength: medium
+      origin: northern Italy (Milan)
     details: >-
-      Ossobuco or osso buco (Italian: [ˌɔssoˈbuːko]; Milanese: òss bus [ˌɔz ˈbyːs]), also known as ossobuco
-      alla milanese, is a specialty of Lombard cuisine of cross-cut veal shanks braised with vegetables,
-      white wine, and broth. It is often garnished with gremolada and traditionally served with either
-      risotto alla milanese or polenta, depending on the regional variation.
+      Italian for “bone with a hole”: thick rounds of [[veal]] shank braised until falling apart; the [[bone marrow|marrow]]
+      in the middle is scooped out and eaten. Traditionally served with risotto colored golden with saffron, a costly spice.
+    compare:
+      - risotto
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Ossobuco
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1325393708
     image: Ossobuco.jpg
   - term: braciola
     category: meat
     answer:
       core:
-        - animal varies
-        - rolled or grilled meat slice
+        - thin slice of meat, rolled around a filling and [[braised meat|braised]]
       context:
-        - Italian
-        - meaning varies by region
+        - Italian; meaning varies by region
+    profile:
+      animal: [cow, pig]
+      made: [braised]
+      served: [cooked in dishes]
+      texture: [tender]
+      strength: medium
+      origin: southern Italy
     details: >-
-      Braciola (Italian: [braˈtʃɔːla]; pl.: braciole, Italian: [braˈtʃɔːle]) may refer to several distinct
-      dishes in Italian cuisine.
+      In southern Italy and Italian-American cooking, beef rolled around cheese and herbs and simmered in tomato sauce; elsewhere
+      in Italy, braciola just means a grilled [[pork]] steak.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Braciola
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1332397386
-    image: Braciola_di_maiale_e_melanzane_ai_ferri.jpg
+    image: Braciola con coste 3.jpg
   - term: animelle
     category: meat
+    kind: concept
+    translates: sweetbreads
     answer:
       core:
-        - usually young cow or young sheep
-        - sweetbreads (glands)
+        - '[[sweetbreads]]'
       context:
         - Italian
     details: >-
-      Sweetbread is a culinary name for the thymus or pancreas, typically from calf or lamb. Sweetbreads
-      have a rich, slightly gamey flavour and a tender, succulent texture.
+      Usually from [[veal]], pan-fried.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Sweetbread
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367036244
-    image: SweetbreadsChufaCuminBroccoliCocoa_(8311452821).jpg
+    image_from: sweetbreads
   - term: trippa
     category: meat
+    kind: concept
+    translates: tripe
     answer:
       core:
-        - animal varies
-        - tripe
-        - edible stomach lining
+        - '[[tripe]]'
       context:
         - Italian
     details: >-
-      Tripe is the digestive system of ruminants prepared as edible offal. Most tripe is from cattle and
-      sheep, but may come from other ruminants as well.
+      Trippa alla romana is tripe simmered in tomato sauce with mint and pecorino.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Tripe
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1355101341
-    image: Trippa.jpg
+    image_from: tripe
+    compare:
+      - pecorino
   - term: midollo
     category: meat
+    kind: concept
+    translates: bone marrow
     answer:
       core:
-        - animal varies
-        - bone marrow
+        - '[[bone marrow]]'
       context:
         - Italian
     details: >-
-      Humans consume the bone marrow of animals as a food source. It is found in the long bones of animals
-      and comes in two types: yellow and red marrow.
+      As in the marrow of osso buco.
+    compare:
+      - osso buco
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Bone_marrow_as_food
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368972402
-    image: Markkloesschensuppe.jpg
+    image_from: bone marrow
   - term: ris de veau
     category: meat
+    kind: concept
+    translates: sweetbreads
     answer:
       core:
-        - young cow
-        - sweetbreads
+        - '[[veal]] [[sweetbreads]]'
       context:
-        - French
-        - despite the name, not rice
+        - French; despite the name, not rice
     details: >-
-      Sweetbread is a culinary name for the thymus or pancreas, typically from calf or lamb. Sweetbreads
-      have a rich, slightly gamey flavour and a tender, succulent texture.
+      Ris is an old word of unclear origin, unrelated to riz, rice. A French restaurant delicacy.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Sweetbread
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367036244
-    image: Ris de Veau.jpg
+    image_from: sweetbreads
   - term: foie gras
     category: meat
     answer:
       core:
-        - duck or goose
-        - fatty liver
+        - 'fattened liver: silky and buttery'
+      context:
+        - French
+    profile:
+      family: offal
+      animal: [duck, goose]
+      part: [liver]
+      made: [cooked]
+      served: [sliced, pan-fried]
+      texture: [silky]
+      fat: [fatty]
+      strength: medium
+      origin: France
     details: >-
-      Foie gras (lit. 'fat liver'; French: [fwa ɡʁɑ]; Occitan: foiè grass) is a specialty food product
-      made of the liver of a duck or goose. According to French law, foie gras is defined as the liver
-      of a duck or goose fattened by gavage (force feeding).
+      French for “fat liver”. The birds are force-fed to fatten the liver, a practice banned in some places. Served cold as
+      a smooth slice with toast, or seared.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Foie_gras
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368764317
     image: Foie_gras_en_cocotte.jpg
+  - term: sweetbreads
+    category: meat
+    answer:
+      core:
+        - small glands from the throat or near the stomach, with a creamy texture
+    profile:
+      family: offal
+      animal: [young cow, young sheep]
+      part: [glands]
+      made: [cooked]
+      served: [pan-fried]
+      texture: [creamy, tender]
+      strength: mild
+      origin: many cuisines
+    details: >-
+      Not sweet and not bread: [[offal]] that’s mild and soft, usually crisped in a pan.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sweetbread
+    image: Sweetbreads 5.jpg
+  - term: tripe
+    category: meat
+    answer:
+      core:
+        - stomach lining, simmered until tender
+    profile:
+      family: offal
+      animal: [cow]
+      part: [stomach]
+      made: [cooked]
+      served: [simmered]
+      texture: [chewy]
+      strength: mild
+      origin: many cuisines
+    details: >-
+      [[offal|Offal]] with a honeycomb or ruffled look and a chewy bite. Slow-cooked in sauces and soups, like Mexican menudo.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tripe
+    image: Callos de ternera.jpg
+  - term: bone marrow
+    category: meat
+    answer:
+      core:
+        - the soft, fatty center of large bones
+    profile:
+      family: offal
+      animal: [cow]
+      part: [bone marrow]
+      made: [roasted]
+      served: [scooped onto toast]
+      texture: [soft]
+      fat: [fatty]
+      strength: mild
+      origin: many cuisines
+    details: >-
+      Almost always [[beef]] or [[veal]]: their [[leg (meat)|leg]] bones are big enough to be worth roasting. [[offal|Offal]]
+      served as split bones roasted until the marrow melts, then scooped onto toast.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bone_marrow_(food)
+    image: Os à moelle.jpg
   - term: curds
     category: cheese
     kind: concept
@@ -2051,8 +3586,8 @@ cards:
       core:
         - the thin, watery liquid left over when milk separates into [[curds]]
     details: >-
-      Most cheesemaking drains the whey away and keeps the curds. It's slightly sweet and cloudy yellow-green. It still has
-      some protein, which is why a few cheeses, like ricotta, are made by reheating it, and why it's sold dried as whey protein
+      Most cheesemaking drains the whey away and keeps the curds. It’s slightly sweet and cloudy yellow-green. It still has
+      some protein, which is why a few cheeses, like ricotta, are made by reheating it, and why it’s sold dried as whey protein
       powder.
     compare:
       - ricotta
@@ -2156,7 +3691,7 @@ cards:
       core:
         - the outer layer or skin that forms on a cheese as it [[aged cheese|ages]]
     details: >-
-      Like a crust on bread, it's drier and tougher than the inside. Some form on their own as the outside dries out; others
+      Like a crust on bread, it’s drier and tougher than the inside. Some form on their own as the outside dries out; others
       are grown on purpose from [[mold (cheese)|mold]], or by rubbing the cheese with salt water; some cheeses are sealed
       in wax instead. Thin, soft rinds are usually eaten; hard crusts and wax are not. Cheeses eaten within days of being
       made have none.
@@ -2172,8 +3707,8 @@ cards:
         - a dry, hard [[rind]] that forms on its own as a cheese’s outside dries out
     details: >-
       The most common kind of rind, usually brownish, grayish or tan. Cheesemakers may brush, oil or turn the cheese while
-      it [[aged cheese|ages]], but they don't grow anything on it. Found mostly on [[firm cheese|firm]] and [[hard cheese|hard]]
-      cheeses, like parmesan's crust, and usually too hard to eat.
+      it [[aged cheese|ages]], but they don’t grow anything on it. Found mostly on [[firm cheese|firm]] and [[hard cheese|hard]]
+      cheeses, like parmesan’s crust, and usually too hard to eat.
     compare:
       - parmesan
     source:
@@ -2258,8 +3793,8 @@ cards:
       core:
         - stored in salt water, which keeps it moist and salty
     details: >-
-      Brine is just very salty water. Brined cheeses sit in it until they're sold, so they have no [[rind]] and taste noticeably
-      salty. Feta and halloumi are the best-known. (Many other cheeses get a short brine bath just to salt them, but aren't
+      Brine is just very salty water. Brined cheeses sit in it until they’re sold, so they have no [[rind]] and taste noticeably
+      salty. Feta and halloumi are the best-known. (Many other cheeses get a short brine bath just to salt them, but aren’t
       called brined cheeses.)
     compare:
       - feta
@@ -2276,7 +3811,7 @@ cards:
         - 'a legal label: made in its traditional home region by traditional rules'
     details: >-
       Only cheese made in a particular region, following its traditional rules, may use a protected name. So shaker parmesan
-      made in the US isn't parmigiano reggiano. Each language abbreviates the label differently.
+      made in the US isn’t parmigiano reggiano. Each language abbreviates the label differently.
     compare:
       - parmigiano reggiano
       - parmesan
@@ -2324,7 +3859,7 @@ cards:
       context:
         - French abbreviation (appellation d’origine protégée)
     details: >-
-      The newer, EU-wide version of France's [[AOC]] label.
+      The newer, EU-wide version of France’s [[AOC]] label.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Geographical_indications_and_traditional_specialities_in_the_European_Union
@@ -2338,7 +3873,7 @@ cards:
       context:
         - French abbreviation of the older national label (appellation d’origine contrôlée)
     details: >-
-      France's original national label, also used for wines.
+      France’s original national label, also used for wines.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Geographical_indications_and_traditional_specialities_in_the_European_Union
@@ -2350,7 +3885,7 @@ cards:
         - melts smooth and gooey
     details: >-
       The cheeses for fondue, grilled cheese, pizza and burgers. American cheese is the extreme example, and pepper jack melts
-      well too. Other cheeses soften but don't melt: they stay in shape when heated, or separate into grease and lumps.
+      well too. Other cheeses soften but don’t melt: they stay in shape when heated, or separate into grease and lumps.
     compare:
       - fondue
       - American cheese
@@ -2447,7 +3982,7 @@ cards:
       core:
         - a [[tangy cheese|tangy]] taste that tingles on your tongue and grows as a cheese [[aged cheese|ages]]
     details: >-
-      The difference between mild and sharp cheddar. It's a kind of strong flavor, felt most at the sides of your tongue.
+      The difference between mild and sharp cheddar. It’s a kind of strong flavor, felt most at the sides of your tongue.
     compare:
       - cheddar
     source:
@@ -2460,7 +3995,7 @@ cards:
       core:
         - strong-smelling; stinky
     details: >-
-      Pungent cheeses can smell like feet, a barnyard or cooked cabbage. It's a kind of strong flavor, but one you smell rather
+      Pungent cheeses can smell like feet, a barnyard or cooked cabbage. It’s a kind of strong flavor, but one you smell rather
       than taste: many pungent cheeses taste much milder than they smell.
     source:
       label: Wikipedia
@@ -2472,7 +4007,7 @@ cards:
       core:
         - pleasantly sour, like yogurt or cream cheese
     details: >-
-      A mild sourness, like sour cream or buttermilk. Common in [[young cheese|young]] cheeses and in goat's-milk cheeses.
+      A mild sourness, like sour cream or buttermilk. Common in [[young cheese|young]] cheeses and in goat’s-milk cheeses.
     compare:
       - cream cheese
     source:
@@ -2486,7 +4021,7 @@ cards:
         - toasty, like roasted nuts
     details: >-
       A toasty, slightly sweet flavor that develops as [[firm cheese|firm cheeses]] [[aged cheese|age]]. Parmesan has some
-      of it. It's the classic flavor of cheeses like gruyère.
+      of it. It’s the classic flavor of cheeses like gruyère.
     compare:
       - gruyère
       - parmesan
@@ -2500,7 +4035,7 @@ cards:
       core:
         - tasting and smelling like mushrooms or damp soil
     details: >-
-      Usually comes from what grows on the outside of the cheese, so it's strongest near the [[rind]].
+      Usually comes from what grows on the outside of the cheese, so it’s strongest near the [[rind]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Types_of_cheese
@@ -2547,7 +4082,7 @@ cards:
       core:
         - '[[curds]] heated and stretched like taffy, making it stringy and [[springy cheese|springy]]'
     details: >-
-      The curds are dipped in hot water, then pulled, stretched and folded until smooth and elastic. That's why string cheese
+      The curds are dipped in hot water, then pulled, stretched and folded until smooth and elastic. That’s why string cheese
       peels into strings and why mozzarella stretches on pizza.
     compare:
       - mozzarella
@@ -2837,7 +4372,7 @@ cards:
       context:
         - Italian
     details: >-
-      A cheesemakers' term that sometimes shows up on menus and cheese shop labels.
+      A cheesemakers’ term that sometimes shows up on menus and cheese shop labels.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/List_of_stretch-curd_cheeses
@@ -2893,14 +4428,15 @@ cards:
       context:
         - French; literally “ewe”, a female sheep
     details: >-
-      Marks a sheep's-milk cheese on French menus and cheese boards, like roquefort.
+      Marks a sheep’s-milk cheese on French menus and cheese boards, like roquefort.
     compare:
       - roquefort
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Sheep_milk_cheese
     image_from: ossau-iraty
-  - term: bleu
+  - term: bleu (cheese)
+    id: bleu
     category: cheese
     kind: concept
     translates: blue cheese
@@ -2910,7 +4446,7 @@ cards:
       context:
         - French
     details: >-
-      As in bleu d'Auvergne. American menus sometimes spell blue cheese as “bleu cheese”.
+      As in bleu d’Auvergne. American menus sometimes spell blue cheese as “bleu cheese”.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Blue_cheese
@@ -2949,7 +4485,7 @@ cards:
       label: DOP
     details: >-
       Two styles share the name. Asiago [[fresco]] (also called pressato) is aged about a month: pale, springy and mild, with
-      small holes. Asiago d'allevo is aged for months to years until firm to hard, nutty and sharp. In the US, “asiago” usually
+      small holes. Asiago d’allevo is aged for months to years until firm to hard, nutty and sharp. In the US, “asiago” usually
       means an aged, grating kind.
     source:
       label: Wikipedia
@@ -2995,7 +4531,7 @@ cards:
       origin: southern Italy
     details: >-
       The outside is a thin skin of mozzarella; cut it open and the soft, creamy filling spills out. It spoils within a couple
-      of days, so it's served whole and very fresh, typically with tomatoes, olive oil and bread.
+      of days, so it’s served whole and very fresh, typically with tomatoes, olive oil and bread.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Burrata
@@ -3016,7 +4552,7 @@ cards:
       age: fresh
       origin: southern Italy
     details: >-
-      Italian for “little rags”. It's the filling inside burrata, also served on its own, spooned over pasta, pizza or toast.
+      Italian for “little rags”. It’s the filling inside burrata, also served on its own, spooned over pasta, pizza or toast.
     compare:
       - burrata
     source:
@@ -3109,7 +4645,7 @@ cards:
       origin: the Italian Alps
       label: DOP, fontina Val d’Aosta only
     details: >-
-      The original is fontina Val d'Aosta, [[DOP]]-protected, from the Italian Alps, with a thin brown rind and an earthy
+      The original is fontina Val d’Aosta, [[DOP]]-protected, from the Italian Alps, with a thin brown rind and an earthy
       smell. Fontina made elsewhere, often sealed in red wax, is milder. Melts smoothly into sauces, and onto pizza and grilled
       sandwiches.
     source:
@@ -3171,7 +4707,7 @@ cards:
       age: aged 3 months to a year
       style: [piccante]
     details: >-
-      [[piccante (cheese)|Piccante]] means “spicy”. [[aged cheese|Aged]] longer, so it's firmer, more heavily streaked with
+      [[piccante (cheese)|Piccante]] means “spicy”. [[aged cheese|Aged]] longer, so it’s firmer, more heavily streaked with
       blue and much sharper; crumbled on salads or eaten with honey.
     source:
       label: Wikipedia
@@ -3197,7 +4733,7 @@ cards:
       origin: northern Italy (Po Valley)
       label: DOP
     details: >-
-      Made over a wider area than parmigiano reggiano, under looser rules, and often aged less, so it's milder and cheaper.
+      Made over a wider area than parmigiano reggiano, under looser rules, and often aged less, so it’s milder and cheaper.
       Grated over pasta and risotto, or broken into chunks.
     compare:
       - parmigiano reggiano
@@ -3223,8 +4759,8 @@ cards:
       age: fresh
       origin: northern Italy
     details: >-
-      Made by thickening cream, not milk, with a little acid, so it's much higher in fat than American cream cheese and barely
-      [[tangy cheese|tangy]]. It isn't sweetened, but its mild, faintly sweet taste suits desserts; it also goes into risotto
+      Made by thickening cream, not milk, with a little acid, so it’s much higher in fat than American cream cheese and barely
+      [[tangy cheese|tangy]]. It isn’t sweetened, but its mild, faintly sweet taste suits desserts; it also goes into risotto
       and pasta sauces.
     compare:
       - tiramisu
@@ -3253,7 +4789,7 @@ cards:
       origin: northeast Italy
       label: DOP
     details: >-
-      From the Alps in Italy's northeast corner, [[DOP]]-protected. Young montasio is the classic cheese for frico, a crisp,
+      From the Alps in Italy’s northeast corner, [[DOP]]-protected. Young montasio is the classic cheese for frico, a crisp,
       fried cheese pancake.
     compare:
       - frico
@@ -3300,7 +4836,7 @@ cards:
       origin: southern Italy
       label: DOP, as mozzarella di bufala campana
     details: >-
-      Softer, creamier and a little tangier than cow's-milk mozzarella. Water buffalo are large, cattle-like animals, common
+      Softer, creamier and a little tangier than cow’s-milk mozzarella. Water buffalo are large, cattle-like animals, common
       in Asia and raised in southern Italy mainly for this cheese. The version from its home region is labeled mozzarella
       di bufala campana [[DOP]]: Campania is the region around Naples.
     compare:
@@ -3318,7 +4854,7 @@ cards:
     profile:
       milk: [cow]
     details: >-
-      Italian for “flower of milk”. Pizza menus use it to tell cow's-milk mozzarella apart from mozzarella di bufala.
+      Italian for “flower of milk”. Pizza menus use it to tell cow’s-milk mozzarella apart from mozzarella di bufala.
     compare:
       - mozzarella di bufala
     source:
@@ -3345,8 +4881,8 @@ cards:
       origin: northern Italy (Parma and Reggio Emilia)
       label: DOP
     details: >-
-      Italy's most famous cheese, made in huge [[wheel (cheese)|wheels]] whose rind is stamped all over with its name. [[DOP]]
-      rules require cow's milk from one small region and at least a year of aging; the tiny crunchy crystals come from long
+      Italy’s most famous cheese, made in huge [[wheel (cheese)|wheels]] whose rind is stamped all over with its name. [[DOP]]
+      rules require cow’s milk from one small region and at least a year of aging; the tiny crunchy crystals come from long
       aging. Grated over pasta, or broken into chunks and eaten on its own.
     compare:
       - grana padano
@@ -3373,7 +4909,7 @@ cards:
       made: [pressed]
       origin: Italy
     details: >-
-      From pecora, “sheep”: any Italian sheep's-milk cheese. Each region makes its own, like pecorino toscano, often young
+      From pecora, “sheep”: any Italian sheep’s-milk cheese. Each region makes its own, like pecorino toscano, often young
       and mild, or pecorino sardo. On a menu, plain pecorino often means pecorino romano.
     compare:
       - pecorino romano
@@ -3427,7 +4963,7 @@ cards:
       origin: central Italy (Tuscany)
       label: DOP
     details: >-
-      Tuscany's pecorino: milder and less salty than pecorino romano, and usually eaten in slices rather than grated, often
+      Tuscany’s pecorino: milder and less salty than pecorino romano, and usually eaten in slices rather than grated, often
       with honey or pears. Sold [[fresco]] (young) or [[stagionato]] (aged).
     compare:
       - pecorino romano
@@ -3455,7 +4991,7 @@ cards:
       origin: southern Italy, now mostly made in the north
       label: DOP, provolone Valpadana only
     details: >-
-      Shaped into pears, cones or huge sausages hung up to age. It's sold [[dolce (cheese)|dolce]] or [[piccante (cheese)|piccante]];
+      Shaped into pears, cones or huge logs hung up to age. It’s sold [[dolce (cheese)|dolce]] or [[piccante (cheese)|piccante]];
       American deli provolone is the young, mild kind, and “sharp provolone” is aged longer.
     compare:
       - caciocavallo
@@ -3482,7 +5018,7 @@ cards:
       made: [from whey]
       origin: Italy
     details: >-
-      Italian for “re-cooked”: it's made by reheating the whey left over from making other cheeses, which forms tiny, soft
+      Italian for “re-cooked”: it’s made by reheating the whey left over from making other cheeses, which forms tiny, soft
       [[curds]]. Used in [[lasagne]], stuffed pasta and cannoli filling, or spooned onto toast and pasta.
     compare:
       - cannoli
@@ -3532,7 +5068,7 @@ cards:
       origin: northern Italy
       label: DOP, robiola di Roccaverano only
     details: >-
-      A family of small square or round cheeses, each a slightly different mix of cow's, goat's and sheep's milk. [[young
+      A family of small square or round cheeses, each a slightly different mix of cow’s, goat’s and sheep’s milk. [[young
       cheese|Young]] robiola is fresh and tangy with no rind; left a little longer, it grows a thin bloomy rind and turns
       buttery and mushroomy.
     compare:
@@ -3560,7 +5096,7 @@ cards:
       made: [often smoked]
       origin: southern Italy
     details: >-
-      Made like [[mozzarella]], but hung up by a string to dry for a couple of weeks, so it's firmer and less moist, with
+      Made like [[mozzarella]], but hung up by a string to dry for a couple of weeks, so it’s firmer and less moist, with
       a thin skin. The smoked kind is golden-brown outside and tastes of campfire. Both melt well, on pizza or grilled.
     source:
       label: Wikipedia
@@ -3586,7 +5122,7 @@ cards:
       origin: southern Italy
     details: >-
       Made like [[mozzarella]], but drier, so it melts without making a pizza soggy. Neapolitan pizza menus often use provola
-      [[affumicato|affumicata]], the smoked kind. Despite the name, it isn't provolone, which is aged much longer; it's closer
+      [[affumicato|affumicata]], the smoked kind. Despite the name, it isn’t provolone, which is aged much longer; it’s closer
       to scamorza.
     compare:
       - provolone
@@ -3671,7 +5207,7 @@ cards:
       origin: the Italian Alps
       label: DOP, toma piemontese only
     details: >-
-      A general name in northern Italy for simple round cheeses, usually of cow's milk; toma piemontese is [[DOP]]-protected.
+      A general name in northern Italy for simple round cheeses, usually of cow’s milk; toma piemontese is [[DOP]]-protected.
       Milky when young; firmer and more earthy with age. The Italian cousin of tomme.
     compare:
       - tomme
@@ -3697,7 +5233,7 @@ cards:
       made: [ash-coated]
       origin: northern Italy
     details: >-
-      The name means “under ash”; the full name, sottocenere al tartufo, adds “with truffle”. It's studded with slivers of
+      The name means “under ash”; the full name, sottocenere al tartufo, adds “with truffle”. It’s studded with slivers of
       [[truffle (fungus)|black truffle]], and its rind is rubbed with ash and spices. [[tartufo (fungus)|Tartufo]] is Italian
       for truffle.
     source:
@@ -3725,7 +5261,7 @@ cards:
       label: AOP
     details: >-
       Very similar to comté and gruyère. Its [[wheel (cheese)|wheels]] are easy to spot because their sides curve inward.
-      Beaufort d'été (“summer”) is made while the cows graze on high mountain pastures, and is the most prized.
+      Beaufort d’été (“summer”) is made while the cows graze on high mountain pastures, and is the most prized.
     compare:
       - comté
       - gruyère
@@ -3829,7 +5365,7 @@ cards:
       origin: central France
       label: AOP
     details: >-
-      One of France's oldest cheeses, often compared to cheddar. Sold by age: jeune (young, a month or two), entre-deux (“in
+      One of France’s oldest cheeses, often compared to cheddar. Sold by age: jeune (young, a month or two), entre-deux (“in
       between”) and vieux (old, over six months).
     compare:
       - cheddar
@@ -3869,7 +5405,7 @@ cards:
       core:
         - firm, nutty, Alpine-style cheese
       context:
-        - French; France's best-selling cheese
+        - French; France’s best-selling cheese
     profile:
       family: Alpine-style
       rind: natural
@@ -3911,7 +5447,7 @@ cards:
       origin: eastern France
       label: AOP
     details: >-
-      Its orange rind is washed with brandy. Smelly enough that, by a popular story, it's banned on French public transport.
+      Its orange rind is washed with brandy. Smelly enough that, by a popular story, it’s banned on French public transport.
       Sold in a round wooden box and often eaten with a spoon.
     source:
       label: Wikipedia
@@ -4024,7 +5560,7 @@ cards:
       origin: northern France
     details: >-
       Colored bright orange with annatto, a tasteless plant seed, and shaped like a cantaloupe. Its gray rind, covered in
-      tiny holes, is the work of cheese mites, tiny bugs deliberately allowed to nibble it; the rind isn't eaten. Aged mimolette
+      tiny holes, is the work of cheese mites, tiny bugs deliberately allowed to nibble it; the rind isn’t eaten. Aged mimolette
       is much like aged gouda.
     compare:
       - gouda
@@ -4051,7 +5587,7 @@ cards:
       origin: eastern France, near Switzerland
       label: AOP
     details: >-
-      The ash line once separated the morning's [[curds|curd]] from the evening's; today it's decorative. Its rind is lightly
+      The ash line once separated the morning’s [[curds|curd]] from the evening’s; today it’s decorative. Its rind is lightly
       washed, so it smells stronger than it tastes.
     source:
       label: Wikipedia
@@ -4127,7 +5663,7 @@ cards:
       origin: northern France
       label: AOP
     details: >-
-      Often shaped like a heart; one of France's oldest cheeses. Firmer, saltier and more crumbly than brie. American neufchâtel
+      Often shaped like a heart; one of France’s oldest cheeses. Firmer, saltier and more crumbly than brie. American neufchâtel
       is something else: a lower-fat cream cheese.
     compare:
       - brie
@@ -4182,7 +5718,7 @@ cards:
       origin: northern France
       label: AOP
     details: >-
-      One of France's oldest cheeses, and easy to spot because it's square. Like most washed-rind cheeses, it smells much
+      One of France’s oldest cheeses, and easy to spot because it’s square. Like most washed-rind cheeses, it smells much
       stronger than it tastes.
     source:
       label: Wikipedia
@@ -4209,7 +5745,7 @@ cards:
       origin: Switzerland and the French Alps
       label: AOP, raclette du Valais only
     details: >-
-      Named after the dish it's made for, from racler, “to scrape”. Its washed rind gives it a strong smell, especially when
+      Named after the dish it’s made for, from racler, “to scrape”. Its washed rind gives it a strong smell, especially when
       melted, though it tastes milder.
     compare:
       - raclette (dish)
@@ -4238,7 +5774,7 @@ cards:
     details: >-
       Its name comes from reblocher, “to milk again”: farmers once held back some milk from the landowner and milked the cows
       a second time for themselves. Milder than most washed-rind cheeses. The star of tartiflette, a baked dish of potatoes,
-      bacon, onions and melted reblochon.
+      [[bacon]], onions and melted reblochon.
     compare:
       - tartiflette
     source:
@@ -4344,7 +5880,7 @@ cards:
       origin: the French and Swiss Alps
     details: >-
       A name covering many small round cheeses from the French and Swiss Alps, traditionally made from the milk left over
-      after butter-making, so they're lower in fat. The best-known is tomme de Savoie, with a thick gray-brown rind. Toma
+      after butter-making, so they’re lower in fat. The best-known is tomme de Savoie, with a thick gray-brown rind. Toma
       is its Italian cousin.
     compare:
       - toma
@@ -4361,7 +5897,7 @@ cards:
         - soft cheese with extra cream added; high in fat
     details: >-
       Cream is added to the milk, so the cheese is much higher in fat than most; it tastes like whipped butter. Almost always
-      a [[soft cheese]] with a [[bloomy rind]], from France. (Mascarpone has as much fat, but isn't called this.)
+      a [[soft cheese]] with a [[bloomy rind]], from France. (Mascarpone has as much fat, but isn’t called this.)
     compare:
       - mascarpone
     source:
@@ -4412,8 +5948,8 @@ cards:
       origin: Greece
       label: PDO
     details: >-
-      Sold in white blocks, ideally still in their salty liquid. Made from sheep's milk, sometimes with some goat's milk mixed
-      in; in Europe, only Greek cheese made that way may be called feta, though US “feta” is often cow's milk. Crumbled onto
+      Sold in white blocks, ideally still in their salty liquid. Made from sheep’s milk, sometimes with some goat’s milk mixed
+      in; in Europe, only Greek cheese made that way may be called feta, though US “feta” is often cow’s milk. Crumbled onto
       salads or baked into pastries like spanakopita, a Greek spinach pie.
     source:
       label: Wikipedia
@@ -4439,9 +5975,9 @@ cards:
       origin: Cyprus
       label: PDO
     details: >-
-      Its [[curds]] are heated in their [[whey]] while it's made, so it doesn't melt: it's sliced and grilled or fried until
-      golden outside and soft inside, and squeaks against your teeth. Traditionally goat's and sheep's milk; now often with
-      cow's milk.
+      Its [[curds]] are heated in their [[whey]] while it’s made, so it doesn’t melt: it’s sliced and grilled or fried until
+      golden outside and soft inside, and squeaks against your teeth. Traditionally goat’s and sheep’s milk; now often with
+      cow’s milk.
     compare:
       - feta
     source:
@@ -4467,7 +6003,7 @@ cards:
       origin: Spain (La Mancha)
       label: DOP
     details: >-
-      Made from the milk of La Mancha's Manchega sheep, in forms that press a zigzag basket-weave pattern into the rind. Labeled
+      Made from the milk of La Mancha’s Manchega sheep, in forms that press a zigzag basket-weave pattern into the rind. Labeled
       by age, from [[tierno]] and semicurado to [[curado]] and viejo (old); older manchego is sharper and more crumbly. Served
       in slices with quince paste (membrillo).
     compare:
@@ -4524,7 +6060,7 @@ cards:
       origin: Mexico and Latin America
     details: >-
       Spanish for “fresh cheese” ([[queso]] + [[fresco]]). Crumbled over tacos, beans and enchiladas (sauced, rolled tortillas);
-      it softens when heated but doesn't melt. Cotija is its aged, saltier cousin.
+      it softens when heated but doesn’t melt. Cotija is its aged, saltier cousin.
     compare:
       - cotija
     source:
@@ -4775,7 +6311,7 @@ cards:
       age: young, then processed
       origin: United States
     details: >-
-      Usually sold as individually wrapped slices: the classic cheese for burgers and grilled cheese. It's made from young
+      Usually sold as individually wrapped slices: the classic cheese for burgers and grilled cheese. It’s made from young
       cheeses like cheddar.
     compare:
       - cheddar
@@ -4794,8 +6330,8 @@ cards:
       flavor: [milky, salty]
       age: young, a few weeks
     details: >-
-      Low-moisture mozzarella is [[aged cheese|aged]] a little, so it's drier, firmer and saltier than fresh mozzarella. Stretching
-      the [[curds]] lines up the cheese's proteins, so a stick peels into strings.
+      Low-moisture mozzarella is [[aged cheese|aged]] a little, so it’s drier, firmer and saltier than fresh mozzarella. Stretching
+      the [[curds]] lines up the cheese’s proteins, so a stick peels into strings.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/String_cheese
@@ -4817,7 +6353,7 @@ cards:
       age: aged at least 10 months
       origin: United States, copying Italy
     details: >-
-      In Europe, the name parmesan is reserved for the real parmigiano reggiano; in the US it's a general name. US [[wheel
+      In Europe, the name parmesan is reserved for the real parmigiano reggiano; in the US it’s a general name. US [[wheel
       (cheese)|wedges]] are usually aged around 10 months, versus at least a year for the Italian original. Shaker parmesan
       is grated and dried so it keeps without refrigeration.
     compare:
@@ -5325,7 +6861,7 @@ cards:
     category: dish
     answer:
       core:
-        - baked potatoes, bacon and onions under melted [[reblochon]]
+        - baked potatoes, [[bacon]] and onions under melted [[reblochon]]
       context:
         - from the French Alps
     details: >-
@@ -5459,7 +6995,7 @@ cards:
       context:
         - Middle Eastern
     details: >-
-      Za'atar is sprinkled on flatbread with olive oil (manakish), on [[labneh]], or over eggs and salads.
+      Za’atar is sprinkled on flatbread with olive oil (manakish), on [[labneh]], or over eggs and salads.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Za%27atar
@@ -5535,3 +7071,18 @@ cards:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cannoli
     image: Cannolo siciliano with chocolate squares.jpg
+  - term: crudo (dish)
+    category: dish
+    answer:
+      core:
+        - thin slices of raw fish or seafood, dressed with oil and citrus
+      context:
+        - Italian
+    details: >-
+      Italian for raw; like carpaccio or sashimi, but dressed simply with olive oil, lemon and salt.
+    compare:
+      - carpaccio
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Crudo
+    image: Wit & Wisdom - February 2024 - Sarah Stierch 09.jpg

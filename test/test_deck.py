@@ -39,37 +39,29 @@ class DeckDataTests(unittest.TestCase):
     def test_card_id_preserves_guid_when_term_changes(self):
         card = next(card for card in CARDS if card.get("id") == "salame")
         model = build_deck.make_model(build_deck.load_data()["deck"])
-        note = build_deck.make_note(card, model, build_deck.Path(card["image"]))
+        note = build_deck.make_note(
+            card, model, build_deck.Path(card["image"]), build_deck.index_cards(CARDS)
+        )
 
         self.assertEqual(note.fields[0], "salami / salame")
         self.assertEqual(note.guid, build_deck.genanki.guid_for("menu-food", "salame"))
 
-    def test_every_meat_cue_leads_with_its_animal(self):
-        animal_leads = {
-            "animal varies",
-            "cow",
-            "deer",
-            "duck",
-            "duck or goose",
-            "guinea fowl",
-            "Iberian pig",
-            "meat or fish",
-            "often duck",
-            "pig",
-            "rabbit",
-            "roe deer",
-            "usually cow",
-            "usually pig",
-            "usually young cow or young sheep",
-            "wild boar",
-            "young cow",
-            "young cow (calf)",
-            "young goat",
-            "young sheep",
-        }
-        for card in CARDS:
-            if card["category"] == "meat":
-                self.assertIn(card["answer"]["core"][0], animal_leads, card["term"])
+    def test_meat_headlines_lead_with_the_profile_animal(self):
+        cards_by_key = build_deck.index_cards(CARDS)
+        self.assertEqual(
+            build_deck.headline_fragments(cards_by_key["guanciale"])[0], "pig"
+        )
+        self.assertEqual(
+            build_deck.headline_fragments(cards_by_key["pâté"])[0],
+            "pig, duck or chicken",
+        )
+        data = build_deck.load_data()
+        card = next(card for card in data["cards"] if card["term"] == "guanciale")
+        del card["profile"]["animal"]
+        with self.assertRaisesRegex(
+            ValueError, "guanciale: needs a profile animal row"
+        ):
+            build_deck.validate_data(data)
 
     def test_cheese_core_vocabulary_policy(self):
         milk_identity_terms = {
@@ -115,6 +107,10 @@ class DeckDataTests(unittest.TestCase):
             key = build_deck.card_key(card)
             for dependency in build_deck.dependencies(card, cards_by_key):
                 self.assertLess(order.index(dependency), order.index(key), key)
+
+    def test_study_order_interleaves_categories(self):
+        first = build_deck.study_order(CARDS)[:30]
+        self.assertGreaterEqual(len({card["category"] for card in first}), 5)
 
     def test_kind_of_inherits_and_overrides_the_parent_profile(self):
         cards_by_key = build_deck.index_cards(CARDS)
@@ -166,6 +162,13 @@ class DeckDataTests(unittest.TestCase):
             build_deck.card_backlinks(CARDS),
         )
         self.assertIn('like <span class="ref">tiramisu</span>', fields[1])
+
+    def test_authored_text_must_use_typographic_quotes(self):
+        data = build_deck.load_data()
+        card = next(card for card in data["cards"] if card["term"] == "brie")
+        card["details"] = "It's soft."
+        with self.assertRaisesRegex(ValueError, "brie: use typographic quotes"):
+            build_deck.validate_data(data)
 
     def test_text_html_renders_references(self):
         self.assertEqual(

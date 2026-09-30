@@ -1,5 +1,6 @@
 import argparse
 import hashlib
+import heapq
 import html
 import itertools
 import os
@@ -59,28 +60,55 @@ def load_vocabulary(path=VOCABULARY_PATH):
     """Loads the deck's house style from `vocabulary.yaml`."""
     with path.open(encoding="utf-8") as file:
         vocabulary = YAML(typ="safe").load(file)
-    for name, row in vocabulary["profile"].items():
-        if row.get("shape") not in PROFILE_SHAPES:
-            raise ValueError(f"{path.name}: profile row {name} has unknown shape")
-        if row["shape"] == "list" and "joiner" not in row:
-            raise ValueError(f"{path.name}: profile row {name} needs a joiner")
+    for category, spec in vocabulary["categories"].items():
+        for name, row in (spec.get("profile") or {}).items():
+            if row.get("shape") not in PROFILE_SHAPES:
+                raise ValueError(
+                    f"{path.name}: {category} profile row {name} has unknown shape"
+                )
+            if row["shape"] == "list" and "joiner" not in row:
+                raise ValueError(
+                    f"{path.name}: {category} profile row {name} needs a joiner"
+                )
+        for group in spec.get("jargon", []):
+            if group not in vocabulary["jargon"]:
+                raise ValueError(
+                    f"{path.name}: {category} names unknown jargon {group}"
+                )
     return vocabulary
 
 
+class Category:
+    """A category's settings from `vocabulary.yaml`."""
+
+    def __init__(self, spec, jargon):
+        self.label = spec["label"]
+        self.term_label = spec["term_label"]
+        self.profile_rows = {
+            name: {**row, "vocabulary": row.get("words") or {}}
+            for name, row in (spec.get("profile") or {}).items()
+        }
+        self.required_rows = [
+            name for name, row in self.profile_rows.items() if row.get("required")
+        ]
+        self.headline_noun = spec.get("headline_noun")
+        self.headline_order = [
+            (entry["kind"], word_pattern(entry["words"], wildcards=True))
+            for entry in spec.get("headline_order", [])
+        ]
+        self.headline_lead = spec.get("headline_lead")
+        self.jargon = {
+            card: word_pattern(words)
+            for group in spec.get("jargon", [])
+            for card, words in (jargon[group] or {}).items()
+        }
+
+
 VOCABULARY = load_vocabulary()
-CATEGORIES = VOCABULARY["categories"]
-PROFILE_ROWS = {
-    name: {**row, "vocabulary": row.get("words") or {}}
-    for name, row in VOCABULARY["profile"].items()
+CATEGORIES = {
+    name: Category(spec, VOCABULARY["jargon"])
+    for name, spec in VOCABULARY["categories"].items()
 }
-REQUIRED_PROFILE_ROWS = [
-    name for name, row in VOCABULARY["profile"].items() if row.get("required")
-]
-HEADLINE_ORDER = [
-    (entry["kind"], word_pattern(entry["words"], wildcards=True))
-    for entry in VOCABULARY["headline_order"]
-]
-JARGON = {card: word_pattern(words) for card, words in VOCABULARY["jargon"].items()}
 BANNED_JARGON = word_pattern(VOCABULARY["banned"])
 REFERENCE = re.compile(r"\[\[([^\]|]+)(?:\|([^\]]+))?\]\]")
 YAML_SAFE = YAML(typ="safe")
@@ -187,6 +215,17 @@ def validate_data(data):
             errors.append(f"{term}: details must be a nonempty string")
         elif re.search(r"\(\s*(?:\)|[,;])", details):
             errors.append(f"{term}: details contain malformed empty punctuation")
+        # Text written for the deck uses typographic quotes; Wikipedia extracts,
+        # which track their source, stay verbatim.
+        authored = [term, *core, *context]
+        if isinstance(details, str) and not (card.get("source") or {}).get(
+            "adapted_from"
+        ):
+            authored.append(details)
+        if any(
+            isinstance(text, str) and re.search(r"['\"]", text) for text in authored
+        ):
+            errors.append(f"{term}: use typographic quotes (’ “ ”), not straight ones")
 
         source = card.get("source")
         if not isinstance(source, dict):
@@ -212,7 +251,9 @@ def validate_data(data):
         if "profile" in card:
             if kind == CONCEPT:
                 errors.append(f"{term}: concept cards cannot have a profile")
-            errors.extend(profile_errors(term, card["profile"]))
+            category = CATEGORIES.get(card.get("category"))
+            rows = category.profile_rows if category else {}
+            errors.extend(profile_errors(term, rows, card["profile"]))
         for field in ["kind_of", "translates"]:
             value = card.get(field)
             if value is not None and (not isinstance(value, str) or not value):
@@ -224,6 +265,8 @@ def validate_data(data):
             errors.append(f"{term}: compare must be a list of keys when present")
 
         image = card.get("image")
+        if card.get("mirror_image") not in (None, True):
+            errors.append(f"{term}: mirror_image must be true when present")
         image_from = card.get("image_from")
         if image_from is not None and (
             image is not None or not isinstance(image_from, str) or not image_from
@@ -246,9 +289,14 @@ def validate_data(data):
     return data
 
 
-def profile_values(row, value):
+def profile_rows(card):
+    """Returns the profile rows of a card's category."""
+    return CATEGORIES[card["category"]].profile_rows
+
+
+def profile_values(spec, value):
     """Returns the vocabulary words in a profile value, or `None` if malformed."""
-    shape = PROFILE_ROWS[row]["shape"]
+    shape = spec["shape"]
     if shape == "text":
         return [] if isinstance(value, str) and value else None
     if shape == "stages":
@@ -269,19 +317,21 @@ def profile_values(row, value):
     return None
 
 
-def profile_errors(term, profile):
+def profile_errors(term, rows, profile):
+    if not rows:
+        return [f"{term}: this category has no profile"]
     if not isinstance(profile, dict):
         return [f"{term}: profile must be a mapping"]
     errors = []
     for row, value in profile.items():
-        if row not in PROFILE_ROWS:
+        if row not in rows:
             errors.append(f"{term}: unknown profile row {row!r}")
             continue
-        words = profile_values(row, value)
+        words = profile_values(rows[row], value)
         if words is None:
             errors.append(f"{term}: malformed profile {row}: {value!r}")
             continue
-        vocabulary = PROFILE_ROWS[row].get("vocabulary", {})
+        vocabulary = rows[row]["vocabulary"]
         for word in words:
             if word not in vocabulary:
                 errors.append(f"{term}: profile {row} has unknown value {word!r}")
@@ -324,11 +374,11 @@ def merged_profile(card, cards_by_key):
     return {**profile, **card["profile"]}
 
 
-def profile_links(profile):
+def profile_links(profile, rows):
     links = []
     for row, value in (profile or {}).items():
-        vocabulary = PROFILE_ROWS[row].get("vocabulary", {})
-        for word in profile_values(row, value):
+        vocabulary = rows[row]["vocabulary"]
+        for word in profile_values(rows[row], value):
             if (link := vocabulary.get(word)) is not None and link not in links:
                 links.append(link)
     return links
@@ -339,7 +389,7 @@ def dependencies(card, cards_by_key):
     links = [
         *([card["kind_of"]] if "kind_of" in card else []),
         *([card["translates"]] if "translates" in card else []),
-        *profile_links(merged_profile(card, cards_by_key)),
+        *profile_links(merged_profile(card, cards_by_key), profile_rows(card)),
         *text_references(card),
     ]
     return [link for link in dict.fromkeys(links) if link != card_key(card)]
@@ -397,9 +447,10 @@ def link_errors(cards):
     errors = []
     cards_by_key = index_cards(cards)
     parents = {card["kind_of"] for card in cards if "kind_of" in card}
-    for concept in JARGON:
-        if concept not in cards_by_key:
-            errors.append(f"{VOCABULARY_PATH.name}: names unknown card {concept!r}")
+    for group in VOCABULARY["jargon"].values():
+        for concept in group or {}:
+            if concept not in cards_by_key:
+                errors.append(f"{VOCABULARY_PATH.name}: names unknown card {concept!r}")
     # Cards whose terms can be mentioned in prose, grouped so that mentioning a
     # word with several senses, like "truffle", needs only one of them linked.
     mentionable = {}
@@ -421,22 +472,30 @@ def link_errors(cards):
             card["image_from"], {}
         ):
             errors.append(f"{key}: image_from must name a card with its own image")
+        category = CATEGORIES[card["category"]]
+        lead = category.headline_lead
+        if (
+            lead
+            and card.get("kind") != CONCEPT
+            and not (card.get("profile") or {}).get(lead)
+        ):
+            errors.append(f"{key}: needs a profile {lead} row to lead its headline")
         if not is_reworked(card):
             continue
         profile = merged_profile(card, cards_by_key)
         # A card with narrower kinds may leave the rows that vary to them.
         if "profile" in card and key not in parents:
-            missing = [row for row in REQUIRED_PROFILE_ROWS if row not in profile]
+            missing = [row for row in category.required_rows if row not in profile]
             if missing:
                 errors.append(f"{key}: profile lacks {', '.join(missing)}")
-        for target in profile_links(profile):
+        for target in profile_links(profile, category.profile_rows):
             if target not in cards_by_key:
                 errors.append(f"{key}: profile links to unknown card {target!r}")
         learned = prerequisites(card, cards_by_key) | {key}
         linked = learned | set(card.get("compare", []))
         # Fragments are joined so that no phrase can span two of them.
         text = "\n".join(REFERENCE.sub("", text) for text in card_texts(card))
-        for concept, pattern in JARGON.items():
+        for concept, pattern in category.jargon.items():
             if concept not in learned and (match := pattern.search(text)):
                 errors.append(
                     f"{key}: uses {match.group()!r} without building on {concept!r}"
@@ -454,12 +513,12 @@ def link_errors(cards):
             ):
                 terms = " or ".join(repr(sense["term"]) for sense in senses)
                 errors.append(f"{key}: mentions {terms} without linking it")
-        if "profile" in card:
-            errors.extend(headline_order_errors(card))
+        if "profile" in card and category.headline_order:
+            errors.extend(headline_order_errors(card, category))
             ranged = [
                 row
-                for row in ["firmness", "strength"]
-                if isinstance(profile.get(row), list)
+                for row, spec in category.profile_rows.items()
+                if spec["shape"] == "range" and isinstance(profile.get(row), list)
             ]
             headline = " ".join(core_fragments(card["answer"], card.get("kind_of")))
             if ranged and not re.search(r"\bwhen\b", headline):
@@ -468,24 +527,27 @@ def link_errors(cards):
                 )
     if not errors:
         try:
-            study_order(cards)
+            prerequisite_order(cards)
         except ValueError as error:
             errors.append(str(error))
     return errors
 
 
-def headline_order_errors(card):
-    """Checks that the adjectives before "cheese" in a headline follow `HEADLINE_ORDER`."""
+def headline_order_errors(card, category):
+    """Checks that the adjectives before the category's headline noun, like
+    "cheese", follow its `headline_order`."""
+    order = category.headline_order
     errors = []
     for fragment in card["answer"]["core"]:
         for segment in fragment.split(";"):
-            phrase = re.split(r"\bcheese\b", plain_text(segment))[0]
+            noun = re.escape(category.headline_noun)
+            phrase = re.split(rf"\b{noun}\b", plain_text(segment))[0]
             found = []
             for match in re.finditer(r"[\w’'-]+(?: rich)?", phrase):
                 rank = next(
                     (
                         rank
-                        for rank, (_, pattern) in enumerate(HEADLINE_ORDER)
+                        for rank, (_, pattern) in enumerate(order)
                         if pattern.fullmatch(match.group())
                     ),
                     None,
@@ -495,14 +557,15 @@ def headline_order_errors(card):
             for (rank, word), (next_rank, next_word) in itertools.pairwise(found):
                 if next_rank < rank:
                     errors.append(
-                        f"{card_key(card)}: headline puts {HEADLINE_ORDER[next_rank][0]} "
-                        f"{next_word!r} after {HEADLINE_ORDER[rank][0]} {word!r}"
+                        f"{card_key(card)}: headline puts {order[next_rank][0]} "
+                        f"{next_word!r} after {order[rank][0]} {word!r}"
                     )
     return errors
 
 
-def study_order(cards):
-    """Orders cards so each follows the cards it builds on, otherwise keeping data order."""
+def prerequisite_order(cards):
+    """Orders cards so each follows the cards it builds on, otherwise keeping data
+    order. Raises on a dependency cycle."""
     cards_by_key = index_cards(cards)
     ordered = []
     state = {}
@@ -521,6 +584,50 @@ def study_order(cards):
 
     for card in cards:
         visit(card, [])
+    return ordered
+
+
+def study_order(cards):
+    """Orders cards for studying: each after the cards it builds on, with the
+    categories interleaved so that each is spread evenly across the whole deck.
+
+    Among the cards whose prerequisites are all placed, the next card comes from
+    the category that is furthest behind its share; within a category, cards keep
+    their prerequisite order."""
+    cards_by_key = index_cards(cards)
+    base = prerequisite_order(cards)
+    rank = {card_key(card): index for index, card in enumerate(base)}
+    waiting = {card_key(card): set(dependencies(card, cards_by_key)) for card in base}
+    dependents = {key: [] for key in waiting}
+    for key, needs in waiting.items():
+        for need in needs:
+            dependents[need].append(key)
+    totals = {}
+    for card in base:
+        totals[card["category"]] = totals.get(card["category"], 0) + 1
+    placed = dict.fromkeys(totals, 0)
+    ready = {category: [] for category in totals}
+    for card in base:
+        if not waiting[card_key(card)]:
+            heapq.heappush(ready[card["category"]], rank[card_key(card)])
+    ordered = []
+    while len(ordered) < len(base):
+        category = min(
+            (category for category, heap in ready.items() if heap),
+            key=lambda category: (
+                placed[category] / totals[category],
+                ready[category][0],
+            ),
+        )
+        card = base[heapq.heappop(ready[category])]
+        ordered.append(card)
+        placed[category] += 1
+        for dependent in dependents[card_key(card)]:
+            waiting[dependent].discard(card_key(card))
+            if not waiting[dependent]:
+                heapq.heappush(
+                    ready[cards_by_key[dependent]["category"]], rank[dependent]
+                )
     return ordered
 
 
@@ -559,17 +666,39 @@ def core_fragments(answer, kind_of=None):
     return [*([f"a kind of [[{kind_of}]]"] if kind_of else []), *answer["core"]]
 
 
-def recognition_html(answer, kind_of=None, mentions=None):
-    core = "; ".join(
-        text_html(fragment, mentions) for fragment in core_fragments(answer, kind_of)
-    )
+def natural_join(words, joiner):
+    """Joins words with `joiner`, writing "a, b or c" rather than "a or b or c"."""
+    if joiner.strip() in ("or", "and") and len(words) > 2:
+        return ", ".join(words[:-1]) + joiner + words[-1]
+    return joiner.join(words)
+
+
+def headline_lead(card):
+    """Returns the profile value that leads a card's headline, like its animal."""
+    row = CATEGORIES[card["category"]].headline_lead
+    value = (card.get("profile") or {}).get(row) if row else None
+    if not value:
+        return None
+    return natural_join(value, " or ") if isinstance(value, list) else value
+
+
+def headline_fragments(card):
+    lead = headline_lead(card)
+    return [
+        *([lead] if lead else []),
+        *core_fragments(card["answer"], card.get("kind_of")),
+    ]
+
+
+def recognition_html(answer, kind_of=None, mentions=None, lead=None):
+    fragments = [*([lead] if lead else []), *core_fragments(answer, kind_of)]
+    core = "; ".join(text_html(fragment, mentions) for fragment in fragments)
     context = [text_html(fragment, mentions) for fragment in answer.get("context", [])]
     return f"<strong>{core}</strong>" + (f"; {'; '.join(context)}" if context else "")
 
 
 def gloss(card):
-    fragments = core_fragments(card["answer"], card.get("kind_of"))
-    return "; ".join(plain_text(fragment) for fragment in fragments)
+    return "; ".join(plain_text(fragment) for fragment in headline_fragments(card))
 
 
 def profile_word_html(word, link, cards_by_key, suffix=""):
@@ -583,9 +712,9 @@ def profile_word_html(word, link, cards_by_key, suffix=""):
     )
 
 
-def profile_html(profile, cards_by_key):
+def profile_html(profile, rows_spec, cards_by_key):
     rows = []
-    for row, spec in PROFILE_ROWS.items():
+    for row, spec in rows_spec.items():
         if row not in profile:
             continue
         value = profile[row]
@@ -607,7 +736,9 @@ def profile_html(profile, cards_by_key):
         elif spec["shape"] == "range" and isinstance(value, list):
             value_html = " to ".join(word_html(word) for word in value)
         elif spec["shape"] == "list":
-            value_html = spec["joiner"].join(word_html(word) for word in value)
+            value_html = natural_join(
+                [word_html(word) for word in value], spec["joiner"]
+            )
         else:
             value_html = word_html(value)
         rows.append(f"<dt>{html.escape(spec['label'])}</dt><dd>{value_html}</dd>")
@@ -619,10 +750,10 @@ def details_html(card, cards_by_key, backlinks):
     profile = merged_profile(card, cards_by_key)
     parts = []
     if profile:
-        parts.append(profile_html(profile, cards_by_key))
+        parts.append(profile_html(profile, profile_rows(card), cards_by_key))
     mentions = linked_mentions(card, cards_by_key)
     parts.append(f"<p>{text_html(card['details'], mentions)}</p>")
-    glossed = set(profile_links(profile))
+    glossed = set(profile_links(profile, profile_rows(card)))
     linked = [
         *(key for key in dependencies(card, cards_by_key) if key not in glossed),
         *card.get("compare", []),
@@ -666,7 +797,7 @@ def card_backlinks(cards):
         # reference in prose merely mentions it.
         classified = [
             *([card["kind_of"]] if "kind_of" in card else []),
-            *profile_links(merged_profile(card, cards_by_key)),
+            *profile_links(merged_profile(card, cards_by_key), profile_rows(card)),
         ]
         for link in classified:
             concept = cards_by_key[link]
@@ -821,11 +952,8 @@ def make_model(deck_data):
 
 
 def category_label(card):
-    if card.get("kind") != CONCEPT:
-        return CATEGORIES[card["category"]]
-    if card["category"] == "other":
-        return "Menu term"
-    return f"{CATEGORIES[card['category']]} term"
+    category = CATEGORIES[card["category"]]
+    return category.term_label if card.get("kind") == CONCEPT else category.label
 
 
 def card_image(card, cards_by_key):
@@ -835,15 +963,26 @@ def card_image(card, cards_by_key):
     return card.get("image")
 
 
+def image_html(card, image_src, cards_by_key):
+    """Renders a card's image, mirrored if its owner sets `mirror_image` so that,
+    say, every pig faces the same way."""
+    owner = cards_by_key[card["image_from"]] if "image_from" in card else card
+    mirror = ' style="transform: scaleX(-1)"' if owner.get("mirror_image") else ""
+    return f'<img src="{html.escape(image_src, quote=True)}"{mirror}>'
+
+
 def note_fields(card, image_src, cards_by_key, backlinks):
     """Returns the note's field values, in `MODEL_FIELDS` order."""
     image = card_image(card, cards_by_key)
     return [
         html.escape(card["term"]),
         recognition_html(
-            card["answer"], card.get("kind_of"), linked_mentions(card, cards_by_key)
+            card["answer"],
+            card.get("kind_of"),
+            linked_mentions(card, cards_by_key),
+            headline_lead(card),
         ),
-        f'<img src="{html.escape(image_src, quote=True)}">' if image else "",
+        image_html(card, image_src, cards_by_key) if image else "",
         details_html(card, cards_by_key, backlinks.get(card_key(card), {})),
         source_html(card["source"]),
         f'<a href="{html.escape(commons_file_url(image), quote=True)}">image source</a>'

@@ -19,12 +19,41 @@ important, so I suggest studying them all jumbled together.
 
 <p align="center">
   <img src="screenshots/orecchiette.png" alt="Anki answer card for orecchiette: small ear-shaped pasta" width="360">
-  <img src="screenshots/guanciale.png" alt="Anki answer card for guanciale: pig; salt-cured cheek or jowl" width="360">
+  <img src="screenshots/guanciale.png" alt="Anki answer card for guanciale: pig; cured jowl; Italian" width="360">
 </p>
 <p align="center">
   <img src="screenshots/pecorino-romano.png" alt="Anki answer card for pecorino romano: a kind of pecorino; hard, salty grating cheese" width="360">
   <img src="screenshots/peperoncino.png" alt="Anki answer card for peperoncino: chili pepper, usually hot; Italian" width="360">
 </p>
+
+## Installing and updating
+
+Import the downloaded `menu-foods.apkg` with Anki's **File → Import**. New cards
+come in a study order: each card comes after the cards it builds on (see
+[below](#how-the-cards-teach)), and the categories are interleaved, so that each
+is spread across the whole deck. Keep the deck's default display order for new
+cards ("New card gather order: Deck" and "New card sort order: Card type, then
+order gathered"); a random order defeats this.
+
+To update from an earlier release, first make a backup (**File → Create
+Backup**). Then import the new package with "Update notes" and "Update note
+types" set to "If newer". Your existing cards get the new text and keep their
+review history, and new cards join the new-card queue in study order. To see
+what changed, search the browser for `deck:"Menu Foods" (added:1 OR edited:1)`.
+
+When a release reworks a category, its existing cards keep their schedules, so
+you may review an old card before learning the new terms it now builds on. To
+relearn some categories from scratch instead, after the backup:
+
+1. In the browser, search for the cards to relearn, like `deck:"Menu Foods"
+   -tag:menu-food::pasta` for everything but pasta, select them all, and delete
+   their notes (**Notes → Delete**). This discards their review history.
+1. Import the new package as above. The deleted notes come back as new cards, in
+   study order; the rest are updated in place.
+
+Anki's own reset (**Cards → Reset**) keeps review history, but can't put cards
+back into the study order, so deleting and re-importing is the way to relearn
+them in order.
 
 ## How the cards teach
 
@@ -35,9 +64,9 @@ cards are ordered so that a term's card comes before the cards that use it, and
 a card's back repeats the short answer of every card it links. The build
 enforces as much of this as it can; see [below](#what-the-build-checks).
 
-The cheeses, and the dishes, desserts and menu words they rely on, follow these
-conventions. The other categories still use the original, simpler format of a
-headline plus a Wikipedia extract.
+The cheeses and meats, and the dishes, desserts and menu words they rely on,
+follow these conventions. The other categories still use the original, simpler
+format of a headline plus a Wikipedia extract.
 
 ## Card design
 
@@ -46,9 +75,11 @@ The front contains only the menu term. The back contains:
 - a headline with the crucial facts in bold, which is what to grade yourself
   on, followed by extra context in normal weight;
 - a representative image;
-- for a cheese, a profile of fixed facts, most significant first: family, rind,
-  firmness, texture, flavor strength, flavor, smell, milk, age, style, how it's
-  made, origin and protected label;
+- for a cheese or meat, a profile of fixed facts, most significant first. For a
+  cheese: family, rind, firmness, texture, flavor strength, flavor, smell, milk,
+  age, style, how it's made, origin and protected label. For a meat: family,
+  animal, part of the animal, how it's made and served, texture, flavor strength,
+  flavor, curing time, origin and protected label;
 - a short explanation;
 - the answers of the cards it links, and, for a term, the cards in the deck
   that are examples of it; and
@@ -64,7 +95,8 @@ without losing their review history.
 
 [menu-foods.yaml](menu-foods.yaml) is the hand-edited card database, and
 [vocabulary.yaml](vocabulary.yaml) holds the deck's house style: its categories,
-the words a cheese profile may use, and the word lists the build checks against.
+each category's profile rows and words, and the word lists the build checks
+against.
 Editing either never requires touching the Python. Here is a
 cheese and a term of art it relies on, through its profile's `family` row:
 
@@ -123,9 +155,9 @@ These fields connect cards:
 - `kind: concept` marks a card for a term of art, like `rind` or `DOP`, rather
   than a food. Concept cards may omit `image` and get a `menu-food::concept`
   tag. Their backs list the cards they classify.
-- `profile` holds a cheese's fixed facts, using the rows and words in
-  `vocabulary.yaml`. A profile word with a concept card, like `brined`, links
-  that card.
+- `profile` holds a cheese's or meat's fixed facts, using its category's rows
+  and words in `vocabulary.yaml`. A profile word with a concept card, like
+  `brined`, links that card.
 - `kind_of` names a broader card, like `pecorino` for `pecorino romano`. The
   headline starts with "a kind of …", and the profile inherits any rows the card
   leaves out. A card with kinds may leave out the rows that differ between them.
@@ -135,6 +167,8 @@ These fields connect cards:
 - `compare` links look-alike or related cards, like `camembert` for `brie`.
 - `image_from` reuses another card's image, like a menu word showing what it
   means.
+- `mirror_image: true` flips a card's image left to right, so that animals and
+  diagrams all face the same way (left); cards borrowing the image flip too.
 
 Links through a profile, `kind_of`, `translates` or a reference make the linked
 card a prerequisite; `compare` and `image_from` don't.
@@ -144,10 +178,14 @@ card a prerequisite; `compare` and `image_from` don't.
 - **Wording.** Prefer concrete descriptions ("tingles on your tongue") to
   evaluative or insider words ("biting", "rustic"). Name places plainly
   ("northern France"), keeping a region only when the food is named after it.
-  Gloss a dish or drink mentioned in passing, or link its card.
-- **Headlines.** Order adjectives before "cheese" by kind: size, shape or color;
-  firmness; texture; flavor; age; origin; then kinds like `bloomy-rind`. When a
-  cheese varies, say how: "mild when young; sharp when aged".
+  Gloss a dish or drink mentioned in passing, or link its card. Use typographic
+  apostrophes and quotes (’ “ ”), except in verbatim Wikipedia extracts.
+- **Headlines.** A meat's headline starts with its animal, which the build
+  writes from its profile's `animal` row ("pig; dry-cured ham"), so the
+  headline itself leaves it out; its nationality goes in the context line.
+  Order a cheese's adjectives before "cheese" by kind: size, shape or
+  color; firmness; texture; flavor; age; origin; then kinds like `bloomy-rind`.
+  When a cheese varies, say how: "mild when young; sharp when aged".
 - **Names.** Name an adjective with its food (`young cheese`, `sharp cheese`),
   so other categories can have their own versions. Give a noun a `(cheese)`
   suffix only when it's ambiguous (`mold (cheese)`), and give a word with
@@ -170,11 +208,15 @@ Beyond the shape of each field, the build rejects (with the named lists in
 - a link to a card that doesn't exist, or a cycle of prerequisites;
 - a card that mentions another card's term without linking it or one of its
   senses;
-- a term of art from the `jargon` list, like "whey" or "young", in a card that
-  doesn't build on the card explaining it;
+- a term of art from the `jargon` lists, like "whey" or "cured", in a card that
+  doesn't build on the card explaining it (each category says which lists
+  apply, so "young" can mean young cheese on a cheese card but not on a meat
+  card);
 - a `banned` vague word, like "rustic" or "mountain cheese";
+- a straight apostrophe or quote in text written for the deck;
 - a food card without an image;
-- a profile missing a required row, or using a word its row doesn't list; and
+- a profile missing a required row, or using a word its row doesn't list;
+- a meat card without an `animal` row to lead its headline; and
 - a cheese headline whose adjectives break the `headline_order`, or that
   doesn't say when a range of firmness or strength applies.
 
