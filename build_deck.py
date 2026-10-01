@@ -843,12 +843,10 @@ def card_backlinks(cards):
 def source_html(source):
     link = (
         f'<a href="{html.escape(source["url"], quote=True)}">'
-        f'{html.escape(source["label"])}</a>'
+        f"{html.escape(source['label'])}</a>"
     )
     if adapted_from := source.get("adapted_from"):
-        permalink = (
-            f'<a href="{html.escape(adapted_from, quote=True)}">permalink</a>'
-        )
+        permalink = f'<a href="{html.escape(adapted_from, quote=True)}">permalink</a>'
         link += f" (adapted from {permalink})"
     return link
 

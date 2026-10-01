@@ -44,6 +44,11 @@ jobs:
           restore-keys: |
             media-${{ runner.os }}-
 
+      - name: Lint and check formatting
+        run: |
+          uv run --locked ruff check
+          uv run --locked ruff format --check
+
       - name: Run tests
         run: uv run --locked python -m unittest discover -s test -v
 

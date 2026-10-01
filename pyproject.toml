@@ -18,3 +18,8 @@ Repository = "https://github.com/domenic/menu-foods-deck"
 
 [tool.uv]
 package = false
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.9",
+]

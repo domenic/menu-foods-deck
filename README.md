@@ -266,6 +266,13 @@ Run the tests:
 uv run python -m unittest discover -s test -v
 ```
 
+Lint and format the Python, which CI checks:
+
+```sh
+uv run ruff check
+uv run ruff format
+```
+
 ### Regenerate screenshots
 
 After installing the [Playwright](https://playwright.dev/) CLI and its Chromium

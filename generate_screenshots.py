@@ -17,7 +17,9 @@ def render_template(template, fields):
     def conditional(match):
         return match.group(2) if fields.get(match.group(1)) else ""
 
-    template = re.sub(r"{{#([^}]+)}}(.*?){{/\1}}", conditional, template, flags=re.S)
+    template = re.sub(
+        r"{{#([^}]+)}}(.*?){{/\1}}", conditional, template, flags=re.DOTALL
+    )
     for name, value in fields.items():
         template = template.replace(f"{{{{{name}}}}}", value)
     return template
