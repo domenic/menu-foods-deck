@@ -74,12 +74,13 @@ The front contains only the menu term. The back contains:
 
 - a headline with the crucial facts in bold, which is what to grade yourself
   on, followed by extra context in normal weight;
-- a representative image;
-- for a cheese or meat, a profile of fixed facts, most significant first. For a
-  cheese: family, rind, firmness, texture, flavor strength, flavor, smell, milk,
-  age, style, how it's made, origin and protected label. For a meat: family,
-  animal, part of the animal, how it's made and served, texture, flavor strength,
-  flavor, curing time, origin and protected label;
+- a representative image; for a pasta, the uncooked shape beside a served dish;
+- for a cheese, meat or pasta, a profile of fixed facts, most significant first.
+  For a cheese: family, rind, firmness, texture, flavor strength, flavor, smell,
+  milk, age, style, how it's made, origin and protected label. For a meat:
+  family, animal, part of the animal, how it's made and served, texture, flavor
+  strength, flavor, curing time, origin and protected label. For a pasta:
+  family, size, surface, dough, how it's made, how it's served and origin;
 - a short explanation;
 - the answers of the cards it links, and, for a term, the cards in the deck
   that are examples of it; and
@@ -144,6 +145,10 @@ cheese and a term of art it relies on, through its profile's `family` row:
 ```
 
 `answer.core` is the bold headline and `answer.context` the rest of it.
+Examples belong in the context, as "like penne", so that they aren't part of
+what to memorize; context starting with "like" follows the bold core after a
+comma rather than a semicolon. `headline_lines: true` puts each core fragment
+on its own line, for headlines that list parallel groups.
 `category` is one of the categories in `vocabulary.yaml`, and becomes a
 `menu-food::…` tag.
 Cards normally derive their note identity from `term`; an optional `id`
@@ -155,9 +160,9 @@ These fields connect cards:
 - `kind: concept` marks a card for a term of art, like `rind` or `DOP`, rather
   than a food. Concept cards may omit `image` and get a `menu-food::concept`
   tag. Their backs list the cards they classify.
-- `profile` holds a cheese's or meat's fixed facts, using its category's rows
-  and words in `vocabulary.yaml`. A profile word with a concept card, like
-  `brined`, links that card.
+- `profile` holds a cheese's, meat's or pasta's fixed facts, using its
+  category's rows and words in `vocabulary.yaml`. A profile word with a concept
+  card, like `brined`, links that card.
 - `kind_of` names a broader card, like `pecorino` for `pecorino romano`. The
   headline starts with "a kind of …", and the profile inherits any rows the card
   leaves out. A card with kinds may leave out the rows that differ between them.
@@ -169,6 +174,8 @@ These fields connect cards:
   means.
 - `mirror_image: true` flips a card's image left to right, so that animals and
   diagrams all face the same way (left); cards borrowing the image flip too.
+- `served_image` adds a second photo beside `image`, captioned as served, for a
+  pasta whose `image` shows it uncooked.
 
 Links through a profile, `kind_of`, `translates` or a reference make the linked
 card a prerequisite; `compare` and `image_from` don't.

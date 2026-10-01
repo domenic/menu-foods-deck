@@ -6,843 +6,1585 @@ deck:
     id: 1244004215
     name: Menu Food Recognition
 cards:
+  - term: pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - Italian dough of wheat and water or egg, shaped and boiled
+    details: >-
+      There are hundreds of shapes, each with its own name, because each holds sauce differently. Most are Italian, though
+      pasta is now made everywhere.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pasta
+  - term: noodle
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - a strip of boiled dough; the general word, for Asian and European kinds alike
+    details: >-
+      Italian noodles are called [[pasta]]; ramen, udon (thick Japanese wheat noodles) and rice noodles are Asian ones.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Noodle
+  - term: durum wheat
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - a hard wheat that makes firm, yellowish pasta; its gritty flour is semolina
+    details: >-
+      Dried Italian [[pasta]] is made of durum wheat semolina and water, and stays firm when cooked.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Durum
+    image: Triticum durum sl18.jpg
+  - term: fresh pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - cooked from soft, moist dough, without drying it first
+    details: >-
+      Softer and more tender than boxed [[pasta]], and it cooks in a couple of minutes. In northern Italy it’s usually made
+      with eggs, and in the south, with flour and water.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pasta#Fresh_pasta
+    image: Séchage des pâtes fraîches (16464743776).jpg
+  - term: egg pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - '[[pasta]] dough made with eggs instead of water: softer and yellower, with a mild egg taste'
+    details: >-
+      Most northern Italian [[fresh pasta]] is egg pasta, like tagliatelle and tortellini.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pasta#Fresh_pasta
+    image: Cooking-cuisine-delicious-egg-327143.jpg
+    compare:
+      - tagliatelle
+      - tortellini
+  - term: dried pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - 'made to keep: dried hard and sold in boxes or bags'
+    details: >-
+      Most shapes you buy are dried: made of [[durum wheat]] and water, they stay firm and chewy when cooked. Italians see
+      it as different from [[fresh pasta]], not worse.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pasta#Dried_pasta
+    image: Campo de' Fiori street market 2016 - 02.jpg
+  - term: handmade pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - '[[pasta]] shaped by hand, one piece at a time'
+    details: >-
+      Rougher and less even than machine-made pasta, which helps sauce cling. Many regional shapes, like orecchiette and pici,
+      are traditionally handmade.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pasta
+    image: Orecchiette Bari.jpg
+    compare:
+      - orecchiette
+      - pici
+  - term: ridged pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - with grooves on the outside, which help sauce cling
+    details: >-
+      Tubes and shells often come ridged or smooth.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pasta
+    image: Conchiglioni rigati.jpg
+  - term: al dente
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - cooked until tender but still firm to the bite
+      context:
+        - Italian; literally “to the tooth”
+    details: >-
+      How Italians cook [[pasta]]: with a little resistance in the middle, never mushy.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Al_dente
+  - term: pasta size endings
+    id: pasta size endings
+    category: pasta
+    kind: concept
+    headline_lines: true
+    answer:
+      core:
+        - '-ini, -etti, -elli: smaller'
+        - '-oni, -one: bigger'
+        - 'mezze, mezzi: half'
+    details: >-
+      Italian names build on each other this way: spaghettini are thin spaghetti, tortelloni are big tortellini, and mezze
+      maniche are “half sleeves”.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Italian_grammar#Diminutives
+    compare:
+      - mezze maniche
+      - spaghetti
+      - spaghettini
+      - tortellini
+      - tortelloni
+  - term: long pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - long, round or square strands
+      context:
+        - like spaghetti
+    details: >-
+      Usually twirled around a fork. Thin strands suit light oil or tomato sauces; thick ones suit chunky meat sauces.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_pasta#Long_pasta
+    image: Pasta 2006 1.jpg
+    compare:
+      - spaghetti
+  - term: ribbon pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - long, flat strips
+      context:
+        - like tagliatelle
+    details: >-
+      Often [[egg pasta]]; wide ribbons suit chunky meat sauces.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_pasta#Ribbon-cut_pasta
+    image: Comparison ribbon pasta.jpg
+    compare:
+      - tagliatelle
+  - term: tube pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - hollow tubes
+      context:
+        - like penne
+    details: >-
+      Sauce gets inside the tubes; big ones are also stuffed and baked.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_pasta#Tubular_pasta
+    image: -EMS-RigPenneMost-120648.JPG
+    compare:
+      - penne
+  - term: short pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - small shaped pieces
+      context:
+        - like shells, twists and bows
+    details: >-
+      The nooks and ridges catch chunky sauces; also common in [[pasta]] salads.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_pasta#Short-cut_pasta
+    image: Pasta Evolution (26750479006).jpg
+  - term: stuffed pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - pasta pockets with a filling
+      context:
+        - like ravioli
+    details: >-
+      Usually [[fresh pasta|fresh]] [[egg pasta]] around meat, cheese or vegetables, served simply so the filling stands out.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_pasta#Stuffed_pasta
+    image: Pates Diverses SIAL 2008 Cl J Weber08 (23456163433).jpg
+    compare:
+      - ravioli
+  - term: soup pasta
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - tiny shapes cooked in broth
+    details: >-
+      Stars, rings, beads and little tubes, cooked in soup or served to children.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_pasta#Pastina
+    image: Pasta_2006_4.jpg
+  - term: dumpling
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - a soft lump of dough, boiled or steamed; some are filled
+    details: >-
+      Found almost everywhere: Chinese and Japanese dumplings wrap meat or vegetables in thin dough, Polish pierogi hold potato
+      and cheese, and American chicken and dumplings has plain, fluffy ones. Italian dumplings, like gnocchi, are made from
+      potato, bread or ricotta rather than plain [[pasta]] dough, and are served like pasta; a few, like passatelli, are pressed
+      into strands.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Dumpling
+    compare:
+      - gnocchi
+      - passatelli
+      - ricotta
+  - term: long pasta, thinnest to thickest
+    id: long pasta ladder
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - '[[capellini]] → [[spaghettini]] → [[spaghetti]] → [[bucatini]], [[pici]] and [[bigoli]]'
+    details: >-
+      Thin strands cook in minutes and suit light sauces; thick ones suit chunky meat sauces. Vermicelli is confusing: thinner
+      than spaghetti in the US, thicker in Italy.
+    compare:
+      - vermicelli
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_pasta#Long_pasta
+  - term: ribbon pasta, narrowest to widest
+    id: ribbon pasta ladder
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - '[[tagliolini]] → [[fettuccine]] and [[tagliatelle]] → [[pappardelle]]'
+    details: >-
+      Fettuccine and tagliatelle are nearly the same; the names come from different regions.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_pasta#Ribbon-cut_pasta
+  - term: tube pasta, smallest to largest
+    id: tube pasta ladder
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - '[[ditalini]] → [[penne]] and [[ziti]] → [[rigatoni]] → [[paccheri]] → [[cannelloni]] and [[manicotti]]'
+    details: >-
+      The smallest go in soups; the largest are stuffed and baked.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/List_of_pasta#Tubular_pasta
+  - term: rigate
+    category: pasta
+    kind: concept
+    translates: ridged pasta
+    answer:
+      core:
+        - '[[ridged pasta|ridged]]'
+      context:
+        - Italian
+    details: >-
+      As in penne rigate.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/rigato#Italian
+    compare:
+      - penne
+  - term: lisce
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - smooth, without ridges
+      context:
+        - Italian
+    details: >-
+      As in penne lisce.
+    compare:
+      - ridged pasta
+      - penne
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/liscio#Italian
+  - term: all’uovo
+    category: pasta
+    kind: concept
+    translates: egg pasta
+    answer:
+      core:
+        - made with egg
+      context:
+        - Italian
+    details: >-
+      As in tagliatelle all’uovo, egg tagliatelle.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/uovo#Italian
+    compare:
+      - tagliatelle
+  - term: fatta a mano
+    category: pasta
+    kind: concept
+    translates: handmade pasta
+    answer:
+      core:
+        - '[[handmade pasta|made by hand]]'
+      context:
+        - Italian
+    details: >-
+      Also fatta in casa, homemade.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/fatto_a_mano#Italian
+  - term: al forno
+    category: pasta
+    kind: concept
+    answer:
+      core:
+        - baked in the oven
+      context:
+        - Italian
+    details: >-
+      As in [[pasta]] al forno, baked pasta, or lasagne al forno.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/al_forno#Italian
+    compare:
+      - lasagne
   - term: acini di pepe
     category: pasta
     answer:
       core:
         - tiny bead-shaped pasta
+    profile:
+      family: soup pasta
+      size: tiny
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in broth]
+      origin: Italy
     details: >-
-      Acini di pepe (Italian: [ˈaːtʃini di ˈpeːpe]; lit. 'seeds of pepper') is a type of pasta. Acini
-      is the plural of acino whose root is the Latin word acinus.
+      Italian for “peppercorns”. Cooked in soups, like Italian wedding soup (a broth with small [[meatball|meatballs]] and
+      greens), and in [[pasta]] salads.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Acini_di_pepe
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1324910850
-    image: Acini_di_Pepe.jpg
+    image: AciniDiPepe3.jpg
+    served_image: Napoli Villa – November 8 2023 - Sarah Stierch 02.jpg
   - term: agnolotti
     category: pasta
     answer:
       core:
-        - small stuffed pasta parcels
+        - small, pinched pockets of stuffed pasta
+    profile:
+      family: stuffed
+      size: small
+      dough: [egg]
+      made: [fresh, by hand]
+      sauce: [with butter, in meat sauce]
+      origin: northern Italy
     details: >-
-      Agnolotti (Italian: [aɲɲoˈlɔtti]; Piedmontese: agnolòt, Piedmontese: [aɲʊˈlɔt]), also known as agnolotti
-      piemontesi, is a type of stuffed pasta typical of the Piedmont region of Italy, made with small
-      pieces of flattened dough folded over a filling of roasted meat or vegetables. Agnolotti can be
-      di magro or di grasso depending on their filling of vegetables or meat.
+      Filled with roast meat or vegetables and pinched closed; served with butter and sage, or with the roast’s juices.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Agnolotti
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1357274030
     image: Agnolotti.JPG
+    served_image: Agnolotti del Piemonte.jpg
   - term: anelli
     category: pasta
     answer:
       core:
         - small ring-shaped pasta
+    profile:
+      family: soup pasta
+      size: small
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in broth, baked]
+      origin: southern Italy
     details: >-
-      Anelli (also known as anellini or anelletti) are small, thin rings of pasta. They are generally
-      used for soups and pasta salads.
+      Italian for “rings”. Cooked in soups, or baked in a timbale (a [[pasta]] cake) in Sicily.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Anelli
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1281191531
     image: Uncooked_anellini_pasta.jpg
+    served_image: Pasta e ceci (Anelli) 2.jpg
   - term: bigoli
     category: pasta
     answer:
       core:
-        - thick, rough spaghetti-like pasta
+        - thick, rough, spaghetti-like strands
+    profile:
+      family: long strands
+      surface: [rough]
+      dough: [whole wheat, buckwheat]
+      made: [fresh]
+      sauce: [in meat sauce]
+      origin: northern Italy (Venice)
     details: >-
-      Bigoli (Italian: [ˈbiːɡoli]; Venetian: bìgołi) is an extruded pasta in the form of a long and thick
-      strand. Initially bigoli were made with buckwheat flour, but are now more commonly made with whole-wheat
-      flour, and sometimes include duck eggs.
+      Made with eggs and squeezed through a hand-cranked press; traditionally served with duck ragù, or with anchovies and
+      onions.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Bigoli
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1322505674
     image: Bigoli2.jpg
+    served_image: Bigoli alle millepiume.jpg
   - term: bucatini
     category: pasta
     answer:
       core:
-        - thick spaghetti with a hollow center
+        - thick spaghetti with a hole through the middle
+    profile:
+      family: long strands
+      size: large
+      surface: [hollow]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in tomato sauce]
+      origin: central Italy (Rome)
     details: >-
-      Bucatini (Italian: [bukaˈtiːni]), also known as perciatelli (Italian: [pertʃaˈtɛlli]), is a thick
-      spaghetti-like pasta with a hole running through the center. It is common throughout Lazio, particularly
-      Rome.
+      The hole lets it cook evenly; the classic [[pasta]] for amatriciana.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Bucatini
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368524370
     image: Bucatini.jpg
+    served_image: Bucatini allamatriciana.jpg
+    compare:
+      - spaghetti
+      - amatriciana
   - term: busiate
     category: pasta
     answer:
       core:
-        - long, tightly twisted pasta
-      context:
-        - Sicilian
+        - long, tightly twisted strands
+    profile:
+      family: long strands
+      surface: [twisted]
+      dough: [durum wheat]
+      made: [fresh, by hand]
+      sauce: [with pesto]
+      origin: Sicily (an Italian island)
     details: >-
-      Busiate or busiati are a type of long macaroni, originating in the province of Trapani and typical
-      of the Calabria and Sicily regions of Italy. They take their name from busa, the Sicilian word for
-      the stem of Ampelodesmos mauritanicus, a local grass, which is used in preparing them and giving
-      them their helical shape.
+      Twisted around a thin rod; served with Sicilian pesto of tomatoes and almonds.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Busiate
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368524534
     image: Busiate.jpg
+    served_image: Busiate with Pesto alla trapanese.jpg
   - term: calamarata
     category: pasta
     answer:
       core:
-        - thick squid-ring-shaped pasta
+        - thick rings, like slices of squid
+    profile:
+      family: tubes
+      size: large
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [with seafood]
+      origin: southern Italy (Naples)
     details: >-
-      Calamarata is a type of thick ring pasta, often dyed with black squid ink to resemble sliced calamari.
+      Named after calamari (squid), and often cooked with it.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Calamarata
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1346179978
     image: Calamari2.jpg
+    served_image: Calamarata0877.jpg
   - term: campanelle
     category: pasta
     answer:
       core:
-        - ruffled cone or bell-shaped pasta
+        - ruffled cone or bell-shaped [[pasta]]
+    profile:
+      family: short shapes
+      surface: [ruffled]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in creamy sauces, with vegetables]
+      origin: Italy
     details: >-
-      Campanelle (Italian: [kampaˈnɛlle]; Italian for 'bellflowers' or 'little bells') is a type of pasta
-      which is shaped like a cone with a ruffled edge, or a bell-like flower. It is also sometimes referred
-      to as gigli ('lilies') or trompetti ('trumpets').
+      Italian for “little bells”; the ruffled edges catch thick sauces.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Campanelle
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1295748189
     image: Gigli.jpg
+    served_image: Campanelle with Summer Veggies (top view).jpg
   - term: cannelloni
     category: pasta
     answer:
       core:
-        - large pasta tubes meant for stuffing
+        - large pasta tubes, stuffed and baked
+    profile:
+      family: tubes
+      size: very large
+      dough: [egg, durum wheat]
+      made: [dried, fresh]
+      sauce: [baked]
+      origin: Italy
     details: >-
-      Cannelloni (Italian: [kannelˈloːni]; Italian for 'large reeds') are a cylindrical type of egg-based
-      stuffed pasta generally served baked with a filling and covered by a sauce in Italian cuisine. Popular
-      stuffings include spinach and ricotta or minced beef.
+      Filled with ricotta and spinach or meat, covered in tomato sauce or béchamel (a milk sauce), and baked.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cannelloni
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1359658583
     image: Cannelloni2.png
+    served_image: Cannelloni mit Zucchini-Hack (7149050187).jpg
+    compare:
+      - ricotta
   - term: capellini
     category: pasta
     answer:
       core:
-        - very thin strands
-        - angel-hair pasta
+        - very thin strands; angel-hair [[pasta]]
+    profile:
+      family: long strands
+      size: tiny
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in tomato sauce, with olive oil and garlic, in broth]
+      origin: Italy
     details: >-
-      Capellini (Italian: [kapelˈliːni]; lit. 'little hairs') is a thin variety of pasta, with a diameter
-      ranging from 0.85 to 0.92 mm (0.033 to 0.036 in). It is made in the form of long, thin strands,
-      similar to spaghetti.
+      Italian for “thin hairs”. Cooks in about two minutes; best with light sauces or in broth.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Capellini
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368524619
     image: Capelli_angelo_front.jpg
+    served_image: Capellini.jpg
   - term: cappellacci
     category: pasta
     answer:
       core:
-        - large hat-shaped stuffed pasta
+        - large, hat-shaped stuffed pasta
+    profile:
+      family: stuffed
+      size: large
+      dough: [egg]
+      made: [fresh, by hand]
+      sauce: [with butter, in meat sauce]
+      origin: northern Italy
     details: >-
-      Cappellacci are large, hat-shaped stuffed egg-pasta parcels associated with Ferrara. The classic
-      cappellacci di zucca are filled with pumpkin, Parmigiano Reggiano, breadcrumbs, and nutmeg, although
-      menu fillings can vary.
+      Italian for “shabby hats”, after peasants’ straw hats. Classically filled with pumpkin, and served with butter and sage.
     source:
       label: Ferrara tourism
       url: https://www.inferrara.it/en/p/12/food/i-cappellacci-di-zucca-igp
-    image: Caplét ad suca.jpg
+    image: 04 Cappelletti - Cappellacci - Pasta ripiena - Cucina tipica - Ferrara.jpg
+    served_image: Caplét ad suca.jpg
   - term: cappelletti
     category: pasta
     answer:
       core:
-        - small hat-shaped stuffed pasta
+        - small, hat-shaped stuffed pasta
+    profile:
+      family: stuffed
+      size: small
+      dough: [egg]
+      made: [fresh, by hand]
+      sauce: [in broth]
+      origin: northern Italy
     details: >-
-      Cappelletti (Italian: [kappelˈletti]) are ring-shaped stuffed pasta; they are named for the characteristic
-      shape that resembles a hat (cappello in Italian). Compared to tortellini, they have a different
-      shape, larger size, thicker dough and different filling.
+      Italian for “little hats”. Filled with meat or cheese, and served in broth at Christmas.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cappelletti_(pasta)
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1307367080
     image: 02_Cappelletti_-_Cappellacci_-_Pasta_ripiena_-_Cucina_tipica_-_Ferrara.jpg
+    served_image: 02 Cappelletti in brodo.jpg
   - term: casarecce
     category: pasta
     answer:
       core:
-        - short, loosely rolled S-shaped pasta
+        - short, loosely rolled, S-shaped [[pasta]]
+    profile:
+      family: short shapes
+      surface: [twisted]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [with pesto, in meat sauce]
+      origin: Sicily (an Italian island)
     details: >-
-      Casarecce (from Italian casereccio, 'homemade') are short twists of pasta originating in the Sicily
-      region of Italy which appear rolled up on themselves like a scroll. Casarecce pairs well with cream/cheese,
-      meat, napolitana, seafood, pesto, and vegetables.
+      Italian for “homemade”, though now usually dried; the groove holds sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Casarecce
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1312453629
     image: Casarecce2.jpg
+    served_image: Casarecce con funghi porcini.jpg
   - term: cavatappi
     category: pasta
     answer:
       core:
-        - hollow corkscrew-shaped pasta
+        - hollow corkscrew-shaped [[pasta]]
+    profile:
+      family: short shapes
+      surface: [ridged, hollow, twisted]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in creamy sauces, with cheese]
+      origin: Italy
     details: >-
-      Cavatappi (Italian: [kavaˈtappi]; lit. 'corkscrews'), also known as spirali, cellentani, amori,
-      fusilli rigati, or curly mac, is macaroni formed in a helical tube shape. Certain areas of the US
-      and Canada may also refer to it as "double elbows" or "scoobi doo" pasta, purportedly because of
-      their resemblance to scoubidou.
+      Italian for “corkscrews”; popular in the US for macaroni and cheese.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cavatappi
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1356065520
     image: Cellentani2.jpg
+    served_image: Cellentani al sugo.jpg
+    compare:
+      - macaroni
   - term: cavatelli
     category: pasta
     answer:
       core:
-        - small folded pasta shells with a hollow
+        - small, folded shells with a hollow
+    profile:
+      family: short shapes
+      size: small
+      dough: [durum wheat]
+      made: [fresh, by hand]
+      sauce: [with vegetables, in meat sauce]
+      origin: southern Italy
     details: >-
-      Cavatelli are small pasta shells made from semolina or other flour dough, commonly cooked with garlic
-      and broccoli or rapini, or simply with tomato sauce. A variant adds ricotta cheese to the dough
-      mix.
+      Rolled under a fingertip to make the hollow; often with [[rapini|broccoli rabe]] and [[sausage]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cavatelli
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1304509810
     image: Cavatelli.jpg
+    served_image: Cavatelli con peperoni cruschi e ceci.jpg
   - term: conchiglie
     category: pasta
     answer:
       core:
-        - seashell-shaped pasta
+        - seashell-shaped [[pasta]]
+    profile:
+      family: short shapes
+      surface: [ridged]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in meat sauce, in creamy sauces]
+      origin: Italy
     details: >-
-      Conchiglie (Italian: [koŋˈkiʎʎe]) are a type of pasta. They are usually sold in the plain durum
-      wheat variety, and also in colored varieties which use natural pigments, such as tomato extract,
-      squid ink or spinach extract.
+      Italian for “shells”. Conchiglioni are big ones, stuffed and baked; conchigliette, tiny ones for soup.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Conchiglie
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368441381
     image: Conchiglie_rigate.png
+    served_image: A tomato sauce shell pasta with seafood and pork.jpg
   - term: corzetti
     category: pasta
     answer:
       core:
-        - thin round pasta coins, often stamped
+        - thin, round pasta coins, stamped with a pattern
+    profile:
+      family: short shapes
+      dough: [plain flour, egg]
+      made: [fresh, by hand]
+      sauce: [with pesto]
+      origin: northern Italy (Liguria)
     details: >-
-      Corzetti or croxetti (Ligurian: [kur'zetˑi] or [kru'ʒetˑi]) are a type of pasta typical of the Ligurian
-      cuisine of northwest Italy, and also traditional in the area of Novi Ligure just across the border
-      with Piedmont, in the province of Alessandria. Corzetti originated in Liguria, in northern Italy
-      along the border with France, during the Middle Ages.
+      Pressed with a carved wooden stamp; served with pesto or a walnut sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Corzetti
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1334573850
     image: Croxetti.png
+    served_image: Croxetti al pesto.jpg
   - term: ditalini
     category: pasta
     answer:
       core:
         - very short, tiny pasta tubes
+    profile:
+      family: tubes
+      size: tiny
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in broth]
+      origin: southern Italy
     details: >-
-      Ditalini (Italian: [ditaˈliːni]; English: "small thimbles"), also referred to as tubettini, is a
-      type of pasta that is shaped like small tubes. It has been described as "thimble-sized" and as "very
-      short macaroni".
+      Italian for “little thimbles”; the [[pasta]] in pasta e fagioli, a bean soup.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Ditalini
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1331179687
     image: Ditalini-230.jpg
+    served_image: Pasta fagioli.jpg
   - term: farfalle
     category: pasta
     answer:
       core:
         - bow-tie or butterfly-shaped pasta
+    profile:
+      family: short shapes
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in creamy sauces, with vegetables]
+      origin: northern Italy
     details: >-
-      Farfalle (Italian: [farˈfalle]) are a type of pasta. The name is derived from the Italian word farfalle
-      ('butterflies').
+      Italian for “butterflies”; popular in [[pasta]] salads.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Farfalle
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1342296920
     image: Farfalle_Pasta.JPG
+    served_image: Farfalle with arugula and sun dried tomatoes in a white wine garlic sauce 
+      ルッコラとサンドライドトマトのファルファッレ、白ワインニンニクソース.jpg
   - term: fettuccine
     category: pasta
     answer:
       core:
         - flat, medium-width pasta ribbons
+    profile:
+      family: ribbons
+      size: medium
+      dough: [egg]
+      made: [fresh, dried]
+      sauce: [in creamy sauces, in meat sauce]
+      origin: central Italy (Rome)
     details: >-
-      Fettuccine is a type of pasta popular in Roman cuisine. It is descended from the extremely thin
-      capelli d'angelo of the Renaissance, but is a flat, thick pasta traditionally made with egg and
-      flour (usually one egg for every 100 grams or 3.5 ounces of flour).
+      Italian for “little ribbons”; the pasta of fettuccine alfredo. Nearly the same as tagliatelle.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Fettuccine
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368523573
     image: Fettucine1.JPG
+    served_image: Fettuccine alla papalina.png
+    compare:
+      - tagliatelle
+      - alfredo
+  - term: egg noodles
+    category: pasta
+    answer:
+      core:
+        - flat, often curly ribbons of dried egg dough, as sold in American stores
+    profile:
+      family: ribbons
+      surface: [ruffled]
+      dough: [egg]
+      made: [dried]
+      sauce: [with butter, in creamy sauces, in broth]
+      origin: Germany and Central Europe
+    details: >-
+      Buttered as a side dish, in chicken [[noodle]] soup, or under [[beef]] stroganoff (beef in a creamy sauce). Chinese
+      egg noodles are a different kind: thin, round and chewy, as in lo mein (stir-fried noodles).
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Egg_noodles
+    image: Uncooked Noodles in Bowl.jpg
+    served_image: Beef Stroganoff & Egg Noodles.jpg
   - term: fileja
     category: pasta
     answer:
       core:
         - long, narrow corkscrews
-      context:
-        - Calabrian
+    profile:
+      family: long strands
+      surface: [twisted]
+      dough: [durum wheat]
+      made: [fresh, by hand]
+      sauce: [in meat sauce]
+      origin: southern Italy
     details: >-
-      Fileja (pronounced [fɪˈlɛːja]) is a type of pasta typical from the province of Vibo Valentia, Calabria.
-      Made of durum wheat semolina and water, they are prepared by wrapping a sheet of pasta around a
-      thin cane (dinaciulu), creating a hollow tube approximately 20 cm in length.
+      Rolled around a thin rod, like busiate; often with spicy [[pork]] sauces.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Fileja
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368524726
     image: Fileja.jpg
+    served_image: Fileja-nduja-recipe.jpg
+    compare:
+      - busiate
   - term: fregola
     category: pasta
     answer:
       core:
-        - small toasted pasta balls
-      context:
-        - Sardinian
+        - small, toasted pasta balls
+    profile:
+      family: soup pasta
+      size: tiny
+      dough: [durum wheat]
+      made: [by hand, dried]
+      sauce: [with seafood, in broth]
+      origin: Sardinia (an Italian island)
     details: >-
-      Fregula (often written fregola) is a type of semolina pasta from the Sardinia region of Italy.
+      Rolled into little balls and toasted, which makes them nutty and golden; often cooked with [[clam|clams]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Fregula
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366225076
     image: UncookedFregula.jpg
+    served_image: Fregola ai frutti di mare (IMG 20260515 203730).jpg
   - term: fusilli
     category: pasta
     answer:
       core:
         - short spiral or corkscrew pasta
+    profile:
+      family: short shapes
+      surface: [twisted]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [with pesto, in tomato sauce]
+      origin: southern Italy
     details: >-
-      Fusilli (Italian: [fuˈzilli]) are a variety of pasta from southern Italy, with a helical (corkscrew)
-      or helicoidal shape, also known as rotini in the United States and Canada.
+      The spirals trap sauce; common in [[pasta]] salads.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Fusilli
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1362893270
     image: Fusilli pasta.jpg
+    served_image: Pistacchio di Bronte (pesto) - cropped.jpg
   - term: garganelli
     category: pasta
     answer:
       core:
         - ridged pasta tubes with a visible seam
-      context:
-        - egg pasta
+    profile:
+      family: tubes
+      size: small
+      surface: [ridged]
+      dough: [egg]
+      made: [fresh, by hand]
+      sauce: [in meat sauce, in creamy sauces]
+      origin: northern Italy
     details: >-
-      Garganelli (Italian: [ɡarɡaˈnɛlli]; Romagnol: garganéi) are a type of egg-based pasta from the Emilia-Romagna
-      region of Italy. They are formed by rolling a flat, square noodle into a cylindrical shape over
-      a ridged wooden board, giving the pasta ridges.
+      Squares of egg pasta rolled diagonally over a ridged board, so the seam shows.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Garganelli
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1297558206
     image: Garganelli_(10348149363).jpg
+    served_image: Garganelli with Pancetta, Kale, and Tomato (10347979145).jpg
   - term: gemelli
     category: pasta
     answer:
       core:
-        - short pasta twisted like paired strands
+        - short pasta twisted like two strands
+    profile:
+      family: short shapes
+      surface: [twisted]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [with pesto, in tomato sauce]
+      origin: southern Italy
     details: >-
-      Gemelli (Italian: [dʒeˈmɛlli]; lit. 'twins') are a type of pasta. They are most often used for making
-      casserole or pasta salads.
+      Italian for “twins”, though it’s really one strand folded and twisted; common in [[pasta]] salads.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Gemelli_(pasta)
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1297815596
     image: Gemelli.jpg
   - term: gnocchi
     category: pasta
     answer:
       core:
         - soft dumplings, usually made with potato
+    profile:
+      family: dumplings
+      size: small
+      dough: [potato]
+      made: [fresh]
+      sauce: [in tomato sauce, with butter, with pesto, with cheese]
+      origin: Italy
     details: >-
-      Gnocchi are a varied family of pasta-like dumplings in Italian cuisine. They are made of small rolls
-      of dough, such as those composed of a simple combination of wheat flour, potato, egg, and salt.
+      Potato and flour dough, cut into small pillows and boiled until they float. Gnocchi alla romana are different: baked
+      discs of [[durum wheat|semolina]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Gnocchi
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365131052
-    image: Gnocchi_di_ricotta_burro_e_salvia.jpg
-  - term: lasagne
+    image: Making mashed potato gnocchi - 9368109488.jpg
+    served_image: Gnocchi di Patate I.jpg
+  - term: lasagne (pasta)
+    id: lasagne
     category: pasta
     answer:
       core:
-        - wide flat pasta sheets
-        - also the layered dish
+        - wide, flat pasta sheets
+    profile:
+      family: sheets
+      size: very large
+      dough: [egg, durum wheat]
+      made: [fresh, dried]
+      sauce: [baked]
+      origin: Italy
     details: >-
-      Lasagna, also known by the plural form lasagne, is a type of pasta made in wide, flat sheets. It
-      originates in Italian cuisine, where it is served in a number of ways, including in broth (lasagne
-      in brodo), but is best known for its use in a baked dish made by stacking layers of pasta, alternating
-      with fillings such as ragù (ground meats and tomato sauce), béchamel sauce, vegetables, cheeses
-      (which may include ricotta, mozzarella, and Parmesan), and seasonings and spices.
+      Layered with sauce and cheese and baked into the dish of the same name.
+    compare:
+      - lasagne (dish)
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Lasagna
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1364767829
-    image: Lasagne_-_stonesoup.jpg
+    image: Lasagne Blätter01.jpg
+    served_image: Lasagne_-_stonesoup.jpg
   - term: linguine
     category: pasta
     answer:
       core:
         - long, narrow, slightly flattened strands
+    profile:
+      family: long strands
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [with seafood, with pesto]
+      origin: northern Italy (Liguria)
     details: >-
-      Linguine (lit. 'little tongues'), sometimes anglicized as linguini, is a type of pasta similar to
-      fettuccine and trenette, distinguished by its elliptical rather than flat section. Around about
-      4 millimetres (5⁄32 in) in width, it is wider than spaghetti, but less wide than fettuccine.
+      Italian for “little tongues”; classic with [[clam|clams]] or pesto.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Linguine
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368524870
     image: Linguine.jpg
+    served_image: Linguine alle Vongole.jpg
   - term: lumache
     category: pasta
     answer:
       core:
-        - curved, hollow snail-shell-shaped pasta
+        - curved, hollow, snail-shell-shaped [[pasta]]
+    profile:
+      family: short shapes
+      surface: [ridged, hollow]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in meat sauce, in creamy sauces]
+      origin: Italy
     details: >-
-      Lumache (Italian for “snails”) are short, curved, hollow pasta pieces shaped like snail shells,
-      often with ridges and one pinched end. Their hollow shape is well suited to catching thick or chunky
-      sauces.
+      Italian for “snails”; the hollow scoops up sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/List_of_pasta#Short-cut_extruded_pasta
     image: Lumache pasta.jpg
+    served_image: House-made lumache, rugosa squash, sage, benton’s country ham, vella dry jack (15855229792).jpg
+  - term: macaroni
+    category: pasta
+    answer:
+      core:
+        - small, curved tubes (elbow macaroni)
+      context:
+        - American
+    profile:
+      family: tubes
+      size: small
+      surface: [smooth]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [with cheese, baked]
+      origin: United States
+    details: >-
+      The [[pasta]] in macaroni and cheese. In Italy, maccheroni means short or long tubes; it once meant any pasta.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Macaroni
+    image: Macaroni closeup.jpg
+    served_image: Flickr stuart spivack 173603796--Macaroni and cheese.jpg
   - term: mafaldine
     category: pasta
     answer:
       core:
         - long ribbons with ruffled edges
+    profile:
+      family: ribbons
+      surface: [ruffled]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in meat sauce, in tomato sauce]
+      origin: southern Italy (Naples)
     details: >-
-      Mafaldine, also known as reginette (Italian for 'little queens') or simply mafalde, is a type of
-      ribbon-shaped pasta.
+      Named after an Italian princess, Mafalda; the ruffles hold sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Mafaldine
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368524899
     image: Reginette.jpg
+    served_image: Mafaldine al sugo.jpg
   - term: malloreddus
     category: pasta
     answer:
       core:
-        - small ridged pasta shells
-      context:
-        - Sardinian
+        - small, ridged [[pasta]] shells
+    profile:
+      family: short shapes
+      size: small
+      surface: [ridged]
+      dough: [durum wheat]
+      made: [dried, fresh]
+      sauce: [in meat sauce]
+      origin: Sardinia (an Italian island)
     details: >-
-      Malloreddus, sometimes Italianized as gnocchetti sardi, are a type of pasta typical of Sardinian
-      cuisine. They have the shape of thin ribbed shells, about 2 cm (0.79 in) long, and are made of semolina
-      flour and water.
+      Sardinia’s little shells, sometimes colored with saffron, a costly yellow spice; classic with [[sausage]] and tomato.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Malloreddus
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1354708725
-    image: Sardo_Cucina,_Fitzrovia,_London_(5147126888).jpg
+    image: Malloredus.jpg
+    served_image: Malloreddus grandi.jpg
   - term: manicotti
     category: pasta
     answer:
       core:
-        - large ridged pasta tubes meant for stuffing
+        - large, ridged [[pasta]] tubes, stuffed and baked
+    profile:
+      family: tubes
+      size: very large
+      surface: [ridged]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [baked]
+      origin: United States
     details: >-
-      Manicotti (the plural form of the Italian word manicotto; < manica, 'sleeve', + the augmentative
-      ending, -otto) are a type of pasta in Italian and Italian-American cuisine. They are large pasta
-      tubes intended to be stuffed and baked.
+      The Italian-American cousin of cannelloni: filled with ricotta and baked in tomato sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Manicotti
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366857109
     image: EMS-109321-Manicotti-rule..JPG
+    served_image: Mmm... Stuffed manicotti (6342222276).jpg
+    compare:
+      - cannelloni
+      - ricotta
   - term: mezze maniche
     category: pasta
     answer:
       core:
-        - short, wide ridged pasta tubes
+        - short, wide, ridged [[pasta]] tubes
+    profile:
+      family: tubes
+      size: medium
+      surface: [ridged]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in meat sauce, in tomato sauce]
+      origin: central Italy (Rome)
     details: >-
-      Mezze maniche are short, wide pasta tubes whose name means “half sleeves.” They are about half the
-      length of rigatoni and are commonly ridged to catch thick sauces.
+      Italian for “half sleeves”: shorter rigatoni. Common with Roman sauces like carbonara and amatriciana.
     source:
       label: De Cecco
       url: https://www.dececco.com/it_it/product/mezze-maniche-rigate-n-136/
     image: Mezze maniche2.jpg
+    served_image: Mezze maniche all'amatriciana.jpg
+    compare:
+      - rigatoni
+      - carbonara
+      - amatriciana
   - term: orecchiette
     category: pasta
     answer:
       core:
-        - small ear-shaped pasta
+        - small, ear-shaped pasta
+    profile:
+      family: short shapes
+      size: small
+      surface: [rough]
+      dough: [durum wheat]
+      made: [fresh, by hand, dried]
+      sauce: [with vegetables]
+      origin: southern Italy (Puglia)
     details: >-
-      Orecchiette is a pasta typical of the Apulia region of Italy. Their name comes from the Italian
-      word for "ear," a reference to their shape.
+      Italian for “little ears”: pressed with a thumb into small cups. Classic with [[rapini|cime di rapa]], a bitter leafy
+      green.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Orecchiette
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1355490900
-    image: Orecchiette_carbonara.jpg
+    image: Orecchiette Pasta.JPG
+    served_image: Orecchiette al Pomodoro.jpg
   - term: orzo
     category: pasta
     answer:
       core:
-        - rice-shaped pasta—not rice
+        - rice-shaped [[pasta]]; not rice
+    profile:
+      family: soup pasta
+      size: tiny
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in broth, with vegetables]
+      origin: Italy
     details: >-
-      Orzo (Italian: [ˈɔrdzo]; lit. 'barley'; from Latin hordeum), also known in Italy as risoni (Italian:
-      [riˈzoːni]; 'large [grains of] rice'), and popular in Greek cuisine as kritharaki (κριθαράκι), is
-      a form of short-cut pasta shaped like a large grain of rice. Orzo is made from flour, often with
-      semolina.
+      Italian for “barley”, which it also resembles. Cooked in soups, salads, and like risotto.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Orzo
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1349978538
-    image: Orzo.jpg
+    image: EMS-107937-Orzo.JPG
+    served_image: Thalassino Youvetsi close-up - Hellenic Republic AUD24.jpg
+    compare:
+      - risotto
   - term: paccheri
     category: pasta
     answer:
       core:
-        - very large, wide pasta tubes
+        - very large, wide [[pasta]] tubes
+    profile:
+      family: tubes
+      size: very large
+      surface: [smooth]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [with seafood, in meat sauce]
+      origin: southern Italy (Naples)
     details: >-
-      Paccheri (Italian: [ˈpakkeri]) is a type of pasta in the shape of a very large tube, originating
-      from the Campania region of Italy. They are generally smooth, but there is also a ribbed version,
-      paccheri millerighe.
+      Wide enough to hold chunks of sauce inside; they slump softly when cooked.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Paccheri
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369338874
     image: Paccheri3.jpg
+    served_image: Paccheri alle Zucchine e Gamberi - Wiki Loves Sicilia 01.jpg
   - term: pappardelle
     category: pasta
     answer:
       core:
         - very broad, flat pasta ribbons
+    profile:
+      family: ribbons
+      size: very large
+      dough: [egg]
+      made: [fresh]
+      sauce: [in meat sauce]
+      origin: central Italy (Tuscany)
     details: >-
-      Pappardelle (Italian: [papparˈdɛlle]; sing.: pappardella; from the Italian verb pappare, meaning
-      'to gobble up') are large, very broad, flat pasta, similar to wide fettuccine, originating from
-      the Tuscany region of Italy. The fresh types are two to three centimetres (3⁄4–1 inches) wide and
-      may have fluted edges, while dried egg pappardelle have straight sides.
+      From pappare, Italian for “to gobble up”; classic with slow-cooked [[game (meat)|game]] sauces, like [[wild boar]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pappardelle
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368524935
     image: Pappardelle.jpg
+    served_image: Pappardelle con funghi porcini.jpg
   - term: passatelli
     category: pasta
     answer:
       core:
-        - soft breadcrumb-and-egg noodle-like strands
+        - soft, thick strands of breadcrumbs, cheese and egg
+    profile:
+      family: dumplings
+      dough: ['breadcrumbs, cheese and egg']
+      made: [fresh]
+      sauce: [in broth]
+      origin: northern Italy
     details: >-
-      Passatelli are a pasta formed of bread crumbs, eggs, grated Parmesan cheese, and in some regions
-      lemon, and nutmeg; it is typically cooked in chicken broth. Typically, it is found mainly in Romagna,
-      Pesaro and Urbino province (northern Marche), Ancona province (central Marche) and other regions
-      of Italy, such as Umbria.
+      Pushed through a press with round holes, and cooked and served in broth.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Passatelli
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1301978901
-    image: Passatelli.jpg
+    image: Passatelli 2.jpg
+    served_image: Passatelli.jpg
   - term: pastina
     category: pasta
+    kind: concept
+    translates: soup pasta
     answer:
       core:
-        - any very small pasta
+        - '[[soup pasta|tiny soup pasta]]'
       context:
-        - usually for soup
+        - Italian; literally “little [[pasta]]”
     details: >-
-      Pastina (lit. 'little pasta') is a variety of pasta consisting of tiny pieces, typically of a round
-      (irregular) shape with a diameter of about two millimetres (1⁄16 inch). It is the smallest type
-      of pasta produced.
+      Given to children and to anyone sick, in broth with butter and cheese.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pastina
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1342056480
-    image: Pasta_2006_4.jpg
+    image_from: soup pasta
   - term: penne
     category: pasta
     answer:
       core:
-        - short diagonal-cut pasta tubes
+        - short, diagonal-cut [[pasta]] tubes
+    profile:
+      family: tubes
+      size: medium
+      surface: [ridged, smooth]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in tomato sauce, in creamy sauces, baked]
+      origin: southern Italy
     details: >-
-      Penne (Italian: [ˈpenne]) are an extruded type of pasta in the shape of tubular pieces with ends
-      cut at an angle. They are usually made from wheat flour.
+      Italian for “quills”, for the pen-nib cut. Sold ridged or smooth; classic with arrabbiata and vodka sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Penne
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1363164303
     image: Pennelisce_closeup.png
+    served_image: Penne Arrabbiata.jpg
+    compare:
+      - arrabbiata
+      - vodka sauce
   - term: pici
     category: pasta
     answer:
       core:
         - thick, hand-rolled spaghetti
-      context:
-        - Tuscan
+    profile:
+      family: long strands
+      size: large
+      surface: [rough]
+      dough: [plain flour]
+      made: [fresh, by hand]
+      sauce: [in meat sauce, in tomato sauce]
+      origin: central Italy (Tuscany)
     details: >-
-      Pici (Italian: [ˈpiːtʃi], locally [ˈpiːʃi]) is thick, hand-rolled pasta, like fat spaghetti. It
-      originates in the province of Siena, in Tuscany; in the Montalcino area it is also referred to as
-      pinci (Italian: [ˈpintʃi]).
+      Rolled by hand from flour and water, so each strand is a little uneven; chewy and thick.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pici
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368525022
     image: Pici_con_albume.jpeg
+    served_image: Pici all'aglione.jpg
+    compare:
+      - spaghetti
   - term: pizzoccheri
     category: pasta
     answer:
       core:
-        - short, flat buckwheat pasta ribbons
+        - short, flat buckwheat ribbons
+    profile:
+      family: ribbons
+      dough: [buckwheat]
+      made: [fresh, dried]
+      sauce: [baked, with cheese]
+      origin: northern Italy (Alps)
     details: >-
-      Pizzoccheri (Italian: [pitˈtsɔkkeri]; Lombard: pizzòcher, pronounced [piˈtsɔker, -kar]) is a flat
-      ribbon pasta, made with a blend of buckwheat flour and wheat flour. It is believed to have originated
-      in Valtellina, a valley in the northern Italian region of Lombardy.
+      Buckwheat is a nutty, dark grain. Baked with potatoes, cabbage, butter and melted cheese: a filling winter dish from
+      the Alps.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pizzoccheri
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1342296852
-    image: Pizzoccheri.jpg
+    image: Pizzochieri bulk.jpg
+    served_image: Pizzoccheri alla Valtellinese2.jpg
   - term: radiatori
     category: pasta
     answer:
       core:
-        - short pasta shaped like little radiators
+        - short [[pasta]] shaped like little radiators
+    profile:
+      family: short shapes
+      surface: [ruffled]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in creamy sauces, in meat sauce]
+      origin: Italy
     details: >-
-      Radiatori are small, squat pasta shapes that are said to resemble radiators. Although it is rumored
-      that they were created in the 1960s by an industrial designer, their invention was actually between
-      the First and Second World War.
+      The fins catch thick sauces.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Radiatori
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1337810536
     image: Radiatori.jpg
+    served_image: Adoro i radiatori (725873324).jpg
   - term: ravioli
     category: pasta
     answer:
       core:
         - filled pasta pillows
+    profile:
+      family: stuffed
+      dough: [egg]
+      made: [fresh]
+      sauce: [with butter, in tomato sauce, in meat sauce]
+      origin: Italy
     details: >-
-      Ravioli (Italian: [raviˈɔli]; sing.: raviolo, Italian: [raviˈɔlo]) are a type of stuffed pasta comprising
-      a filling enveloped in thin pasta dough. Usually served in broth or with a sauce, they originated
-      as a traditional food in Italian cuisine.
+      Square or round, filled with cheese, meat, vegetables or pumpkin.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Ravioli
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365501669
-    image: Flickr_-_cyclonebill_-_Ravioli_med_skinke_og_asparges_i_mascarponecreme.jpg
+    image: Ravioli (4591575515).jpg
+    served_image: Mary's Pizza Shack - July 2025 - Sarah Stierch 04.jpg
   - term: rigatoni
     category: pasta
     answer:
       core:
-        - large ridged pasta tubes with square-cut ends
+        - large, ridged [[pasta]] tubes with square-cut ends
+    profile:
+      family: tubes
+      size: large
+      surface: [ridged]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in meat sauce, baked]
+      origin: central Italy (Rome)
     details: >-
-      Rigatoni (Italian: [riɡaˈtoːni]) is a type of pasta. They are larger than penne and ziti, and sometimes
-      slightly curved, but not as curved as elbow macaroni.
+      From rigato, Italian for “ridged”. Thick meat sauces cling to the ridges and fill the tubes.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Rigatoni
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1332730180
     image: Rigatoni.jpg
+    served_image: Rigatoni Alla Gricia 7.jpg
   - term: rotelle
     category: pasta
     answer:
       core:
-        - wagon-wheel-shaped pasta
+        - wagon-wheel-shaped [[pasta]]
+    profile:
+      family: short shapes
+      size: small
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in tomato sauce]
+      origin: Italy
     details: >-
-      Rotelle is a type of pasta resembling wheels with spokes. They are similar to fiori.
+      Sold in the US as wagon-wheels; popular with children.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Rotelle
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1363713011
     image: Rotelle2.jpg
+    served_image: Spicy Tempeh And Broccoli Rabe With Rotelle (140492057).jpeg
   - term: rotini
     category: pasta
     answer:
       core:
         - short, tight corkscrew pasta
+    profile:
+      family: short shapes
+      surface: [twisted]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in tomato sauce, with vegetables]
+      origin: United States
     details: >-
-      Fusilli (Italian: [fuˈzilli]) are a variety of pasta from southern Italy, with a helical (corkscrew)
-      or helicoidal shape, also known as rotini in the United States and Canada.
+      The American name for a tighter fusilli; common in [[pasta]] salads.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Fusilli
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1362893270
-    image: Rotini.jpg
+    image: Rotini Yellow.jpg
+    served_image: Rotini pasta portion.jpg
+    compare:
+      - fusilli
   - term: scialatielli
     category: pasta
     answer:
       core:
         - short, thick, flat ribbons
-      context:
-        - from Campania
+    profile:
+      family: ribbons
+      dough: [plain flour]
+      made: [fresh]
+      sauce: [with seafood]
+      origin: southern Italy (Amalfi Coast)
     details: >-
-      Scialatielli or scialatelli (Italian: [ʃalaˈt(j)ɛlli]), also known as sciliatielli or scivatieddi,
-      is a short, thick pasta with a rectangular cross section and an irregular, slightly curved shape.
-      It is typical of modern Campanian cuisine, having originated on the Amalfi Coast as a chef's specialty,
-      but it has also spread to nearby areas such as Catanzaro, Calabria, and Potenza, Basilicata.
+      Flour mixed with milk, often with basil; chewy, and classic with seafood.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Scialatielli
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1337855553
     image: Scialatielli.jpg
+    served_image: Scialatielli ai frutti di mare, Capri.jpg
   - term: spaghetti
     category: pasta
     answer:
       core:
-        - long, thin round pasta strands
+        - long, thin, round pasta strands
+    profile:
+      family: long strands
+      size: medium
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in tomato sauce, with olive oil and garlic, with seafood]
+      origin: Italy
     details: >-
-      Spaghetti (Italian: [spaˈɡetti] 'little strings' plural diminutive of spago 'string') is a long,
-      thin, solid, cylindrical pasta. It serves as a staple food of Italian cuisine and is made of milled
-      wheat and water, with the standard Italian version using durum-wheat semolina.
+      Italian for “little strings”; the best-known [[pasta]]. Italians rarely serve it with [[meatball|meatballs]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Spaghetti
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369051674
-    image: Spaghettoni.jpg
+    image: Spaghetti spiral, 2008.jpg
+    served_image: Spaghetti al pomodoro 4.jpg
   - term: spaghettini
     category: pasta
     answer:
       core:
         - thin spaghetti strands
+    profile:
+      family: long strands
+      size: small
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [with olive oil and garlic, with seafood]
+      origin: Italy
     details: >-
-      Spaghettini are long, round pasta strands with a smaller diameter than standard spaghetti. Their
-      thinness gives them a shorter cooking time and makes them well suited to lighter sauces.
+      Between capellini and spaghetti in thickness; good with light oil or seafood sauces.
     source:
       label: Barilla
       url: https://www.barilla.com/it-it/prodotti/pasta/i-classici/spaghettini
-    image: Spaghettini Ai Gamberi.jpg
+    image: Fedellini.jpg
+    served_image: Spaghettini Aglio e Olio (4015077875).jpg
+    compare:
+      - capellini
+      - spaghetti
   - term: strozzapreti
     category: pasta
     answer:
       core:
-        - short, hand-rolled twisted pasta
+        - short, hand-rolled, twisted pasta
+    profile:
+      family: short shapes
+      surface: [twisted]
+      dough: [plain flour]
+      made: [fresh, by hand]
+      sauce: [in meat sauce, in tomato sauce]
+      origin: northern Italy
     details: >-
-      Strozzapreti (Italian: [ˌstrɔttsaˈprɛːti]; lit. 'priest choker' or 'priest strangler') are hand-made
-      pasta shape, similar to cavatelli, though longer. The name is also used for a baked cheese and vegetable
-      dumpling, prepared in some regions of Italy.
+      Italian for “priest stranglers”, a joke about greedy priests; rolled between the palms.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Strozzapreti
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1354371511
     image: Strozzapreti_bulk.jpg
+    served_image: Gli strozzapreti.jpg
   - term: tagliatelle
     category: pasta
     answer:
       core:
-        - long, flat pasta ribbons
-      context:
-        - egg pasta
+        - flat, medium-width egg-pasta ribbons
+    profile:
+      family: ribbons
+      size: medium
+      dough: [egg]
+      made: [fresh]
+      sauce: [in meat sauce, with butter]
+      origin: northern Italy (Bologna)
     details: >-
-      Tagliatelle (Italian: [taʎʎaˈtɛlle]; from the Italian word tagliare, meaning 'to cut') are a traditional
-      type of pasta from the Italian regions of Emilia-Romagna and Marche. Individual pieces of tagliatelle
-      are long, flat ribbons that are similar in shape to fettuccine and are traditionally about 6 mm
-      (1⁄4 in) wide.
+      From tagliare, Italian for “to cut”. The traditional pasta for bolognese sauce; nearly the same as fettuccine, the name
+      used around Rome.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Tagliatelle
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368524338
     image: Nests_of_tagliatelle_bolognesi.jpg
+    served_image: Tagliatelle al ragù Trattoria Tony.jpg
+    compare:
+      - fettuccine
+      - bolognese
   - term: tagliolini
     category: pasta
     answer:
       core:
         - very narrow, flat pasta ribbons
-      context:
-        - egg pasta
+    profile:
+      family: ribbons
+      size: small
+      dough: [egg]
+      made: [fresh]
+      sauce: [with butter, with seafood]
+      origin: northern Italy
     details: >-
-      Tagliolini (Italian: [taʎʎoˈliːni]) is a type of ribbon pasta, long like spaghetti, roughly 2–3
-      mm (3⁄32–1⁄8 in) wide, cut from a sheet of dough similar to tagliatelle, but thin like capellini.
-      It is a traditional recipe in the Molise and Piedmont regions of Italy.
+      Thin egg ribbons, made with extra yolks; often simply buttered, sometimes with shaved truffle.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Tagliolini
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368525310
-    image: 2016_1129_Turin_Tajarin_al_Castelmagno.jpg
+    image: Tajarin bulk.jpg
+    served_image: 2016_1129_Turin_Tajarin_al_Castelmagno.jpg
+    compare:
+      - truffle (fungus)
   - term: tonnarelli
     category: pasta
     answer:
       core:
-        - thick square-cut spaghetti
+        - thick, square-cut spaghetti
+    profile:
+      family: long strands
+      size: large
+      dough: [egg]
+      made: [fresh]
+      sauce: [with cheese]
+      origin: central Italy (Rome)
     details: >-
-      Spaghetti alla chitarra (Italian: [spaˈɡetti ˌalla kiˈtarra]), also known as maccheroni alla chitarra,
-      is a variety of egg pasta typical of the Abruzzo region of Italy, with a square cross section about
-      2–3 mm thick. Tonnarelli are a similar pasta from Lazio, used especially in the Roman cacio e pepe.
+      Cut on a frame of strings, so they’re square; classic for cacio e pepe.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Spaghetti_alla_chitarra
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368525149
-    image: Spaghetti_alla_chitarra.jpg
+    image: Spaghetti chitarra.jpg
+    served_image: Tonnarelli cacio e pepe.jpg
+    compare:
+      - spaghetti
+      - cacio e pepe
   - term: tortellini
     category: pasta
     answer:
       core:
-        - small ring-shaped stuffed pasta
+        - small, ring-shaped stuffed pasta
+    profile:
+      family: stuffed
+      size: small
+      dough: [egg]
+      made: [fresh, by hand]
+      sauce: [in broth, in creamy sauces]
+      origin: northern Italy (Bologna)
     details: >-
-      Tortellini is a type of stuffed pasta typical of the Italian cities of Bologna and Modena, in the
-      Emilia-Romagna region. Traditionally it is stuffed with a mix of meat (pork loin, prosciutto, mortadella),
-      Parmesan cheese, egg, and nutmeg and served in capon broth (in brodo di cappone).
+      Filled with [[pork]], [[ham]] and cheese, and traditionally served in broth.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Tortellini
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1329384628
     image: Tortellini_Bolognesi.jpg
+    served_image: Tortellini in brodo Bologna.jpg
   - term: tortelloni
     category: pasta
     answer:
       core:
-        - larger ring-shaped stuffed pasta
+        - larger, ring-shaped stuffed pasta
+    profile:
+      family: stuffed
+      size: large
+      dough: [egg]
+      made: [fresh, by hand]
+      sauce: [with butter]
+      origin: northern Italy
     details: >-
-      Tortelloni is a type of stuffed pasta common in northern Italy, with a shape similar to tortellini,
-      but larger and with a cheese-based filling. It is traditionally stuffed with ricotta, Parmesan,
-      leafy herbs or vegetables such as parsley or spinach, egg, and nutmeg.
+      Big tortellini, usually filled with ricotta and spinach and served with butter and sage.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Tortelloni
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365130828
     image: Tortelloni.jpg
+    served_image: Tortelloni tomatosauce2.JPG
+    compare:
+      - tortellini
+      - ricotta
   - term: trofie
     category: pasta
     answer:
       core:
         - short, thin, hand-twisted pasta
-      context:
-        - Ligurian
+    profile:
+      family: short shapes
+      size: small
+      surface: [twisted]
+      dough: [plain flour]
+      made: [fresh, by hand, dried]
+      sauce: [with pesto]
+      origin: northern Italy (Liguria)
     details: >-
-      Trofie (Italian: [ˈtrɔːfje]), less frequently troffie, strofie or stroffie, is a short, thin, twisted
-      pasta from the Liguria region of Italy. These thin, twisted shapes are believed to have originated
-      in Sori, a town in the province of Genoa.
+      Rolled by hand into little spirals; the classic pasta for pesto.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Trofie
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1359234777
     image: Trofie_pasta_macro.jpg
+    served_image: Trofie al pesto.jpg
   - term: vermicelli
     category: pasta
     answer:
       core:
-        - long thin strands, usually thinner than spaghetti
+        - 'long strands: thicker than spaghetti in Italy, thinner in the US'
+    profile:
+      family: long strands
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [in tomato sauce, with seafood]
+      origin: southern Italy
     details: >-
-      Vermicelli (Italian: [vermiˈtʃɛlli]) is a type of pasta that is round in section, similar to spaghetti.
-      In English-speaking regions, it is usually thinner than spaghetti, while in Italy it is thicker.
+      Italian for “little worms”. Asian menus also use the name, for thin rice [[noodle|noodles]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Vermicelli
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368525764
     image: Fideo_(coiled_vermicelli).JPG
+    served_image: Vermicelli alle vongole lupino.jpg
+    compare:
+      - spaghetti
   - term: ziti
     category: pasta
     answer:
       core:
-        - long, smooth pasta tubes
+        - smooth, medium [[pasta]] tubes; long in Italy, cut short in the US
+    profile:
+      family: tubes
+      size: medium
+      surface: [smooth]
+      dough: [durum wheat]
+      made: [dried]
+      sauce: [baked, in meat sauce]
+      origin: southern Italy (Naples)
     details: >-
-      Ziti (Italian: [ˈdziːti]) or zite (Italian: [ˈdziːte]) is a shape of extruded pasta originating
-      in the Italian region of Sicily. Factories make ziti out of durum wheat flour and water, forming
-      long, narrow tubes.
+      Traditionally broken into pieces before cooking; baked ziti is an Italian-American favorite.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Ziti
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1351237415
-    image: Ziti_al_ragù.jpg
+    image: Ziti top (cropped).jpg
+    served_image: Ziti alla genovese Napoli.jpg
   - term: pork
     category: meat
     kind: concept
@@ -949,7 +1691,7 @@ cards:
       core:
         - meat from a wild pig
     details: >-
-      Darker, leaner and more [[gamey meat|gamey]] than [[pork]]; often slow-cooked into stews and pasta sauces in Italy.
+      Darker, leaner and more [[gamey meat|gamey]] than [[pork]]; often slow-cooked into stews and [[pasta]] sauces in Italy.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Wild_boar
@@ -1670,8 +2412,8 @@ cards:
       flavor: [herby, fennel-flavored]
       origin: Italy
     details: >-
-      Italian for sausage. Often flavored with fennel seeds, which taste like licorice. Grilled whole or crumbled into pasta
-      sauces; American “Italian sausage” is the same idea, sold sweet or hot.
+      Italian for sausage. Often flavored with [[fennel]] seeds, which taste like licorice. Grilled whole or crumbled into
+      [[pasta]] sauces; American “Italian sausage” is the same idea, sold sweet or hot.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Italian_sausage
@@ -1721,7 +2463,7 @@ cards:
       origin: central Italy
       label: IGP
     details: >-
-      Named for finocchio, fennel, whose seeds give it a sweet, licorice-like flavor.
+      Named for finocchio, [[fennel]], whose seeds give it a sweet, licorice-like flavor.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Finocchiona
@@ -2024,11 +2766,12 @@ cards:
       flavor: [salty, peppery]
       origin: central Italy
     details: >-
-      Richer and fattier than pancetta. Fried until crisp, it’s the traditional meat in Roman pasta dishes like carbonara
+      Richer and fattier than pancetta. Fried until crisp, it’s the traditional meat in Roman [[pasta]] dishes like carbonara
       and amatriciana, a tomato sauce.
     compare:
       - pancetta
       - carbonara
+      - amatriciana
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Guanciale
@@ -2125,8 +2868,8 @@ cards:
       flavor: [spicy]
       origin: southern Italy
     details: >-
-      Fatty [[pork]] packed with hot chili until it’s fiery red and soft enough to spread; also melted into pasta sauces and
-      pizza.
+      Fatty [[pork]] packed with hot chili until it’s fiery red and soft enough to spread; also melted into [[pasta]] sauces
+      and pizza.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/%27Nduja
@@ -2194,7 +2937,7 @@ cards:
       flavor: [herby, garlicky]
       origin: central Italy
     details: >-
-      A whole pig, or a [[pork]] belly wrapped around a loin, stuffed with garlic, rosemary and fennel (a licorice-flavored
+      A whole pig, or a [[pork]] belly wrapped around a loin, stuffed with garlic, rosemary and [[fennel]] (a licorice-flavored
       herb) and roasted for hours; sold in sandwiches from street stalls.
     source:
       label: Wikipedia
@@ -4044,7 +4787,9 @@ cards:
     kind: concept
     answer:
       core:
-        - bounces back when you press or bite it, like string cheese
+        - bounces back when you press or bite it
+      context:
+        - like string cheese
     details: >-
       A rubbery, elastic give: squeeze it and it pushes back, then returns to its shape. Common in [[young cheese|young]],
       moist cheeses like mozzarella, and in halloumi, which also squeaks against your teeth.
@@ -4552,7 +5297,8 @@ cards:
       age: fresh
       origin: southern Italy
     details: >-
-      Italian for “little rags”. It’s the filling inside burrata, also served on its own, spooned over pasta, pizza or toast.
+      Italian for “little rags”. It’s the filling inside burrata, also served on its own, spooned over [[pasta]], pizza or
+      toast.
     compare:
       - burrata
     source:
@@ -4686,7 +5432,7 @@ cards:
       style: [dolce]
     details: >-
       [[dolce (cheese)|Dolce]] means “sweet”. [[young cheese|Young]], pale and spoonable, with soft blue-green streaks; melted
-      into pasta sauces and risotto.
+      into [[pasta]] sauces and risotto.
     compare:
       - risotto
     source:
@@ -4734,7 +5480,7 @@ cards:
       label: DOP
     details: >-
       Made over a wider area than parmigiano reggiano, under looser rules, and often aged less, so it’s milder and cheaper.
-      Grated over pasta and risotto, or broken into chunks.
+      Grated over [[pasta]] and risotto, or broken into chunks.
     compare:
       - parmigiano reggiano
       - risotto
@@ -4761,7 +5507,7 @@ cards:
     details: >-
       Made by thickening cream, not milk, with a little acid, so it’s much higher in fat than American cream cheese and barely
       [[tangy cheese|tangy]]. It isn’t sweetened, but its mild, faintly sweet taste suits desserts; it also goes into risotto
-      and pasta sauces.
+      and [[pasta]] sauces.
     compare:
       - tiramisu
       - risotto
@@ -4883,7 +5629,7 @@ cards:
     details: >-
       Italy’s most famous cheese, made in huge [[wheel (cheese)|wheels]] whose rind is stamped all over with its name. [[DOP]]
       rules require cow’s milk from one small region and at least a year of aging; the tiny crunchy crystals come from long
-      aging. Grated over pasta, or broken into chunks and eaten on its own.
+      aging. Grated over [[pasta]], or broken into chunks and eaten on its own.
     compare:
       - grana padano
       - parmesan
@@ -4936,7 +5682,7 @@ cards:
       label: DOP
     details: >-
       Much saltier and sharper than parmesan; despite the name, most is made in Sardinia. The traditional cheese for Roman
-      pasta dishes like cacio e pepe and carbonara.
+      [[pasta]] dishes like cacio e pepe and carbonara.
     compare:
       - cacio e pepe
       - carbonara
@@ -5019,7 +5765,7 @@ cards:
       origin: Italy
     details: >-
       Italian for “re-cooked”: it’s made by reheating the whey left over from making other cheeses, which forms tiny, soft
-      [[curds]]. Used in [[lasagne]], stuffed pasta and cannoli filling, or spooned onto toast and pasta.
+      [[curds]]. Used in [[lasagne]], [[stuffed pasta]] and cannoli filling, or spooned onto toast and pasta.
     compare:
       - cannoli
     source:
@@ -5177,7 +5923,7 @@ cards:
       label: DOP
     details: >-
       Named after Val Taleggio, a valley in northern Italy, where it was aged in caves. The thin orange rind is edible. Melted
-      into risotto, polenta and pasta.
+      into risotto, polenta and [[pasta]].
     compare:
       - pont-l’évêque
       - risotto
@@ -6387,37 +7133,61 @@ cards:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pepper_jack_cheese
     image: Pepperjack Cheese.jpg
+  - term: chicory
+    category: vegetable
+    kind: concept
+    answer:
+      core:
+        - a family of bitter salad greens
+      context:
+        - like radicchio
+    details: >-
+      Their bitterness is prized in Italian cooking; they’re eaten raw in salads or grilled.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Chicory
+    image: Chicories.png
+    compare:
+      - radicchio
+  - term: fennel
+    category: vegetable
+    kind: concept
+    answer:
+      core:
+        - a pale bulb with a licorice-like flavor; its seeds are a spice
+    details: >-
+      Eaten raw and crisp in salads or cooked soft; the seeds flavor Italian [[sausage|sausages]].
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Fennel
+    image: Au marché - Fenouil.JPG
   - term: pepperoncini
     category: vegetable
     answer:
       core:
-        - mild, tangy pickled chili peppers
+        - mild, sour pickled yellow-green peppers
       context:
-        - not meat
+        - American name, from Italian
     details: >-
-      Friggitello (pl.: friggitelli) is a sweet Italian chili pepper of the species Capsicum annuum. It
-      is also known as the "Golden Greek pepper", "Sweet Italian pepper", or "Tuscan pepper".
+      Served on salads and sandwiches; despite the similar name, much milder than peperoncino.
+    compare:
+      - peperoncino
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Friggitello
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1358107466
     image: Pickled_friggitelli.jpg
   - term: peperoncino
     category: vegetable
     answer:
       core:
-        - chili pepper, usually hot
+        - small hot chili pepper, fresh or dried
       context:
         - Italian
     details: >-
-      Peperoncino (Italian: [peperonˈtʃiːno]; pl.: peperoncini) is the generic Italian name for a hot chili pepper, specifically
-      some regional cultivars of the species Capsicum annuum and C. frutescens (chili pepper and Tabasco pepper, respectively).
-      (The diminutive suffix ino means smaller; the larger sweet bell pepper is called peperone (pl.: peperoni) in Italian.)
-      Like most chili peppers, the fruit is green or yellowish-green when young, and ripens to a red colour.
+      Crushed dried peperoncino, like red pepper flakes, heats many Italian dishes.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Peperoncino
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1362170697
     image: Capsicum_-Chili_-_Peperoncino_-_Il_Viagra_Calabrese_-_Calabria_-_Italy_-_July_17th_2013_-_02.jpg
   - term: peperoni
     category: vegetable
@@ -6425,63 +7195,142 @@ cards:
       core:
         - bell peppers
       context:
-        - Italian plural
-        - not pepperoni sausage
+        - Italian plural; not pepperoni
     details: >-
-      The bell pepper (also known as sweet pepper, paprika, pepper, capsicum or, in some parts of the U.S. Midwest, mango)
-      is the fruit of plants in the Grossum Group of the species Capsicum annuum. Cultivars of the plant produce fruits in
-      different colors, including red, yellow, orange, green, white, and purple.
+      Sweet peppers, red, yellow or green, often roasted or stuffed.
+    compare:
+      - pepperoni
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Bell_pepper
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369811711
     image: Green-Yellow-Red-Pepper-2009.jpg
+  - term: capers
+    category: condiment
+    kind: concept
+    answer:
+      core:
+        - small, salty pickled flower buds
+    details: >-
+      Salty and sour, a bit like green olives; used in sauces and salads.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Caper
+    image: Salted capers.jpg
   - term: giardiniera
     category: condiment
     answer:
       core:
         - pickled mixed vegetables
       context:
-        - Italian style
+        - Italian
     details: >-
-      Giardiniera (Italian: [dʒardiˈnjɛːra]) is an Italian relish of pickled vegetables in vinegar or
-      oil.
+      Cauliflower, carrots, peppers and celery in vinegar; in Chicago, a spicy oily version tops sandwiches.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Giardiniera
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368138130
     image: GiardinieraSpicy.JPG
   - term: mostarda
     category: condiment
     answer:
       core:
-        - candied fruit in mustard-flavored syrup
+        - candied fruit in a mustard-flavored syrup
       context:
-        - Northern Italian
+        - northern Italian
     details: >-
-      Mostarda (sometimes also called mostarda di frutta) is a northern Italian condiment made of candied
-      fruit and a mustard-flavoured syrup. Commercially the essential oil of mustard is employed, which
-      has the advantage of transparency; in home cooking, mustard powder heated in white wine may be used.
+      Sweet and sharply hot; served with boiled meats and cheese.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Mostarda
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1348441112
     image: Sapori_mantovani_-_La_mostarda_di_frutta.jpg
+  - term: shellfish
+    category: seafood
+    kind: concept
+    answer:
+      core:
+        - sea creatures with shells
+      context:
+        - like shrimp, lobster and oysters
+    details: >-
+      Eaten steamed, grilled or raw; some people are allergic to them.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Shellfish
+    image: Plateau de fruits de mer 03.jpg
+  - term: clam
+    category: seafood
+    kind: concept
+    answer:
+      core:
+        - a small [[shellfish]] in a hinged, rounded shell
+    details: >-
+      Steamed open with wine and garlic, or chopped into chowder, a thick, creamy soup.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Clam
+    image: Vongole 01 - Wiki Loves Sicilia.jpg
+  - term: mussel
+    category: seafood
+    kind: concept
+    answer:
+      core:
+        - a [[shellfish]] in a long, blue-black shell
+    details: >-
+      Steamed in wine, cream or tomato; moules frites is the Belgian dish of mussels with fries.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Mussel
+    image: Cozze tarantine pulite.jpg
+  - term: cuttlefish
+    category: seafood
+    kind: concept
+    answer:
+      core:
+        - a squid-like sea creature with a wide body and an ink sac
+    details: >-
+      Cooked like squid; its black ink colors [[pasta]] and risotto.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Cuttlefish
+    image: Cuttlefish (356295359).jpg
+    compare:
+      - risotto
+  - term: salt cod
+    category: seafood
+    kind: concept
+    answer:
+      core:
+        - cod preserved by salting and drying
+    details: >-
+      Soaked for days to soften it and wash out the salt, then stewed, fried or whipped into a spread.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Salted_cod
+    image: Klippfisk.jpg
+  - term: langoustine
+    category: seafood
+    kind: concept
+    answer:
+      core:
+        - a small, lobster-like [[shellfish]]
+    details: >-
+      Sweet meat in the tail; also called Norway lobster or Dublin Bay prawn.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Nephrops_norvegicus
+    image: MERCADO - panoramio (1).jpg
   - term: bottarga
     category: seafood
     answer:
       core:
-        - salt-cured fish roe
+        - salted, dried fish roe (eggs), grated or sliced thin
       context:
-        - usually grated or thinly sliced
+        - Italian
     details: >-
-      Bottarga is salted, cured fish roe pouch, typically of the grey mullet or the bluefin tuna (Italian:
-      bottarga di tonno). It is a feature of Italian cuisine; forms of the dish from other parts of the
-      world include Taiwanese wūyú zǐ, which is softer, and Korean eoran, from mullet or freshwater drum.
+      A pressed, amber block of the eggs of mullet (a common sea fish) or tuna; grated over pasta for a salty, sea-tasting
+      flavor.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Bottarga
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367062366
     image: Bottarga_from_Preveza_Greece.jpg
   - term: acciughe
     category: seafood
@@ -6491,30 +7340,27 @@ cards:
       context:
         - Italian
     details: >-
-      Anchovies are small, common forage fish of the family Engraulidae. Most species are found in marine
-      waters, but several will enter brackish water, and some in South America are restricted to fresh
-      water.
+      Small, oily sea fish, usually salted or packed in oil. They melt into sauces, adding a salty, meaty taste; fresh ones
+      are fried or soaked in lemon or vinegar.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Anchovy
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366941610
-    image: Anchovy_closeup.jpg
+    image: Anchois commun (Engraulis encrasicolus) (Ifremer 00402-51364).jpg
   - term: baccalà
     category: seafood
+    kind: concept
+    translates: salt cod
     answer:
       core:
-        - salt-cured cod
+        - '[[salt cod|salt cod]]'
       context:
         - Italian
     details: >-
-      Dried and salted cod, sometimes referred to as salt cod or saltfish or salt dolly, is cod which
-      has been preserved by drying after salting. Cod which has been dried without the addition of salt
-      is stockfish.
+      Soaked, then stewed, fried or whipped into a spread.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Dried_and_salted_cod
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369866122
-    image: Bacalhau_(Porto).jpg
+    image_from: salt cod
   - term: polpo
     category: seafood
     answer:
@@ -6523,77 +7369,79 @@ cards:
       context:
         - Italian
     details: >-
-      People of several cultures eat octopus. The arms and sometimes other body parts are prepared in
-      various ways, often varying by species and/or geography.
+      Chewy unless cooked slowly: usually simmered until tender, then grilled, or served in a salad with potatoes.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Octopus_as_food
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368348997
-    image: Octopuses_in_Tsukiji.JPG
+    image: Octopus at the Rialto fish market (6295246264).jpg
   - term: seppia
     category: seafood
+    kind: concept
+    translates: cuttlefish
     answer:
       core:
-        - cuttlefish
+        - '[[cuttlefish|cuttlefish]]'
       context:
         - Italian
     details: >-
-      Cuttlefish, or cuttles, are marine molluscs of the family Sepiidae. They belong to the class Cephalopoda
-      which also includes squid, octopuses, and nautiluses.
+      Nero di seppia is its black ink, used in [[pasta]] and risotto.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cuttlefish
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366797170
-    image: Sepia_común_(Sepia_officinalis),_Parque_natural_de_la_Arrábida,_Portugal,_2020-07-21,_DD_62.jpg
+    image_from: cuttlefish
+    compare:
+      - risotto
   - term: cozze
     category: seafood
+    kind: concept
+    translates: mussel
     answer:
       core:
-        - mussels
+        - '[[mussel|mussels]]'
       context:
         - Italian
     details: >-
-      Mussel is the common name used for members of several families of bivalve molluscs, from saltwater
-      and freshwater habitats. These groups have in common a shell whose outline is elongated and asymmetrical
-      compared with other edible clams, which are often more or less rounded or oval.
+      Often steamed with wine or tomato.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Mussel
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1365738489
-    image: CornishMussels.JPG
+    image_from: mussel
   - term: vongole
     category: seafood
+    kind: concept
+    translates: clam
     answer:
       core:
-        - clams
+        - '[[clam|clams]]'
       context:
         - Italian
     details: >-
-      Clam is a common name for several species of bivalve mollusc. The word is often applied only to
-      those that are deemed edible and live as infauna, spending most of their lives halfway buried in
-      the sand of the sea floor or riverbeds.
+      As in spaghetti alle vongole.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Clam
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1367271677
-    image: Grilled littleneck clams - Cambridge, MA.jpg
-  - term: scampi
+    image_from: clam
+    compare:
+      - spaghetti
+      - alle vongole
+  - term: scampi (seafood)
+    id: scampi
     category: seafood
+    kind: concept
+    translates: langoustine
     answer:
       core:
-        - small, lobster-like crustaceans
+        - '[[langoustine|langoustines]]'
       context:
-        - usage varies by country
+        - Italian
     details: >-
-      Scampi is a crustacean-based seafood dish, typically featuring langoustine, shrimp or prawns sautéed
-      in olive oil, garlic, and white wine, and garnished with Parmesan cheese and lemon juice, though
-      exact ingredients vary regionally in preparation. The term "scampi" comes from the Italian name
-      for langoustines, which were the original shellfish used in the dish.
+      In the US, shrimp scampi is something else: shrimp in garlic butter.
+    compare:
+      - scampi (dish)
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Scampi
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1351903831
-    image: Nephrops_norvegicus.jpg
+    image_from: langoustine
   - term: carciofi
     category: vegetable
     answer:
@@ -6602,74 +7450,61 @@ cards:
       context:
         - Italian
     details: >-
-      The artichoke (Cynara cardunculus var. scolymus) is a variety of a species of thistle cultivated as food.
+      You eat the tender base of the leaves and the heart, the soft center under the fuzzy, inedible choke. As in carciofi
+      alla romana, artichokes slowly stewed with garlic and mint.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Artichoke
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1369636019
-    image: Artichoke_J1.jpg
+    image: Valencia market - artichokes.jpg
   - term: radicchio
     category: vegetable
     answer:
       core:
-        - bitter red-leaf chicory
+        - bitter red-leaf [[chicory]]
     details: >-
-      Radicchio is a perennial cultivated form of leaf chicory (Cichorium intybus, Asteraceae), commonly
-      used in Italian cuisine. It is grown as a leaf vegetable and usually has colourful, white-veined
-      red leaves that form a head.
+      Red and white leaves, eaten raw in salads or grilled until soft and sweeter.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Radicchio
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1368109245
     image: RadicchioNL.jpg
   - term: rapini
     category: vegetable
     answer:
       core:
-        - bitter leafy green
-        - broccoli rabe
+        - bitter leafy green with small broccoli-like buds
+      context:
+        - also called broccoli rabe or cime di rapa
     details: >-
-      Rapini (broccoli rabe or raab; RAHB) is a green cruciferous vegetable, with the leaves, buds, and
-      stems all being edible; the buds somewhat resemble broccoli. Rapini is known for its bitter taste,
-      and is particularly associated with Mediterranean cuisine.
+      Usually fried quickly with garlic and chili; classic with orecchiette.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Rapini
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1357556647
     image: Rapini.jpg
   - term: puntarelle
     category: vegetable
     answer:
       core:
-        - crisp, slightly bitter chicory shoots
+        - crisp, slightly bitter [[chicory]] shoots
       context:
-        - from Catalonian chicory
+        - from Rome
     details: >-
-      Puntarelle or cicoria di catalogna or cicoria asparago is a variant of chicory. The heads are characterized
-      by an elongated shape (about 40–50 cm), light green stems and dandelion shaped leaves.
+      Cut into thin curls, soaked in cold water, and dressed with anchovies and garlic.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Puntarelle
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1366439526
     image: Puntarelle_stehend.jpg
   - term: cavolo nero
     category: vegetable
     answer:
       core:
-        - dark leafy cabbage
-        - Italian kale
+        - dark, crinkly Tuscan kale
       context:
-        - Tuscan
+        - also called lacinato kale
     details: >-
-      Lacinato kale, also known as Tuscan kale, Italian kale, dinosaur kale, kale, flat back kale, palm
-      tree kale, black Tuscan palm, or, in Italian and often in, cavolo nero, is a variety of kale from
-      the Acephala group of cultivars Brassica oleracea grown for its edible leaves. Lacinato has a long
-      tradition in Italian cuisine, especially that of Tuscany, where it has been grown for centuries,
-      and it is one of the traditional ingredients of minestrone and ribollita.
+      Italian for “black cabbage”; in ribollita, a thick bread and bean soup.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Lacinato_kale
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1351789579
     image: Brassica_-_Gardenology.org-IMG_0606_bbg09.jpg
   - term: cipollini
     category: vegetable
@@ -6679,8 +7514,7 @@ cards:
       context:
         - Italian
     details: >-
-      Cipollini are small, somewhat flattened Italian onions with thin skins and a mild, sweet flavor.
-      They are often cooked whole by roasting, braising, glazing, or pickling.
+      Roasted or glazed whole until sweet and soft.
     source:
       label: Merriam-Webster
       url: https://www.merriam-webster.com/dictionary/cipollini
@@ -6693,45 +7527,36 @@ cards:
       context:
         - French
     details: >-
-      A pickled cucumber – commonly known as a pickle in the United States and Canada and a gherkin (
-      GUR-kin) in Britain, Ireland, South Africa, Australia and New Zealand – is a usually small or miniature
-      cucumber that has been pickled in a brine, vinegar, or other solution and left to ferment. The fermentation
-      process is executed either by immersing the cucumbers in an acidic solution or through souring by
-      lacto-fermentation.
+      Served with [[pâté]] and [[charcuterie]], and chopped into sauces.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pickled_cucumber
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1358911642
     image: Pickle.jpg
   - term: gremolata
     category: condiment
     answer:
       core:
-        - chopped parsley, lemon zest, and garlic garnish
+        - chopped parsley, lemon zest and garlic, sprinkled over food
+      context:
+        - Italian
     details: >-
-      Gremolata (Italian: [ɡremoˈlaːta]) or gremolada (Italian: [ɡremoˈlaːda], Lombard: [ɡremuˈlaːda])
-      is a green sauce made with chopped parsley, lemon zest, and garlic. It is the standard accompaniment
-      to the Lombard braised veal shank dish ossobuco.
+      Lemon zest is the grated yellow skin. The classic topping for osso buco, slow-cooked veal shanks.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Gremolata
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1351657558
     image: Gremolata_03.jpg
   - term: tapenade
     category: condiment
     answer:
       core:
-        - savory olive spread
+        - salty olive spread
       context:
-        - Provençal
+        - from southern France
     details: >-
-      Tapenade (French pronunciation: [tapəˈnad]; Occitan: tapenada [tapeˈnadɔ]) is a Provençal dish of
-      puréed or finely chopped olives, capers, and sometimes anchovies used as a spread, condiment and
-      culinary ingredient. The name comes from the Provençal word for capers, tapenas (pronounced [taˈpenɔs]).
+      Olives, [[capers]] and anchovies ground together; spread on bread.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Tapenade
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1361913932
     image: Cuillere_de_tapenade.jpg
   - term: caponata
     category: condiment
@@ -6739,15 +7564,12 @@ cards:
       core:
         - sweet-and-sour eggplant relish
       context:
-        - Sicilian
+        - from Sicily
     details: >-
-      Caponata (Sicilian: capunata) is a Sicilian dish consisting of chopped, fried eggplant and other
-      vegetables, seasoned with olive oil, tomato sauce, celery, olives, and capers, in an agrodolce (sweet
-      and sour) sauce. Variants add carrots, bell peppers, potatoes, pine nuts, and raisins.
+      Fried eggplant cooked with tomatoes, celery, olives and capers in vinegar and sugar; served cold or warm.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Caponata
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1321304956
     image: Caponata_(14049113982).jpg
   - term: gelato
     category: dessert
@@ -6821,7 +7643,7 @@ cards:
       context:
         - Italian
     details: >-
-      As in [[salame]] piccante, a salami made with chili, or a pizza piccante.
+      As in [[salame]] piccante, a salami made with chili, or a pizza piccante, topped with spicy salami.
     source:
       label: Wiktionary
       url: https://en.wiktionary.org/wiki/piccante#Italian
@@ -7023,7 +7845,7 @@ cards:
       context:
         - northern Italian; soft, or set and grilled
     details: >-
-      Coarse cornmeal simmered in water or broth until thick. Served soft and spoonable, often topped with melted cheese or
+      Ground cornmeal simmered in water or broth until thick. Served soft and spoonable, often topped with melted cheese or
       a sauce, or left to set, then sliced and grilled or fried.
     source:
       label: Wikipedia
@@ -7037,8 +7859,8 @@ cards:
       context:
         - Roman
     details: >-
-      Egg yolks and grated cheese are tossed with hot pasta and crisp guanciale until they turn into a silky sauce; the Roman
-      original has no cream. Usually made with [[spaghetti]] or [[rigatoni]].
+      Egg yolks and grated cheese are tossed with hot [[pasta]] and crisp guanciale until they turn into a silky sauce; the
+      Roman original has no cream. Usually made with [[spaghetti]] or [[rigatoni]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Carbonara
@@ -7079,10 +7901,278 @@ cards:
       context:
         - Italian
     details: >-
-      Italian for raw; like carpaccio or sashimi, but dressed simply with olive oil, lemon and salt.
+      Italian for “raw”. Like carpaccio, or Japanese sashimi (plain sliced raw fish), but dressed with olive oil, lemon and
+      salt.
     compare:
       - carpaccio
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Crudo
     image: Wit & Wisdom - February 2024 - Sarah Stierch 09.jpg
+  - term: sugo
+    category: dish
+    kind: concept
+    answer:
+      core:
+        - sauce, especially for [[pasta]]
+      context:
+        - Italian
+    details: >-
+      As in sugo di pomodoro, tomato sauce.
+    source:
+      label: Wiktionary
+      url: https://en.wiktionary.org/wiki/sugo#Italian
+    compare:
+      - pomodoro
+  - term: ragù
+    category: dish
+    answer:
+      core:
+        - meat sauce, slow-cooked for hours
+      context:
+        - Italian
+    details: >-
+      Chopped or ground meat simmered with tomato, wine and vegetables until thick. Every region has its own; the best-known
+      outside Italy is bolognese.
+    compare:
+      - bolognese
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Ragù
+    image: Pappardelle ternane al cinghiale.jpg
+  - term: bolognese
+    category: dish
+    answer:
+      core:
+        - a [[ragù]] of [[beef]] and [[pork]], slow-cooked with a little tomato, wine and milk
+      context:
+        - Italian
+    details: >-
+      From the northern Italian city it’s named after, where it’s served with fresh tagliatelle; “spaghetti bolognese” is
+      a foreign invention.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Bolognese_sauce
+    image: Tagliatelle al ragu (Bologna, Italia 2025).jpg
+    compare:
+      - spaghetti
+      - tagliatelle
+  - term: marinara
+    category: dish
+    answer:
+      core:
+        - quick tomato sauce with garlic and herbs
+      context:
+        - Italian-American
+    details: >-
+      America’s everyday red sauce for pasta. In Italy, marinara usually means a pizza of tomato, garlic and oregano, with
+      no cheese.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Marinara_sauce
+    image: Espaguetis con salsa marinara.jpg
+  - term: pomodoro
+    category: dish
+    answer:
+      core:
+        - simple tomato sauce with basil
+      context:
+        - Italian
+    details: >-
+      Italian for “tomato”: spaghetti al pomodoro is pasta with tomato sauce.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Tomato_sauce
+    image: Spaghettata.JPG
+  - term: arrabbiata
+    category: dish
+    answer:
+      core:
+        - tomato sauce made spicy with chili
+      context:
+        - Italian
+    details: >-
+      Italian for “angry”, for the heat of [[peperoncino]]; classic with penne.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Arrabbiata_sauce
+    image: Penne all'arrabbiata.jpg
+    compare:
+      - penne
+  - term: amatriciana
+    category: dish
+    answer:
+      core:
+        - tomato sauce with [[guanciale]] and [[pecorino romano]]
+      context:
+        - Italian
+    details: >-
+      From Amatrice, a mountain town northeast of Rome; classic with bucatini.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Amatriciana_sauce
+    image: Pasta alla matriciana.jpg
+    compare:
+      - bucatini
+  - term: puttanesca
+    category: dish
+    answer:
+      core:
+        - tomato sauce with olives, [[capers]] and anchovies
+      context:
+        - Italian
+    details: >-
+      Very salty, from the olives, capers and anchovies; from Naples.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Spaghetti_alla_puttanesca
+    image: Pasta Puttanesca.jpg
+  - term: pesto
+    category: dish
+    answer:
+      core:
+        - uncooked sauce of basil, garlic, pine nuts, cheese and olive oil, pounded together
+      context:
+        - Italian
+    details: >-
+      Bright green, from Genoa; classic with trofie and linguine. Pesto just means “pounded”, so other versions exist, like
+      Sicily’s with tomatoes and almonds.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pesto
+    image: Trofie al pesto 01.jpg
+  - term: aglio e olio
+    category: dish
+    answer:
+      core:
+        - olive oil and garlic, often with chili
+      context:
+        - Italian
+    details: >-
+      Italian for “garlic and oil”. The simplest [[pasta]]: spaghetti tossed with garlic gently fried in olive oil, often
+      with [[peperoncino]].
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Spaghetti_aglio,_olio_e_peperoncino
+    image: Spaghetti aglio olio e peperoncino by matsuyuki retouched.jpg
+    compare:
+      - spaghetti
+  - term: alfredo
+    category: dish
+    answer:
+      core:
+        - butter and parmesan sauce, thickened with cream in the US
+      context:
+        - from Rome; creamier in the US
+    details: >-
+      Fettuccine alfredo began in Rome as [[pasta]] tossed with butter and [[parmigiano reggiano|parmigiano]]; American versions
+      add cream and often chicken.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Fettuccine_Alfredo
+    image: Mario's fettuccine alfredo.jpg
+    compare:
+      - fettuccine
+      - parmesan
+  - term: alla norma
+    category: dish
+    answer:
+      core:
+        - tomato sauce with fried eggplant and [[ricotta salata]]
+      context:
+        - Italian
+    details: >-
+      From Sicily, and named after the opera Norma.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pasta_alla_Norma
+    image: Pasta Norma Villa Principe di Belmonte Ispica 2017.jpg
+  - term: alle vongole
+    category: dish
+    answer:
+      core:
+        - with [[vongole|clams]], white wine, garlic and olive oil
+      context:
+        - Italian
+    details: >-
+      Usually spaghetti or linguine; a red version adds tomato.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Spaghetti_alle_vongole
+    image: Spaghetti alle vongole.jpg
+    compare:
+      - linguine
+      - spaghetti
+  - term: primavera
+    category: dish
+    answer:
+      core:
+        - with spring vegetables, often in a light cream sauce
+      context:
+        - Italian-American
+    details: >-
+      Italian for “spring”, though the dish was invented in New York in the 1970s.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Pasta_primavera
+    image: Pasta primavera (1).jpg
+  - term: vodka sauce
+    category: dish
+    answer:
+      core:
+        - creamy tomato sauce with a splash of vodka
+      context:
+        - Italian-American
+    details: >-
+      As in penne alla vodka: pink, creamy and mild; most of the alcohol cooks off.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Penne_alla_vodka
+    image: Penne alla Vodka.jpg
+  - term: burro e salvia
+    category: dish
+    answer:
+      core:
+        - butter heated with sage leaves until golden-brown
+      context:
+        - Italian
+    details: >-
+      Italian for “butter and sage”: the classic sauce for [[stuffed pasta]], like ravioli.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Brown_butter
+    image: Hardys, Marylebone, Soho (5112010562).jpg
+    compare:
+      - ravioli
+  - term: lasagne (dish)
+    category: dish
+    answer:
+      core:
+        - baked layers of [[lasagne|pasta sheets]], meat sauce, white sauce and cheese
+      context:
+        - Italian
+    details: >-
+      The northern Italian classic uses bolognese and béchamel, a milk sauce; Italian-American lasagna uses ricotta and mozzarella.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Lasagna
+    image: Slice of Lasagna.jpg
+    compare:
+      - mozzarella
+      - ricotta
+      - bolognese
+  - term: scampi (dish)
+    category: dish
+    answer:
+      core:
+        - shrimp in garlic butter and white wine, often over [[pasta]]
+      context:
+        - American
+    details: >-
+      An American dish that kept the Italian name of the [[langoustine|langoustines]] it once used.
+    compare:
+      - scampi
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Scampi
+    image: Shrimp scampi food.jpg

@@ -34,12 +34,21 @@ def card_html(card, cards):
                 f"media is not cached for {image}; build the deck first"
             )
         image_src = media_path.as_uri()
+    served_src = ""
+    if served := card.get("served_image"):
+        served_path = build_deck.cached_media_path(served)
+        if served_path is None:
+            raise FileNotFoundError(
+                f"media is not cached for {served}; build the deck first"
+            )
+        served_src = served_path.as_uri()
 
     values = build_deck.note_fields(
         card,
         image_src,
         cards_by_key,
         build_deck.card_backlinks(cards),
+        served_src,
     )
     fields = {
         field["name"]: value for field, value in zip(build_deck.MODEL_FIELDS, values)

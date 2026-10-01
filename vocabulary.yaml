@@ -22,7 +22,86 @@ categories:
   pasta:
     label: Pasta
     term_label: Pasta term
-    jargon: [cheese]
+    jargon: [pasta]
+    # A pasta's profile, in display order: what kind of pasta it is and how it
+    # looks, what it's made of and how, what it's served with, then where it's
+    # from.
+    profile:
+      family:
+        label: family
+        shape: single
+        required: true
+        words:
+          long strands: long pasta
+          ribbons: ribbon pasta
+          tubes: tube pasta
+          short shapes: short pasta
+          stuffed: stuffed pasta
+          soup pasta: soup pasta
+          dumplings: dumpling
+          sheets:
+      size:
+        label: size
+        shape: range
+        words:
+          tiny:
+          small:
+          medium:
+          large:
+          very large:
+      surface:
+        label: surface
+        shape: list
+        joiner: ", "
+        words:
+          smooth:
+          ridged: ridged pasta
+          hollow:
+          twisted:
+          ruffled:
+          rough:
+      dough:
+        label: dough
+        shape: list
+        joiner: " or "
+        required: true
+        words:
+          durum wheat: durum wheat
+          egg: egg pasta
+          potato:
+          buckwheat:
+          whole wheat:
+          breadcrumbs, cheese and egg:
+          plain flour:
+      made:
+        label: made
+        shape: list
+        joiner: ", "
+        required: true
+        words:
+          dried: dried pasta
+          fresh: fresh pasta
+          by hand: handmade pasta
+      sauce:
+        label: served
+        shape: list
+        joiner: ", "
+        words:
+          in meat sauce: ragù
+          in tomato sauce:
+          in creamy sauces:
+          with butter:
+          with olive oil and garlic: aglio e olio
+          with pesto: pesto
+          with seafood:
+          with vegetables:
+          with cheese:
+          in broth:
+          baked:
+      origin:
+        label: from
+        shape: text
+        required: true
   meat:
     label: Meat & charcuterie
     term_label: Meat term
@@ -358,7 +437,7 @@ categories:
   dish:
     label: Dish
     term_label: Dish term
-    jargon: [cheese, meat]
+    jargon: [cheese, meat, pasta]
   other:
     label: Other menu trap
     term_label: Menu term
@@ -412,6 +491,16 @@ jargon:
     marbled meat: [marbled, marbling]
     gamey meat: [gamey]
     dry-aged beef: [dry-aged]
+  pasta:
+    durum wheat: [durum, semolina]
+    egg pasta: [egg pasta]
+    fresh pasta: [fresh pasta]
+    dried pasta: [dried pasta]
+    handmade pasta: [handmade, hand-rolled, hand-shaped, hand-twisted]
+    ridged pasta: [ridged]
+    al dente: [al dente]
+    stuffed pasta: [stuffed pasta]
+    dumpling: [dumpling, dumplings]
 
 # Vague words with no card, which reworked cards may not use at all.
 banned: [farmhouse, mountain cheese, mountain cheeses, rustic]

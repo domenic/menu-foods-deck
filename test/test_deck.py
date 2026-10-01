@@ -153,6 +153,36 @@ class DeckDataTests(unittest.TestCase):
             cards_by_key["fresh cheese"]["image"],
         )
 
+    def test_example_context_follows_the_core_after_a_comma(self):
+        answer = {"core": ["hollow tubes"], "context": ["like penne", "Italian"]}
+        self.assertEqual(
+            build_deck.recognition_html(answer),
+            "<strong>hollow tubes</strong>, like penne; Italian",
+        )
+        card = {"term": "tube pasta", "category": "pasta", "answer": answer}
+        self.assertEqual(build_deck.gloss(card), "hollow tubes, like penne")
+
+    def test_headline_lines_put_each_core_fragment_on_its_own_line(self):
+        answer = {"core": ["-ini: smaller", "-oni: bigger"]}
+        self.assertEqual(
+            build_deck.recognition_html(answer, lines=True),
+            "<strong>-ini: smaller<br>-oni: bigger</strong>",
+        )
+
+    def test_served_image_shows_beside_the_uncooked_one(self):
+        card = {"term": "penne", "image": "Penne.jpg", "served_image": "Arrabbiata.jpg"}
+        rendered = build_deck.image_html(card, "a.jpg", {}, "b.jpg")
+        self.assertIn('<figure><img src="a.jpg"><figcaption>uncooked', rendered)
+        self.assertIn('<figure><img src="b.jpg"><figcaption>served', rendered)
+        self.assertIn("served image source", build_deck.image_credit_html(card, {}))
+
+    def test_served_image_needs_an_image_beside_it(self):
+        data = build_deck.load_data()
+        card = next(card for card in data["cards"] if card["term"] == "pasta")
+        card["served_image"] = "Some_dish.jpg"
+        with self.assertRaisesRegex(ValueError, "pasta: served_image needs an image"):
+            build_deck.validate_data(data)
+
     def test_prose_mentions_of_linked_cards_are_marked(self):
         cards_by_key = build_deck.index_cards(CARDS)
         fields = build_deck.note_fields(

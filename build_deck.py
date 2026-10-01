@@ -267,6 +267,8 @@ def validate_data(data):
         image = card.get("image")
         if card.get("mirror_image") not in (None, True):
             errors.append(f"{term}: mirror_image must be true when present")
+        if card.get("headline_lines") not in (None, True):
+            errors.append(f"{term}: headline_lines must be true when present")
         image_from = card.get("image_from")
         if image_from is not None and (
             image is not None or not isinstance(image_from, str) or not image_from
@@ -281,6 +283,15 @@ def validate_data(data):
         elif image in seen_images:
             errors.append(f"duplicate image: {image}")
         seen_images.add(image)
+        served = card.get("served_image")
+        if served is not None:
+            if not isinstance(served, str) or not served or "/" in served:
+                errors.append(f"{term}: served_image must be a Commons filename")
+            elif image is None:
+                errors.append(f"{term}: served_image needs an image beside it")
+            elif served in seen_images:
+                errors.append(f"duplicate image: {served}")
+            seen_images.add(served)
 
     if not errors:
         errors.extend(link_errors(cards))
@@ -690,15 +701,29 @@ def headline_fragments(card):
     ]
 
 
-def recognition_html(answer, kind_of=None, mentions=None, lead=None):
+def recognition_html(answer, kind_of=None, mentions=None, lead=None, lines=False):
+    """Renders the headline: the bold core, then the context. With `lines`, each
+    core fragment gets its own line. Context that gives examples, starting with
+    "like", follows the core after a comma rather than a semicolon."""
     fragments = [*([lead] if lead else []), *core_fragments(answer, kind_of)]
-    core = "; ".join(text_html(fragment, mentions) for fragment in fragments)
-    context = [text_html(fragment, mentions) for fragment in answer.get("context", [])]
-    return f"<strong>{core}</strong>" + (f"; {'; '.join(context)}" if context else "")
+    joiner = "<br>" if lines else "; "
+    core = joiner.join(text_html(fragment, mentions) for fragment in fragments)
+    result = f"<strong>{core}</strong>"
+    for fragment in answer.get("context", []):
+        separator = ", " if fragment.startswith("like ") else "; "
+        result += separator + text_html(fragment, mentions)
+    return result
 
 
 def gloss(card):
-    return "; ".join(plain_text(fragment) for fragment in headline_fragments(card))
+    """Returns a card's headline as plain text: its core, and any examples."""
+    core = "; ".join(plain_text(fragment) for fragment in headline_fragments(card))
+    examples = [
+        plain_text(fragment)
+        for fragment in card["answer"].get("context", [])
+        if fragment.startswith("like ")
+    ]
+    return ", ".join([core, *examples])
 
 
 def profile_word_html(word, link, cards_by_key, suffix=""):
@@ -920,9 +945,10 @@ def prepare_media(cards, offline=False, workers=8):
     paths = {}
     with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = {
-            executor.submit(download_image, card["image"], offline): card["image"]
+            executor.submit(download_image, image, offline): image
             for card in cards
-            if "image" in card
+            for image in [card.get("image"), card.get("served_image")]
+            if image
         }
         for completed, future in enumerate(as_completed(futures), start=1):
             image = futures[future]
@@ -963,15 +989,35 @@ def card_image(card, cards_by_key):
     return card.get("image")
 
 
-def image_html(card, image_src, cards_by_key):
+def image_html(card, image_src, cards_by_key, served_src=""):
     """Renders a card's image, mirrored if its owner sets `mirror_image` so that,
-    say, every pig faces the same way."""
+    say, every pig faces the same way. With a `served_image`, the two are shown
+    side by side: the food uncooked, then as it's served."""
     owner = cards_by_key[card["image_from"]] if "image_from" in card else card
     mirror = ' style="transform: scaleX(-1)"' if owner.get("mirror_image") else ""
-    return f'<img src="{html.escape(image_src, quote=True)}"{mirror}>'
+    main = f'<img src="{html.escape(image_src, quote=True)}"{mirror}>'
+    if not served_src:
+        return main
+    served = f'<img src="{html.escape(served_src, quote=True)}">'
+    return (
+        f'<div class="pair"><figure>{main}<figcaption>uncooked</figcaption></figure>'
+        f"<figure>{served}<figcaption>served</figcaption></figure></div>"
+    )
 
 
-def note_fields(card, image_src, cards_by_key, backlinks):
+def image_credit_html(card, cards_by_key):
+    links = [
+        f'<a href="{html.escape(commons_file_url(image), quote=True)}">{label}</a>'
+        for image, label in [
+            (card_image(card, cards_by_key), "image source"),
+            (card.get("served_image"), "served image source"),
+        ]
+        if image
+    ]
+    return '<span aria-hidden="true"> · </span>'.join(links)
+
+
+def note_fields(card, image_src, cards_by_key, backlinks, served_src=""):
     """Returns the note's field values, in `MODEL_FIELDS` order."""
     image = card_image(card, cards_by_key)
     return [
@@ -981,23 +1027,25 @@ def note_fields(card, image_src, cards_by_key, backlinks):
             card.get("kind_of"),
             linked_mentions(card, cards_by_key),
             headline_lead(card),
+            card.get("headline_lines", False),
         ),
-        image_html(card, image_src, cards_by_key) if image else "",
+        image_html(card, image_src, cards_by_key, served_src) if image else "",
         details_html(card, cards_by_key, backlinks.get(card_key(card), {})),
         source_html(card["source"]),
-        f'<a href="{html.escape(commons_file_url(image), quote=True)}">image source</a>'
-        if image
-        else "",
+        image_credit_html(card, cards_by_key),
         html.escape(category_label(card)),
     ]
 
 
-def make_note(card, model, media_path, cards_by_key=None, backlinks=None, due=0):
+def make_note(
+    card, model, media_path, cards_by_key=None, backlinks=None, due=0, served_path=None
+):
     fields = note_fields(
         card,
         media_path.name if media_path else "",
         cards_by_key or index_cards([card]),
         backlinks or {},
+        served_path.name if served_path else "",
     )
     tags = ["menu-food", f"menu-food::{card['category']}"]
     if card.get("kind") == CONCEPT:
@@ -1047,6 +1095,7 @@ def build_package(data, output=DEFAULT_OUTPUT, offline=False, workers=8):
                 cards_by_key,
                 backlinks,
                 due,
+                media.get(card.get("served_image")),
             )
         )
 

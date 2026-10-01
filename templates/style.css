@@ -105,6 +105,30 @@ footer {
       max-width: min(100%, 640px);
     }
   }
+
+  .pair {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    justify-content: center;
+
+    figure {
+      flex: 1 1 0;
+      margin: 0;
+      min-width: 0;
+    }
+
+    img {
+      max-height: 240px;
+      max-width: 100%;
+    }
+  }
+
+  figcaption {
+    color: var(--muted);
+    font-size: 0.72rem;
+    margin-top: 4px;
+  }
 }
 
 .extra {
