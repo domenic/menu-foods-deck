@@ -108,6 +108,10 @@ def main():
                 [
                     playwright,
                     "screenshot",
+                    # Twice the pixel density, for sharp README images on
+                    # high-density displays.
+                    "--device",
+                    "Desktop Chrome HiDPI",
                     "--viewport-size",
                     f"{VIEWPORT[0]},{VIEWPORT[1]}",
                     "--wait-for-timeout",

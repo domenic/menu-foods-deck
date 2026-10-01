@@ -18,12 +18,12 @@ important, so I suggest studying them all jumbled together.
 ## Example cards
 
 <p align="center">
-  <img src="screenshots/orecchiette.png" alt="Anki answer card for orecchiette: small ear-shaped pasta" width="360">
+  <img src="screenshots/orecchiette.png" alt="Anki answer card for orecchiette: small, ear-shaped pasta" width="360">
   <img src="screenshots/guanciale.png" alt="Anki answer card for guanciale: pig; cured jowl; Italian" width="360">
 </p>
 <p align="center">
   <img src="screenshots/pecorino-romano.png" alt="Anki answer card for pecorino romano: a kind of pecorino; hard, salty grating cheese" width="360">
-  <img src="screenshots/peperoncino.png" alt="Anki answer card for peperoncino: chili pepper, usually hot; Italian" width="360">
+  <img src="screenshots/peperoncino.png" alt="Anki answer card for peperoncino: small hot chili pepper, fresh or dried; Italian" width="360">
 </p>
 
 ## Installing and updating
