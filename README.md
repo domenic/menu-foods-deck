@@ -292,19 +292,22 @@ Git before committing it. Descriptions without a permanent Wikipedia revision in
 
 Release tags must be `v` followed by the version in `pyproject.toml`; CI rejects
 mismatches. Use `uv` to update both the project metadata and lockfile, then
-commit and tag the result. For example, to promote `1.0.0.dev0` to `1.0.0`:
+commit and tag the result. The annotated tag's message becomes the GitHub
+release notes, so write it for people using the deck: what changed, and anything
+to know when updating; `--cleanup=verbatim` keeps Markdown headings, which Git
+would otherwise strip as comments. For example, for a minor release with its
+notes in `notes.md`:
 
 ```sh
-uv version --bump stable
+uv version --bump minor
 version=$(uv version --short)
 git add pyproject.toml uv.lock
 git commit -m "v$version"
-git tag -a "v$version" -m "v$version"
+git tag -a "v$version" --cleanup=verbatim -F notes.md
 git push --atomic origin main "v$version"
 ```
 
-For later releases, `uv version --bump major`, `minor`, or `patch` provides the
-corresponding version increments.
+`uv version --bump major` and `patch` provide the other version increments.
 
 ## Third-party material
 

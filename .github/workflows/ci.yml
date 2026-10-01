@@ -79,9 +79,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # The release notes are the annotated tag's message.
+          tag_sha="$(gh api "repos/$GITHUB_REPOSITORY/git/ref/tags/$GITHUB_REF_NAME" --jq .object.sha)"
+          notes="$(gh api "repos/$GITHUB_REPOSITORY/git/tags/$tag_sha" --jq .message)"
           gh release create "$GITHUB_REF_NAME" \
             --repo "$GITHUB_REPOSITORY" \
             "dist/menu-foods.apkg" \
-            --notes "Original deck material is MIT-licensed; Wikipedia excerpts and Wikimedia Commons images remain under their linked source licenses. See [third-party notices](https://github.com/${GITHUB_REPOSITORY}/blob/${GITHUB_REF_NAME}/THIRD_PARTY_NOTICES.md)." \
-            --generate-notes \
+            --notes "$notes" \
             --verify-tag
