@@ -85,5 +85,6 @@ jobs:
           gh release create "$GITHUB_REF_NAME" \
             --repo "$GITHUB_REPOSITORY" \
             "dist/menu-foods.apkg" \
+            --title "$GITHUB_REF_NAME" \
             --notes "$notes" \
             --verify-tag
