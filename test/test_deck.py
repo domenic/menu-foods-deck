@@ -2,6 +2,7 @@ import re
 import unittest
 
 import build_deck
+import reorder_new_cards
 import wikipedia_descriptions
 
 CARDS = build_deck.validate_data(build_deck.load_data())["cards"]
@@ -167,6 +168,23 @@ class DeckDataTests(unittest.TestCase):
         self.assertEqual(
             build_deck.recognition_html(answer, lines=True),
             "<strong>-ini: smaller<br>-oni: bigger</strong>",
+        )
+
+    def test_reordering_moves_new_cards_to_their_study_positions(self):
+        positions = reorder_new_cards.study_positions(CARDS)
+        self.assertLess(positions["simmered"], positions["braised meat"])
+        new_cards = [
+            {"cardId": 1, "due": 900, "fields": {"Term": {"value": "simmered"}}},
+            {
+                "cardId": 2,
+                "due": positions["pasta"],
+                "fields": {"Term": {"value": "pasta"}},
+            },
+            {"cardId": 3, "due": 5, "fields": {"Term": {"value": "not a deck card"}}},
+        ]
+        self.assertEqual(
+            reorder_new_cards.plan_moves(new_cards, positions),
+            [(1, "simmered", 900, positions["simmered"])],
         )
 
     def test_served_image_shows_beside_the_uncooked_one(self):
