@@ -33,27 +33,42 @@ come in a study order: each card comes after the cards it builds on (see
 [below](#how-the-cards-teach)), and the categories are interleaved, so that each
 is spread across the whole deck. Keep the deck's default display order for new
 cards ("New card gather order: Deck" and "New card sort order: Card type, then
-order gathered"); a random order defeats this.
+order gathered"). A random order defeats this, including "Deck, then random
+notes", which shuffles cards within the deck.
 
 To update from an earlier release, first make a backup (**File → Create
 Backup**). Then import the new package with "Update notes" and "Update note
 types" set to "If newer". Your existing cards get the new text and keep their
-review history, and new cards join the new-card queue in study order. To see
-what changed, search the browser for `deck:"Menu Foods" (added:1 OR edited:1)`.
+review history, and cards new to the deck join the new-card queue at their
+places in the study order. To see what changed, search the browser for
+`deck:"Menu Foods" (added:1 OR edited:1)`.
+
+Importing doesn't move cards that were already waiting to be learned, though,
+and each release can change the study order. If you have the
+[AnkiConnect](https://ankiweb.net/shared/info/2055492159) add-on, put every
+unlearned card back into the current order after importing, by running this from
+a checkout of this repository while Anki is open:
+
+```sh
+uv run python reorder_new_cards.py           # shows what would change
+uv run python reorder_new_cards.py --apply
+```
+
+A card that now comes before ones you've already learned, like a new term that
+older cards build on, moves to the front of the queue.
 
 When a release reworks a category, its existing cards keep their schedules, so
 you may review an old card before learning the new terms it now builds on. To
-relearn some categories from scratch instead, after the backup:
+relearn some categories from scratch instead, after the backup, search the
+browser for the cards to relearn, like `deck:"Menu Foods"
+-tag:menu-food::pasta` for everything but pasta, and select them all. Then
+either:
 
-1. In the browser, search for the cards to relearn, like `deck:"Menu Foods"
-   -tag:menu-food::pasta` for everything but pasta, select them all, and delete
-   their notes (**Notes → Delete**). This discards their review history.
-1. Import the new package as above. The deleted notes come back as new cards, in
-   study order; the rest are updated in place.
-
-Anki's own reset (**Cards → Reset**) keeps review history, but can't put cards
-back into the study order, so deleting and re-importing is the way to relearn
-them in order.
+- reset them (**Cards → Reset**) and run `reorder_new_cards.py --apply`, which
+  keeps their review history; or
+- without AnkiConnect, delete their notes (**Notes → Delete**), which discards
+  their review history, and import the package again. The deleted notes come
+  back as new cards, in study order.
 
 ## How the cards teach
 
