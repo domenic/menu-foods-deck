@@ -1778,7 +1778,7 @@ cards:
     kind: concept
     answer:
       core:
-        - browned, then simmered slowly in a little liquid until tender
+        - '[[browned]], then [[simmered]] slowly in a little liquid until tender'
     details: >-
       Braising turns tough, cheap [[cut of meat|cuts]] soft enough to cut with a fork, as in pot roast or osso buco.
     compare:
@@ -2269,7 +2269,7 @@ cards:
     kind: concept
     answer:
       core:
-        - 'very rare: browned quickly outside, cool and red inside'
+        - 'very rare: [[browned]] quickly outside, cool and red inside'
       context:
         - French
     details: >-
@@ -2892,7 +2892,7 @@ cards:
       origin: northern Italy
       label: IGP, cotechino Modena
     details: >-
-      Simmered for hours, then sliced; eaten with lentils at New Year. Often sold already cooked.
+      [[simmered|Simmered]] for hours, then sliced; eaten with lentils at New Year. Often sold already cooked.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cotechino
@@ -3120,8 +3120,8 @@ cards:
       strength: mild
       origin: France
     details: >-
-      Simmered gently in water when made, then browned in a pan; a Christmas tradition in France. In Louisiana, boudin is
-      a different, rice-filled [[pork]] sausage.
+      [[simmered|Simmered]] gently in water when made, then [[browned]] in a pan; a Christmas tradition in France. In Louisiana,
+      boudin is a different, rice-filled [[pork]] sausage.
     compare:
       - boudin noir
     source:
@@ -3859,7 +3859,7 @@ cards:
       flavor: [beefy]
       origin: United States
     details: >-
-      Best marinated, grilled quickly and sliced against its long fibers, which makes it tender; common in fajitas (grilled
+      Best [[marinated]], grilled quickly and sliced against its long fibers, which makes it tender; common in fajitas (grilled
       strips wrapped in tortillas).
     compare:
       - skirt steak
@@ -4183,7 +4183,7 @@ cards:
       context:
         - Italian
     details: >-
-      Trippa alla romana is tripe simmered in tomato sauce with mint and pecorino.
+      Trippa alla romana is tripe [[simmered]] in tomato sauce with mint and pecorino.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Tripe
@@ -4241,7 +4241,7 @@ cards:
       origin: France
     details: >-
       French for “fat liver”. The birds are force-fed to fatten the liver, a practice banned in some places. Served cold as
-      a smooth slice with toast, or seared.
+      a smooth slice with toast, or [[seared]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Foie_gras
@@ -4270,7 +4270,7 @@ cards:
     category: meat
     answer:
       core:
-        - stomach lining, simmered until tender
+        - stomach lining, [[simmered]] until tender
     profile:
       family: offal
       animal: [cow]
@@ -7634,6 +7634,97 @@ cards:
     source:
       label: Wiktionary
       url: https://en.wiktionary.org/wiki/dolce#Italian
+  - term: browned
+    category: other
+    kind: concept
+    answer:
+      core:
+        - cooked in a hot pan or oven until the outside turns brown
+    details: >-
+      Browning gives food a toasty taste, like the crust on bread or grilled meat. Meat is often browned before it’s cooked
+      slowly in liquid.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Browning_(food_process)
+    image: Searing the Porterhouse Steak (4431516594).jpg
+  - term: seared
+    category: other
+    kind: concept
+    answer:
+      core:
+        - '[[browned]] quickly over very high heat'
+    details: >-
+      The outside gets a dark crust while the inside stays less cooked, as in seared scallops, or seared tuna, still raw in
+      the middle.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Searing
+    image: Pan Seared Tuna 8-4-09 -- IMG 4347.jpg
+  - term: simmered
+    category: other
+    kind: concept
+    answer:
+      core:
+        - cooked in liquid kept just below boiling, with small, gentle bubbles
+    details: >-
+      Gentler than boiling, so meat turns tender instead of tough and sauces thicken slowly; soups, stews and tomato sauces
+      are simmered.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Simmering
+    image: Pot-au-feu - Josselin 2.jpg
+  - term: poached
+    category: other
+    kind: concept
+    answer:
+      core:
+        - cooked gently in hot liquid, below a [[simmered|simmer]]
+    details: >-
+      Keeps delicate food soft and moist, as in poached eggs, poached fish, or pears poached in wine.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Poaching_(cooking)
+    image: 02016 0756 Pochierte Eier, Ostergerichte, Schlesische Beskiden.JPG
+  - term: sautéed
+    category: other
+    kind: concept
+    answer:
+      core:
+        - fried quickly in a little fat in a hot pan, tossed or stirred
+      context:
+        - French
+    details: >-
+      French for “jumped”, from tossing food in the pan. Common for vegetables, like sautéed spinach or mushrooms.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Sautéing
+    image: Borsch-con-fungi 041.jpg
+  - term: glazed
+    category: other
+    kind: concept
+    answer:
+      core:
+        - coated in a shiny layer, often sweet, as it cooks
+    details: >-
+      A glaze is usually sugar, honey or butter cooked down until sticky, as on glazed carrots or glazed chicken wings; on
+      pastries, it’s a thin sugar icing.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Glaze_(cooking_technique)
+    image: Honey-glazed ham.jpg
+  - term: marinated
+    category: other
+    kind: concept
+    answer:
+      core:
+        - soaked in a flavored liquid before cooking or serving
+    details: >-
+      A marinade, often oil with vinegar or lemon, herbs and garlic, flavors food and can soften tough meat; olives and vegetables
+      are also marinated and served cold.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/Marination
+    image: Rostbraetel in marinade closeup.jpg
   - term: piccante (dish)
     category: other
     kind: concept
@@ -7932,7 +8023,7 @@ cards:
       context:
         - Italian
     details: >-
-      Chopped or ground meat simmered with tomato, wine and vegetables until thick. Every region has its own; the best-known
+      Chopped or ground meat [[simmered]] with tomato, wine and vegetables until thick. Every region has its own; the best-known
       outside Italy is bolognese.
     compare:
       - bolognese

@@ -22,7 +22,7 @@ categories:
   pasta:
     label: Pasta
     term_label: Pasta term
-    jargon: [pasta]
+    jargon: [pasta, cooking]
     # A pasta's profile, in display order: what kind of pasta it is and how it
     # looks, what it's made of and how, what it's served with, then where it's
     # from.
@@ -105,7 +105,7 @@ categories:
   meat:
     label: Meat & charcuterie
     term_label: Meat term
-    jargon: [meat]
+    jargon: [meat, cooking]
     # A meat card's headline starts with its profile's animal row.
     headline_lead: animal
     # A meat's profile, in display order: what kind of meat it is and where on
@@ -270,7 +270,7 @@ categories:
   cheese:
     label: Cheese
     term_label: Cheese term
-    jargon: [cheese]
+    jargon: [cheese, cooking]
     # A cheese's profile, in display order: what kind of cheese it is, what
     # it's like to eat, what it's made from and how, then where it's from.
     profile:
@@ -421,27 +421,27 @@ categories:
   seafood:
     label: Seafood
     term_label: Seafood term
-    jargon: [cheese]
+    jargon: [cheese, cooking]
   vegetable:
     label: Vegetable
     term_label: Vegetable term
-    jargon: [cheese]
+    jargon: [cheese, cooking]
   condiment:
     label: Condiment
     term_label: Condiment term
-    jargon: [cheese]
+    jargon: [cheese, cooking]
   dessert:
     label: Dessert
     term_label: Dessert term
-    jargon: [cheese]
+    jargon: [cheese, cooking]
   dish:
     label: Dish
     term_label: Dish term
-    jargon: [cheese, meat, pasta]
+    jargon: [cheese, meat, pasta, cooking]
   other:
     label: Other menu trap
     term_label: Menu term
-    jargon: [cheese]
+    jargon: [cheese, cooking]
 
 # Terms of art, grouped by the kind of food they belong to, each with the card
 # explaining it and the word forms that count as using it. A card may use one
@@ -501,6 +501,14 @@ jargon:
     al dente: [al dente]
     stuffed pasta: [stuffed pasta]
     dumpling: [dumpling, dumplings]
+  cooking:
+    browned: [browned, browning]
+    seared: [sear, seared, searing]
+    simmered: [simmer, simmered, simmering, simmers]
+    poached: [poach, poached, poaching]
+    sautéed: [sauté, sautéed, sauteed, sautéing]
+    glazed: [glaze, glazed, glazes, glazing]
+    marinated: [marinade, marinades, marinate, marinated]
 
 # Vague words with no card, which reworked cards may not use at all.
 banned: [farmhouse, mountain cheese, mountain cheeses, rustic]
