@@ -59,9 +59,10 @@ cards:
     kind: concept
     answer:
       core:
-        - '[[pasta]] dough made with eggs instead of water: softer and yellower, with a mild egg taste'
+        - '[[pasta]] dough made with eggs in place of most or all of the water: softer and yellower, with a mild egg taste'
     details: >-
-      Most northern Italian [[fresh pasta]] is egg pasta, like tagliatelle and tortellini.
+      Classic Italian egg pasta is just flour and eggs, which supply all the moisture; some recipes add a splash of
+      water. Most northern Italian [[fresh pasta]] is egg pasta, like tagliatelle and tortellini.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pasta#Fresh_pasta
