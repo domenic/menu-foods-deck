@@ -1741,6 +1741,7 @@ cards:
     kind: concept
     answer:
       core:
+        - usually cow
         - a thick slice of meat, quickly grilled or pan-fried
     details: >-
       Usually [[beef]], but tuna, [[pork]] and even cauliflower steaks exist. Beef steaks are named for the part of the cow
@@ -1793,6 +1794,7 @@ cards:
     kind: concept
     answer:
       core:
+        - usually pig
         - seasoned ground meat stuffed into a thin tube, or casing
     details: >-
       The casing is traditionally cleaned intestine, now sometimes man-made. Some sausages must be cooked before eating; others
@@ -1947,6 +1949,7 @@ cards:
     kind: concept
     answer:
       core:
+        - pig or cow
         - a whole piece of meat, [[dry-cured meat|dry-cured]] and sliced thin
     details: >-
       Unlike [[salame|salami]], it isn’t ground, so each slice shows one solid piece of muscle. Coppa, bresaola and lonza
@@ -1963,6 +1966,7 @@ cards:
     kind: concept
     answer:
       core:
+        - usually pig
         - raw [[sausage]] that must be cooked before eating
     details: >-
       Italian sausage and breakfast sausage (usually ground [[pork]] with sage) are fresh sausages; they’re grilled, fried,
@@ -1976,6 +1980,7 @@ cards:
     kind: concept
     answer:
       core:
+        - pig, cow or chicken
         - "[[sausage]] cooked when it’s made, so it’s ready to eat"
     details: >-
       Hot dogs and bologna are cooked sausages. They’re served cold in slices, or just heated through.
@@ -1990,9 +1995,10 @@ cards:
     kind: concept
     answer:
       core:
+        - usually pig
         - "[[sausage]] made with animal blood, so it’s nearly black"
     details: >-
-      The blood is mixed with fat and a filler like oats, rice or onions. Soft, and a little iron-tasting.
+      Usually pig’s blood, mixed with fat and a filler like oats, rice or onions. Soft, and a little iron-tasting.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Blood_sausage
@@ -2002,6 +2008,7 @@ cards:
     kind: concept
     answer:
       core:
+        - pig, duck, goose or chicken
         - finely ground or shredded meat, served cold on bread or in slices
     details: >-
       Pâté is smooth, rillettes are shredded, and a terrine is a chunky loaf served in slices.
@@ -2383,13 +2390,14 @@ cards:
     kind: concept
     answer:
       core:
+        - usually pig
         - '[[dry-cured meat|dry-cured]] [[sausage]], sliced and eaten without cooking'
       context:
         - Italian; salame is the singular
     details: >-
-      Ground meat and fat are seasoned, stuffed into a casing, and left to ferment and dry for weeks or months, which gives
-      salami a slightly tangy taste. The white coating on some is a harmless [[mold (cheese)|mold]]. Pepperoni is an American
-      salami.
+      Usually [[pork]], sometimes mixed with [[beef]]; some are all beef, [[wild boar]] or [[venison]]. The ground meat and
+      fat are seasoned, stuffed into a casing, and left to ferment and dry for weeks or months, which gives salami a slightly
+      tangy taste. The white coating on some is a harmless [[mold (cheese)|mold]]. Pepperoni is an American salami.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Salami
