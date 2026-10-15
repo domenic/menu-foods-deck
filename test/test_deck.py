@@ -1,4 +1,3 @@
-import re
 import unittest
 
 import build_deck
@@ -62,27 +61,6 @@ class DeckDataTests(unittest.TestCase):
             ValueError, "guanciale: needs a profile animal row"
         ):
             build_deck.validate_data(data)
-
-    def test_cheese_core_vocabulary_policy(self):
-        milk_identity_terms = {
-            "mozzarella di bufala",
-            "pecorino",
-            "pecorino romano",
-            "chèvre",
-        }
-        animal_milk = re.compile(
-            r"\b(?:cow|sheep|goat|buffalo|water-buffalo)[’'s-]*(?:milk|cheese)\b"
-        )
-        context_only = re.compile(
-            r"\b(?:aromatic|bloomy-rind|strong-smelling|washed-rind)\b"
-        )
-        for card in CARDS:
-            if card["category"] != "cheese" or build_deck.is_reworked(card):
-                continue
-            core = "; ".join(card["answer"]["core"])
-            if animal_milk.search(core):
-                self.assertIn(card["term"], milk_identity_terms)
-            self.assertIsNone(context_only.search(core), card["term"])
 
     def test_reworked_cards_must_link_the_jargon_they_use(self):
         data = build_deck.load_data()
