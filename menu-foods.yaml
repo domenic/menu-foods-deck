@@ -1,3 +1,37 @@
+# The Menu Foods cards. build_deck.py validates this file and builds the deck
+# from it; see AGENTS.md for how to write cards, and vocabulary.yaml for the
+# categories, profile rows and word lists cards are checked against.
+#
+# Every card has:
+#   term        The menu word on the card's front. A suffix like " (cheese)"
+#               tells apart senses of one word; " / " joins spelling variants.
+#   category    A category from vocabulary.yaml; also the card's tag.
+#   answer      `core`: the bold headline fragments, what the reader is graded
+#               on. `context`: the rest of the headline; a fragment starting
+#               with "like" gives examples and follows the core after a comma.
+#   details     The explanation. `[[key]]` or `[[key|shown text]]` links a
+#               card, by its `id` or `term`, in any text.
+#   source      Where the explanation comes from. `adapted_from` marks a
+#               verbatim Wikipedia extract, at a permanent revision.
+#   image       A Wikimedia Commons filename; optional for concept cards.
+#
+# Optional fields:
+#   id              The note's identity, which otherwise comes from `term`; set
+#                   it to the old term when renaming a released card.
+#   kind: concept   A term of art, like `rind`, rather than a food.
+#   profile         Fixed facts, using the category's rows and words. A word
+#                   with a concept card links it.
+#   kind_of         A broader card; its profile fills in rows this one omits.
+#   translates      The card a foreign menu word means.
+#   compare         Related cards, linked without becoming prerequisites.
+#   image_from      A card whose image this one shows.
+#   mirror_image    true flips the image, so that animals face left.
+#   served_image    A second photo, of the food as served (pasta).
+#   headline_lines  true puts each core fragment on its own line.
+#
+# Links through text, `profile`, `kind_of` and `translates` make the linked
+# card a prerequisite, which comes earlier in the study order.
+
 schema: 1
 deck:
   id: 2031671180
