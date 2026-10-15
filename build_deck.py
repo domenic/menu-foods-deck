@@ -38,7 +38,6 @@ MODEL_FIELDS = [
 MODEL_TEMPLATE_ID = 1746720810477752110
 CONCEPT = "concept"
 
-LINK_FIELDS = ["profile", "kind_of", "translates", "compare"]
 PROFILE_SHAPES = {"text", "single", "range", "list", "stages"}
 VOCABULARY_PATH = ROOT / "vocabulary.yaml"
 
@@ -404,16 +403,6 @@ def prerequisites(card, cards_by_key):
     return found
 
 
-def is_reworked(card):
-    """Returns whether a card follows the concept-card conventions, rather than
-    predating them."""
-    return (
-        card.get("kind") == CONCEPT
-        or any(field in card for field in LINK_FIELDS)
-        or bool(text_references(card))
-    )
-
-
 def base_term(card):
     """Returns a card's term without any disambiguating suffix, like "(cheese)"."""
     return re.sub(r"\s*\(.*\)$", "", card["term"])
@@ -477,8 +466,6 @@ def link_errors(cards):
             and not (card.get("profile") or {}).get(lead)
         ):
             errors.append(f"{key}: needs a profile {lead} row to lead its headline")
-        if not is_reworked(card):
-            continue
         profile = merged_profile(card, cards_by_key)
         # A card with narrower kinds may leave the rows that vary to them.
         if "profile" in card and key not in parents:

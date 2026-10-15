@@ -7369,7 +7369,7 @@ cards:
       context:
         - Italian
     details: >-
-      A pressed, amber block of the eggs of mullet (a common sea fish) or tuna; grated over pasta for a salty, sea-tasting
+      A firm, amber block of the eggs of mullet (a common sea fish) or tuna; grated over [[pasta]] for a salty, sea-tasting
       flavor.
     source:
       label: Wikipedia
@@ -7412,7 +7412,7 @@ cards:
       context:
         - Italian
     details: >-
-      Chewy unless cooked slowly: usually simmered until tender, then grilled, or served in a salad with potatoes.
+      Chewy unless cooked slowly: usually [[simmered]] until tender, then grilled, or served in a salad with potatoes.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Octopus_as_food
@@ -7523,6 +7523,8 @@ cards:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Rapini
     image: Rapini.jpg
+    compare:
+      - orecchiette
   - term: puntarelle
     category: vegetable
     answer:
@@ -7557,7 +7559,7 @@ cards:
       context:
         - Italian
     details: >-
-      Roasted or glazed whole until sweet and soft.
+      Roasted or [[glazed]] whole until sweet and soft.
     source:
       label: Merriam-Webster
       url: https://www.merriam-webster.com/dictionary/cipollini
@@ -7583,11 +7585,13 @@ cards:
       context:
         - Italian
     details: >-
-      Lemon zest is the grated yellow skin. The classic topping for osso buco, slow-cooked veal shanks.
+      Lemon zest is the grated yellow skin. The classic topping for osso buco, slow-cooked [[veal]] [[shank|shanks]].
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Gremolata
     image: Gremolata_03.jpg
+    compare:
+      - osso buco
   - term: tapenade
     category: condiment
     answer:
@@ -7609,7 +7613,7 @@ cards:
       context:
         - from Sicily
     details: >-
-      Fried eggplant cooked with tomatoes, celery, olives and capers in vinegar and sugar; served cold or warm.
+      Fried eggplant cooked with tomatoes, celery, olives and [[capers]] in vinegar and sugar; served cold or warm.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Caponata
@@ -7878,13 +7882,15 @@ cards:
         - shaved over food
     details: >-
       Truffles grow underground on tree roots and are sniffed out by trained dogs or pigs. Black and white truffles are shaved
-      raw over pasta, eggs or risotto; a little goes a long way. “Truffle oil” and truffle fries are usually flavored with
-      a synthetic aroma instead.
+      raw over [[pasta]], eggs or risotto; a little goes a long way. “Truffle oil” and truffle fries are usually flavored
+      with a synthetic aroma instead.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Truffle
     image: Tuber melanosporum Vittadini 1831 (Fungi Ascomycota Pezizomycotina Pezizomycetes Pezizales Tuberaceæ) 
       (25817500456) cropped.jpg
+    compare:
+      - risotto
   - term: truffle (chocolate)
     category: dessert
     answer:
@@ -7979,8 +7985,8 @@ cards:
       context:
         - northern Italian; soft, or set and grilled
     details: >-
-      Ground cornmeal simmered in water or broth until thick. Served soft and spoonable, often topped with melted cheese or
-      a sauce, or left to set, then sliced and grilled or fried.
+      Ground cornmeal [[simmered]] in water or broth until thick. Served soft and spoonable, often topped with melted cheese
+      or a sauce, or left to set, then sliced and grilled or fried.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Polenta
@@ -8099,8 +8105,8 @@ cards:
       context:
         - Italian-American
     details: >-
-      America’s everyday red sauce for pasta. In Italy, marinara usually means a pizza of tomato, garlic and oregano, with
-      no cheese.
+      America’s everyday red sauce for [[pasta]]. In Italy, marinara usually means a pizza of tomato, garlic and oregano,
+      with no cheese.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Marinara_sauce
@@ -8113,11 +8119,13 @@ cards:
       context:
         - Italian
     details: >-
-      Italian for “tomato”: spaghetti al pomodoro is pasta with tomato sauce.
+      Italian for “tomato”: spaghetti al pomodoro is [[pasta]] with tomato sauce.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Tomato_sauce
     image: Spaghettata.JPG
+    compare:
+      - spaghetti
   - term: arrabbiata
     category: dish
     answer:
@@ -8175,6 +8183,9 @@ cards:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pesto
     image: Trofie al pesto 01.jpg
+    compare:
+      - linguine
+      - trofie
   - term: aglio e olio
     category: dish
     answer:
@@ -8263,6 +8274,8 @@ cards:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Penne_alla_vodka
     image: Penne alla Vodka.jpg
+    compare:
+      - penne
   - term: burro e salvia
     category: dish
     answer:
