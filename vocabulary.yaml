@@ -1,6 +1,6 @@
 # The deck's house style: the words cards may use and how they are checked.
-# build_deck.py reads this file alongside menu-foods.yaml; see the README's
-# "Writing cards" and "What the build checks" sections for how it's used.
+# build_deck.py reads this file alongside menu-foods.yaml; see AGENTS.md for
+# how cards are written.
 
 # Card categories. Each has the label shown on its cards' backs, the label for
 # its concept cards, and the `jargon` groups (below) that its cards are checked
