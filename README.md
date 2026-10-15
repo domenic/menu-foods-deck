@@ -1,19 +1,10 @@
 # Menu Foods Anki deck
 
-An Anki deck for recognizing unfamiliar food words on restaurant menus. It
-focuses on identification, not language production: seeing the bare term should
-be enough to recall what kind of food it is and the characteristics that matter
-most when ordering.
+I've often had trouble with restaurant menus. Is this foreign-language word a meat, a pasta, or a cheese? What's the difference between peperoncino and pepperoni, or tagliata and tagliatelle? Why does tartufo sometimes refer to a dessert and sometimes a pasta topping?
 
-**[Download the latest Menu Foods deck](https://github.com/domenic/menu-foods-deck/releases/latest/download/menu-foods.apkg)**
+This deck of [Anki](https://apps.ankiweb.net/) flashcards is designed to solve my confusion once and for all. It contains over 400 cards covering meats, pastas, cheeses, seafood, vegetables, condiments, and more. It starts from the basics ("pork", "ham", "beef", "cured", "aged", "shellfish") before eventually getting into a full list of specific cheeses. Via the power of spaced repetition, I have finally stopped pulling out my phone to look up words before ordering.
 
-The cards live in one mixed `Menu Foods` deck and cover pasta, meats and
-charcuterie, seafood, vegetables, cheeses, condiments, desserts, dishes, and
-other easily misclassified terms.
-
-Category tags allow filtering if you'd prefer to just study pastas or similar.
-But at least for me, "is this mystery foreign word a pasta or a meat?" is
-important, so I suggest studying them all jumbled together.
+**[Download the latest Menu Foods deck](https://github.com/domenic/menu-foods-deck/releases/latest/download/menu-foods.apkg)**, or [browse the release notes](https://github.com/domenic/menu-foods-deck/releases).
 
 ## Example cards
 
@@ -26,86 +17,38 @@ important, so I suggest studying them all jumbled together.
   <img src="screenshots/peperoncino.png" alt="Anki answer card for peperoncino: small hot chili pepper, fresh or dried; Italian" width="360">
 </p>
 
+## Card design
+
+This deck is focused on _word recognition_: the front side contains the word or concept, and the back contains the relevant details one should recall when deciding one's order. It doesn't work as well for production, i.e., looking at a food and then recalling its name. So if a friend busts out some round, orange cheese, you won't necessarily be able to say "nice mimolette!".
+
+The cards live in one mixed `Menu Foods` deck. Category tags allow filtering if you'd prefer to just study pastas or similar. But at least for me, "is this mystery foreign word a pasta or a meat?" is important, so I suggest studying them all jumbled together.
+
+The cards are designed to make sense to someone who knows very little about food. You might think that a card for "ham" is not necessary, but as a former vegetarian who only recently got a grip on [the Norman/Saxon split](https://grammarphobia.com/blog/2007/01/on-swine-and-pork.html), I thought it was worth reinforcing. Basic cards like "egg pasta" often contain nuggets of new information, e.g. that the pasta contains eggs entirely in place of water. Anyway, if these are too obvious for you, just mash the "Easy" button in Anki, and they'll quickly become scarce.
+
+As part of the pedagogy, the cards are ordered so that a term's card comes before the cards that use it. Similarly, a card's back gives a dotted underline to all previously-studied terms, and repeats their contents when space permits.
+
+You can decide how strict to be when grading yourself. My default suggestion is to require that you remember all the bolded contents, e.g., for the above "guanciale" card, press "Again" if you forget any of "pig", "cured", or "jowl", but give yourself a pass if you forget "Italian". But it's also valid to go much coarser, e.g., if you don't care much about cheeses, just recognizing that "stracchino" is a type of cheese and "whey" is part of the cheese-making process could be enough.
+
 ## Installing and updating
 
-Import the downloaded `menu-foods.apkg` with Anki's **File → Import**. New cards
-come in a study order: each card comes after the cards it builds on (see
-[below](#how-the-cards-teach)), and the categories are interleaved, so that each
-is spread across the whole deck. Keep the deck's default display order for new
-cards ("New card gather order: Deck" and "New card sort order: Card type, then
-order gathered"). A random order defeats this, including "Deck, then random
-notes", which shuffles cards within the deck.
+Import the downloaded `menu-foods.apkg` with Anki's **File → Import**. New cards come in a study order: each card comes after the cards it builds on, and the categories are interleaved, so that each is spread across the whole deck. Keep the deck's default display order for new cards ("New card gather order: Deck" and "New card sort order: Card type, then order gathered"); do not use a random order.
 
-To update from an earlier release, first make a backup (**File → Create
-Backup**). Then import the new package with "Update notes" and "Update note
-types" set to "If newer". Your existing cards get the new text and keep their
-review history, and cards new to the deck join the new-card queue at their
-places in the study order. To see what changed, search the browser for
-`deck:"Menu Foods" (added:1 OR edited:1)`.
+To update from an earlier release, first make a backup (**File → Create Backup**). Then import the new package with "Update notes" and "Update note types" set to "If newer". Your existing cards get the new text and keep their review history, and cards new to the deck join the new-card queue at their places in the study order. To see what changed, search the browser for `deck:"Menu Foods" (added:1 OR edited:1)`.
 
-Importing doesn't move cards that were already waiting to be learned, though,
-and each release can change the study order. If you have the
-[AnkiConnect](https://ankiweb.net/shared/info/2055492159) add-on, put every
-unlearned card back into the current order after importing, by running this from
-a checkout of this repository while Anki is open:
+## Advanced updating
+
+Normally, the above update procedure suffices. However, in Anki, importing a new release can't change the study index of any existing cards in your collection; it only inserts new cards. So if a previous release had cards A, B, C, D waiting to be studied, and a new release inserts X, Y between B and C, the new order will be A, B, C or X (tied), D or Y (tied), instead of the intended A, B, X, Y, C, D.
+
+If you want to preserve the ideal as-designed study order, you can install [uv](https://docs.astral.sh/uv/) and [AnkiConnect](https://ankiweb.net/shared/info/2055492159), and run the following commands from a checkout of this repository while Anki is open:
 
 ```sh
 uv run python reorder_new_cards.py           # shows what would change
 uv run python reorder_new_cards.py --apply
 ```
 
-A card that now comes before ones you've already learned, like a new term that
-older cards build on, moves to the front of the queue.
+This will reorder all unstudied cards to best match the new release's order, including moving new prerequsite cards for cards you've already studied to the front of the queue.
 
-When a release reworks a category, its existing cards keep their schedules, so
-you may review an old card before learning the new terms it now builds on. To
-relearn some categories from scratch instead, after the backup, search the
-browser for the cards to relearn, like `deck:"Menu Foods"
--tag:menu-food::pasta` for everything but pasta, and select them all. Then
-either:
-
-- reset them (**Cards → Reset**) and run `reorder_new_cards.py --apply`, which
-  keeps their review history; or
-- without AnkiConnect, delete their notes (**Notes → Delete**), which discards
-  their review history, and import the package again. The deleted notes come
-  back as new cards, in study order.
-
-## How the cards teach
-
-Every card should make sense to someone who knows little about food. So a card
-may only use plain everyday English and terms that have cards of their own:
-"bloomy rind", "whey", "young cheese", "DOP" and "fondue" are all cards. New
-cards are ordered so that a term's card comes before the cards that use it, and
-a card's back repeats the short answer of every card it links. The build
-enforces as much of this as it can; see [below](#what-the-build-checks).
-
-The cheeses and meats, and the dishes, desserts and menu words they rely on,
-follow these conventions. The other categories still use the original, simpler
-format of a headline plus a Wikipedia extract.
-
-## Card design
-
-The front contains only the menu term. The back contains:
-
-- a headline with the crucial facts in bold, which is what to grade yourself
-  on, followed by extra context in normal weight;
-- a representative image; for a pasta, the uncooked shape beside a served dish;
-- for a cheese, meat or pasta, a profile of fixed facts, most significant first.
-  For a cheese: family, rind, firmness, texture, flavor strength, flavor, smell,
-  milk, age, style, how it's made, origin and protected label. For a meat:
-  family, animal, part of the animal, how it's made and served, texture, flavor
-  strength, flavor, curing time, origin and protected label. For a pasta:
-  family, size, surface, dough, how it's made, how it's served and origin;
-- a short explanation;
-- the answers of the cards it links, and, for a term, the cards in the deck
-  that are examples of it; and
-- links to the text and image sources.
-
-Words that link another card have a dotted underline. The note model includes
-compact desktop styling and readable mobile/night-mode colors. Fixed deck and
-model IDs and deterministic note GUIDs ensure that successive packages identify
-the same generated deck objects, so importing a new package updates cards
-without losing their review history.
+For bigger reworks, you can also delete the relevant cards and re-import the package.
 
 ## The data
 
