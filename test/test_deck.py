@@ -3,7 +3,6 @@ import unittest
 
 import build_deck
 import reorder_new_cards
-import wikipedia_descriptions
 
 CARDS = build_deck.validate_data(build_deck.load_data())["cards"]
 
@@ -239,16 +238,6 @@ class DeckDataTests(unittest.TestCase):
         self.assertEqual(
             build_deck.source_html(
                 {
-                    "label": "Wikipedia",
-                    "url": "https://en.wikipedia.org/wiki/Feta",
-                    "adapted_from": "https://en.wikipedia.org/w/index.php?oldid=123&x=1",
-                }
-            ),
-            '<a href="https://en.wikipedia.org/wiki/Feta">Wikipedia</a> (adapted from <a href="https://en.wikipedia.org/w/index.php?oldid=123&amp;x=1">permalink</a>)',
-        )
-        self.assertEqual(
-            build_deck.source_html(
-                {
                     "label": "Other & source",
                     "url": "https://example.com/?a=1&b=2",
                 }
@@ -263,92 +252,6 @@ class DeckDataTests(unittest.TestCase):
             ),
             "jpg",
         )
-
-    def test_wikipedia_description_cleanup(self):
-        self.assertEqual(
-            wikipedia_descriptions.clean_extract(
-                "Feta ( FET-ə; English: ,) is cheese. It is brined. Third sentence."
-            ),
-            "Feta (FET-ə) is cheese. It is brined. Third sentence.",
-        )
-
-    def test_description_updates_preserve_other_cards(self):
-        source = """schema: 1
-cards:
-  - term: alpha
-    details: >-
-      Old alpha.
-    source:
-      label: Wikipedia
-      url: https://en.wikipedia.org/wiki/Alpha
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=1
-  - term: beta
-    details: >-
-      Leave beta alone.
-    source:
-      label: Example
-      url: https://example.com/beta
-  - term: gamma
-    details: >-
-      Keep gamma's wrapping and text.
-    source:
-      label: Wikipedia
-      url: https://en.wikipedia.org/wiki/Gamma
-      adapted_from: https://en.wikipedia.org/w/index.php?oldid=3
-"""
-        updated = wikipedia_descriptions.update_yaml_text(
-            source,
-            {
-                "alpha": {
-                    "details": "New alpha.",
-                    "host": "en.wikipedia.org",
-                    "revision": 2,
-                },
-                "gamma": {
-                    "details": None,
-                    "host": "en.wikipedia.org",
-                    "revision": 4,
-                },
-            },
-        )
-        self.assertIn("      New alpha.\n", updated)
-        self.assertIn(
-            "adapted_from: https://en.wikipedia.org/w/index.php?oldid=2", updated
-        )
-        self.assertIn("url: https://en.wikipedia.org/wiki/Alpha", updated)
-        self.assertIn("      Leave beta alone.\n", updated)
-        self.assertIn("      Keep gamma's wrapping and text.\n", updated)
-        self.assertIn(
-            "adapted_from: https://en.wikipedia.org/w/index.php?oldid=4", updated
-        )
-
-    def test_description_update_round_trip_preserves_unchanged_yaml(self):
-        source = build_deck.DATA_PATH.read_text(encoding="utf-8")
-        self.assertEqual(wikipedia_descriptions.update_yaml_text(source, {}), source)
-
-    def test_bulk_description_updates_exclude_unchanged_cards(self):
-        cards = [
-            {"term": "alpha", "details": "Same ( alpha)."},
-            {"term": "beta", "details": "Old beta."},
-        ]
-        pages = {
-            "alpha": {
-                "details": "Same (alpha).",
-                "host": "en.wikipedia.org",
-                "source_revision": 1,
-                "revision": 2,
-            },
-            "beta": {
-                "details": "New beta.",
-                "host": "en.wikipedia.org",
-                "source_revision": 2,
-                "revision": 3,
-            },
-        }
-        updates = wikipedia_descriptions.pending_updates(cards, pages)
-        self.assertEqual(set(updates), {"alpha", "beta"})
-        self.assertIsNone(updates["alpha"]["details"])
-        self.assertEqual(updates["beta"]["details"], "New beta.")
 
 
 if __name__ == "__main__":
