@@ -7682,7 +7682,7 @@ cards:
       label: Wiktionary
       url: https://en.wiktionary.org/wiki/dolce#Italian
   - term: browned
-    category: other
+    category: dish
     kind: concept
     answer:
       core:
@@ -7695,7 +7695,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Browning_(food_process)
     image: Searing the Porterhouse Steak (4431516594).jpg
   - term: seared
-    category: other
+    category: dish
     kind: concept
     answer:
       core:
@@ -7708,7 +7708,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Searing
     image: Pan Seared Tuna 8-4-09 -- IMG 4347.jpg
   - term: simmered
-    category: other
+    category: dish
     kind: concept
     answer:
       core:
@@ -7721,7 +7721,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Simmering
     image: Pot-au-feu - Josselin 2.jpg
   - term: poached
-    category: other
+    category: dish
     kind: concept
     answer:
       core:
@@ -7733,7 +7733,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Poaching_(cooking)
     image: 02016 0756 Pochierte Eier, Ostergerichte, Schlesische Beskiden.JPG
   - term: sautéed
-    category: other
+    category: dish
     kind: concept
     answer:
       core:
@@ -7747,7 +7747,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Sautéing
     image: Borsch-con-fungi 041.jpg
   - term: glazed
-    category: other
+    category: dish
     kind: concept
     answer:
       core:
@@ -7760,7 +7760,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Glaze_(cooking_technique)
     image: Honey-glazed ham.jpg
   - term: marinated
-    category: other
+    category: dish
     kind: concept
     answer:
       core:
@@ -7773,7 +7773,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Marination
     image: Rostbraetel in marinade closeup.jpg
   - term: piccante (dish)
-    category: other
+    category: dish
     kind: concept
     answer:
       core:
