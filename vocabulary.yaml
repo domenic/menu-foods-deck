@@ -438,10 +438,6 @@ categories:
     label: Dish
     term_label: Dish term
     jargon: [cheese, meat, pasta, cooking]
-  other:
-    label: Other menu trap
-    term_label: Menu term
-    jargon: [cheese, cooking]
 
 # Terms of art, grouped by the kind of food they belong to, each with the card
 # explaining it and the word forms that count as using it. A card may use one
