@@ -53,10 +53,3 @@ For bigger reworks, you can also delete the relevant cards and re-import the pac
 ## Editing the deck
 
 The cards live in [menu-foods.yaml](menu-foods.yaml), and [AGENTS.md](AGENTS.md) explains how to write them, build the deck and publish releases.
-
-## Third-party material
-
-The repository's MIT license covers the original code and original portions of
-the deck data. Explanatory text and images retain their respective source terms;
-every card includes source links. See
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.

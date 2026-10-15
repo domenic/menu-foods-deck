@@ -215,15 +215,9 @@ def validate_data(data):
             errors.append(f"{term}: details must be a nonempty string")
         elif re.search(r"\(\s*(?:\)|[,;])", details):
             errors.append(f"{term}: details contain malformed empty punctuation")
-        # Text written for the deck uses typographic quotes; Wikipedia extracts,
-        # which track their source, stay verbatim.
-        authored = [term, *core, *context]
-        if isinstance(details, str) and not (card.get("source") or {}).get(
-            "adapted_from"
-        ):
-            authored.append(details)
         if any(
-            isinstance(text, str) and re.search(r"['\"]", text) for text in authored
+            isinstance(text, str) and re.search(r"['\"]", text)
+            for text in [term, *core, *context, details]
         ):
             errors.append(f"{term}: use typographic quotes (’ “ ”), not straight ones")
 
@@ -236,14 +230,6 @@ def validate_data(data):
             url = source.get("url")
             if not isinstance(url, str) or not url.startswith("https://"):
                 errors.append(f"{term}: source.url must be an HTTPS URL")
-            adapted_from = source.get("adapted_from")
-            if adapted_from is not None and (
-                not isinstance(adapted_from, str)
-                or not adapted_from.startswith("https://")
-            ):
-                errors.append(
-                    f"{term}: source.adapted_from must be an HTTPS URL when present"
-                )
 
         kind = card.get("kind")
         if kind not in (None, CONCEPT):
@@ -841,14 +827,10 @@ def card_backlinks(cards):
 
 
 def source_html(source):
-    link = (
+    return (
         f'<a href="{html.escape(source["url"], quote=True)}">'
         f"{html.escape(source['label'])}</a>"
     )
-    if adapted_from := source.get("adapted_from"):
-        permalink = f'<a href="{html.escape(adapted_from, quote=True)}">permalink</a>'
-        link += f" (adapted from {permalink})"
-    return link
 
 
 def media_stem(image):

@@ -11,8 +11,7 @@
 #               with "like" gives examples and follows the core after a comma.
 #   details     The explanation. `[[key]]` or `[[key|shown text]]` links a
 #               card, by its `id` or `term`, in any text.
-#   source      Where the explanation comes from. `adapted_from` marks a
-#               verbatim Wikipedia extract, at a permanent revision.
+#   source      A link for further reading, with its `label` and `url`.
 #   image       A Wikimedia Commons filename; optional for concept cards.
 #
 # Optional fields:

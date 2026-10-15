@@ -11,7 +11,7 @@ The reader knows very little about food. A card may use only plain everyday Engl
 - **Headlines.** The bold core is what the reader is graded on, so it holds only what they must remember; examples go in the context, as "like penne". Meat headlines start with the animal, which the build takes from the profile; a meat family concept card writes its usual animal itself ("usually pig"). Cheese adjectives follow `headline_order` in `vocabulary.yaml`, and a cheese that varies says how ("mild when young; sharp when aged").
 - **Names.** Name an adjective with its food (`young cheese`, `cured meat`), so that other categories can have their own versions. Give a word with several menu meanings one suffixed card per meaning (`stracciatella (cheese)`, `stracciatella (gelato)`). A slash joins only spelling or grammar variants (`fresco / fresca`); different names for one thing, like `quesillo` and `Oaxaca cheese`, get separate cards.
 - **Images.** Every food card needs a Wikimedia Commons photo that clearly shows the food and matches the text; drop a card rather than ship it without one. Concept cards may have one too. Animals face left (`mirror_image`), and foreign words for an animal or food borrow the English card's photo (`image_from`). Pasta cards show the uncooked shape with a served dish (`served_image`).
-- **Details.** Write details as original text, with the source as further reading. Some older cards' details are verbatim Wikipedia extracts, marked by `source.adapted_from`; builds never fetch text, so those change only when refreshed deliberately (below).
+- **Details.** Write details as original text, with the source as further reading.
 - **Renaming.** A note's identity comes from its `id`, or its `term` if it has none. When renaming a card that has been released, set `id` to the old term so imports update the existing note instead of adding a duplicate.
 
 The study order is computed, not taken from the file: each card comes after the cards it links (except `compare` and `image_from`), with categories interleaved. Avoid links that would make two cards each other's prerequisites; the build reports such cycles.
@@ -29,7 +29,7 @@ A package meant for importing into a collection that already has the deck must b
 
 When one of the README's example cards changes, regenerate the screenshots with `uv run python generate_screenshots.py` (needs the Playwright CLI and its Chromium).
 
-`uv run wikipedia_descriptions.py check` compares the verbatim Wikipedia extracts with the current articles; `update` rewrites the changed ones, for review in the diff.
+To edit `menu-foods.yaml` from a script, use ruamel.yaml in round-trip mode with `preserve_quotes = True`, `width = 120` and `indent(mapping=2, sequence=4, offset=2)`, which keeps the file's comments and formatting.
 
 `reorder_new_cards.py` puts a collection's unlearned cards into the current study order through AnkiConnect; see the README's "Advanced updating". Never change someone's live collection without their explicit go-ahead.
 
