@@ -6507,12 +6507,12 @@ cards:
       origin: northern France
       label: AOP
     details: >-
-      One of France’s oldest cheeses, and easy to spot because it’s square. Like most washed-rind cheeses, it smells much
-      stronger than it tastes.
+      One of France’s oldest cheeses, and easy to spot because it’s square. Its rind is paler than most washed rinds: white,
+      tinged orange-brown. Like most washed-rind cheeses, it smells much stronger than it tastes.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Pont-l%27%C3%89v%C3%AAque_cheese
-    image: Pont-l'Évêque_02.jpg
+    image: Petit-pont-leveque.jpg
   - term: raclette (cheese)
     id: raclette
     category: cheese
