@@ -574,7 +574,7 @@ cards:
       sauce: [baked]
       origin: Italy
     details: >-
-      Filled with ricotta and spinach or meat, covered in tomato sauce or béchamel (a milk sauce), and baked.
+      Filled with ricotta and spinach or meat, covered in tomato sauce or [[béchamel]], and baked.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Cannelloni
@@ -8219,6 +8219,24 @@ cards:
     compare:
       - fettuccine
       - parmesan
+  - term: béchamel / besciamella
+    id: béchamel
+    category: sauce
+    answer:
+      core:
+        - white sauce of milk thickened with butter and flour
+      context:
+        - French and Italian
+    details: >-
+      Butter and flour are cooked together, then milk is stirred in until the sauce is thick and smooth, often with a little
+      nutmeg. It’s the creamy layer in northern Italian lasagne, and is baked over cannelloni and vegetables.
+    source:
+      label: Wikipedia
+      url: https://en.wikipedia.org/wiki/B%C3%A9chamel_sauce
+    image: 2021 Sos beszamelowy.jpg
+    compare:
+      - lasagne (dish)
+      - cannelloni
   - term: alla norma
     category: sauce
     answer:
@@ -8295,11 +8313,11 @@ cards:
     category: dish
     answer:
       core:
-        - baked layers of [[lasagne|pasta sheets]], meat sauce, white sauce and cheese
+        - baked layers of [[lasagne|pasta sheets]], meat sauce, [[béchamel|white sauce]] and cheese
       context:
         - Italian
     details: >-
-      The northern Italian classic uses bolognese and béchamel, a milk sauce; Italian-American lasagna uses ricotta and mozzarella.
+      The northern Italian classic uses bolognese and [[béchamel]]; Italian-American lasagna uses ricotta and mozzarella.
     source:
       label: Wikipedia
       url: https://en.wikipedia.org/wiki/Lasagna
