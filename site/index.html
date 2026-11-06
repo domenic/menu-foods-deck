@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu Foods flashcards</title>
+<meta name="description" content="Try the Menu Foods Anki deck: flashcards for reading restaurant menus, covering meats, pastas, cheeses, seafood and more.">
+<link rel="stylesheet" href="card.css">
+<link rel="stylesheet" href="demo.css">
+<script type="module" src="demo.mjs"></script>
+
+<header class="bar">
+  <h1>Menu Foods</h1>
+  <nav class="modes" aria-label="View">
+    <button type="button" data-mode="browse" aria-pressed="true">All cards</button>
+    <button type="button" data-mode="study" aria-pressed="false">Flashcards</button>
+  </nav>
+  <div class="links">
+    <a class="download" href="https://github.com/domenic/menu-foods-deck/releases/latest/download/menu-foods.apkg" aria-label="Download for Anki"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5v9m-4-4 4 4 4-4M2.5 14h11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="narrow">Download</span><span class="wide">Download for Anki</span></a>
+    <a class="wide" href="https://github.com/domenic/menu-foods-deck#readme">About</a>
+  </div>
+</header>
+
+<main>
+  <section id="browse" aria-label="All cards">
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Search" aria-label="Search cards">
+      <div class="chips" id="browse-category" role="group" aria-label="Category">
+        <button type="button" data-category="" aria-pressed="true">All</button>
+      </div>
+    </div>
+    <ul class="grid" id="grid"></ul>
+    <p id="empty" hidden>No cards match.</p>
+  </section>
+
+  <section id="study" aria-label="Flashcards" hidden>
+    <div class="toolbar">
+      <select id="order" aria-label="Order">
+        <option value="study">Study order</option>
+        <option value="shuffled">Shuffled</option>
+      </select>
+      <select id="study-category" aria-label="Category">
+        <option value="">All categories</option>
+      </select>
+      <span id="progress" aria-live="polite"></span>
+    </div>
+    <article class="card" id="study-card" tabindex="-1"></article>
+    <div class="actions">
+      <button type="button" id="previous" title="Left arrow">Previous</button>
+      <button type="button" id="reveal" class="primary" title="Space">Show answer</button>
+      <button type="button" id="next" class="primary" title="Space">Next</button>
+    </div>
+  </section>
+</main>
+
+<dialog id="viewer" aria-label="Card" closedby="any">
+  <form method="dialog"><button class="close" aria-label="Close"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 3.5l9 9m0-9l-9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button></form>
+  <article class="card" tabindex="-1" autofocus></article>
+</dialog>
