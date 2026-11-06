@@ -4,7 +4,7 @@ I've often had trouble with restaurant menus. Is this foreign-language word a me
 
 This deck of [Anki](https://apps.ankiweb.net/) flashcards is designed to solve my confusion once and for all. It contains over 400 cards covering meats, pastas, cheeses, seafood, vegetables, condiments, and more. It starts from the basics ("pork", "ham", "beef", "cured", "aged", "shellfish") before eventually getting into a full list of specific cheeses. Via the power of spaced repetition, I have finally stopped pulling out my phone to look up words before ordering.
 
-**[Download the latest Menu Foods deck](https://github.com/domenic/menu-foods-deck/releases/latest/download/menu-foods.apkg)**, or [browse the release notes](https://github.com/domenic/menu-foods-deck/releases).
+**[Download the latest Menu Foods deck](https://github.com/domenic/menu-foods-deck/releases/latest/download/menu-foods.apkg)**, or [browse the release notes](https://github.com/domenic/menu-foods-deck/releases). To look around first, [try the cards in your browser](https://domenic.github.io/menu-foods-deck/).
 
 ## Example cards
 
