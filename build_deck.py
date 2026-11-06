@@ -1004,6 +1004,30 @@ def note_fields(card, image_src, cards_by_key, backlinks, served_src=""):
     ]
 
 
+def render_template(template, fields):
+    """Fills in an Anki card template, for showing cards outside Anki."""
+
+    def conditional(match):
+        return match.group(2) if fields.get(match.group(1)) else ""
+
+    template = re.sub(
+        r"{{#([^}]+)}}(.*?){{/\1}}", conditional, template, flags=re.DOTALL
+    )
+    for name, value in fields.items():
+        template = template.replace(f"{{{{{name}}}}}", value)
+    return template
+
+
+def card_sides(card, cards_by_key, backlinks, image_src="", served_src=""):
+    """Returns a card's question and answer sides as Anki would show them."""
+    front_template, back_template, _ = load_card_design()
+    values = note_fields(card, image_src, cards_by_key, backlinks, served_src)
+    fields = {field["name"]: value for field, value in zip(MODEL_FIELDS, values)}
+    front = render_template(front_template, fields)
+    back = render_template(back_template.replace("{{FrontSide}}", front), fields)
+    return front, back
+
+
 def make_note(
     card, model, media_path, cards_by_key=None, backlinks=None, due=0, served_path=None
 ):

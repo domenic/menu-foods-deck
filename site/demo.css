@@ -1,0 +1,398 @@
+:root {
+  --page: #e9ece8;
+  --page-text: #1b2420;
+  --page-muted: #5a6560;
+  --page-accent: #2d5e48;
+  --surface: #fbfcfa;
+  --line: rgb(45 70 58 / 20%);
+  --shadow: 0 10px 30px rgb(20 35 28 / 14%);
+  color-scheme: light dark;
+
+  @media (prefers-color-scheme: dark) {
+    --page: #111614;
+    --page-text: #edf2ee;
+    --page-muted: #a3aea8;
+    --page-accent: #8fc7a8;
+    --surface: #1b2220;
+    --line: rgb(163 174 168 / 22%);
+    --shadow: 0 10px 30px rgb(0 0 0 / 40%);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--page);
+  color: var(--page-text);
+  font-family: ui-rounded, "Avenir Next", Avenir, system-ui, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+
+  /* Flashcards fill the window, so the card and its buttons stay put. */
+  &:has(#study:not([hidden])) {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+  }
+}
+
+button,
+select,
+input {
+  color: inherit;
+  font: inherit;
+}
+
+.bar {
+  align-items: center;
+  background: var(--page);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding: 10px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0;
+  }
+
+  /* On a phone, everything fits on one line. */
+  @media (width < 600px) {
+    gap: 10px;
+    padding-inline: 12px;
+
+    h1 {
+      font-size: 1.15rem;
+    }
+
+    .wide {
+      display: none;
+    }
+
+    .narrow {
+      display: inline;
+    }
+  }
+
+  /* On the smallest phones, the download link is just its icon. */
+  @media (width < 440px) {
+    .narrow {
+      display: none;
+    }
+  }
+
+  a {
+    color: var(--page-accent);
+  }
+
+  .links {
+    display: flex;
+    font-size: 0.9rem;
+    gap: 16px;
+    margin-inline-start: auto;
+  }
+
+  .download {
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+    gap: 4px;
+
+    svg {
+      height: 1.1em;
+      width: 1.1em;
+    }
+  }
+
+  .narrow {
+    display: none;
+  }
+}
+
+.modes {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  display: inline-flex;
+  padding: 3px;
+
+  button {
+    background: none;
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 4px 14px;
+
+    @media (width < 600px) {
+      font-size: 0.85rem;
+      padding-inline: 10px;
+    }
+
+    &[aria-pressed="true"] {
+      background: var(--page-accent);
+      color: var(--surface);
+    }
+  }
+}
+
+main {
+  margin-inline: auto;
+  max-width: 1200px;
+  padding-inline: 16px;
+  width: 100%;
+
+  body:has(#study:not([hidden])) & {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 760px;
+    min-height: 0;
+  }
+}
+
+.toolbar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  gap: 8px 12px;
+  margin-block: 12px;
+
+  select,
+  input {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 4px 8px;
+  }
+
+  select {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  input {
+    flex: 1 1 16em;
+    padding: 6px 12px;
+  }
+
+  #study & {
+    flex-wrap: nowrap;
+  }
+}
+
+#study:not([hidden]) {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  padding-bottom: 12px;
+}
+
+#progress {
+  color: var(--page-muted);
+  margin-inline-start: auto;
+  white-space: nowrap;
+}
+
+/* The deck's own styles fill a whole Anki window; here a card is a panel. It
+   takes focus only so that the keyboard reaches it, so it shows no ring. */
+main .card,
+#viewer .card {
+  border-radius: 18px;
+  outline: none;
+  padding: 20px;
+}
+
+#study-card {
+  box-shadow: var(--shadow);
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+
+  &:not(.revealed) {
+    align-content: center;
+    cursor: pointer;
+    display: grid;
+  }
+}
+
+/* Links between cards keep the deck's dotted underline. */
+.card .extra a:not(.ref),
+.card a.ref {
+  color: inherit;
+}
+
+.card a.ref:hover,
+.card .extra a:hover {
+  color: var(--accent);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 12px;
+
+  button {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 8px 18px;
+    white-space: nowrap;
+    width: 10.5em;
+
+    &.primary {
+      background: var(--page-accent);
+      border-color: transparent;
+      color: var(--surface);
+    }
+
+    &:disabled {
+      cursor: default;
+      opacity: 0.4;
+    }
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  button {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 3px 12px;
+
+    &[aria-pressed="true"] {
+      background: var(--page-accent);
+      border-color: transparent;
+      color: var(--surface);
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+
+  a {
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgb(20 35 28 / 10%);
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    text-decoration: none;
+
+    &:hover {
+      outline: 2px solid var(--page-accent);
+    }
+  }
+
+  img,
+  .no-image {
+    aspect-ratio: 4 / 3;
+    background: var(--line);
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  img.mirrored {
+    transform: scaleX(-1);
+  }
+
+  .no-image {
+    align-content: center;
+    color: var(--page-accent);
+    display: grid;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.tile-term {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+  padding: 8px 10px 2px;
+}
+
+.tile-gloss {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: var(--page-muted);
+  display: -webkit-box;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  margin: 0 10px 10px;
+  overflow: hidden;
+}
+
+#empty {
+  color: var(--page-muted);
+  text-align: center;
+}
+
+#viewer {
+  background: none;
+  border: 0;
+  max-height: calc(100dvh - 32px);
+  max-width: 760px;
+  padding: 0;
+  width: calc(100vw - 32px);
+
+  &::backdrop {
+    background: rgb(10 18 14 / 60%);
+  }
+
+  /* An icon rather than "×", whose glyph sits off-center in many fonts. */
+  .close {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    cursor: pointer;
+    display: grid;
+    height: 2.2rem;
+    padding: 0;
+    place-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 2.2rem;
+    z-index: 1;
+
+    svg {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+}
