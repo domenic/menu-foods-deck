@@ -66,6 +66,15 @@ jobs:
           if-no-files-found: error
           retention-days: 14
 
+      - name: Build the demo website
+        run: uv run --locked python build_site.py --offline
+
+      - name: Upload the demo website
+        if: github.event_name == 'push' && github.ref_type == 'tag'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist/site
+
   release:
     if: github.event_name == 'push' && github.ref_type == 'tag'
     needs: build
@@ -93,3 +102,19 @@ jobs:
             --title "$GITHUB_REF_NAME" \
             --notes "$notes" \
             --verify-tag
+
+  deploy-site:
+    if: github.event_name == 'push' && github.ref_type == 'tag'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy the demo website to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

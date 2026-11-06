@@ -28,7 +28,7 @@ uv run python build_site.py            # writes the demo website to dist/site
 
 A package meant for importing into a collection that already has the deck must be built with `SOURCE_DATE_EPOCH=$(date +%s)`. Without it, the package carries a fixed old timestamp, and Anki's "If newer" import skips every note. CI builds use the commit's timestamp.
 
-The [demo website](https://domenic.github.io/menu-foods-deck/) shows every card as Anki would, rendered from the deck's templates, with links between the cards. Its page is hand-written in `site/`; `build_site.py` adds the cards and their images. Preview it by serving `dist/site`, for example with `python -m http.server --directory dist/site`.
+The [demo website](https://domenic.github.io/menu-foods-deck/) shows every card as Anki would, rendered from the deck's templates, with links between the cards. Its page is hand-written in `site/`; `build_site.py` adds the cards and their images. Preview it by serving `dist/site`, for example with `python -m http.server --directory dist/site`. CI deploys it to GitHub Pages with each release.
 
 When one of the README's example cards changes, regenerate the screenshots with `uv run python generate_screenshots.py` (needs the Playwright CLI and its Chromium).
 
