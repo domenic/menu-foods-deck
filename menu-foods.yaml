@@ -7682,7 +7682,7 @@ cards:
       label: Wiktionary
       url: https://en.wiktionary.org/wiki/dolce#Italian
   - term: browned
-    category: dish
+    category: cooking
     kind: concept
     answer:
       core:
@@ -7695,7 +7695,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Browning_(food_process)
     image: Searing the Porterhouse Steak (4431516594).jpg
   - term: seared
-    category: dish
+    category: cooking
     kind: concept
     answer:
       core:
@@ -7708,7 +7708,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Searing
     image: Pan Seared Tuna 8-4-09 -- IMG 4347.jpg
   - term: simmered
-    category: dish
+    category: cooking
     kind: concept
     answer:
       core:
@@ -7721,7 +7721,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Simmering
     image: Pot-au-feu - Josselin 2.jpg
   - term: poached
-    category: dish
+    category: cooking
     kind: concept
     answer:
       core:
@@ -7733,7 +7733,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Poaching_(cooking)
     image: 02016 0756 Pochierte Eier, Ostergerichte, Schlesische Beskiden.JPG
   - term: sautéed
-    category: dish
+    category: cooking
     kind: concept
     answer:
       core:
@@ -7747,7 +7747,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Sautéing
     image: Borsch-con-fungi 041.jpg
   - term: glazed
-    category: dish
+    category: cooking
     kind: concept
     answer:
       core:
@@ -7760,7 +7760,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Glaze_(cooking_technique)
     image: Honey-glazed ham.jpg
   - term: marinated
-    category: dish
+    category: cooking
     kind: concept
     answer:
       core:
@@ -8050,7 +8050,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Crudo
     image: Wit & Wisdom - February 2024 - Sarah Stierch 09.jpg
   - term: sugo
-    category: dish
+    category: sauce
     kind: concept
     answer:
       core:
@@ -8065,7 +8065,7 @@ cards:
     compare:
       - pomodoro
   - term: ragù
-    category: dish
+    category: sauce
     answer:
       core:
         - meat sauce, slow-cooked for hours
@@ -8081,7 +8081,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Ragù
     image: Pappardelle ternane al cinghiale.jpg
   - term: bolognese
-    category: dish
+    category: sauce
     answer:
       core:
         - a [[ragù]] of [[beef]] and [[pork]], slow-cooked with a little tomato, wine and milk
@@ -8098,7 +8098,7 @@ cards:
       - spaghetti
       - tagliatelle
   - term: marinara
-    category: dish
+    category: sauce
     answer:
       core:
         - quick tomato sauce with garlic and herbs
@@ -8112,7 +8112,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Marinara_sauce
     image: Espaguetis con salsa marinara.jpg
   - term: pomodoro
-    category: dish
+    category: sauce
     answer:
       core:
         - simple tomato sauce with basil
@@ -8127,7 +8127,7 @@ cards:
     compare:
       - spaghetti
   - term: arrabbiata
-    category: dish
+    category: sauce
     answer:
       core:
         - tomato sauce made spicy with chili
@@ -8142,7 +8142,7 @@ cards:
     compare:
       - penne
   - term: amatriciana
-    category: dish
+    category: sauce
     answer:
       core:
         - tomato sauce with [[guanciale]] and [[pecorino romano]]
@@ -8157,7 +8157,7 @@ cards:
     compare:
       - bucatini
   - term: puttanesca
-    category: dish
+    category: sauce
     answer:
       core:
         - tomato sauce with olives, [[capers]] and anchovies
@@ -8170,7 +8170,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Spaghetti_alla_puttanesca
     image: Pasta Puttanesca.jpg
   - term: pesto
-    category: dish
+    category: sauce
     answer:
       core:
         - uncooked sauce of basil, garlic, pine nuts, cheese and olive oil, pounded together
@@ -8187,7 +8187,7 @@ cards:
       - linguine
       - trofie
   - term: aglio e olio
-    category: dish
+    category: sauce
     answer:
       core:
         - olive oil and garlic, often with chili
@@ -8203,7 +8203,7 @@ cards:
     compare:
       - spaghetti
   - term: alfredo
-    category: dish
+    category: sauce
     answer:
       core:
         - butter and parmesan sauce, thickened with cream in the US
@@ -8220,7 +8220,7 @@ cards:
       - fettuccine
       - parmesan
   - term: alla norma
-    category: dish
+    category: sauce
     answer:
       core:
         - tomato sauce with fried eggplant and [[ricotta salata]]
@@ -8233,7 +8233,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Pasta_alla_Norma
     image: Pasta Norma Villa Principe di Belmonte Ispica 2017.jpg
   - term: alle vongole
-    category: dish
+    category: sauce
     answer:
       core:
         - with [[vongole|clams]], white wine, garlic and olive oil
@@ -8249,7 +8249,7 @@ cards:
       - linguine
       - spaghetti
   - term: primavera
-    category: dish
+    category: sauce
     answer:
       core:
         - with spring vegetables, often in a light cream sauce
@@ -8262,7 +8262,7 @@ cards:
       url: https://en.wikipedia.org/wiki/Pasta_primavera
     image: Pasta primavera (1).jpg
   - term: vodka sauce
-    category: dish
+    category: sauce
     answer:
       core:
         - creamy tomato sauce with a splash of vodka
@@ -8277,7 +8277,7 @@ cards:
     compare:
       - penne
   - term: burro e salvia
-    category: dish
+    category: sauce
     answer:
       core:
         - butter heated with sage leaves until golden-brown

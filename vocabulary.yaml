@@ -430,6 +430,10 @@ categories:
     label: Condiment
     term_label: Condiment term
     jargon: [cheese, cooking]
+  sauce:
+    label: Sauce
+    term_label: Sauce term
+    jargon: [cheese, meat, pasta, cooking]
   dessert:
     label: Dessert
     term_label: Dessert term
@@ -438,6 +442,10 @@ categories:
     label: Dish
     term_label: Dish term
     jargon: [cheese, meat, pasta, cooking]
+  cooking:
+    label: Cooking
+    term_label: Cooking term
+    jargon: [cooking]
 
 # Terms of art, grouped by the kind of food they belong to, each with the card
 # explaining it and the word forms that count as using it. A card may use one
