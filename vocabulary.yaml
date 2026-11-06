@@ -103,7 +103,7 @@ categories:
         shape: text
         required: true
   meat:
-    label: Meat & charcuterie
+    label: Meat
     term_label: Meat term
     jargon: [meat, cooking]
     # A meat card's headline starts with its profile's animal row.
